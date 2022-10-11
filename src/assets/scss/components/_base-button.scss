@@ -1,0 +1,54 @@
+.btn{
+  display: inline-block;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.532rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-weight: bold;
+  &.round{ border-radius: 28px;}
+  
+  &.btn-sm{
+    padding: 4px 0.5rem; font-size: 14px; line-height: 24px; min-height: 32px;
+  }
+  &.btn-md{
+    padding: 7px 1rem; font-size: 15px; line-height: 24px; min-height: 40px;
+  }
+  &.btn-lg{
+    padding: 11px 1rem; font-size: 16px; line-height: 24px; min-height: 48px;
+  }
+  &.btn-xl{
+    padding: 15px 1rem; font-size: 17px; line-height: 24px; min-height: 56px;
+  }
+
+  &.btn-primary{
+    color: $white;
+    background-color: $PRIMARY_COLOR;
+    border-color: $PRIMARY_COLOR;
+    &:hover{
+      background-color: #1172cf;
+    }
+  }
+  &.btn-outline-primary{
+    color: $PRIMARY_COLOR;
+    background-color: $white;
+    border-color: $PRIMARY_COLOR;
+    &:hover{
+      color: $white;
+      background-color: $PRIMARY_COLOR;
+      border-color: $PRIMARY_COLOR;
+    }
+  }
+  &:disabled {
+    color: #aaaaaa;
+    border-color: #eeeeee;
+    background-color: #eeeeee;
+  }
+}
