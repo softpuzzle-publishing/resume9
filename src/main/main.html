@@ -58,7 +58,7 @@
         <!-- // main-content__join -->
 
         <div class="main-content__announcement">
-          <div class="container p-0">
+          <div class="container">
             <div class="announcement-head">
               <p class="main-content-title">실시간 헤드헌팅 채용공고</p>
               <div class="">
@@ -160,32 +160,42 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="search-card">
-                        <div class="search-card__logo"></div>
-                        <p class="search-card__title">모션(mocean) 소개 (현대자동차 계열)</p>
+                        <a href="">
+                          <div class="search-card__logo"></div>
+                          <p class="search-card__title">모션(mocean) 소개 (현대자동차 계열)</p>
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="search-card">
-                        <div class="search-card__logo"></div>
-                        <p class="search-card__title">법무법인(유한) 중부로 소개</p>
+                        <a href="">
+                          <div class="search-card__logo"></div>
+                          <p class="search-card__title">법무법인(유한) 중부로 소개</p>
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="search-card">
-                        <div class="search-card__logo"></div>
-                        <p class="search-card__title">연봉 1억 헤드헌터 그들은 어떻게 일하는가</p>
+                        <a href="">
+                          <div class="search-card__logo"></div>
+                          <p class="search-card__title">연봉 1억 헤드헌터 그들은 어떻게 일하는가</p>
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="search-card active">
-                        <div class="search-card__logo"></div>
-                        <p class="search-card__title">헤드헌터 초빙 (신입 / 경력)</p>
+                        <a href="">
+                          <div class="search-card__logo"></div>
+                          <p class="search-card__title">헤드헌터 초빙 (신입 / 경력)</p>
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="search-card">
-                        <div class="search-card__logo"></div>
-                        <p class="search-card__title">모션(mocean) 소개 (현대자동차 계열)</p>
+                        <a href="">
+                          <div class="search-card__logo"></div>
+                          <p class="search-card__title">모션(mocean) 소개 (현대자동차 계열)</p>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -201,7 +211,31 @@
           </div>
         </div>
         <!-- // main-content__search -->
-        <div class="main-content__platform"></div>
+        <div class="main-content__platform">
+          <div class="container">
+            <div class="platform-head">
+              <p class="platform-title">헤드헌터 플랫폼 레쥬메나인</p>
+              <p class="main-content-title">레쥬메나인의 장점을 둘러보세요.</p>
+            </div>
+            <div class="platform-bg-card">
+              <p class="platform-desc-title">Platform RESUME9</p>
+              <p class="platform-desc-txt">RESUME9 이력서 등록 한 번으로 AI가 당신을 원하는 곳으로 당신의 경력을 최고 우대하는 곳으로 안내해줍니다.</p>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="platform-card"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="platform-card"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="platform-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- // main-content__platform -->
       </div>
     </div>
@@ -242,6 +276,19 @@
 
         scrollbar: {
           el: ".main-content__search .swiper-scrollbar",
+        },
+      });
+      const platformSwiper = new Swiper(".main-content__platform .swiper-container", {
+        // If we need pagination
+        slidesPerView: 1,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".main-content__platform .swiper-button-next",
+          prevEl: ".main-content__platform .swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".main-content__platform .swiper-scrollbar",
         },
       });
     </script>

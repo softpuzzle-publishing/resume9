@@ -231,6 +231,7 @@ legend{
 
     .search-card{
         height: 175px; border-radius: 16px; border: solid 1px #eee; padding: 32px 25px; 
+        a{ display: block;}
         &.active{
             border: 2px solid #1686f2; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
         }
@@ -243,5 +244,26 @@ legend{
 
 // 플랫폼 헤드헌터 채용
 .main-content__platform{
-    width: 100%; height: 1040px; background: url('../images/platform-banner.png')50% 50% no-repeat;
+    width: 100%; height: 1040px; background: url('../images/platform-banner.png')50% 50% no-repeat; padding-top: 120px; 
+    >.container{ height: 100%; position: relative;}
+    .platform-head{
+        text-align: center;
+        .platform-title{
+            font-size: 40px; font-weight: 700; color: #fff;
+        }
+        .main-content-title{ color: #fff; margin-top: 24px;}
+    }
+    .platform-bg-card{
+        width: 600px; height: 765px; background-color: #fff; position: absolute; bottom: 0; left: 0; padding: 50px 75px;
+    }
+    .platform-desc-title{
+       font-size: 24px;  font-weight: 700; line-height: 1.21;
+    }
+    .platform-desc-txt{ font-size: 18px; color: #555; font-weight: 400; line-height: 1.61; margin-top: 16px;}
+    .swiper-container{
+        width:100%; position: absolute; left: 75px; bottom: 72px;
+    }
+    .platform-card{
+        width: 90%; height: 460px; background-color: #1686f2;
+    }
 }

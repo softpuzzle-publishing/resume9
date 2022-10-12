@@ -2,6 +2,9 @@
 
 #container{flex-grow: 1;}
 
+.container{
+    padding: 0;
+}
 @media screen and (max-width: $BREAKPOINT_LARGE) {
     #container{ margin-top: 30px; }
 }
