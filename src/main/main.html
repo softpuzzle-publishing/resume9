@@ -347,8 +347,10 @@
           </div>
         </div>
         <!-- // main-content__product -->
+        <div class="sm-banner">경력직은 헤드헌터, 헤드헌터 Platform RESUME9</div>
       </div>
     </div>
+    @@include('@@webRoot/_include/_footer.html')
     <script>
       const mainSwiper = new Swiper(".main-content__join .swiper-container", {
         // If we need pagination
@@ -376,8 +378,14 @@
 
       const searchSwiper = new Swiper(".main-content__search .swiper-container", {
         // If we need pagination
-        slidesPerView: 4,
-        spaceBetween: 24,
+        breakpoints: {
+          996: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
         // Navigation arrows
         navigation: {
           nextEl: ".main-content__search .swiper-button-next",
@@ -390,10 +398,15 @@
       });
       const platformSwiper = new Swiper(".main-content__platform .swiper-container", {
         // If we need pagination
-        slidesPerView: "auto",
-        spaceBetween: 140,
-        centeredSlides: true,
-        loop: true,
+        breakpoints: {
+          996: {
+            slidesPerView: "auto",
+            spaceBetween: 140,
+            centeredSlides: true,
+            loop: true,
+          },
+        },
+        slidesPerView: 1,
         navigation: {
           nextEl: ".main-content__platform .swiper-button-next",
           prevEl: ".main-content__platform .swiper-button-prev",
