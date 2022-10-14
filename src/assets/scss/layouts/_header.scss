@@ -24,7 +24,7 @@
   }
 }
 .my-info{
-  width: 210px;box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.1); position: absolute;
+  width: 210px;box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.1); position: absolute; z-index: 2;
   left: 15%; transform: translateX(-50%); top: 50px; border: 1px solid #ddd;
   &::before{
     content:"";   width: 16px; height: 13px; background-image: url('../images/icon-triangle.svg'); background-size: contain; background-position: center;
