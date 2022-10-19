@@ -8,3 +8,21 @@
 @media screen and (max-width: $BREAKPOINT_LARGE) {
     #container{ margin-top: 30px; }
 }
+
+
+.layout {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.layout-left {
+    width: 271px;
+}
+.layout-left + .layout-content {
+    padding-top: 0;
+}
+.layout-content {
+    width: 1001px;
+    padding-top: 1rem;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,15 @@
+.tag{
+    display: inline-flex;height: 30px;padding: 0 5px 1px 10px;border-radius: 50rem;align-items: center;background-color: $PRIMARY_COLOR;
+    color: #fff;font-size: 12px;letter-spacing: -0.05em;margin: .25rem;
+    > a{margin-left: 5px;display: block;padding: 2px 5px;}
+    .icon-tag-x{vertical-align: middle;margin-top: -2px;}
+    &.tag-sm{height: 24px;padding: 0 10px;}
+    &.tag-lg{height: 30px;padding: 0 10px;font-size: 14px;padding-top: 1px;}
+    &.tag-xl{
+        height: 40px;padding: 0 16px;font-size: 18px;font-weight: 500;padding-bottom: 1px;
+        > a{margin-left: 10px;}
+    }
+    &.tag-outline-primary{
+        background-color: #fff;border: 1px solid $PRIMARY_COLOR;color: $PRIMARY_COLOR;
+    }
+}

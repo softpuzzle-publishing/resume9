@@ -21,3 +21,14 @@ input[type="number"]::-webkit-inner-spin-button {
   white-space: nowrap;
   border: 0;
 }
+
+.subtitle { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+.title-line { height: 2px; background: #000; }
+.table-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+.sub-content-head{
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 50px;
+}

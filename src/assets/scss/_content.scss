@@ -37,9 +37,7 @@
 legend{ 
     visibility: hidden; position: absolute;
 }
-.title {
-    text-align: center; margin-top: 80px; margin-bottom: 100px; font-size: 40px; font-weight: 700;
-}
+
 .login-sns{
     margin-top: 56px;
     .login-sns__title{
@@ -567,4 +565,108 @@ legend{
         font-size:13px; padding: 19px 0;
     }
 
+}
+
+// 커뮤니티
+.feed-list{
+    border-top: 2px solid #000;
+    li{padding: 20px 25px; border: 1px solid #ddd; border-radius: 6px; margin-top: 20px;}
+    .title{font-size: 22px;font-weight: 700;margin-bottom: 5px; margin-top:15px;}
+    .desc{ width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-size: 16px;color: #777;letter-spacing: -0.8px; margin-top: 15px;}
+    .name{ font-size :18px; font-weight: 700; margin-top: 20px;}
+    .feed-body{
+        border-bottom: 1px solid #ddd; padding-bottom: 30px;
+    }
+   
+}
+.post-cell{
+    padding: 15px 15px 0 15px; display: flex; align-items: center; justify-content: space-between;
+    .date{color: #777; font-size: 14px;}
+    span{
+        color: #777; font-size: 14px; margin-left: 10px; display: inline-block;
+    }
+}
+
+.body-talk{
+    min-width: 0;
+    .profile{
+        width: 50px;height: 50px;border: 1px solid #e6ecf0;
+    }
+}
+
+// 커뮤니티 상세
+.feed-list-detail{
+    border-top: 0;
+    .title{font-size: 22px;font-weight: 700;margin-bottom: 5px; margin-top:15px;}
+    .date-box{ 
+        display: flex; align-items: center; margin-top: 20px;
+        p{ font-size: 14px; color: #777; padding-right: 15px;}
+        .views{ position: relative; 
+            &::before{ content:""; position: absolute; left: -7px; top:50%; transform: translateY(-50%); width: 1px; height: 60%; background-color: #777;}
+        }
+    }
+    .desc{ width: 100%; padding: 25px 15px; font-size: 16px; color: #000; line-height: 22px;}
+    .name{ font-size :18px; font-weight: 700; margin-top: 20px;}
+    .feed-body{
+        border-bottom: 1px solid #ddd; padding-bottom: 30px;
+    }
+    .like-btn{
+        width: 80px; height: 80px; border-radius: 50%; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center;
+        &.active{
+            border: 1px solid $PRIMARY_COLOR;  color: $PRIMARY_COLOR;
+            .icon-like{}
+        }
+    }
+}
+.another-writing{
+    border: 1px solid #ddd;
+    .another-writing-head{
+        display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 15px 20px;
+    }
+    .another-name{
+        span{ color: $PRIMARY_COLOR;}
+    }
+}
+.another-writing-content{
+    padding: 15px 20px;
+    li{ display: flex; align-items: center; line-height: 40px;}
+    .num{ width: 35px; color: $PRIMARY_COLOR; display: inline-block; font-weight: bold;}
+    .object{ width: 95%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+}
+
+.comment-wrap{
+     margin-top: 100px;
+     .comment-wrap-content{
+        border-top: 2px solid #000; 
+     }
+     .comment-wrap-head{
+        display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 15px 20px;
+    }
+    .comment-name{
+        span{ color: $PRIMARY_COLOR;}
+    }
+        
+    .reply{
+        padding: 15px 20px; border-bottom: 1px solid #ddd; 
+        &:last-child{ border-bottom: 2px solid #000;}
+    }
+    .re-reply{
+        padding: 15px 20px; border-bottom: 1px solid #ddd;  background-color: #f8f8f8;
+        &:last-child{ border-bottom: 2px solid #000;}
+    }
+    .reply-head{
+        .name{font-size: 16px;}
+        .time{ color: #777; display: inline-block; margin-left: 5px; font-size: 14px;} 
+    }
+    .reply-desc{
+        padding: 20px 0;
+    }
+    .re-reply-btn{
+        a{ color: #777; font-size: 14px;}
+    }
+    .comment-write{
+        width: 100%; height: 100px; display: flex; margin-top: 30px;
+        textarea{ padding: 15px 20px; width: 90%; border-radius: 0;}
+        .btn{ width: 10%;}
+    }
 }

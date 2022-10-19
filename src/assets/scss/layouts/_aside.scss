@@ -1,0 +1,33 @@
+aside{
+    > ul{
+        >li{
+            margin-bottom: 2rem;
+            >a{ 
+                font-size: 18px; font-weight: 500; margin-bottom: 1rem; display: inline-block;
+            }
+            > ul{
+                margin-top: -5px;
+                >li{
+                    &.active{
+                        a{
+                            &::before{
+                                background-color: #0078ff; width: 100%;
+                            }
+                        }
+                    }
+                    a{
+                        font-size: 14px; color: #888; line-height: 2.5; position: relative; transition: color .15s; display: inline-block; vertical-align: top;
+                        &::before{
+                            content: ''; width: 0; height: 2px; position: absolute; left: 0; bottom: 3px; transition: all .3s;
+                        }
+                    }
+                    &.active{
+                        a{
+                            color: #0078ff; font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

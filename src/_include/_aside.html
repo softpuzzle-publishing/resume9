@@ -1,36 +1,20 @@
-<aside id="aside">
-  <div class="position-relative">
-    <button type="button" class="btn-menu" aria-label="메뉴"><i class="icon-hamburger"></i></button>
-    <script>
-      const btnMenu = document.querySelector(".btn-menu");
-      btnMenu.addEventListener("click", function () {
-        this.classList.add("active");
-      });
-      document.addEventListener("mouseup", function (e) {
-        let t = e.target;
-        let menuLayer = t.closest(".menu-layer");
-        if (!menuLayer) {
-          btnMenu.classList.remove("active");
-        }
-      });
-    </script>
-    <div class="menu-layer">
-      <button type="button"><i class="icon-person-group"></i><span>Groups</span></button>
-      <button type="button"><i class="icon-person"></i><span>Contacts</span></button>
-      <button type="button" data-is-new="true"><i class="icon-chat"></i><span>Message</span></button>
-      <button type="button"><i class="icon-update"></i><span>Logs</span></button>
-      <button type="button"><i class="icon-gear"></i><span>Setting</span></button>
-    </div>
-  </div>
-  <button type="button" class="btn-search" aria-label="검색"><i class="icon-search"></i></button>
-  <div class="functions-menu">
-    <button type="button"><i class="icon-marker"></i><span>GIS</span></button>
-  </div>
-  <div class="call-menu">
-    <button type="button"><i class="icon-memory"></i><span>Patch</span></button>
-    <button type="button"><i class="icon-group"></i><span>Regroup</span></button>
-    <button type="button"><i class="icon-emergency"></i><span>Emergency</span></button>
-    <button type="button"><i class="icon-broadcast"></i><span>Broadcast</span></button>
-    <button type="button" class="active"><i class="icon-ptt"></i><span>PTT</span></button>
-  </div>
+<aside>
+  <ul>
+    <li>
+      <a href=""><span class="poppins">자유게시판</span></a>
+      <ul>
+        <li class="active"><a href="">직장인 수다</a></li>
+        <li><a href="javascript:void(0)">직장인 고민</a></li>
+        <li><a href="javascript:void(0)">면접/이직/퇴사</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="../mypage/myChannel.html"><span class="poppins">회사 정보</span></a>
+      <ul>
+        <li><a href="javascript:void(0)">합격 후기</a></li>
+        <li><a href="javascript:void(0)">이 회사가 궁금해요</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="add">광고</div>
 </aside>
