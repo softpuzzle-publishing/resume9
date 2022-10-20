@@ -8,6 +8,8 @@ aside{
             > ul{
                 margin-top: -5px;
                 >li{
+                    display: flex; align-items: center;
+                    .item-new{ margin-left: 10px;}
                     &.active{
                         a{
                             &::before{

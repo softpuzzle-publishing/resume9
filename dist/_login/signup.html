@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>Resume9</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 
+<link rel="icon" type="image/png" href="../assets/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" /> -->
+
+    <!-- library css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css" /> -->
+
+    <!-- publilshing css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- jquery js -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+
+    <!-- library js -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- publishing js -->
+    <script src="../assets/js/ui.js" async></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../assets/lib/swiper/css/swiper-bundle.min.css" />
+    <script src="../assets/lib/swiper/js/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="inner">
+          <div class="col">
+            <div class="row align-items-center justify-content-between gx-0">
+              <div class="col-6 d-flex align-items-center">
+                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
+                <ul class="gnb-list hidden-flex-mobile">
+                  <li class="gnb-depth">
+                    <a href="">채용공고</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">헤드헌터검색</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">내 이력서</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">커뮤니티</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 d-flex align-items-center justify-content-end">
+                <div class="search-form hidden-mobile">
+                  <input type="text" class="form-control form-lg" />
+                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
+                </div>
+                <ul class="sign-list hidden-flex-mobile">
+                  <li class="sign-depth">
+                    <a href="">1:1 문의</a>
+                  </li>
+                  <li class="sign-depth">
+                    <a href="">고객센터</a>
+                  </li>
+                  <li class="sign-depth mypage">
+                    <!-- <a href="">로그인</a> -->
+                    <a href="javascript:void(0)" class="mypage-con">MY</a>
+                    <i class="icon-login m-l-10"></i>
+                    <div class="my-info" style="display: none">
+                      <div class="my-info__head">
+                        <div class="info-head__my">
+                          <p class="info-head__name">홍길동</p>
+                          <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
+                        </div>
+                        <div class="info-head__point">
+                          <i class="icon-point"></i>
+                          <span class="my-reword">내 리워드</span>
+                          <span class="point">100P</span>
+                        </div>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">회원정보 수정</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">회원정보 수정</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">비밀번호 변경</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">블랙리스트 관리</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">보안</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">로그인 기록</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">리워드</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">적립/사용내역</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">리워드 Mall</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="container-block">
+      <div id="container">
+        <div class="container">
+          <h2 class="title">회원가입</h2>
+          <div class="content-bg">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">개인회원</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">헤드헌터회원</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <form action="">
+                  <fieldset>
+                    <legend>로그인</legend>
+                    <div class="form-group">
+                      <label for="" class="essential"><span>*</span>이메일(아이디)</label>
+                      <div class="btn-form">
+                        <input type="text" class="form-control form-control-xl bg-light" id="" placeholder="example@innotalk.com" />
+                        <button type="button" class="btn btn-outline-primary btn-xl">인증요청</button>
+                      </div>
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential"><span>*</span>이름(실명)</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="홍길동" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="essential"><span>*</span>휴대폰번호</label>
+                      <div class="btn-form">
+                        <input type="number" class="form-control form-control-xl bg-light" id="" placeholder="(-) 빼고 입력해주세요." />
+                        <button type="button" class="btn btn-outline-primary btn-xl">본인인증</button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="essential"><span>*</span>휴대폰 인증번호</label>
+                      <div class="btn-form">
+                        <input type="number" class="form-control form-control-xl bg-light" id="" placeholder="인증번호 6자리" />
+                        <button type="button" class="btn btn-outline-primary btn-xl">본인확인</button>
+                      </div>
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential"><span>*</span>비밀번호</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="비밀번호" autocomplete="off" />
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential"><span>*</span>비밀번호 확인</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="비밀번호 " autocomplete="off" />
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential">헤드헌터 추천코드</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="코드입력" autocomplete="off" />
+                    </div>
+                  </fieldset>
+                </form>
+                <h3 class="table-title">레쥬메나인 이용약관에 동의해주세요.</h3>
+                <div class="accordion-agree">
+                  <div class="item">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck"> [필수]만 15세 이상입니다.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item active">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck">[필수]서비스이용약관동의 </label>
+                        </div>
+                      </div>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body"></div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck">[필수] 개인정보처리방침 및 제3자정보제공동의</label>
+                        </div>
+                      </div>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body"></div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck"> [선택]마케팅정보수신제공동의</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="table-title">개인정보 유효기간</h3>
+                <div class="accordion-agree">
+                  <div class="item">
+                    <div class="agree-top justify-content-start inline-form-radio">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleRadio1" />
+                        <label class="form-check-label" for="multipleRadio"> 1년</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleRadio2" />
+                        <label class="form-check-label" for="multipleRadio"> 3년</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleRadio3" />
+                        <label class="form-check-label" for="multipleRadio"> 탈퇴시까지</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-xl btn-outline-primary w-100 login-btn">동의하고 가입하기</button>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <form action="">
+                  <fieldset>
+                    <legend>로그인</legend>
+                    <div class="form-group">
+                      <label for="" class="essential"><span>*</span>이메일(아이디)</label>
+                      <div class="btn-form">
+                        <input type="text" class="form-control form-control-xl bg-light" id="" placeholder="example@innotalk.com" />
+                        <button type="button" class="btn btn-outline-primary btn-xl">인증요청</button>
+                      </div>
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential"><span>*</span>이름(실명)</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="홍길동" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="essential"><span>*</span>휴대폰번호</label>
+                      <div class="btn-form">
+                        <input type="number" class="form-control form-control-xl bg-light" id="" placeholder="(-) 빼고 입력해주세요." />
+                        <button type="button" class="btn btn-outline-primary btn-xl">본인인증</button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="essential"><span>*</span>휴대폰 인증번호</label>
+                      <div class="btn-form">
+                        <input type="number" class="form-control form-control-xl bg-light" id="" placeholder="인증번호 6자리" />
+                        <button type="button" class="btn btn-outline-primary btn-xl">본인확인</button>
+                      </div>
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential"><span>*</span>비밀번호</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="비밀번호" autocomplete="off" />
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential"><span>*</span>비밀번호 확인</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="비밀번호 " autocomplete="off" />
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="" class="essential">헤드헌터 추천코드</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="" placeholder="코드입력" autocomplete="off" />
+                    </div>
+                  </fieldset>
+                </form>
+                <h3 class="table-title">레쥬메나인 이용약관에 동의해주세요.</h3>
+                <div class="accordion-agree">
+                  <div class="item">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck"> [필수]만 15세 이상입니다.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item active">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck">[필수]서비스이용약관동의 </label>
+                        </div>
+                      </div>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body"></div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck">[필수] 개인정보처리방침 및 제3자정보제공동의</label>
+                        </div>
+                      </div>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body"></div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <div class="check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck"> [선택]마케팅정보수신제공동의</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="table-title">개인정보 유효기간</h3>
+                <div class="accordion-agree">
+                  <div class="item">
+                    <div class="agree-top justify-content-start inline-form-radio">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleRadio1" />
+                        <label class="form-check-label" for="multipleRadio"> 1년</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleRadio2" />
+                        <label class="form-check-label" for="multipleRadio"> 3년</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleRadio3" />
+                        <label class="form-check-label" for="multipleRadio"> 탈퇴시까지</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-xl btn-outline-primary w-100 login-btn">동의하고 가입하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

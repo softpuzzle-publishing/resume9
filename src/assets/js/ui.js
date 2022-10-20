@@ -12,4 +12,11 @@ $(document).ready(function () {
     $(".sign-wrap__login").hide();
   });
   //    //
+
+  $(".search-box input").on("change keydown paste input", function () {
+    $(this).closest(".search-box").next(".search-result-list").show();
+    if ($(".search-box input").val() == "") {
+      $(this).closest(".search-box").next(".search-result-list").hide();
+    }
+  });
 });

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>Resume9</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 
+<link rel="icon" type="image/png" href="../assets/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" /> -->
+
+    <!-- library css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css" /> -->
+
+    <!-- publilshing css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- jquery js -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+
+    <!-- library js -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- publishing js -->
+    <script src="../assets/js/ui.js" async></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../assets/lib/swiper/css/swiper-bundle.min.css" />
+    <script src="../assets/lib/swiper/js/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="inner">
+          <div class="col">
+            <div class="row align-items-center justify-content-between gx-0">
+              <div class="col-6 d-flex align-items-center">
+                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
+                <ul class="gnb-list hidden-flex-mobile">
+                  <li class="gnb-depth">
+                    <a href="">채용공고</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">헤드헌터검색</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">내 이력서</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">커뮤니티</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 d-flex align-items-center justify-content-end">
+                <div class="search-form hidden-mobile">
+                  <input type="text" class="form-control form-lg" />
+                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
+                </div>
+                <ul class="sign-list hidden-flex-mobile">
+                  <li class="sign-depth">
+                    <a href="">1:1 문의</a>
+                  </li>
+                  <li class="sign-depth">
+                    <a href="">고객센터</a>
+                  </li>
+                  <li class="sign-depth mypage">
+                    <!-- <a href="">로그인</a> -->
+                    <a href="javascript:void(0)" class="mypage-con">MY</a>
+                    <i class="icon-login m-l-10"></i>
+                    <div class="my-info" style="display: none">
+                      <div class="my-info__head">
+                        <div class="info-head__my">
+                          <p class="info-head__name">홍길동</p>
+                          <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
+                        </div>
+                        <div class="info-head__point">
+                          <i class="icon-point"></i>
+                          <span class="my-reword">내 리워드</span>
+                          <span class="point">100P</span>
+                        </div>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">회원정보 수정</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">회원정보 수정</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">비밀번호 변경</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">블랙리스트 관리</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">보안</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">로그인 기록</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">리워드</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">적립/사용내역</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">리워드 Mall</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="container-block">
+      <div id="container">
+        <div class="container">
+          <h2 class="title">로그인</h2>
+          <div class="content-bg">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">개인회원</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">헤드헌터회원</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <form action="">
+                  <fieldset>
+                    <legend>로그인</legend>
+                    <div class="form-group">
+                      <label for="fId">이메일(아이디)</label>
+                      <input type="text" class="form-control form-control-xl bg-light" id="fId" placeholder="example @ innotalk.com" />
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="fPassword">비밀번호</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="fPassword" placeholder="비밀번호 입력" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                            <label class="form-check-label" for="multipleCheck">아이디 저장</label>
+                          </div>
+                        </div>
+                        <div class="col-auto hidden-flex-mobile">
+                          <a href="#none" class="pw-reset">아이디찾기</a>
+                          <a href="#none" class="pw-reset">비밀번호 재설정</a>
+                          <a href="#none" class="pw-reset">회원가입</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-xl btn-primary w-100 login-btn">로그인</button>
+                    <div class="col-auto hidden-flex-desktop justify-content-center m-t-30">
+                      <a href="#none" class="pw-reset">아이디찾기</a>
+                      <a href="#none" class="pw-reset">비밀번호 재설정</a>
+                      <a href="#none" class="pw-reset">회원가입</a>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="login-sns">
+                  <p class="login-sns__title">소셜로 간편하게 로그인하세요</p>
+                  <div class="login-sns__wrap">
+                    <a href="javascript:void(0)">
+                      <div class="icon-naver"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-kakao"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-facebook"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-google"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-apple"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <form action="">
+                  <fieldset>
+                    <legend>로그인</legend>
+                    <div class="form-group">
+                      <label for="fId">이메일(아이디)</label>
+                      <input type="text" class="form-control form-control-xl bg-light" id="fId" placeholder="example @ innotalk.com" />
+                    </div>
+                    <div class="form-group m-t-25">
+                      <label for="fPassword">비밀번호</label>
+                      <input type="password" class="form-control form-control-xl bg-light" id="fPassword" placeholder="비밀번호 입력" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                            <label class="form-check-label" for="multipleCheck">아이디 저장</label>
+                          </div>
+                        </div>
+                        <div class="col-auto hidden-flex-mobile">
+                          <a href="#none" class="pw-reset">아이디찾기</a>
+                          <a href="#none" class="pw-reset">비밀번호 재설정</a>
+                          <a href="#none" class="pw-reset">회원가입</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-xl btn-primary w-100 login-btn">로그인</button>
+                  </fieldset>
+                </form>
+                <div class="login-sns">
+                  <p class="login-sns__title">소셜로 간편하게 로그인하세요</p>
+                  <div class="login-sns__wrap">
+                    <a href="javascript:void(0)">
+                      <div class="icon-naver"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-kakao"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-facebook"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-google"></div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="icon-apple"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
