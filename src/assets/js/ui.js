@@ -19,4 +19,8 @@ $(document).ready(function () {
       $(this).closest(".search-box").next(".search-result-list").hide();
     }
   });
+
+  $(".select-design").select2({
+    minimumResultsForSearch: -1,
+  });
 });

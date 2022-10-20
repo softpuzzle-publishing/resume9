@@ -657,6 +657,10 @@ legend{
     .reply-head{
         .name{font-size: 16px;}
         .time{ color: #777; display: inline-block; margin-left: 5px; font-size: 14px;} 
+        .experience{ display: inline-block; margin-left: 5px; font-size: 14px;
+            &.direct{ color: #32dcbe;}
+            &.indirect{color: rgb(245, 152, 12);}
+        } 
     }
     .reply-desc{
         padding: 20px 0;
@@ -702,5 +706,83 @@ legend{
     }
 }
 .search-result-list{
-    display: none;
+    display: none; position: absolute; width: 100%; z-index: 10; background: #fff;
+    li{
+        padding: 7px 25px;
+        .company-name{ font-weight: 700;}
+        .company-obj{ font-size: 12px; color: #666; margin-top:5px;}
+        &.active{
+            background-color: rgba(22,134,242,0.15);
+        }
+    }
+}
+.search-area{
+    width: 100%; background-color: #f8f8fa; display: flex; align-items: center;
+    justify-content: center; padding: 30px 0;
+    .input-group{
+        width: 50%; display: flex; align-items: center; justify-content: end; background-color: #fff;
+        input{ width: 80%; background-color: #fff; padding: 9px 0; 
+            &:focus{outline: 0;}
+        }
+    }
+}
+
+// 채용공고
+.tbl-head{
+    display: flex; align-items: end; justify-content: space-between; margin-top: 70px;
+    .tbl-head-cnt{
+        span{ color:$PRIMARY_COLOR; font-weight: bold;}
+    }
+}
+.announcement-wrap{
+    .scale{line-height: 1; color: $PRIMARY_COLOR; font-size: 14px; display: flex; align-items: center;}
+    .title{ width: 100%; max-width: 700px; font-size: 20px; font-weight: 600; line-height: 1.5; margin:5px 0; display: block; text-decoration: underline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+    .date{ color: #202020; font-size: 15px; 
+        .tag{height: auto; padding: 3px 10px;}
+        span{ margin-right:15px; display: inline-block;}
+    }
+}
+.headhunter-wrap{
+    .name{ font-weight: 600; display: block; text-decoration: underline; margin-bottom: 5px;}
+    .company{ color: #777; font-size: 14px;}
+}
+.favorites{
+    margin-left: 5px;
+    &.active{
+        .icon-favorites-off{background-image: url('../images/icon-favorites-on.svg');}
+    }
+}
+// 채용공고 상세
+.poting-detail-wrap{
+    .desc{
+        border-top:1px solid #ddd; padding: 50px 0; margin-top: 24px;
+        p{ line-height: 1.5;}
+    }
+}
+.headhunter-profile-content{margin-top: 30px;}
+.headhunter-profile{
+    border: 1px solid #ddd; display: flex; align-items: center; margin-top: 20px; padding: 20px 40px;
+    .headhunter-profile-img{ width: 90px; height: 90px; border-radius: 50%; background-image: url('../images/no-img.png'); background-size: cover; background-position: center;}
+    .headhunter-profile-info{
+        margin-left: 30px;
+        .company{ color: #777; }
+        .name{
+            display:flex; align-items: center; line-height: 1; font-weight: 700; margin-top: 7px; font-size: 18px;
+            .favorites{ margin-left: 0; margin-right: 5px;}
+        }
+        .txt{ font-weight: 600; margin-right: 15px;
+            &.first{margin-bottom: 7px;}
+        }
+        .email{ color: $PRIMARY_COLOR; text-decoration: underline;}
+        .num{ color: $PRIMARY_COLOR; font-weight: bold;}
+    }
+}
+.send-btn{
+    margin-top: 50px; text-align: center;
+    .btn{ width: 300px; margin: 0 auto;}
+}
+
+// 이력서
+.apply-select{
+    width: 50%; margin-top: 30px;
 }

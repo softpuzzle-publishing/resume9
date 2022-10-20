@@ -9,6 +9,12 @@
     <!-- 
 <link rel="icon" type="image/png" href="../assets/images/favicon-16x16.png" sizes="16x16" />
 <link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" /> -->
+    <!-- jquery js -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+
+    <!-- select2 -->
+    <link rel="stylesheet" href="../assets/lib/select2/select2.min.css" />
+    <script src="../assets/lib/select2/select2.min.js"></script>
 
     <!-- library css -->
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
@@ -16,9 +22,6 @@
 
     <!-- publilshing css -->
     <link rel="stylesheet" href="../assets/css/style.css" />
-
-    <!-- jquery js -->
-    <script src="../assets/lib/jquery/jquery.min.js"></script>
 
     <!-- library js -->
     <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
@@ -340,20 +343,29 @@
               <div class="form-group">
                 <input type="text" class="form-control form-md" placeholder="제목을 입력하세요" />
               </div>
-              <div class="form-group">
+              <div class="form-group position-relative">
                 <div class="search-box">
                   <input type="text" class="" placeholder="회사 이름을 입력하세요" />
                   <button type="button" class="btn"><i class="icon-search-dark"></i></button>
                 </div>
                 <div class="search-result-list">
                   <ul>
-                    <li>
-                      <div>
-                        <p>(주)소프트퍼즐</p>
-                        <p>중소기업 | 시스템소프트웨어 | 중공업</p>
+                    <li class="active">
+                      <div class="result-company">
+                        <a href="">
+                          <p class="company-name">(주)소프트퍼즐</p>
+                          <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                        </a>
                       </div>
                     </li>
-                    <li>bb</li>
+                    <li>
+                      <div class="result-company">
+                        <a href="">
+                          <p class="company-name">(주)소프트퍼즐</p>
+                          <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                        </a>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>

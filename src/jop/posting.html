@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="sub-content">
+          <p class="center-title">채용공고 검색</p>
+          <div class="search-area">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="검색어를 입력하세요" />
+              <div class="input-group-append">
+                <button class="btn btn-primary btn-input-search" type="button">공고검색</button>
+              </div>
+            </div>
+            <div class="form-check m-l-25">
+              <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+              <label class="form-check-label" for="multipleCheck"> 결과 내 검색 </label>
+            </div>
+            <div class="tooltip m-l-25"><i class="icon-exclamation"></i></div>
+          </div>
+
+          <div class="tbl-head">
+            <p class="tbl-head-cnt">총 <span>427</span>건의 채용공고가 있습니다.</p>
+            <div class="">
+              <select class="select-design" style="width: 100%">
+                <option value="1">등록일순</option>
+                <option value="3">마감임박순</option>
+              </select>
+            </div>
+          </div>
+          <table class="table in-table mt-3">
+            <colgroup>
+              <col width="65%" />
+              <col width="10%" />
+              <col width="15%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="text-center">공고내용</th>
+                <th class="text-center">헤드헌터</th>
+                <th class="text-center">지원</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left">
+                  <div class="announcement-wrap">
+                    <p class="scale">중소기업</p>
+                    <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                    <p class="date"><span>공고마감일</span><span>2022.10.21 (금)</span></p>
+                  </div>
+                </td>
+                <td class="text-left">
+                  <div class="headhunter-wrap">
+                    <a href="" class="name">박준성</a>
+                    <p class="company">맨쉬컨설팅(주)</p>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button type="button" class="btn btn-outline-primary btn-md">즉시지원</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">
+                  <div class="announcement-wrap">
+                    <p class="scale">
+                      중소기업 <button type="button" class="favorites active"><i class="icon-favorites-off"></i></button>
+                    </p>
+                    <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                    <p class="date"><span>공고마감일</span><span>2022.10.21 (금)</span></p>
+                  </div>
+                </td>
+                <td class="text-left">
+                  <div class="headhunter-wrap">
+                    <a href="" class="name">박준성</a>
+                    <p class="company">맨쉬컨설팅(주)</p>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button type="button" class="btn btn-outline-primary btn-md">즉시지원</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">
+                  <div class="announcement-wrap">
+                    <p class="scale">
+                      중소기업 <button type="button" class="favorites"><i class="icon-favorites-off"></i></button>
+                    </p>
+                    <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                    <p class="date"><span>공고마감일</span><span>2022.10.21 (금)</span></p>
+                  </div>
+                </td>
+                <td class="text-left">
+                  <div class="headhunter-wrap">
+                    <a href="" class="name">박준성</a>
+                    <p class="company">맨쉬컨설팅(주)</p>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button type="button" class="btn btn-outline-primary btn-md">즉시지원</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-center mt-5">
+            <div class="pagination">
+              <a href=""><i class="icon-pager-prev"></i></a>
+              <a href="" class="active">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="">5</a>
+              <a href="">6</a>
+              <a href="">7</a>
+              <a href="">8</a>
+              <a href="">9</a>
+              <a href="">10</a>
+              <a href=""><i class="icon-pager-next"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>
