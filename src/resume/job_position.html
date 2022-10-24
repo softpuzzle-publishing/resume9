@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_resume_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">받은 포지션 제안</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="row row-0">
+              <ol class="step mt-n3">
+                <li class="active">
+                  <a href="job_position.html"><span>포지션 제안내역</span></a>
+                </li>
+                <li>
+                  <a href="job_browse.html"><span>내 이력서 열람 내역</span></a>
+                </li>
+              </ol>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="btn-group date-list" role="group">
+                <p class="m-r-20">조회기간</p>
+                <button type="button" class="btn btn-outline-primary active">1개월</button>
+                <button type="button" class="btn btn-outline-primary">3개월</button>
+                <button type="button" class="btn btn-outline-primary">6개월</button>
+                <button type="button" class="btn btn-outline-primary">1년</button>
+              </div>
+            </div>
+            <div class="resume-form position">
+              <div class="resume-form-list resume-main-form">
+                <div class="headhunter-wrap">
+                  <a href="" class="hunter-name">홍길동</a>
+                  <p class="state">맨쉬컨설팅(주)</p>
+                </div>
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">테스트 공고</a>
+                  <p class="date"><span>제안일</span><span>2022.10.21 10:57:17</span></p>
+                </div>
+                <div class="headhunter-wrap text-center">
+                  <p class="text-danger">제안</p>
+                  <p class="date">~ 10/20(목)</p>
+                </div>
+              </div>
+              <!-- 반복 -->
+              <div class="resume-form-list resume-main-form">
+                <div class="headhunter-wrap">
+                  <a href="" class="hunter-name">홍길동</a>
+                  <p class="state">맨쉬컨설팅(주)</p>
+                </div>
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">테스트 공고</a>
+                  <p class="date"><span>제안일</span><span>2022.10.21 10:57:17</span></p>
+                </div>
+                <div class="headhunter-wrap text-center">
+                  <p class="">제안거부</p>
+                  <p class="date">~ 10/20(목)</p>
+                </div>
+              </div>
+              <!-- 반복 -->
+              <div class="resume-form-list resume-main-form">
+                <div class="headhunter-wrap">
+                  <a href="" class="hunter-name">홍길동</a>
+                  <p class="state">맨쉬컨설팅(주)</p>
+                </div>
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">테스트 공고</a>
+                  <p class="date"><span>제안일</span><span>2022.10.21 10:57:17</span></p>
+                </div>
+                <div class="headhunter-wrap text-center">
+                  <p class="">제안승인</p>
+                  <p class="date">~ 10/20(목)</p>
+                </div>
+              </div>
+            </div>
+            @@include('@@webRoot/_include/_pagination.html')
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

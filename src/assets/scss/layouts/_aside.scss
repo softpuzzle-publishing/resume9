@@ -8,7 +8,6 @@ aside{
             > ul{
                 margin-top: -5px;
                 >li{
-                    display: flex; align-items: center;
                     .item-new{ margin-left: 10px;}
                     &.active{
                         a{
@@ -28,8 +27,25 @@ aside{
                             color: #0078ff; font-weight: 700;
                         }
                     }
+                    ul{
+                        padding-left: 20px; background-color: #f8f8f8;
+                    }
                 }
             }
         }
     }
+}
+.resume-login{
+    width:80%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; border: 1px solid #ddd; margin-bottom: 40px;
+    .btn{ display: block; margin-top: 10px; width: 100%;}
+    .name{ font-size: 14px; margin: 10px 0;  
+        b{font-size:20px;}
+    }
+}
+.resume-login-profile{
+    width: 80px; height: 80px; background-size: cover; 
+}
+
+@media screen and (max-width: 1024px) {
+    aside{ display: none;}
 }

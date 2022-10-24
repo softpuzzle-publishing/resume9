@@ -9,6 +9,12 @@
     <!-- 
 <link rel="icon" type="image/png" href="../assets/images/favicon-16x16.png" sizes="16x16" />
 <link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" /> -->
+    <!-- jquery js -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+
+    <!-- select2 -->
+    <link rel="stylesheet" href="../assets/lib/select2/select2.min.css" />
+    <script src="../assets/lib/select2/select2.min.js"></script>
 
     <!-- library css -->
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
@@ -16,9 +22,6 @@
 
     <!-- publilshing css -->
     <link rel="stylesheet" href="../assets/css/style.css" />
-
-    <!-- jquery js -->
-    <script src="../assets/lib/jquery/jquery.min.js"></script>
 
     <!-- library js -->
     <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
@@ -135,144 +138,110 @@
         <div class="layout">
           <div class="layout-left">
             <aside>
+              <div class="resume-login">
+                <div class="resume-login-profile" style="background-image: url('../assets/images/icon-login.svg')"></div>
+                <p class="name"><b>박근수</b>님</p>
+                <a href="../_layout/community_worry.html" class="btn btn-outline-primary btn-md">이력서 등록하기</a>
+                <button type="button" class="btn btn-primary btn-md">이력서 공개중</button>
+              </div>
               <ul>
                 <li>
-                  <a href=""><span class="poppins">자유게시판</span></a>
+                  <a href=""><span class="poppins">내 이력서 관리</span></a>
                   <ul>
-                    <li class="active"><a href="">직장인 수다</a><i class="item-new">N</i></li>
-                    <li><a href="javascript:void(0)">직장인 고민</a><i class="item-new">N</i></li>
-                    <li><a href="javascript:void(0)">면접/이직/퇴사</a><i class="item-new">N</i></li>
+                    <li class="active"><a href="../_layout/community_chat.html">이력서 등록</a></li>
+                    <li><a href="../_layout/community_worry.html">이력서 목록</a></li>
+                    <li><a href="../_layout/community_type.html">이력서 공개설정</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="../mypage/myChannel.html"><span class="poppins">회사 정보</span></a>
+                  <a href="../mypage/myChannel.html"><span class="poppins">입사지원/제안관리</span></a>
                   <ul>
-                    <li><a href="javascript:void(0)">합격 후기</a></li>
-                    <li><a href="javascript:void(0)">이 회사가 궁금해요</a></li>
+                    <li><a href="javascript:void(0)">입사지원 현황</a></li>
+                    <li>
+                      <a href="../_layout/company_curious.html">받은 포지션 제안</a>
+                      <ul>
+                        <li><a href="">포지션 제안내역</a></li>
+                        <li><a href="">내 이력서 열람내역</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">과거 지원 결과</a></li>
+                    <li><a href="javascript:void(0)">취업활동증명서 발급</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href=""><span class="poppins">관심/맞춤제안</span></a>
+                  <ul>
+                    <li class=""><a href="../_layout/community_chat.html">관심 헤드헌터</a></li>
+                    <li><a href="../_layout/community_worry.html">스크랩/최근열람 공고</a></li>
                   </ul>
                 </li>
               </ul>
-              <div class="add">광고</div>
             </aside>
           </div>
           <div class="layout-content">
-            <div class="community-content">
-              <div class="feed-list-detail">
-                <div class="row row-40 align-items-center">
-                  <div>
-                    <span class="tag tag-lg tag-outline-primary m-0">
-                      <em>이 회사 궁금해요</em>
-                    </span>
-                  </div>
-                  <div class="col feed-body">
-                    <div class="title">이직 결정!! 차마 입이 떨어지지 않네요</div>
-                    <div class="date-box">
-                      <p class="date">2022.12.24 17:58</p>
-                      <p class="views">조회수 <span>5,200</span></p>
-                    </div>
-                    <p class="name">홍**</p>
-                  </div>
-                  <div class="desc">
-                    <p>
-                      안녕하세요, 여러분~! 취업톡톡 관리자입니다. 저는 출근 후에 항상 하는 고민이 있는데요... 바로 "오늘 점심은 뭘 먹을까" 입니다!!<br />
-                      매일 먹는 점심이지만 항상 신중할 수 밖에 없는데요 어제 먹은 메뉴랑은 달라야 하고,<br />
-                      아침과 저녁이랑도 겹치지 않으면서 오늘 내 기분과 날씨에도 맞는 그런 점심 메뉴!! 고르기가 너무 어렵지 않으신가요?<br />
-                      <br />
-                      <br />
-                      여러분은 대체로 어떤 점심 메뉴를 선호하시나요??<br />
-                      댓글로 다양한 메뉴 추천 부탁드려요!!<br />
-                      아래에 직장인 점심 관련 ﻿뉴스도 있으니까 한번 보시는 것도 추천 드립니다~
-                    </p>
-
-                    <div class="d-flex align-items-center justify-content-center mt-5 mb-5">
-                      <div class="like-btn active">
-                        <p>123</p>
-                        <p><i class="icon-like"></i></p>
-                      </div>
-                    </div>
-
-                    <div class="another-writing">
-                      <div class="another-writing-head">
-                        <p class="another-name"><span>홍**</span>님의 다른 글</p>
-                        <a href="javascript:void(0)">전체보기</a>
-                      </div>
-                      <div class="another-writing-content">
-                        <ul>
-                          <li>
-                            <span class="num">1</span>
-                            <span class="object">역마살 가득한 직장생활도 좋은 경험이 되더라.</span>
-                          </li>
-                          <li>
-                            <span class="num">20</span>
-                            <span class="object">역마살 가득한 직장생활도 좋은 경험이 되더라.</span>
-                          </li>
-                          <li>
-                            <span class="num">100</span>
-                            <span class="object">역마살 가득한 직장생활도 좋은 경험이 되더라.</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="comment-wrap">
-                      <h4 class="table-subtitle mb-3">전체댓글 <span>4</span></h4>
-                      <div class="comment-wrap-content">
-                        <div class="reply">
-                          <div class="reply-head">
-                            <span class="name">김**</span>
-                            <span class="time">3시간 전</span>
-                          </div>
-                          <div class="reply-desc">
-                            <p>당연히 1번이지요. 희망연봉이 과하면 기업들이 이렇게 제안하지 않나요?</p>
-                          </div>
-                          <div class="re-reply-btn">
-                            <a href="">
-                              <i class="icon-reply"></i>
-                              <span>댓글 달기 |</span>
-                              <span>1개</span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="re-reply">
-                          <div class="reply-head">
-                            <span class="name">김**</span>
-                            <span class="time">3시간 전</span>
-                          </div>
-                          <div class="reply-desc">
-                            <p>당연히 1번이지요. 희망연봉이 과하면 기업들이 이렇게 제안하지 않나요?</p>
-                          </div>
-                          <div class="re-reply-btn">
-                            <a href="">
-                              <i class="icon-reply"></i>
-                              <span>댓글 달기 |</span>
-                              <span>1개</span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="reply">
-                          <div class="reply-head">
-                            <span class="name">김**</span>
-                            <span class="time">3시간 전</span>
-                          </div>
-                          <div class="reply-desc">
-                            <p>당연히 1번이지요. 희망연봉이 과하면 기업들이 이렇게 제안하지 않나요?</p>
-                          </div>
-                          <div class="re-reply-btn">
-                            <a href="">
-                              <i class="icon-reply"></i>
-                              <span>댓글 달기 |</span>
-                              <span>1개</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="comment-write">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="댓글을 입력하세요."></textarea>
-                        <button type="button" class="btn btn-primary">등록</button>
-                      </div>
-                    </div>
-                  </div>
+            <h3 class="subtitle poppins">과거 지원 결과</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="row row-0">
+              <ol class="step mt-n3">
+                <li class="active">
+                  <a href="job_position.html"><span>과거 지원 결과</span></a>
+                </li>
+                <li>
+                  <a href="companyStep2.html"><span>취업활동증명서 발급</span></a>
+                </li>
+              </ol>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="btn-group date-list" role="group">
+                <p class="m-r-20">조회기간</p>
+                <button type="button" class="btn btn-outline-primary active">1개월</button>
+                <button type="button" class="btn btn-outline-primary">3개월</button>
+                <button type="button" class="btn btn-outline-primary">6개월</button>
+                <button type="button" class="btn btn-outline-primary">1년</button>
+              </div>
+              <div class="">
+                <select class="select-design" style="width: 100%">
+                  <option value="1">전체</option>
+                  <option value="3">마감임박순</option>
+                </select>
+              </div>
+            </div>
+            <div class="resume-form position">
+              <div class="resume-form-list resume-main-form w-100">
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
                 </div>
+                <div class="btn-group">
+                  <a href="" class="btn btn-outline-primary btn-md">불합격</a>
+                </div>
+              </div>
+              <div class="resume-form-list resume-main-form w-100">
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
+                </div>
+                <div class="btn-group">
+                  <a href="" class="btn btn-outline-primary btn-md">지원현황 보기</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <div class="pagination">
+                <a href=""><i class="icon-pager-prev"></i></a>
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href=""><i class="icon-pager-next"></i></a>
               </div>
             </div>
           </div>
@@ -318,6 +287,95 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">닫기</button>
               <button type="button" class="btn btn-primary">등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 게시물 쓰기 (회사검색) -->
+      <div class="modal fade" id="modal-write-company-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-write modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">게시글 쓰기</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="select-form">
+                <select class="form-select form-md">
+                  <option value="">직장인 고민</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-md" placeholder="제목을 입력하세요" />
+              </div>
+              <div class="form-group position-relative">
+                <div class="search-box">
+                  <input type="text" class="" placeholder="회사 이름을 입력하세요" />
+                  <button type="button" class="btn"><i class="icon-search-dark"></i></button>
+                </div>
+                <div class="search-result-list">
+                  <ul>
+                    <li class="active">
+                      <div class="result-company">
+                        <a href="">
+                          <p class="company-name">(주)삼성전자</p>
+                          <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="result-company">
+                        <a href="">
+                          <p class="company-name">(주)삼성전자</p>
+                          <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-textarea">
+                <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요" class=""></textarea>
+              </div>
+              <div class="form-upload">
+                <input type="file" class="" id="form-file" />
+                <label for="form-file"><i class="icon-input-add"></i></label>
+              </div>
+              <div class="preview-image-wrap">
+                <div class="preview-image" style="background-image: url('../assets/images/about-01.png')">
+                  <div class="hover-close">
+                    <button type="button"><i class="icon-del"></i></button>
+                  </div>
+                </div>
+                <div class="preview-image" style="background-image: url('../assets/images/about-01.png')"></div>
+                <div class="preview-image" style="background-image: url('../assets/images/about-01.png')"></div>
+                <div class="preview-image" style="background-image: url('../assets/images/about-01.png')"></div>
+                <div class="preview-image" style="background-image: url('../assets/images/about-01.png')"></div>
+                <div class="preview-image" style="background-image: url('../assets/images/about-01.png')"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">닫기</button>
+              <button type="button" class="btn btn-primary">등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 일반 팝업 취소 -->
+      <div class="modal fade" id="modal-cancel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-cancel modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-form">지원을 취소하시겠습니까?</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary">확인</button>
+              </div>
             </div>
           </div>
         </div>

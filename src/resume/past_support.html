@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_resume_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">과거 지원 결과</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="row row-0">
+              <ol class="step mt-n3">
+                <li class="active">
+                  <a href="job_position.html"><span>과거 지원 결과</span></a>
+                </li>
+                <li>
+                  <a href="companyStep2.html"><span>취업활동증명서 발급</span></a>
+                </li>
+              </ol>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="btn-group date-list" role="group">
+                <p class="m-r-20">조회기간</p>
+                <button type="button" class="btn btn-outline-primary active">1개월</button>
+                <button type="button" class="btn btn-outline-primary">3개월</button>
+                <button type="button" class="btn btn-outline-primary">6개월</button>
+                <button type="button" class="btn btn-outline-primary">1년</button>
+              </div>
+              <div class="">
+                <select class="select-design" style="width: 100%">
+                  <option value="1">전체</option>
+                  <option value="3">마감임박순</option>
+                </select>
+              </div>
+            </div>
+            <div class="resume-form position">
+              <div class="resume-form-list resume-main-form w-100">
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
+                </div>
+                <div class="btn-group">
+                  <a href="" class="btn btn-outline-primary btn-md">불합격</a>
+                </div>
+              </div>
+              <div class="resume-form-list resume-main-form w-100">
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
+                </div>
+                <div class="btn-group">
+                  <a href="" class="btn btn-outline-primary btn-md">지원현황 보기</a>
+                </div>
+              </div>
+            </div>
+            @@include('@@webRoot/_include/_pagination.html')
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

@@ -29,3 +29,14 @@
 .sub-content{
     margin: 70px 0;
 }
+@media screen and (max-width: 1024px) {
+    aside{ display: none;}
+    .layout-left {
+        display: none;
+    }
+    .layout-content {
+        width: 100%;
+        padding-top: 0.5rem;
+        margin-bottom: 50px;
+    }
+}
