@@ -101,7 +101,24 @@
       border-color: #202020;
     }
   }
-
+  &.btn-danger{
+    color: #fff;
+    background-color: #f95b55;
+    border-color: #f95b55;
+    &:hover{
+      background-color: #f95b55;
+    }
+  }
+  &.btn-outline-danger{
+    color: #f95b55;
+    background-color: #fff;
+    border-color: #f95b55;
+    &:hover{
+      color: #fff;
+      background-color: #f95b55;
+      border-color: #f95b55;
+    }
+  }
 
   &:disabled {
     color: #aaaaaa;

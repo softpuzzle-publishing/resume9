@@ -678,13 +678,13 @@ legend{
     max-width: 600px;
     .select-form{ margin-bottom: 15px; }
     .form-group{ margin-top: 15px; }
-    .form-textarea{ margin-top: 15px;
-        textarea{
-            width:100%; height: 300px; background-color: #f8f8fa;  color: #000; padding: 15px 15px 15px 25px; font-size: 15px; border-radius: 4px; border:0;
-            &:focus{ outline:  1px solid #000;}
-        } 
-    }
     .form-upload{margin-top: 15px;}
+}
+.form-textarea{ margin-top: 15px;
+    textarea{
+        width:100%; height: 300px; background-color: #f8f8fa;  color: #000; padding: 15px 15px 15px 25px; font-size: 15px; border-radius: 4px; border:0;
+        &:focus{ outline:  1px solid #000;}
+    } 
 }
 .modal-cancel{
     max-width: 300px;
@@ -703,18 +703,18 @@ legend{
     }
 }
 .search-box{
-    display: block; width: 100%; min-width: 170px; padding: 9px 24px; position: relative; -moz-padding-start: calc(0.75rem - 3px); font-size: 15px; font-weight: 400 ; line-height: 1.5; color: #777777; background-color: #f8f8fa; border-radius: 4px; border:0;
+    display: flex; width: 100%; min-width: 170px; padding: 9px 24px; position: relative; -moz-padding-start: calc(0.75rem - 3px); font-size: 15px; font-weight: 400 ; line-height: 1.5; color: #777777; background-color: #f8f8fa; border-radius: 4px; border:0;
     input{ border:0; background-color: transparent; width: 100%;
         &:focus{outline:0;}
     }
-    .btn{
-        position: absolute; right:0; top:50%; transform: translateY(-50%);
+    .search-btn{
+        position: absolute; right:20px; top:50%; transform: translateY(-50%);
     }
 }
 .search-result-list{
     display: none; position: absolute; width: 100%; z-index: 10; background: #fff;
     li{
-        padding: 7px 25px;
+        padding: 7px 25px; border: 1px solid #ddd; margin-bottom: -1px;
         .company-name{ font-weight: 700;}
         .company-obj{ font-size: 12px; color: #666; margin-top:5px;}
         &.active{
@@ -816,7 +816,7 @@ legend{
         margin-left: 30px;
         .resume-info-top{
             > div{ display: flex; align-items: center; gap: 30px; margin-bottom: 20px;}
-            span{
+            .list span{
                 position: relative;
                 &::after {
                     content: ""; position: absolute; top: 50%; right: -15px; width: 1px; height: 50%; background: #d9e1e8; transform: translateY(-50%);
@@ -853,6 +853,26 @@ legend{
     }
 }
 .apply-wrap-body{
+    &.write{
+        .desc{
+            padding: 20px 0;
+        }
+        .num-box{padding: 15px 0 15px 15px; width: 20px;  height: 48px; }
+        .write-desk{
+            display: flex; align-items: center; gap: 30px;
+        }
+    }
+    .write-desk{
+        .form-group{ display: flex; gap: 10px;}
+
+        // 이력서 경력사항
+        &.career{
+            margin-bottom: 10px;
+            .department{ width: 200px;}
+            .career-date{ display: flex; width: 340px; gap: 10px;}
+            .half-content{width: 50%; display: flex; gap: 10px;}
+        }
+    }
     .content{margin-top: 50px;}
     .desc{
         border-top: 2px solid #000;
@@ -918,23 +938,15 @@ legend{
 .resume-form-list{
     display: flex; align-items: center; justify-content: space-between; padding: 25px 0; border-bottom: 1px solid #ddd;
     &.resume-main-form{ padding: 25px;}
-    &.resume-browse-form{
-        > div{ width: 20%;  text-align: center;}
-        .form-check-input{ margin-left: 0;}
-    }
   .deadline{ color: #f95b55; }
 }
 
-// 입사지원 현황
+// 입사지원
 .resume-application-head{
     width: 100%; display: flex; text-align: center; background-color: #f8f8f8; padding: 10px 0; border-bottom: 1px solid #ddd; border-top: 1px solid #000;
     .state{ width: 15%;}
     .history{ width: 55%;}
     .cancel{ width: 15%;}
-
-    &.browse{
-        > div{ width: 20%;}
-    }
 }
 .resume-application-body{
 
@@ -942,4 +954,13 @@ legend{
     .announcement-wrap{ width: 55%;}
     .btn-group{ width: 15%;  text-align: center;}
 }
-
+// 
+.example-form{
+    background-color: #f8f8f8; padding: 25px; margin-bottom: 30px; margin-top: -20px;
+    li{ 
+        margin: 10px 0; position: relative; padding-left:10px;
+        &::before{
+            content: ""; position: absolute; width: 3px; height: 3px; background-color: #202020; border-radius: 50%; left: 0; top: 7px;
+        }
+    }
+}

@@ -120,3 +120,17 @@ input[type="number"]::-webkit-inner-spin-button {
       span{color: #fff;font-weight: 700;}
   }
 }
+
+.fake-table{
+  width: 100%; display: table; border-bottom: 1px solid #ddd; border-top: 1px solid #000;
+  .fake-table-head{
+    display: table-row; text-align: center; background-color: #f8f8f8; 
+  }
+  .fake-table-body{
+    display: table-row;
+  }
+  .fake-table-cell{
+    display: table-cell; padding: 12px 0; vertical-align: middle; text-align: center;
+    .form-check-input{ margin-left: 0;}
+  }
+}

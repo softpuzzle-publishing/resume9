@@ -63,7 +63,7 @@
         <div class="form-group position-relative">
           <div class="search-box">
             <input type="text" class="" placeholder="회사 이름을 입력하세요" />
-            <button type="button" class="btn"><i class="icon-search-dark"></i></button>
+            <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
           </div>
           <div class="search-result-list">
             <ul>
@@ -126,6 +126,59 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
           <button type="button" class="btn btn-primary">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 경력인증 -->
+<div class="modal fade" id="modal-certification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-default modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-form">(주)소프트퍼즐</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary m-r-5">경력인증 받기</button>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 경력 나이스 확인불가 -->
+<div class="modal fade" id="modal-nice-certification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-default modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="text-form qna">
+          <span class="m-r-15">사업자등록번호</span>
+          <input type="text" class="form-control" placeholder="숫자만입력" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary m-r-5">경력인증 받기</button>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 인증 완료/실패 -->
+<div class="modal fade" id="modal-certification-result" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-default modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-form">인증되었습니다</div>
+        <div class="text-form">인증에 실패하였습니다.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">확인</button>
         </div>
       </div>
     </div>

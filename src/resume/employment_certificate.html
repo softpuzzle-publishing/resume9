@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_resume_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">취업활동증명서 발급</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="row row-0">
+              <ol class="step mt-n3">
+                <li class="">
+                  <a href="past_support.html"><span>과거 지원 결과</span></a>
+                </li>
+                <li class="active">
+                  <a href="employment_certificate.html"><span>취업활동증명서 발급</span></a>
+                </li>
+              </ol>
+            </div>
+            <div class="example-form">
+              <ul>
+                <li>Resume에서 온라인으로 입사지원한 내용을 증명하는 문서로, 취업활동 확인자료로 사용할 수 있습니다.</li>
+                <li>홈페이지, 우편, FAX, 전화, 방문지원의 경우 본 시스템과 연동되어 있지 않으니 해당 기업에 직접 요청하시기 바랍니다.</li>
+                <li>삭제되거나 삭제한 채용정보는 증명서 내용에 포함할 수 없습니다.</li>
+              </ul>
+            </div>
+            <div class="fake-table">
+              <div class="fake-table-head">
+                <div class="fake-table-cell">선택</div>
+                <div class="fake-table-cell">지원일</div>
+                <div class="fake-table-cell">회사명</div>
+                <div class="fake-table-cell">연락처</div>
+                <div class="fake-table-cell">주소</div>
+              </div>
+              <div class="fake-table-body">
+                <div class="fake-table-cell">
+                  <div class="form-check p-0">
+                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                  </div>
+                </div>
+                <div class="fake-table-cell">2022.10.19</div>
+                <div class="fake-table-cell">앤쉬컨설팅(주)</div>
+                <div class="fake-table-cell">010-1234-5678</div>
+                <div class="fake-table-cell">서울특별시 강남구 테헤란로16길 9</div>
+              </div>
+            </div>
+            @@include('@@webRoot/_include/_pagination.html')
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

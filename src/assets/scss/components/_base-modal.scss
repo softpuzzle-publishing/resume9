@@ -28,10 +28,21 @@
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
+  &.modal-default{
+    max-width: 500px;
+    .modal-header{border:0;}
+    .modal-footer{border:0; justify-content: center;}
+    .text-form{text-align: center; padding: 2rem 0;}
+  }
   &.modal-dialog-centered {
     display: flex;
     align-items: center;
     min-height: calc(100% - 1rem);
+  }
+  .qna{
+    display: flex; align-items: center;
+    span{ width: 150px;}
+    input{width: 100%;}
   }
 }
 
