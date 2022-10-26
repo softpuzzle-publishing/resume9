@@ -28,6 +28,9 @@
 }
 .sub-content{
     margin: 70px 0;
+    &.resume-write-btn{
+        padding-right: 150px;
+    }
 }
 @media screen and (max-width: 1024px) {
     aside{ display: none;}

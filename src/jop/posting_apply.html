@@ -36,12 +36,9 @@
             <div class="apply-wrap">
               <div class="apply-wrap-head">
                 <div class="img-upload">
-                  <input type="file" id="img-upload" />
-                  <label for="img-upload" class="img-upload-label">
-                    <i class="icon-img-add"></i>
-                    <span>이미지 올리기</span>
-                    <em>png, jpg 형식, 2MB 미만, <br />360*360 사이즈 권장</em>
-                  </label>
+                  <div class="upload-img">
+                    <img src="../assets/images/about-01.png" alt="" />
+                  </div>
                 </div>
                 <div class="resume-info">
                   <div class="resume-info-top">
@@ -54,6 +51,7 @@
                       <span class="address"><i class="icon-home"></i>서울특별시 서울특별시 서울특별시</span>
                       <span class="phone"><i class="icon-phone"></i>010-1234-5678</span>
                       <span class="email"><i class="icon-email"></i>abcd1234@naver.com</span>
+                      <span class="">상시</span>
                     </div>
                   </div>
                   <div class="rInfo_3">
@@ -61,14 +59,14 @@
                       <li>
                         <div class="_lab">학력</div>
                         <div class="_cont">
-                          <p>789</p>
-                          <p>대학원(박사과정)</p>
+                          <p>서울대학교</p>
+                          <p>경영학과(박사)</p>
                         </div>
                       </li>
                       <li>
                         <div class="_lab">경력</div>
                         <div class="_cont">
-                          <p>3</p>
+                          <p>삼성전자</p>
                           <p>16년8개월 , 재직중</p>
                         </div>
                       </li>
@@ -94,181 +92,194 @@
                 <div class="content">
                   <h4 class="table-subtitle mb-3">학력</h4>
                   <div class="desc">
-                    <table class="table in-table">
-                      <colgroup>
-                        <col width="25%" />
-                        <col width="25%" />
-                        <col width="25%" />
-                        <col width="25%" />
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th class="text-center">재학기간</th>
-                          <th class="text-center">구분</th>
-                          <th class="text-center">학교명(소재지)</th>
-                          <th class="text-center">전공</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <p>2019.03 ~ 2021.02</p>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <span class="text-primary">졸업</span>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <span class="title">서울대학교</span>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <p>경영학과(박사)</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <p>2017.03 ~ 2019.02</p>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <span class="text-primary">졸업</span>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <span class="title">서울대학교</span>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <div class="education-history">
-                              <p>경영학과(석사)</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="row row-line">
+                      <div class="col-2">
+                        <div class="">
+                          <p>2010.03~ 2016.08</p>
+                          <p class="text-primary m-t-5">졸업</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="title">서울대학교<span>(서울특별시)</span><span>본교</span></p>
+                          <ul class="detail-list">
+                            <li>
+                              <span class="key">주전공</span>
+                              <span class="value">경영학과</span>
+                            </li>
+                            <li>
+                              <span class="key">학점</span>
+                              <span class="value">4.36</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-line">
+                      <div class="col-2">
+                        <div class="">
+                          <p>2007.03 ~ 2010.03</p>
+                          <p class="text-primary m-t-5">졸업</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="title">서울고등학교<span>(서울특별시)</span></p>
+                          <ul class="detail-list">
+                            <li>
+                              <span class="key">주전공</span>
+                              <span class="value">경영학과</span>
+                            </li>
+                            <li>
+                              <span class="key">학점</span>
+                              <span class="value">4.36</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="content">
                   <h4 class="table-subtitle mb-3">경력</h4>
                   <div class="desc">
-                    <table class="table in-table">
-                      <colgroup>
-                        <col width="180px" />
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th>근무기간</th>
-                          <th class="text-center">회사명</th>
-                          <th class="text-center">부서</th>
-                          <th class="text-center">직급</th>
-                          <th class="text-center">직책</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="education-history">
-                              <p>2014.03 ~ 2022.02</p>
-                              <p class="text-primary">7년 9개월</p>
-                            </div>
-                          </td>
-                          <td class="text-center">삼성전자</td>
-                          <td class="text-center">마케팅팀</td>
-                          <td class="text-center">차장</td>
-                          <td class="text-center">파트장</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="row row-line">
+                      <div class="col-2">
+                        <div class="">
+                          <p>2016.08 ~ 재직중</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="title">삼성전자</p>
+                          <ul class="detail-list">
+                            <li>
+                              <span class="key">부서명</span>
+                              <span class="value">전략마케팅팀</span>
+                            </li>
+                            <li>
+                              <span class="key">직급</span>
+                              <span class="value">차장</span>
+                            </li>
+                            <li>
+                              <span class="key">직책</span>
+                              <span class="value">파트장</span>
+                            </li>
+                            <li>
+                              <span class="key">최종연봉</span>
+                              <span class="value">10,000만원</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="content">
                   <h4 class="table-subtitle mb-3">채용우대자격</h4>
                   <div class="desc">
-                    <table class="table in-table">
-                      <colgroup></colgroup>
-                      <tbody>
-                        <tr>
-                          <th class="text-center">보훈대상</th>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <th class="text-center">장애</th>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <th class="text-center">병역여부</th>
-                          <td>
-                            <div class="military-service">
-                              <p>군필</p>
-                              <p>2014.01 ~ 2015.10</p>
-                              <p>육군</p>
-                              <p>병장</p>
-                              <p>만기제대</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="row row-line">
+                      <div class="col-2">
+                        <div class="">
+                          <p>보훈대상</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="">-</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-line">
+                      <div class="col-2">
+                        <div class="">
+                          <p>장애</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="">-</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-line">
+                      <div class="col-2">
+                        <div class="">
+                          <p>병역여부</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="">면제</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="content">
                   <h4 class="table-subtitle mb-3">핵심역량</h4>
                   <div class="desc">
-                    <table class="table in-table">
-                      <colgroup>
-                        <col width="100px" />
-                      </colgroup>
-                      <tbody>
-                        <tr>
-                          <th class="text-center">1</th>
-                          <td>직무능력 및 업무상 강점이 20자 내로 서술 됐다</td>
-                        </tr>
-                        <tr>
-                          <th class="text-center">2</th>
-                          <td>인성,자격증, 외국어 등 나는 3개국어를 할 줄 안다.</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="row row-line">
+                      <div class="col-1">
+                        <div class="">
+                          <p class="text-center">1</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="">직무능력 및 업무상 강점이 20자 내로 서술 됐다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-line">
+                      <div class="col-1">
+                        <div class="">
+                          <p class="text-center">2</p>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="detail-info">
+                          <p class="">인성,자격증, 외국어 등 나는 3개국어를 할 줄 안다.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="content">
                   <h4 class="table-subtitle mb-3">경력기술서</h4>
                   <div class="desc">
-                    <div class="career-description">
-                      <p>
-                        <span class="key">회사명:</span>
-                        <span class="value">소프트퍼즐</span>
-                      </p>
-                      <p>
-                        <span class="key">부서명:</span>
-                        <span class="value">웹프론트엔드개발</span>
-                      </p>
-                      <p>
-                        <span class="key">입사년월:</span>
-                        <span class="value">2020.01</span>
-                      </p>
-                      <p>
-                        <span class="key">직급:</span>
-                        <span class="value">과장</span>
-                      </p>
-                      <p>
-                        <span class="key">직책:</span>
-                        <span class="value">파트장</span>
-                      </p>
-                      <p>
-                        <span class="key">최종연봉:</span>
-                        <span class="value">10,000만원</span>
-                      </p>
+                    <div class="row row-line">
+                      <ul class="detail-list mt-0">
+                        <li>
+                          <p class="company text-dark font-bold">삼성전자</p>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">부서명</span>
+                          <span class="value">전략마케팅팀</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">직급</span>
+                          <span class="value">차장</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">직책</span>
+                          <span class="value">파트장</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">최종연봉</span>
+                          <span class="value">10,000만원</span>
+                        </li>
+                      </ul>
+                      <div class="div">
+                        <p class="">[담당업무]</p>
+                        한국예탁결제원 펀드회계 및 더존 금융회계<br />
+                        고객 운용보고서 작성(분기,반기,연) 및 주문대리<br />
+                        공모주 펀드 IPO 관리 및 투자진행<br />
+                        Research Assistant(R.A) 업무로써 자료 분석 및 조사 <br />
+                        <상세업무/프로젝트> Daily position 파일 작성 및 보고<br />
+                        - 매 일 아침 전 영업일 기준 고객 및 고유 자산 포트폴리오 작성 및 보고<br />
+                        고유 회계
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -288,7 +299,137 @@
                 </div>
                 <div class="content">
                   <h4 class="table-subtitle mb-3">희망근무조건</h4>
-                  <div class="desc"></div>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="detail-list mt-0">
+                        <li>
+                          <span class="key text-dark font-bold">고용형태</span>
+                          <span class="value">정규직</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">희망근무지</span>
+                          <span class="value">서울</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">희망산업</span>
+                          <span class="value">IT</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">희망직급</span>
+                          <span class="value">차장</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">희망연봉</span>
+                          <span class="value">12,000만원</span>
+                        </li>
+                        <li>
+                          <span class="key text-dark font-bold">입사가능시기</span>
+                          <span class="value">2주이내</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="table-subtitle mb-3">어학(회화)</h4>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <span class="txt">영어</span>
+                          <span class="txt">일상회화가능</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="table-subtitle mb-3">어학(공인시험)</h4>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <span class="txt">영어</span>
+                          <span class="txt">TOEIC</span>
+                          <span class="txt">900점</span>
+                          <span class="txt">2000.03</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="table-subtitle mb-3">자격증</h4>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <span class="txt">운전면허증</span>
+                          <span class="txt">교통부</span>
+                          <span class="txt">2000.03</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <span class="txt">대형운전면허증</span>
+                          <span class="txt">교통부</span>
+                          <span class="txt">2001.03</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="table-subtitle mb-3">수상</h4>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <span class="txt">베스트커플상</span>
+                          <span class="txt">MBCN</span>
+                          <span class="txt">2015.12</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="table-subtitle mb-3">대외활동</h4>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <span class="txt">엄청 활발히 대외활동 함</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="table-subtitle mb-3">포트폴리오</h4>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <a href="javascipt:void(0)" download="asd.pdf">작품활동내역.pdf</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4 class="table-subtitle mb-3">영문이력서</h4>
+                  <div class="desc">
+                    <div class="row row-line">
+                      <ul class="default-list mt-0">
+                        <li>
+                          <a href="javascipt:void(0)" download="asd.pdf">영문이력서.pdf</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

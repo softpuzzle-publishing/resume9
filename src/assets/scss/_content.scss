@@ -703,13 +703,14 @@ legend{
     }
 }
 .search-box{
-    display: flex; width: 100%; min-width: 170px; padding: 9px 24px; position: relative; -moz-padding-start: calc(0.75rem - 3px); font-size: 15px; font-weight: 400 ; line-height: 1.5; color: #777777; background-color: #f8f8fa; border-radius: 4px; border:0;
+    display: flex; width: 100%; min-width: 170px; padding: 9px 45px 9px 24px; position: relative; -moz-padding-start: calc(0.75rem - 3px); font-size: 15px; font-weight: 400 ; line-height: 1.5; color: #777777; background-color: #f8f8fa; border-radius: 4px; border:0;
     input{ border:0; background-color: transparent; width: 100%;
         &:focus{outline:0;}
     }
     .search-btn{
         position: absolute; right:20px; top:50%; transform: translateY(-50%);
     }
+    &.search-lg{ height: 48px;}
 }
 .search-result-list{
     display: none; position: absolute; width: 100%; z-index: 10; background: #fff;
@@ -799,9 +800,10 @@ legend{
     margin-top: 50px;   
 }
 .img-upload{
+    
    input{ display: none;} 
    .img-upload-label{
-    width: 200px; height: 200px; border: 1px solid #000; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    width: 165px; height: 200px; border: 1px solid #000; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
    }
    span{
     font-weight: 500; margin-top: 10px;
@@ -809,6 +811,10 @@ legend{
    em{
     font-size: 13px; line-height: 1.69; color: #999; font-style: normal; margin-top: 20px;
    }
+}
+.upload-img{
+    width: 165px; height: 200px; border: 1px solid #ddd;
+    img{width: 100%; height: 100%; object-fit: cover;}
 }
 .apply-wrap-head{
     display: flex;
@@ -857,38 +863,15 @@ legend{
         .desc{
             padding: 20px 0;
         }
-        .num-box{padding: 15px 0 15px 15px; width: 20px;  height: 48px; }
-        .write-desk{
-            display: flex; align-items: center; gap: 30px;
-        }
     }
     .write-desk{
         .form-group{ display: flex; gap: 10px;}
-
-        // 이력서 경력사항
-        &.career{
-            margin-bottom: 10px;
-            .department{ width: 200px;}
-            .career-date{ display: flex; width: 340px; gap: 10px;}
-            .half-content{width: 50%; display: flex; gap: 10px;}
-        }
     }
     .content{margin-top: 50px;}
     .desc{
         border-top: 2px solid #000;
         border-bottom: 1px solid #ddd;
-        .in-table{
-            border-top:0;
-        }
     }
-    .education-history{
-        p{line-height: 1.5;}
-    }
-    table{
-        width: 100%;
-        td{ vertical-align: top;}
-    }
-    .title{ font-weight: 700;}
     .military-service{
         display: flex; gap: 30px;
         p{ 
@@ -904,17 +887,50 @@ legend{
         }
     }
     .introduce-text{
-        padding: 40px 20px; line-height: 1.5;
+        padding: 20px; line-height: 1.5;
     }
     .career-description{
-        padding: 40px 20px; line-height: 1.5;
+        padding: 20px; line-height: 1.5;
         p{margin: 10px 0;}
     }
 }
 .resume-form{
     &.position{ border-top: 1px solid #ddd;}
 }
+// 이력서 상세
+.detail-info{
+    .title{
+        font-size: 18px; font-weight: 700;
+        span{font-size: 15px; color: #777; font-weight: 400; display: inline-block; margin: 0 5px;}
+    }
+}
+.detail-list{
+    display: flex; align-items: center; margin-top: 15px;
+    .company{ font-size: 18px; font-weight: 700;}
+    li{
+        color: #666; margin-right: 30px;
+    }
+    .key{
+        position: relative; padding-right: 15px;
+        &::after{ content: ""; position: absolute; width: 1px; height: 50%; background-color: #777; right: 6px; top: 55%; transform: translateY(-50%);}    
+    }
+}
+.default-list{
+    display: flex; align-items: center; margin-top: 15px;
+    .txt{
+        position: relative; padding-right: 15px;
+        &::after{ content: ""; position: absolute; width: 1px; height: 50%; background-color: #777; right: 6px; top: 55%; transform: translateY(-50%);}
+        &:last-child{
+            &::after{content:none;}
+        }    
+    }
+    a{ text-decoration: underline; color: #006EDC;}
+}
 
+.row-line{
+    padding: 20px; border-bottom: 1px solid #ddd;
+    &:last-child{border-bottom: 0;}
+}
 // 내 이력서 현황
 .apply-dashbaord{
     background: $PRIMARY_COLOR;color :#fff;text-align: center; margin-bottom: 50px;
@@ -964,3 +980,4 @@ legend{
         }
     }
 }
+
