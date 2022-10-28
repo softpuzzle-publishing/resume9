@@ -575,9 +575,8 @@ legend{
     .desc{ width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-size: 16px;color: #777;letter-spacing: -0.8px; margin-top: 15px;}
     .name{ font-size :18px; font-weight: 700; margin-top: 20px;}
     .feed-body{
-        border-bottom: 1px solid #ddd; padding-bottom: 30px;
+        border-bottom: 1px solid #ddd; padding-bottom: 30px; position: relative;
     }
-   
 }
 .post-cell{
     padding: 15px 15px 0 15px; display: flex; align-items: center; justify-content: space-between;
@@ -586,7 +585,23 @@ legend{
         color: #777; font-size: 14px; margin-left: 10px; display: inline-block;
     }
 }
-
+@media screen and (max-width: 992px) {
+    .feed-list{
+        li{ padding: 15px 20px;}
+        .desc{ 
+            font-size: 14px;   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 40px; white-space: inherit; line-height: 1.4;
+        }
+        .name{ font-size: 16px; margin-top: 10px;}
+        .feed-body{
+            padding-bottom: 15px;
+        }
+    }
+    .post-cell{
+        padding: 15px 10px 0 10px;
+        .date{ font-size: 12px;}
+        span{ font-size: 12px; margin-left: 5px;}
+    }
+}
 .body-talk{
     min-width: 0;
     .profile{
@@ -596,7 +611,7 @@ legend{
 
 // 커뮤니티 상세
 .feed-list-detail{
-    border-top: 0;
+    border-top: 0;  position: relative;
     .title{font-size: 22px;font-weight: 700;margin-bottom: 5px; margin-top:15px;}
     .date-box{ 
         display: flex; align-items: center; margin-top: 20px;
@@ -609,12 +624,22 @@ legend{
     .name{ font-size :18px; font-weight: 700; margin-top: 20px;}
     .feed-body{
         border-bottom: 1px solid #ddd; padding-bottom: 30px;
+        
     }
     .like-btn{
-        width: 80px; height: 80px; border-radius: 50%; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center;
+        width: 80px; height: 80px; border-radius: 50%; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; flex-direction: column;
         &.active{
             border: 1px solid $PRIMARY_COLOR;  color: $PRIMARY_COLOR;
-            .icon-like{}
+            .icon-like{background-image: url('../images/icon-like-active.svg');}
+        }
+    }
+    .more-dot{
+        position: absolute; top: 15px; right: 20px; line-height: 22px;
+        &.active{
+            .more-page{ display: block;}
+        }
+        .more-page{
+            position: absolute; width: 100px; font-size: 12px; border: 1px solid #ddd; border-radius: 4px; padding: 5px 10px; top: 30px; display: none;
         }
     }
 }
@@ -647,8 +672,17 @@ legend{
     }
         
     .reply{
-        padding: 15px 20px; border-bottom: 1px solid #ddd; 
+        padding: 15px 20px; border-bottom: 1px solid #ddd; position: relative;
         &:last-child{ border-bottom: 2px solid #000;}
+        .more-dot{
+            position: absolute; top: 15px; right: 20px;
+            &.active{
+                .more-page{ display: block;}
+            }
+            .more-page{
+                position: absolute; width: 100px; font-size: 12px; border: 1px solid #ddd; border-radius: 4px; padding: 5px 10px; top: 30px; display: none;
+            }
+        }
     }
     .re-reply{
         padding: 15px 20px; border-bottom: 1px solid #ddd;  background-color: #f8f8f8;
@@ -666,7 +700,14 @@ legend{
         padding: 20px 0;
     }
     .re-reply-btn{
+        display: flex; align-items: center; justify-content: space-between;
         a{ color: #777; font-size: 14px;}
+        .reply-like{
+            &.active{
+                .icon-like{background-image: url('../images/icon-like-active.svg');}
+                color: $PRIMARY_COLOR;
+            }
+        }
     }
     .comment-write{
         width: 100%; height: 100px; display: flex; margin-top: 30px;
@@ -769,24 +810,46 @@ legend{
         p{ line-height: 1.5;}
     }
 }
-.headhunter-profile-content{margin-top: 30px;}
-.headhunter-profile{
-    border: 1px solid #ddd; display: flex; align-items: center; margin-top: 20px; padding: 20px 40px;
-    .headhunter-profile-img{ width: 90px; height: 90px; border-radius: 50%; background-image: url('../images/no-img.png'); background-size: cover; background-position: center;}
-    .headhunter-profile-info{
-        margin-left: 30px;
-        .company{ color: #777; }
-        .name{
-            display:flex; align-items: center; line-height: 1; font-weight: 700; margin-top: 7px; font-size: 18px;
-            .favorites{ margin-left: 0; margin-right: 5px;}
+.headhunter-profile-content{
+    margin-top: 15px; border: 1px solid #ddd;  padding: 20px 40px;
+    .headhunter-profile{
+        display: flex; align-items: center;
+        .headhunter-profile-img{ width: 90px; height: 90px; border-radius: 50%; background-image: url('../images/no-img.png'); background-size: cover; background-position: center;}
+        .headhunter-profile-info{
+            margin-left: 30px;
+            .company{ color: #777; }
+            .name{
+                display:flex; align-items: center; line-height: 1; font-weight: 700; margin-top: 7px; font-size: 18px;
+                .favorites{ margin-left: 0; margin-right: 5px;}
+            }
+            .txt{ font-weight: 600; margin-right: 15px;
+                &.first{margin-bottom: 7px;}
+            }
+            .email{ color: $PRIMARY_COLOR; text-decoration: underline;}
+            .num{ color: $PRIMARY_COLOR; font-weight: bold;}
         }
-        .txt{ font-weight: 600; margin-right: 15px;
-            &.first{margin-bottom: 7px;}
+      
+    }
+    &.attention{
+        .headhunter-profile{
+            align-items: inherit; justify-content: space-between;
+            .headhunter-profile-info{
+                margin-left: 0; display: flex ; align-items: center; 
+                .name{ margin-top: 0; font-size: 20px;}
+                .company{margin-left: 10px;}
+            }
+            .txt{ margin-right: 15px;}
+            .num{ color: $PRIMARY_COLOR; font-weight: bold;}
+            .content{
+                margin-left: 30px;
+            }
         }
-        .email{ color: $PRIMARY_COLOR; text-decoration: underline;}
-        .num{ color: $PRIMARY_COLOR; font-weight: bold;}
+        .btn-group{
+            .btn{ display: block;}
+        }
     }
 }
+
 .send-btn{
     margin-top: 50px; text-align: center;
     .btn{ width: 300px; margin: 0 auto;}
@@ -867,7 +930,10 @@ legend{
     .write-desk{
         .form-group{ display: flex; gap: 10px;}
     }
-    .content{margin-top: 50px;}
+    .content{
+        margin-top: 50px;
+        &:first-child{margin-top: 0;}
+    }
     .desc{
         border-top: 2px solid #000;
         border-bottom: 1px solid #ddd;
@@ -915,6 +981,9 @@ legend{
         &::after{ content: ""; position: absolute; width: 1px; height: 50%; background-color: #777; right: 6px; top: 55%; transform: translateY(-50%);}    
     }
 }
+.career-txt{
+    margin-top: 30px; line-height: 1.4;
+}
 .default-list{
     display: flex; align-items: center; margin-top: 15px;
     .txt{
@@ -932,6 +1001,25 @@ legend{
     &:last-child{border-bottom: 0;}
 }
 // 내 이력서 현황
+.add-info-box{
+    width: 220px; border: 1px solid #ddd; padding: 20px; position: sticky; top: 0;
+    .add-info-title{font-size: 17px; font-weight: 500; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px;}
+    ul{
+        li{
+            display: flex; align-items: center; padding: 7px 0;
+            p{
+                margin-left: 10px;
+                span{ font-size: 14px; margin-left: 5px;}
+            }
+            a{width:100%; display: flex; align-items: center; justify-content: space-between;
+                &.active{
+                    p{ color: $PRIMARY_COLOR;}
+                    .icon-resume-plus{background-image: url('../images/icon-resume-minus.svg');}
+                }
+            }
+        }
+    }
+}
 .apply-dashbaord{
     background: $PRIMARY_COLOR;color :#fff;text-align: center; margin-bottom: 50px;
     a{text-decoration: none;border: 1px solid $PRIMARY_COLOR;display: block;height: 140px;}
@@ -953,7 +1041,10 @@ legend{
 }
 .resume-form-list{
     display: flex; align-items: center; justify-content: space-between; padding: 25px 0; border-bottom: 1px solid #ddd;
-    &.resume-main-form{ padding: 25px;}
+    &.resume-main-form{ padding: 25px ;}
+    &.headhunter-form{
+        background-color: #f8f8f8; padding: 25px 40px;
+    }
   .deadline{ color: #f95b55; }
 }
 
@@ -980,4 +1071,55 @@ legend{
         }
     }
 }
+
+// 이력서 목록
+.resume-list-wrap{
+    display: flex; align-items: center; justify-content: space-between;
+    .title {
+        font-size: 20px; font-weight: 700; margin-bottom: 0; margin-left: 10px; margin-top: 0;
+    }
+    .select-design{
+        width: 150px;
+    }
+}
+.total-career{ font-size: 18px; color: #202020; margin: 10px 0; display: flex; align-items: center; justify-content: space-between;
+    .print{ font-size: 14px; text-decoration: underline;}
+}
+.toggle-btn {
+    .button {
+        position: relative; width: 50px; height: 25px; border-radius: 25px; background-color: #ddd; transition: all 0.2s; cursor: pointer;
+        p{width: 72px; position: absolute; left: -80px; top:50%; transform: translateY(-50%); font-size: 14px; color: #777; text-align: right;}
+    }
+    .inside {
+        position: absolute; top: 50%; left: 5px; width: 17px; height: 17px; border-radius: 50%; background-color: #fff; transform: translateY(-50%); transition: all 0.2s;
+    }
+    input:checked ~ label .button {
+        background-color: $PRIMARY_COLOR;
+        p{color: $PRIMARY_COLOR;}
+    }
+    input:checked ~ label .button .inside {
+        left: 28px;
+    }
+}
+
+.fake-table{
+    &.profile{
+        .fake-table-cell{
+            text-align: left; padding: 12px 20px;background-color: #f6f8fa;
+            &:first-child{ width: 170px;}
+        }
+        .form-control{ background-color: #fff;}
+        .select-design{ width: 180px;}
+    }
+    &.password{
+        width: 60%; margin: 0 auto; border: 0;
+        .fake-table-cell{ border: 0;}
+        .table-cell-title{ font-size: 18px; font-weight: 700; text-align: left; margin-bottom: 10px;}
+    }
+}
+.notice-text{
+     color: #888; margin-top: 50px; text-align: center;
+}
+
+// 관심 헤드헌터 
 

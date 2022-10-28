@@ -22,7 +22,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 0;
 }
 .center-title{ font-size: 32px; font-weight: 700; text-align: center; margin-bottom: 50px;}
-.subtitle { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+.subtitle { font-size: 26px; font-weight: 700; letter-spacing: -.5px; }
 .title-line { height: 2px; background: #000; }
 .table-subtitle {
   font-size: 18px;
@@ -126,13 +126,22 @@ input[type="number"]::-webkit-inner-spin-button {
   .fake-table-head{
     display: table-row; text-align: center; background-color: #f8f8f8; 
   }
-  .fake-table-body{
+  .fake-table-column{
     display: table-row;
   }
   .fake-table-cell{
-    display: table-cell; padding: 12px 0; vertical-align: middle; text-align: center;
+    display: table-cell; padding: 12px 0; vertical-align: middle; text-align: center; border-top: 1px solid #ddd;
     .form-check-input{ margin-left: 0;}
   }
 }
 
 .w-170px{ width: 170px !important;}
+
+@media screen and (max-width: 992px) {
+  .subtitle{
+    font-size: 22px;
+  }
+  .sub-content-head{
+    margin-bottom: 25px;
+  }
+}

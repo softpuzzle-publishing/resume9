@@ -28,12 +28,12 @@
 }
 .sub-content{
     margin: 70px 0;
-    &.resume-write-btn{
-        padding-right: 150px;
-    }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     aside{ display: none;}
+    .layout{
+        margin-top: 35px; padding: 0 20px;
+    }
     .layout-left {
         display: none;
     }
@@ -42,4 +42,10 @@
         padding-top: 0.5rem;
         margin-bottom: 50px;
     }
+}
+
+.sub-content-sticky{
+    display: flex; align-items: flex-start;
+    .apply-wrap-body{width: 80%; padding-right: 20px;}
+    .add-info-box{width: 20%;}
 }

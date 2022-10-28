@@ -135,752 +135,747 @@
 
     <div id="container-block">
       <div class="container">
-        <div class="add-info-box">
-          <p class="add-info-title">이력서 항목</p>
-          <ul>
-            <li>
-              <i class="icon-personal-information"></i>
-              <p>인적사항<span class="text-danger">(필수)</span></p>
-              <i class="icon-row-add"></i>
-            </li>
-            <li>
-              <i class="icon-recruitment-preference"></i>
-              <p>채용우대자격<span class="text-danger">(필수)</span></p>
-              <i class="icon-row-add"></i>
-            </li>
-            <li>
-              <i class="icon-core-competencies"></i>
-              <p>핵심역량<span class="text-danger">(필수)</span></p>
-              <i class="icon-row-add"></i>
-            </li>
-            <li>
-              <i class="icon-career"></i>
-              <p>경력사항<span class="text-danger">(필수)</span></p>
-              <i class="icon-row-add"></i>
-            </li>
-            <li>
-              <i class="icon-education"></i>
-              <p>학력<span class="text-danger">(필수)</span></p>
-              <i class="icon-row-add"></i>
-            </li>
-            <li>
-              <i class="icon-working-conditions"></i>
-              <p>희망근무 조건</p>
-              <i class="icon-row-add"></i>
-            </li>
-            <li>
-              <i class="icon-custom-company"></i>
-              <p>맞춤기업 알림설정</p>
-              <i class="icon-row-add"></i>
-            </li>
-            <li>
-              <i class="icon-self-introduction"></i>
-              <p>자기소개서</p>
-              <i class="icon-row-add"></i>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">
-                <i class="icon-conversation"></i>
-                <p>어학(회화)</p>
-                <i class="icon-row-add"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="icon-official-exam"></i>
-                <p>어학(공인시험)</p>
-                <i class="icon-row-add"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="icon-certificate"></i>
-                <p>자격증</p>
-                <i class="icon-row-add"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="icon-awards"></i>
-                <p>수상</p>
-                <i class="icon-row-add"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="icon-outdoor-activities"></i>
-                <p>대외활동</p>
-                <i class="icon-row-add"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="icon-portfolio"></i>
-                <p>포트폴리오</p>
-                <i class="icon-row-add"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="icon-english-resume"></i>
-                <p>영문이력서</p>
-                <i class="icon-row-add"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="sub-content resume-write-btn">
-          <div class="apply-wrap-body write">
-            <!-- 인적사항 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">인적사항<span class="text-danger">(필수)</span></h4>
-              <div class="desc">
-                <div class="apply-wrap-head">
-                  <div class="img-upload">
-                    <input type="file" id="img-upload" />
-                    <label for="img-upload" class="img-upload-label">
-                      <i class="icon-img-add"></i>
-                      <span>이미지 올리기</span>
-                      <em>png, jpg 형식, 2MB 미만, <br />360*360 사이즈 권장</em>
-                    </label>
-                  </div>
-                  <div class="resume-info">
-                    <div class="resume-info-top">
-                      <div>
-                        <input type="text" class="form-control form-lg inp-name" value="박근수" readonly />
-                        <input type="text" class="form-control form-lg inp-birth" value="" placeholder="생년월일(8자리)" />
-                        <select class="select-design select-lg" style="width: 100%">
-                          <option value="1">성별</option>
-                          <option value="2">남자</option>
-                          <option value="3">여자</option>
-                          <option value="4">비공개</option>
-                        </select>
-                        <select class="select-design select-lg" style="width: 100%">
-                          <option value="1" selected>취업상태</option>
-                          <option value="2">재직중</option>
-                          <option value="3">구직중</option>
-                        </select>
-                      </div>
-                      <div>
-                        <input type="text" class="form-control form-lg inp-phone" value="010-1234-5678" readonly />
-                        <input type="text" class="form-control form-lg inp-email" placeholder="" value="abcd123@naver.com" readonly />
-                      </div>
-                      <div>
-                        <input type="text" class="form-control form-lg inp-address" value="서울특별시 강남구" readonly />
-                      </div>
+        <div class="sub-content">
+          <div class="sub-content-sticky">
+            <div class="apply-wrap-body write">
+              <!-- 인적사항 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">인적사항<span class="text-danger">(필수)</span></h4>
+                <div class="desc">
+                  <div class="apply-wrap-head">
+                    <div class="img-upload">
+                      <input type="file" id="img-upload" />
+                      <label for="img-upload" class="img-upload-label">
+                        <i class="icon-img-add"></i>
+                        <span>이미지 올리기</span>
+                        <em>png, jpg 형식, 2MB 미만, <br />360*360 사이즈 권장</em>
+                      </label>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 채용우대자격 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">채용우대자격<span class="text-danger">(필수)</span></h4>
-              <div class="desc">
-                <div class="row align-items-center">
-                  <div class="col-4">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">대상</option>
-                      <option value="2">비대상</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">대상</option>
-                      <option value="2">비대상</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">군필</option>
-                      <option value="2">미필</option>
-                      <option value="3">복무중</option>
-                      <option value="3">해당없음</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 핵심역량 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">핵심역량<span class="text-danger">(필수)</span></h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-1">
-                    <p class="num-box text-center">1</p>
-                  </div>
-                  <div class="col-11">
-                    <input type="text" class="form-control form-lg" placeholder="직무능력 및 업무상 강점을 20자 내로 간략하게 서술" />
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col-1">
-                    <p class="num-box text-center">2</p>
-                  </div>
-                  <div class="col-11">
-                    <input type="text" class="form-control form-lg" placeholder="인성, 자격증, 외국어, 등 기타 강점을 20자 내로 간략하게 서술" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 경력사항 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">경력사항<span class="text-danger">(필수)</span></h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-4">
-                    <div class="search-box search-lg">
-                      <input type="text" class="" placeholder="회사 이름을 입력하세요" />
-                      <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
-                    </div>
-                    <div class="search-result-list">
-                      <ul>
-                        <li class="active">
-                          <div class="result-company">
-                            <a href="">
-                              <p class="company-name">(주)삼성전자</p>
-                              <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
-                            </a>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="result-company">
-                            <a href="">
-                              <p class="company-name">(주)삼성전자</p>
-                              <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
-                            </a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <div class="department">
-                      <input type="text" class="form-control form-lg" placeholder="부서명" />
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" placeholder="입사년월" />
-                  </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" placeholder="퇴사년월" />
-                  </div>
-                  <div class="col-2">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                      <label class="form-check-label" for="multipleCheck">재직중</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" placeholder="직급" />
-                  </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" placeholder="직책" />
-                  </div>
-                  <div class="col-3">
-                    <div class="d-flex align-items-center">
-                      <input type="text" class="form-control form-lg" placeholder="최종연봉" />
-                      <p class="w-50px m-l-10">만원</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col-12">
-                    <input type="text" class="form-control form-lg" placeholder="담당업무" />
-                  </div>
-                </div>
-
-                <div class="btn-group d-flex justify-content-center m-t-30">
-                  <button type="button" class="btn btn-outline-gray m-r-10" data-bs-toggle="modal" data-bs-target="#modal-nice-certification">경력인증</button>
-                  <button type="button" class="btn btn-outline-primary">저장</button>
-                </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 경력기술서 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">경력기술서</h4>
-              <div class="desc">
-                <div class="form-textarea m-0">
-                  <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요" class=""></textarea>
-                </div>
-                <div class="btn-group d-flex justify-content-end m-t-30">
-                  <button type="button" class="btn btn-outline-gray m-r-10">수정</button>
-                  <button type="button" class="btn btn-outline-danger">삭제</button>
-                </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 학력 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">학력<span class="text-danger">(필수)</span></h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="고등학교" readonly />
-                  </div>
-                  <div class="col-2">
-                    <div class="search-box search-lg">
-                      <input type="text" class="" placeholder="학교명" />
-                      <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
-                    </div>
-                    <div class="search-result-list">
-                      <ul>
-                        <li class="active">
-                          <div class="result-company">
-                            <a href="">
-                              <p class="company-name">서울고등학교</p>
-                            </a>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="result-company">
-                            <a href="">
-                              <p class="company-name">연세고등학교</p>
-                            </a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="소재지" readonly />
-                  </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" placeholder="졸업년도" />
-                  </div>
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">졸업상태</option>
-                      <option value="2">졸업</option>
-                      <option value="3">대입검정고시</option>
-                    </select>
-                  </div>
-                  <div class="col-2">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                      <label class="form-check-label" for="multipleCheck">해외</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row m-b-10 add-education">
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">대학(2/3년)</option>
-                      <option value="2">대학교(4년)</option>
-                      <option value="3">석사</option>
-                      <option value="4">박사</option>
-                    </select>
-                  </div>
-                  <div class="col-10">
-                    <div class="row align-items-center m-b-10">
-                      <div class="col-3">
-                        <div class="search-box search-lg">
-                          <input type="text" class="" placeholder="학교명" />
-                          <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+                    <div class="resume-info">
+                      <div class="resume-info-top">
+                        <div>
+                          <input type="text" class="form-control form-lg inp-name" value="박근수" readonly />
+                          <input type="text" class="form-control form-lg inp-birth" value="" placeholder="생년월일(8자리)" />
+                          <select class="select-design select-lg" style="width: 100%">
+                            <option value="1">성별</option>
+                            <option value="2">남자</option>
+                            <option value="3">여자</option>
+                            <option value="4">비공개</option>
+                          </select>
+                          <select class="select-design select-lg" style="width: 100%">
+                            <option value="1" selected>취업상태</option>
+                            <option value="2">재직중</option>
+                            <option value="3">구직중</option>
+                          </select>
                         </div>
-                        <div class="search-result-list">
-                          <ul>
-                            <li class="active">
-                              <div class="result-company">
-                                <a href="">
-                                  <p class="company-name">서울대학교</p>
-                                </a>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="result-company">
-                                <a href="">
-                                  <p class="company-name">연세대학교</p>
-                                </a>
-                              </div>
-                            </li>
-                          </ul>
+                        <div>
+                          <input type="text" class="form-control form-lg inp-phone" value="010-1234-5678" readonly />
+                          <input type="text" class="form-control form-lg inp-email" placeholder="" value="abcd123@naver.com" readonly />
                         </div>
-                      </div>
-                      <div class="col-3">
-                        <input type="text" class="form-control form-lg" value="소재지" readonly />
-                      </div>
-                      <div class="col-3">
-                        <select class="select-design select-lg" style="width: 100%">
-                          <option value="1">캠퍼스</option>
-                          <option value="2">본교</option>
-                          <option value="3">분교</option>
-                        </select>
-                      </div>
-                      <div class="col-3">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                          <label class="form-check-label" for="multipleCheck">해외</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row align-items-center m-b-10">
-                      <div class="col-3">
-                        <input type="text" class="form-control form-lg" value="" placeholder="입학년월" />
-                      </div>
-                      <div class="col-3">
-                        <select class="select-design select-lg" style="width: 100%">
-                          <option value="1">입학상태</option>
-                          <option value="2">입학</option>
-                          <option value="3">편입</option>
-                        </select>
-                      </div>
-                      <div class="col-3">
-                        <input type="text" class="form-control form-lg" value="" placeholder="졸업년월" />
-                      </div>
-                      <div class="col-3">
-                        <select class="select-design select-lg" style="width: 100%">
-                          <option value="1">졸업상태</option>
-                          <option value="2">졸업</option>
-                          <option value="3">졸업예정</option>
-                          <option value="4">재학중</option>
-                          <option value="5">휴학중</option>
-                          <option value="6">중퇴</option>
-                          <option value="7">수료</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row align-items-center m-b-10">
-                      <div class="col-3">
-                        <input type="text" class="form-control form-lg" value="" placeholder="주 전공명" />
-                      </div>
-                      <div class="col-3">
-                        <input type="text" class="form-control form-lg" value="" placeholder="학점" />
-                      </div>
-                      <div class="col-3">
-                        <input type="text" class="form-control form-lg" value="" placeholder="부 전공명" />
-                      </div>
-                      <div class="col-3">
-                        <input type="text" class="form-control form-lg" value="" placeholder="학점" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
-                </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 희망근무조건 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">희망근무조건</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">고용형태</option>
-                      <option value="2">정규직</option>
-                      <option value="3">계약직</option>
-                      <option value="4">인턴</option>
-                      <option value="5">파견직</option>
-                      <option value="6">프리랜서</option>
-                      <option value="7">병역특례</option>
-                    </select>
-                  </div>
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">희망근무지</option>
-                      <option value="2">서울</option>
-                      <option value="3">수도권</option>
-                      <option value="4">전국</option>
-                    </select>
-                  </div>
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">입사가능시기</option>
-                      <option value="2">채용후즉시</option>
-                      <option value="3">2주이내</option>
-                      <option value="4">한달이내</option>
-                      <option value="5">협의후결정</option>
-                    </select>
-                  </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="희망직급" />
-                  </div>
-                  <div class="col-4">
-                    <div class="row align-items-center">
-                      <div class="col-6"><input type="text" class="form-control form-lg" value="" placeholder="희망연봉" /></div>
-                      <div class="col-6">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                          <label class="form-check-label" for="multipleCheck">내규에 따름</label>
+                        <div>
+                          <input type="text" class="form-control form-lg inp-address" value="서울특별시 강남구" readonly />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row align-items-center m-b-10">
-                  <div class="col-12">
-                    <input type="text" class="form-control form-lg" value="" placeholder="희망산업" />
-                  </div>
-                </div>
               </div>
-            </div>
-            <!-- end -->
-
-            <!--맞춤기업알림  -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">맞춤기업알림</h4>
-              <div class="desc">
-                <p class="m-b-10">희망 기업 정보 등록시 앱으로 해당 기업 포지션 정보를 알려드립니다.</p>
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="기업명" readonly />
-                  </div>
-                  <div class="col-10">
-                    <div class="search-box search-lg">
-                      <input type="text" class="" placeholder="회사 이름을 입력하세요" />
-                      <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+              <!-- end -->
+              <!-- 채용우대자격 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">채용우대자격<span class="text-danger">(필수)</span></h4>
+                <div class="desc">
+                  <div class="row align-items-center">
+                    <div class="col-4">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">대상</option>
+                        <option value="2">비대상</option>
+                      </select>
                     </div>
-                    <div class="search-result-list">
-                      <ul>
-                        <li class="active">
-                          <div class="result-company">
-                            <a href="">
-                              <p class="company-name">(주)삼성전자</p>
-                              <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
-                            </a>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="result-company">
-                            <a href="">
-                              <p class="company-name">(주)삼성전자</p>
-                              <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
-                            </a>
-                          </div>
-                        </li>
-                      </ul>
+                    <div class="col-4">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">대상</option>
+                        <option value="2">비대상</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">군필</option>
+                        <option value="2">미필</option>
+                        <option value="3">복무중</option>
+                        <option value="3">해당없음</option>
+                      </select>
                     </div>
                   </div>
                 </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+              </div>
+              <!-- end -->
+              <!-- 핵심역량 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">핵심역량<span class="text-danger">(필수)</span></h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-1">
+                      <p class="num-box text-center">1</p>
+                    </div>
+                    <div class="col-11">
+                      <input type="text" class="form-control form-lg" placeholder="직무능력 및 업무상 강점을 20자 내로 간략하게 서술" />
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      <p class="num-box text-center">2</p>
+                    </div>
+                    <div class="col-11">
+                      <input type="text" class="form-control form-lg" placeholder="인성, 자격증, 외국어, 등 기타 강점을 20자 내로 간략하게 서술" />
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- end -->
-
-            <!-- 어학(회화) -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">어학(회화)</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">외국어</option>
-                      <option value="2">영어</option>
-                      <option value="3">일본어</option>
-                      <option value="4">중국어</option>
-                    </select>
+              <!-- end -->
+              <!-- 경력사항 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">경력사항<span class="text-danger">(필수)</span></h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-4">
+                      <div class="search-box search-lg">
+                        <input type="text" class="" placeholder="회사 이름을 입력하세요" />
+                        <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+                      </div>
+                      <div class="search-result-list">
+                        <ul>
+                          <li class="active">
+                            <div class="result-company">
+                              <a href="">
+                                <p class="company-name">(주)삼성전자</p>
+                                <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="result-company">
+                              <a href="">
+                                <p class="company-name">(주)삼성전자</p>
+                                <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="department">
+                        <input type="text" class="form-control form-lg" placeholder="부서명" />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" placeholder="입사년월" />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" placeholder="퇴사년월" />
+                    </div>
+                    <div class="col-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                        <label class="form-check-label" for="multipleCheck">재직중</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="직접입력" />
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" placeholder="직급" />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" placeholder="직책" />
+                    </div>
+                    <div class="col-3">
+                      <div class="d-flex align-items-center">
+                        <input type="text" class="form-control form-lg" placeholder="최종연봉" />
+                        <p class="w-50px m-l-10">만원</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">회화수준</option>
-                      <option value="2">일상 회화가능</option>
-                      <option value="3">비지니스 회화가능</option>
-                      <option value="4">원어민 수준</option>
-                    </select>
+                  <div class="row align-items-center">
+                    <div class="col-12">
+                      <input type="text" class="form-control form-lg" placeholder="담당업무" />
+                    </div>
                   </div>
-                </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  <div class="btn-group d-flex justify-content-center m-t-30">
+                    <button type="button" class="btn btn-outline-gray m-r-10" data-bs-toggle="modal" data-bs-target="#modal-nice-certification">경력인증</button>
+                    <button type="button" class="btn btn-outline-primary">저장</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- end -->
-
-            <!-- 어학(공인시험) -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">어학(공인시험)</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">외국어(영어)</option>
-                      <option value="2">TOEIC</option>
-                      <option value="3">TOE리</option>
-                      <option value="4">G-TELP</option>
-                      <option value="4">Oplc</option>
-                      <option value="4">IELTS</option>
-                      <option value="4">ESPT</option>
-                      <option value="4">TEPS</option>
-                      <option value="1">외국어(일어)</option>
-                      <option value="2">JLPT</option>
-                      <option value="3">JPT</option>
-                      <option value="4">EJU</option>
-                      <option value="1">외국어(중국어)</option>
-                      <option value="2">HSK</option>
-                      <option value="3">TSC</option>
-                      <option value="4">BCT</option>
-                    </select>
+              <!-- end -->
+              <!-- 경력기술서 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">경력기술서</h4>
+                <div class="desc">
+                  <div class="form-textarea m-0">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요" class=""></textarea>
                   </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="점수/급수" />
+                  <div class="btn-group d-flex justify-content-end m-t-30">
+                    <button type="button" class="btn btn-outline-gray m-r-10">수정</button>
+                    <button type="button" class="btn btn-outline-danger">삭제</button>
                   </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="취득년월" />
-                  </div>
-                </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
                 </div>
               </div>
-            </div>
-            <!-- end -->
-
-            <!-- 자격증 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">자격증</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="자격증명" />
+              <!-- end -->
+              <!-- 학력 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">학력<span class="text-danger">(필수)</span></h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="고등학교" readonly />
+                    </div>
+                    <div class="col-2">
+                      <div class="search-box search-lg">
+                        <input type="text" class="" placeholder="학교명" />
+                        <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+                      </div>
+                      <div class="search-result-list">
+                        <ul>
+                          <li class="active">
+                            <div class="result-company">
+                              <a href="">
+                                <p class="company-name">서울고등학교</p>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="result-company">
+                              <a href="">
+                                <p class="company-name">연세고등학교</p>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="소재지" readonly />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" placeholder="졸업년도" />
+                    </div>
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">졸업상태</option>
+                        <option value="2">졸업</option>
+                        <option value="3">대입검정고시</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                        <label class="form-check-label" for="multipleCheck">해외</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="발행처" />
+                  <div class="row m-b-10 add-education">
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">대학(2/3년)</option>
+                        <option value="2">대학교(4년)</option>
+                        <option value="3">석사</option>
+                        <option value="4">박사</option>
+                      </select>
+                    </div>
+                    <div class="col-10">
+                      <div class="row align-items-center m-b-10">
+                        <div class="col-3">
+                          <div class="search-box search-lg">
+                            <input type="text" class="" placeholder="학교명" />
+                            <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+                          </div>
+                          <div class="search-result-list">
+                            <ul>
+                              <li class="active">
+                                <div class="result-company">
+                                  <a href="">
+                                    <p class="company-name">서울대학교</p>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="result-company">
+                                  <a href="">
+                                    <p class="company-name">연세대학교</p>
+                                  </a>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <input type="text" class="form-control form-lg" value="소재지" readonly />
+                        </div>
+                        <div class="col-3">
+                          <select class="select-design select-lg" style="width: 100%">
+                            <option value="1">캠퍼스</option>
+                            <option value="2">본교</option>
+                            <option value="3">분교</option>
+                          </select>
+                        </div>
+                        <div class="col-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                            <label class="form-check-label" for="multipleCheck">해외</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center m-b-10">
+                        <div class="col-3">
+                          <input type="text" class="form-control form-lg" value="" placeholder="입학년월" />
+                        </div>
+                        <div class="col-3">
+                          <select class="select-design select-lg" style="width: 100%">
+                            <option value="1">입학상태</option>
+                            <option value="2">입학</option>
+                            <option value="3">편입</option>
+                          </select>
+                        </div>
+                        <div class="col-3">
+                          <input type="text" class="form-control form-lg" value="" placeholder="졸업년월" />
+                        </div>
+                        <div class="col-3">
+                          <select class="select-design select-lg" style="width: 100%">
+                            <option value="1">졸업상태</option>
+                            <option value="2">졸업</option>
+                            <option value="3">졸업예정</option>
+                            <option value="4">재학중</option>
+                            <option value="5">휴학중</option>
+                            <option value="6">중퇴</option>
+                            <option value="7">수료</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row align-items-center m-b-10">
+                        <div class="col-3">
+                          <input type="text" class="form-control form-lg" value="" placeholder="주 전공명" />
+                        </div>
+                        <div class="col-3">
+                          <input type="text" class="form-control form-lg" value="" placeholder="학점" />
+                        </div>
+                        <div class="col-3">
+                          <input type="text" class="form-control form-lg" value="" placeholder="부 전공명" />
+                        </div>
+                        <div class="col-3">
+                          <input type="text" class="form-control form-lg" value="" placeholder="학점" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="취득년월" />
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
                   </div>
-                </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
                 </div>
               </div>
-            </div>
-            <!-- end -->
-
-            <!-- 수상 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">수상</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="수상명" />
+              <!-- end -->
+              <!-- 희망근무조건 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">희망근무조건</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">고용형태</option>
+                        <option value="2">정규직</option>
+                        <option value="3">계약직</option>
+                        <option value="4">인턴</option>
+                        <option value="5">파견직</option>
+                        <option value="6">프리랜서</option>
+                        <option value="7">병역특례</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">희망근무지</option>
+                        <option value="2">서울</option>
+                        <option value="3">수도권</option>
+                        <option value="4">전국</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">입사가능시기</option>
+                        <option value="2">채용후즉시</option>
+                        <option value="3">2주이내</option>
+                        <option value="4">한달이내</option>
+                        <option value="5">협의후결정</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="희망직급" />
+                    </div>
+                    <div class="col-4">
+                      <div class="row align-items-center">
+                        <div class="col-6"><input type="text" class="form-control form-lg" value="" placeholder="희망연봉" /></div>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                            <label class="form-check-label" for="multipleCheck">내규에 따름</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="수여기간" />
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-12">
+                      <input type="text" class="form-control form-lg" value="" placeholder="희망산업" />
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <input type="text" class="form-control form-lg" value="" placeholder="수상년월" />
-                  </div>
-                </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
                 </div>
               </div>
-            </div>
-            <!-- end -->
-
-            <!-- 대외활동 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">대외활동</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-12">
-                    <input type="text" class="form-control form-lg" value="" placeholder="활동내용" />
+              <!-- end -->
+              <!--맞춤기업알림  -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">맞춤기업알림</h4>
+                <div class="desc">
+                  <p class="m-b-10">희망 기업 정보 등록시 앱으로 해당 기업 포지션 정보를 알려드립니다.</p>
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-12">
+                      <div class="search-box search-lg">
+                        <input type="text" class="" placeholder="회사 이름을 입력하세요" />
+                        <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+                      </div>
+                      <div class="search-result-list">
+                        <ul>
+                          <li class="active">
+                            <div class="result-company">
+                              <a href="">
+                                <p class="company-name">(주)삼성전자</p>
+                                <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="result-company">
+                              <a href="">
+                                <p class="company-name">(주)삼성전자</p>
+                                <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  <div class="row">
+                    <div class="col-11">
+                      <input type="text" class="form-control form-lg" value="기업명" readonly />
+                    </div>
+                    <div class="col-1">
+                      <button type="button" class="btn btn-danger btn-lg min-width-auto">삭제</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- end -->
-
-            <!-- 포트폴리오 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">대외활동</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">선택</option>
-                      <option value="2">URL</option>
-                      <option value="3">파일첨부</option>
-                    </select>
+              <!-- end -->
+              <!-- 어학(회화) -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">어학(회화)</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">외국어</option>
+                        <option value="2">영어</option>
+                        <option value="3">일본어</option>
+                        <option value="4">중국어</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="직접입력" />
+                    </div>
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">회화수준</option>
+                        <option value="2">일상 회화가능</option>
+                        <option value="3">비지니스 회화가능</option>
+                        <option value="4">원어민 수준</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="col-10">
-                    <input type="text" class="form-control form-lg" value="" placeholder="http://" />
-                    <div class="form-upload">
-                      <input type="file" class="" id="form-file" />
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- 어학(공인시험) -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">어학(공인시험)</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">외국어(영어)</option>
+                        <option value="2">TOEIC</option>
+                        <option value="3">TOE리</option>
+                        <option value="4">G-TELP</option>
+                        <option value="4">Oplc</option>
+                        <option value="4">IELTS</option>
+                        <option value="4">ESPT</option>
+                        <option value="4">TEPS</option>
+                        <option value="1">외국어(일어)</option>
+                        <option value="2">JLPT</option>
+                        <option value="3">JPT</option>
+                        <option value="4">EJU</option>
+                        <option value="1">외국어(중국어)</option>
+                        <option value="2">HSK</option>
+                        <option value="3">TSC</option>
+                        <option value="4">BCT</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="점수/급수" />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="취득년월" />
+                    </div>
+                  </div>
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- 자격증 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">자격증</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="자격증명" />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="발행처" />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="취득년월" />
+                    </div>
+                  </div>
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- 수상 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">수상</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="수상명" />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="수여기간" />
+                    </div>
+                    <div class="col-2">
+                      <input type="text" class="form-control form-lg" value="" placeholder="수상년월" />
+                    </div>
+                  </div>
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- 대외활동 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">대외활동</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-12">
+                      <input type="text" class="form-control form-lg" value="" placeholder="활동내용" />
+                    </div>
+                  </div>
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- 포트폴리오 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">대외활동</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">선택</option>
+                        <option value="2">URL</option>
+                        <option value="3">파일첨부</option>
+                      </select>
+                    </div>
+                    <div class="col-10">
+                      <input type="text" class="form-control form-lg" value="" placeholder="http://" />
+                      <div class="form-upload">
+                        <input type="file" class="" id="form-file" />
+                        <!-- select 박스에 따라서 -->
+                        <label for="form-file"><i class="icon-input-add"></i></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- 영문이력서 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3">영문이력서</h4>
+                <div class="desc">
+                  <div class="row align-items-center m-b-10">
+                    <div class="col-2">
+                      <select class="select-design select-lg" style="width: 100%">
+                        <option value="1">선택</option>
+                        <option value="2">URL</option>
+                        <option value="3">파일첨부</option>
+                      </select>
+                    </div>
+                    <div class="col-10">
+                      <input type="text" class="form-control form-lg" value="" placeholder="http://" />
                       <!-- select 박스에 따라서 -->
-                      <label for="form-file"><i class="icon-input-add"></i></label>
+                      <div class="form-upload">
+                        <input type="file" class="" id="form-file" />
+                        <label for="form-file"><i class="icon-input-add"></i></label>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
-                </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 영문이력서 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3">영문이력서</h4>
-              <div class="desc">
-                <div class="row align-items-center m-b-10">
-                  <div class="col-2">
-                    <select class="select-design select-lg" style="width: 100%">
-                      <option value="1">선택</option>
-                      <option value="2">URL</option>
-                      <option value="3">파일첨부</option>
-                    </select>
-                  </div>
-                  <div class="col-10">
-                    <input type="text" class="form-control form-lg" value="" placeholder="http://" />
-                    <!-- select 박스에 따라서 -->
-                    <div class="form-upload">
-                      <input type="file" class="" id="form-file" />
-                      <label for="form-file"><i class="icon-input-add"></i></label>
-                    </div>
+                  <div class="btn-group d-flex justify-content-center m-t-20">
+                    <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
                   </div>
                 </div>
-                <div class="btn-group d-flex justify-content-center m-t-20">
-                  <button type="button" class="btn btn-outline-dark btn-lg">항목추가 <i class="icon-row-add"></i></button>
+              </div>
+              <!-- end -->
+              <!-- 자기소개서 -->
+              <div class="content">
+                <div class="d-flex justify-content-between">
+                  <h4 class="table-subtitle mb-3">자기소개서</h4>
+                  <p class=""><span>123</span>자</p>
                 </div>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 자기소개서 -->
-            <div class="content">
-              <div class="d-flex justify-content-between">
-                <h4 class="table-subtitle mb-3">자기소개서</h4>
-                <p class=""><span>123</span>자</p>
-              </div>
-              <div class="desc">
-                <div class="row align-items-center">
-                  <div class="col-12">
-                    <div class="form-textarea m-0">
-                      <textarea name="" id="" cols="30" rows="30" placeholder="내용을 입력하세요" class=""></textarea>
+                <div class="desc">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+                      <div class="form-textarea m-0">
+                        <textarea name="" id="" cols="30" rows="30" placeholder="내용을 입력하세요" class=""></textarea>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- end -->
             </div>
-            <!-- end -->
+            <div class="add-info-box">
+              <p class="add-info-title">이력서 항목</p>
+              <ul>
+                <li>
+                  <i class="icon-personal-information"></i>
+                  <p>인적사항<span class="text-danger">(필수)</span></p>
+                </li>
+                <li>
+                  <i class="icon-recruitment-preference"></i>
+                  <p>채용우대자격<span class="text-danger">(필수)</span></p>
+                </li>
+                <li>
+                  <i class="icon-core-competencies"></i>
+                  <p>핵심역량<span class="text-danger">(필수)</span></p>
+                </li>
+                <li>
+                  <i class="icon-career"></i>
+                  <p>경력사항<span class="text-danger">(필수)</span></p>
+                </li>
+                <li>
+                  <i class="icon-education"></i>
+                  <p>학력<span class="text-danger">(필수)</span></p>
+                </li>
+                <li>
+                  <i class="icon-working-conditions"></i>
+                  <p>희망근무 조건</p>
+                </li>
+                <li>
+                  <i class="icon-custom-company"></i>
+                  <p>맞춤기업 알림설정</p>
+                </li>
+                <li>
+                  <i class="icon-self-introduction"></i>
+                  <p>자기소개서</p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="d-flex align-items-center">
+                      <i class="icon-conversation"></i>
+                      <p>어학(회화)</p>
+                    </div>
+                    <i class="icon-resume-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="d-flex align-items-center">
+                      <i class="icon-official-exam"></i>
+                      <p>어학(공인시험)</p>
+                    </div>
+                    <i class="icon-resume-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="d-flex align-items-center">
+                      <i class="icon-certificate"></i>
+                      <p>자격증</p>
+                    </div>
+                    <i class="icon-resume-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="d-flex align-items-center">
+                      <i class="icon-awards"></i>
+                      <p>수상</p>
+                    </div>
+                    <i class="icon-resume-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="d-flex align-items-center">
+                      <i class="icon-outdoor-activities"></i>
+                      <p>대외활동</p>
+                    </div>
+                    <i class="icon-resume-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="d-flex align-items-center">
+                      <i class="icon-portfolio"></i>
+                      <p>포트폴리오</p>
+                    </div>
+                    <i class="icon-resume-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="d-flex align-items-center">
+                      <i class="icon-english-resume"></i>
+                      <p>영문이력서</p>
+                    </div>
+                    <i class="icon-resume-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+
           <div class="send-btn">
             <a href="posting_apply.html" class="btn btn-primary btn-xl">지원하기</a>
           </div>

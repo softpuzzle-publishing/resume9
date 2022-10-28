@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>Resume9</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 
+<link rel="icon" type="image/png" href="../assets/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" /> -->
+    <!-- jquery js -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+
+    <!-- select2 -->
+    <link rel="stylesheet" href="../assets/lib/select2/select2.min.css" />
+    <script src="../assets/lib/select2/select2.min.js"></script>
+
+    <!-- library css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css" /> -->
+
+    <!-- publilshing css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- library js -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- publishing js -->
+    <script src="../assets/js/ui.js" async></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../assets/lib/swiper/css/swiper-bundle.min.css" />
+    <script src="../assets/lib/swiper/js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="inner">
+          <div class="col">
+            <div class="row align-items-center justify-content-between gx-0">
+              <div class="col-6 d-flex align-items-center">
+                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
+                <ul class="gnb-list hidden-flex-mobile">
+                  <li class="gnb-depth">
+                    <a href="">채용공고</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">헤드헌터검색</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">내 이력서</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">커뮤니티</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 d-flex align-items-center justify-content-end">
+                <div class="search-form hidden-mobile">
+                  <input type="text" class="form-control form-lg" />
+                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
+                </div>
+                <ul class="sign-list hidden-flex-mobile">
+                  <li class="sign-depth">
+                    <a href="">1:1 문의</a>
+                  </li>
+                  <li class="sign-depth">
+                    <a href="">고객센터</a>
+                  </li>
+                  <li class="sign-depth mypage">
+                    <!-- <a href="">로그인</a> -->
+                    <a href="javascript:void(0)" class="mypage-con">MY</a>
+                    <i class="icon-login m-l-10"></i>
+                    <div class="my-info" style="display: none">
+                      <div class="my-info__head">
+                        <div class="info-head__my">
+                          <p class="info-head__name">홍길동</p>
+                          <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
+                        </div>
+                        <div class="info-head__point">
+                          <i class="icon-point"></i>
+                          <span class="my-reword">내 리워드</span>
+                          <span class="point">100P</span>
+                        </div>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">회원정보 수정</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">회원정보 수정</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">비밀번호 변경</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">블랙리스트 관리</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">보안</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">로그인 기록</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">리워드</span>
+                          </li>
+                          <li class="active">
+                            <a href="" class="category">적립/사용내역</a>
+                          </li>
+                          <li>
+                            <a href="" class="category">리워드 Mall</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">
+            <aside>
+              <div class="resume-login">
+                <div class="resume-login-profile" style="background-image: url('../assets/images/icon-login.svg')"></div>
+                <p class="name"><b>박근수</b>님</p>
+                <a href="../_layout/community_worry.html" class="btn btn-outline-primary btn-md">이력서 등록하기</a>
+                <button type="button" class="btn btn-primary btn-md">이력서 공개중</button>
+              </div>
+              <ul>
+                <li>
+                  <a href=""><span class="poppins">내 이력서 관리</span></a>
+                  <ul>
+                    <li class="active"><a href="../_layout/community_chat.html">이력서 등록</a></li>
+                    <li><a href="../_layout/community_worry.html">이력서 목록</a></li>
+                    <li><a href="../_layout/community_type.html">이력서 공개설정</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../mypage/myChannel.html"><span class="poppins">입사지원/제안관리</span></a>
+                  <ul>
+                    <li><a href="javascript:void(0)">입사지원 현황</a></li>
+                    <li>
+                      <a href="../_layout/company_curious.html">받은 포지션 제안</a>
+                      <ul>
+                        <li><a href="">포지션 제안내역</a></li>
+                        <li><a href="">내 이력서 열람내역</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">과거 지원 결과</a></li>
+                    <li><a href="javascript:void(0)">취업활동증명서 발급</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href=""><span class="poppins">관심/맞춤제안</span></a>
+                  <ul>
+                    <li class=""><a href="../_layout/community_chat.html">관심 헤드헌터</a></li>
+                    <li><a href="../_layout/community_worry.html">스크랩/최근열람 공고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="layout-content">
+            <div class="community-content">
+              <div class="sub-content-head">
+                <h3 class="subtitle">이력서 공개설정</h3>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-write">이력서 등록하기</button>
+              </div>
+              <div class="example-form">
+                <ul>
+                  <li>인재정보에 등록된 이력서는 직접 비공개하기 전까지 헤드헌터 열람이 가능합니다.</li>
+                  <li>이력서를 비공개 한 후 포지션 지원을 하여도 인사담당자가 이력서를 열람할 수 있습니다.</li>
+                </ul>
+              </div>
+              <div class="feed-list">
+                <ul>
+                  <li>
+                    <div class="row row-40 align-items-center">
+                      <div class="resume-list-wrap">
+                        <div class="d-flex align-items-center">
+                          <div class="title m-r-20">이력서 열람 설정</div>
+                          <div class="total-career">헤드헌터가 내 이력서를 열람하는 것을 설정합니다.</div>
+                        </div>
+                        <div class="toggle-btn">
+                          <input type="checkbox" class="sr-only" id="check1" />
+                          <label for="check1">
+                            <div class="button">
+                              <p>공개중</p>
+                              <div class="inside"></div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row row-40 align-items-center">
+                      <div class="resume-list-wrap">
+                        <div class="d-flex align-items-center">
+                          <div class="title m-r-20">포지션 제안받기</div>
+                          <div class="total-career">포지션 제안받기로 설정하시면 나에게 맞는 포지션을 먼저 제안받을 수 있습니다.</div>
+                        </div>
+                        <div class="toggle-btn">
+                          <input type="checkbox" class="sr-only" id="check2" />
+                          <label for="check2">
+                            <div class="button">
+                              <p>제안 받기중</p>
+                              <div class="inside"></div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-desc left">
+          <div class="footer-logo"></div>
+          <ul class="company-info">
+            <li>레쥬메나인(주)</li>
+            <li>사업자등록번호 : 543-81-01709</li>
+            <li class="hide-bar">직업정보제공사업 : J1200020200017</li>
+            <li>통신판매업 : 제 2021-서울강남-02745호</li>
+            <li class="hide-bar">서울시 강남구 테헤란로 16길 9, 1층</li>
+            <li>대표번호 : 02-6956-2715</li>
+            <li>대표이사 : 이덕진</li>
+            <li class="hide-bar">개인정보보호책임자 : 오길석</li>
+          </ul>
+          <p class="email">Email : resume9@resume9.co.kr (평일 10:00 ~ 17:30)</p>
+          <p class="copyright">CopyrightⓒResume9. All rights reserved.</p>
+        </div>
+        <div class="footer-desc right">
+          <ul class="wrap-info">
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보보호정책</a></li>
+            <li><a href="">이메일무단수집거부</a></li>
+            <li><a href="">제휴문의</a></li>
+            <li><a href="">고객센터</a></li>
+          </ul>
+          <div class="precautions">RESUME9(레쥬메나인)의 사전 서면동의 없이 일체의 정보, 콘텐츠, 로고 및 UI 등을 상업적 목적으로 무단전재, 전송 및 스크래핑 등을 할 수 없습니다.</div>
+          <div class="app-download">
+            <a href="">
+              <img src="../assets/images/icon-google-store.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="../assets/images/icon-app-store.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

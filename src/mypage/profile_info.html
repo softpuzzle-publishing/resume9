@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_mypage_aside.html')</div>
+          <div class="layout-content">
+            <div class="row row-40 align-items-center">
+              <h3 class="subtitle">회원정보 수정</h3>
+              <div class="apply-wrap">
+                <div class="fake-table profile">
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">프로필</div>
+                    <div class="fake-table-cell">
+                      <div class="img-upload">
+                        <div class="upload-img">
+                          <img src="../assets/images/about-01.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">아이디</div>
+                    <div class="fake-table-cell">
+                      <input type="text" class="form-control form-md" value="asd1234@gmail.com" />
+                    </div>
+                  </div>
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">이름</div>
+                    <div class="fake-table-cell">
+                      <input type="text" class="form-control form-md" value="홍길동" />
+                    </div>
+                  </div>
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">생년</div>
+                    <div class="fake-table-cell">
+                      <select class="select-design">
+                        <option value="1">1980</option>
+                        <option value="2">1981</option>
+                        <option value="3">1982</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">성별</div>
+                    <div class="fake-table-cell">
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck1" name="multipleCheck" checked />
+                          <label class="form-check-label" for="multipleCheck1"> 남 </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck2" name="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck2"> 여 </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">휴대폰번호</div>
+                    <div class="fake-table-cell">
+                      <input type="text" class="form-control form-md" value="010-1234-5678" readonly />
+                    </div>
+                  </div>
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">연락 가능 시간</div>
+                    <div class="fake-table-cell">
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck1" name="multipleCheck3" checked />
+                          <label class="form-check-label" for="multipleCheck1"> 상시 </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck2" name="multipleCheck3" />
+                          <label class="form-check-label" for="multipleCheck2"> 18시~22시 </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          <label class="form-check-label" for="multipleCheck"> 주말/휴일 제외 </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell text-start">개인정보유효기간</div>
+                    <div class="fake-table-cell">
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck1" name="multipleCheck2" checked />
+                          <label class="form-check-label" for="multipleCheck1"> 1년 </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck2" name="multipleCheck2" />
+                          <label class="form-check-label" for="multipleCheck2"> 3년 </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck2" name="multipleCheck2" />
+                          <label class="form-check-label" for="multipleCheck2"> 탈퇴시까지 </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="send-btn">
+                <button type="button" class="btn btn-dark btn-xl">수정완료</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

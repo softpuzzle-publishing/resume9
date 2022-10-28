@@ -30,8 +30,8 @@
   }
 
   &:checked {
-    background-color: $PRIMARY_COLOR;
-    border-color: $PRIMARY_COLOR;
+    background-color: #202020;
+    border-color: #202020;
 
     &[type="checkbox"] {
       background-image: url('../images/checkbox-checked.svg');

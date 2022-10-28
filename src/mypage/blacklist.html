@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_resume_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">블랙리스트 관리</h3>
+            <div class="title-line mt-4 mb-5"></div>
+
+            <p class="m-b-10">블랙리스트에 등록된 헤드헌터를 확인/해제할 수 있습니다.</p>
+            <div class="fake-table">
+              <div class="fake-table-head">
+                <div class="fake-table-cell">이름</div>
+                <div class="fake-table-cell">서치펌명</div>
+                <div class="fake-table-cell">이메일</div>
+                <div class="fake-table-cell">관리</div>
+              </div>
+              <div class="fake-table-column">
+                <div class="fake-table-cell">장영은</div>
+                <div class="fake-table-cell">서치펌명</div>
+                <div class="fake-table-cell">asdqwe1234@naver.com</div>
+                <div class="fake-table-cell">
+                  <div class="form-check p-0">
+                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            @@include('@@webRoot/_include/_pagination.html')
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

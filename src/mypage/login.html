@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_resume_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">로그인 기록</h3>
+            <div class="title-line mt-4 mb-5"></div>
+
+            <div class="d-flex justify-content-between m-b-10">
+              <p>최근 90일간의 로그인 기록을 확인하실 수 있습니다.</p>
+              <p>로그인 기록 기간: 2022.07.16 ~ 2022.10.14</p>
+            </div>
+            <div class="fake-table">
+              <div class="fake-table-head">
+                <div class="fake-table-cell">일시</div>
+                <div class="fake-table-cell">IP</div>
+                <div class="fake-table-cell">기기</div>
+                <div class="fake-table-cell">지역</div>
+              </div>
+              <div class="fake-table-column">
+                <div class="fake-table-cell">2022.10.13 16:23:38</div>
+                <div class="fake-table-cell">61.73.75.162</div>
+                <div class="fake-table-cell">-</div>
+                <div class="fake-table-cell">-</div>
+              </div>
+              <div class="fake-table-column">
+                <div class="fake-table-cell">2022.10.13 16:23:38</div>
+                <div class="fake-table-cell">61.73.75.162</div>
+                <div class="fake-table-cell">-</div>
+                <div class="fake-table-cell">-</div>
+              </div>
+            </div>
+            @@include('@@webRoot/_include/_pagination.html')
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

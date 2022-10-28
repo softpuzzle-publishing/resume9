@@ -23,4 +23,10 @@ $(document).ready(function () {
   $(".select-design").select2({
     minimumResultsForSearch: -1
   });
+  $(".add-info-box a").on("click", function () {
+    var getThis = $(this).children().find("i");
+    var getClass = getThis.attr("class");
+    $(this).toggleClass("active");
+    $(this).children().find("i").addClass(getClass + "-active");
+  });
 });
