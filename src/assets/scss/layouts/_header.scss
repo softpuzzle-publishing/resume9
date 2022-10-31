@@ -56,11 +56,11 @@
   }
 }
 .search-form{
-  width: 320px; border:1px solid #dddddd; border-radius: 37px; background-color: #fff;
+  width: 235px; border:1px solid #dddddd; border-radius: 37px; background-color: #fff;
   position: relative; margin-right: 2.5vw;
   .form-control{background-color: transparent; padding:12px 60px 12px 24px;}
   .search-btn{
-    position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+    min-width:50px; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
   }
 }
 // @media screen and (max-width: 1400px) {

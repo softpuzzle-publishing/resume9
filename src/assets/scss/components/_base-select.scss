@@ -86,3 +86,9 @@
     }
     .select2-results__option--highlighted.select2-results__option--selectable{background: #fff !important;color: #000 !important;}
 }
+
+@media screen and (max-width: 992px) {
+  .form-select { 
+    font-size: 14px;
+  }
+}

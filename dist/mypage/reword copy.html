@@ -39,27 +39,24 @@
         <div class="inner">
           <div class="col">
             <div class="row align-items-center justify-content-between gx-0">
-              <div class="col-7 d-flex align-items-center">
+              <div class="col-6 d-flex align-items-center">
                 <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
                 <ul class="gnb-list hidden-flex-mobile">
                   <li class="gnb-depth">
-                    <a href="../jop/posting.html">채용공고</a>
+                    <a href="">채용공고</a>
                   </li>
                   <li class="gnb-depth">
                     <a href="">헤드헌터검색</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../resume/resume_main.html">내 이력서</a>
+                    <a href="">내 이력서</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../application/application_status.html">지원현황</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../_layout/community.html">커뮤니티</a>
+                    <a href="">커뮤니티</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-5 d-flex align-items-center justify-content-end">
+              <div class="col-6 d-flex align-items-center justify-content-end">
                 <div class="search-form hidden-mobile">
                   <input type="text" class="form-control form-lg" />
                   <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
@@ -78,9 +75,7 @@
                     <div class="my-info" style="display: none">
                       <div class="my-info__head">
                         <div class="info-head__my">
-                          <a href="../mypage/profile_info.html">
-                            <p class="info-head__name">홍길동</p>
-                          </a>
+                          <p class="info-head__name">홍길동</p>
                           <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
                         </div>
                         <div class="info-head__point">
@@ -92,16 +87,16 @@
                       <div class="my-info__list">
                         <ul>
                           <li>
-                            <a href=""><span class="info-list__title">회원정보 수정</span></a>
+                            <span class="info-list__title">회원정보 수정</span>
                           </li>
                           <li class="active">
-                            <a href="../mypage/profile_info.html" class="category">회원정보 수정</a>
+                            <a href="" class="category">회원정보 수정</a>
                           </li>
                           <li>
-                            <a href="../mypage/password.html" class="category">비밀번호 변경</a>
+                            <a href="" class="category">비밀번호 변경</a>
                           </li>
                           <li>
-                            <a href="../mypage/blacklist.html" class="category">블랙리스트 관리</a>
+                            <a href="" class="category">블랙리스트 관리</a>
                           </li>
                         </ul>
                       </div>
@@ -111,7 +106,7 @@
                             <span class="info-list__title">보안</span>
                           </li>
                           <li class="active">
-                            <a href="../mypage/login.html" class="category">로그인 기록</a>
+                            <a href="" class="category">로그인 기록</a>
                           </li>
                         </ul>
                       </div>
@@ -121,10 +116,10 @@
                             <span class="info-list__title">리워드</span>
                           </li>
                           <li class="active">
-                            <a href="../mypage/reword.html" class="category">적립/사용내역</a>
+                            <a href="" class="category">적립/사용내역</a>
                           </li>
                           <li>
-                            <a href="../mypage/reword.html" class="category">리워드 Mall</a>
+                            <a href="" class="category">리워드 Mall</a>
                           </li>
                         </ul>
                       </div>
@@ -186,82 +181,57 @@
           <div class="layout-content">
             <div class="community-content">
               <div class="sub-content-head">
-                <h3 class="subtitle">이력서 목록</h3>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-write">이력서 등록하기</button>
+                <h3 class="subtitle">적립/사용 내역</h3>
               </div>
-              <div class="example-form">
-                <ul>
-                  <li>이력서는 <span class="text-danger">최대 99개</span>까지 등록 가능합니다.</li>
-                  <li>기본이력서는 <span class="text-danger">1개</span>만 등록 가능합니다.</li>
-                </ul>
+              <div class="reword-wrap">
+                <p class="reword-wrap-title">
+                  헤드헌터 내 이력서 상세정보를 열람할 때다<br />
+                  <b>100포인트</b>의 <b class="text-primary">리워드 적립</b>됩니다.
+                </p>
+                <p class="desc">RESUME에 이력서 등록하고 리워드 mall에서 쇼핑도 하세요!</p>
+
+                <div class="now-point">
+                  <i class="icon-point"></i>
+                  <span>내 리워드</span>
+                  <p class="my-point"><b class="text-primary">1,350</b>P</p>
+                </div>
               </div>
-              <p class="m-b-5">총 <span class="text-danger">5</span>건의 이력서가 있습니다.</p>
-              <div class="feed-list">
-                <ul>
-                  <li>
-                    <div class="row row-40 align-items-center">
-                      <div class="resume-list-wrap">
-                        <div class="d-flex align-items-center">
-                          <span class="tag tag-lg tag-outline-primary none-border m-0">
-                            <em>기본이력서</em>
-                          </span>
-                          <div class="title"><a href="channelDetail.html">가나다1 16년 5개월 대기업이 설립한 유망 화장품 기업 CRM</a></div>
-                        </div>
-                        <select class="select-design">
-                          <option value="1">복사</option>
-                          <option value="2">수정</option>
-                          <option value="3">파일저장하기</option>
-                        </select>
-                      </div>
-                      <div class="total-career"><span>총 16년 5개월</span> <a href="javascipt:void(0)" class="print">인쇄하기</a></div>
-                      <div class="post-cell">
-                        <p class="date">최종수정일: 2022-07-07 09:15:02</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="row row-40 align-items-center">
-                      <div class="resume-list-wrap">
-                        <div class="d-flex align-items-center">
-                          <span class="tag tag-lg tag-outline-primary none-border m-0">
-                            <em>기본이력서</em>
-                          </span>
-                          <div class="title"><a href="channelDetail.html">가나다1 16년 5개월 대기업이 설립한 유망 화장품 기업 CRM</a></div>
-                        </div>
-                        <select class="select-design">
-                          <option value="1">복사</option>
-                          <option value="2">수정</option>
-                          <option value="3">파일저장하기</option>
-                        </select>
-                      </div>
-                      <div class="total-career"><span>총 16년 5개월</span> <a href="javascipt:void(0)" class="print">인쇄하기</a></div>
-                      <div class="post-cell">
-                        <p class="date">최종수정일: 2022-07-07 09:15:02</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="row row-40 align-items-center">
-                      <div class="resume-list-wrap">
-                        <div class="d-flex align-items-center">
-                          <span class="tag tag-lg tag-outline-primary none-border danger m-0">
-                            <em>지원이력서</em>
-                          </span>
-                          <div class="title"><a href="channelDetail.html">가나다1 16년 5개월 대기업이 설립한 유망 화장품 기업 CRM</a></div>
-                        </div>
-                        <select class="select-design">
-                          <option value="1">복사</option>
-                          <option value="2">수정</option>
-                          <option value="3">파일저장하기</option>
-                        </select>
-                      </div>
-                      <div class="total-career"><span>총 16년 5개월</span> <a href="javascipt:void(0)" class="print">인쇄하기</a></div>
-                      <div class="post-cell">
-                        <p class="date">최종수정일: 2022-07-07 09:15:02</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+              <div class="reword-list">
+                <h4 class="table-subtitle mb-3">최신 글</h4>
+                <div class="reword-product-list">
+                  <div class="reword-product">
+                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
+                    <p class="company">스타벅스</p>
+                    <p class="product-name">아이스 카페 아메리카노</p>
+                    <p class="need-point"><span>4,100</span>P</p>
+                  </div>
+                  <div class="reword-product">
+                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
+                    <p class="company">스타벅스</p>
+                    <p class="product-name">아이스 카페 아메리카노</p>
+                    <p class="need-point"><span>4,100</span>P</p>
+                  </div>
+                  <div class="reword-product">
+                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
+                    <p class="company">스타벅스</p>
+                    <p class="product-name">아이스 카페 아메리카노</p>
+                    <p class="need-point"><span>4,100</span>P</p>
+                  </div>
+                  <div class="reword-product">
+                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
+                    <p class="company">스타벅스</p>
+                    <p class="product-name">아이스 카페 아메리카노</p>
+                    <p class="need-point"><span>4,100</span>P</p>
+                  </div>
+                  <div class="reword-product">
+                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
+                    <p class="company">스타벅스</p>
+                    <p class="product-name">아이스 카페 아메리카노</p>
+                    <p class="need-point"><span>4,100</span>P</p>
+                  </div>
+                </div>
+
+                <button type="button" class="more-btn">VIEW MORE <span>(1/100)</span> <i class="icon-primary-plus"></i></button>
               </div>
             </div>
           </div>
