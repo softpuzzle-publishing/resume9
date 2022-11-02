@@ -47,6 +47,10 @@
   }
   
   @media screen and (max-width: 992px) {
-    
-    .form-control {font-size: 14px;}
+    .form-control {
+      &.form-sm{ min-height: 22px; font-size: 11px; padding: 4px 15px 4px 12px;}
+      &.form-md{min-height: 24px; font-size: 12px; padding: 8px 15px 8px 12px;}
+      &.form-lg{min-height: 26px; font-size: 13px;  padding: 12px 15px 12px 12px;}
+      &.form-xl{min-height: 30px;  font-size: 14px;}
+    }
   }

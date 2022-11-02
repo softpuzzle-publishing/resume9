@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>Resume9</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 
+<link rel="icon" type="image/png" href="../assets/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" /> -->
+    <!-- jquery js -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+
+    <!-- select2 -->
+    <link rel="stylesheet" href="../assets/lib/select2/select2.min.css" />
+    <script src="../assets/lib/select2/select2.min.js"></script>
+
+    <!-- library css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css" /> -->
+
+    <!-- publilshing css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- library js -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- publishing js -->
+    <script src="../assets/js/ui.js" async></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../assets/lib/swiper/css/swiper-bundle.min.css" />
+    <script src="../assets/lib/swiper/js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="inner">
+          <div class="col">
+            <div class="row align-items-center justify-content-between gx-0">
+              <div class="col-7 d-flex align-items-center">
+                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
+                <ul class="gnb-list hidden-flex-mobile">
+                  <li class="gnb-depth">
+                    <a href="../jop/posting.html">채용공고</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="">헤드헌터검색</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="../resume/resume_main.html">내 이력서</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="../application/application_status.html">지원현황</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="../_layout/community.html">커뮤니티</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-5 d-flex align-items-center justify-content-end">
+                <div class="search-form hidden-mobile">
+                  <input type="text" class="form-control form-lg" />
+                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
+                </div>
+                <ul class="sign-list hidden-flex-mobile">
+                  <li class="sign-depth">
+                    <a href="">1:1 문의</a>
+                  </li>
+                  <li class="sign-depth">
+                    <a href="">고객센터</a>
+                  </li>
+                  <li class="sign-depth mypage">
+                    <!-- <a href="">로그인</a> -->
+                    <a href="javascript:void(0)" class="mypage-con">MY</a>
+                    <i class="icon-login m-l-10"></i>
+                    <div class="my-info" style="display: none">
+                      <div class="my-info__head">
+                        <div class="info-head__my">
+                          <a href="../mypage/profile_info.html">
+                            <p class="info-head__name">홍길동</p>
+                          </a>
+                          <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
+                        </div>
+                        <div class="info-head__point">
+                          <i class="icon-point"></i>
+                          <span class="my-reword">내 리워드</span>
+                          <span class="point">100P</span>
+                        </div>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <a href=""><span class="info-list__title">회원정보 수정</span></a>
+                          </li>
+                          <li class="active">
+                            <a href="../mypage/profile_info.html" class="category">회원정보 수정</a>
+                          </li>
+                          <li>
+                            <a href="../mypage/password.html" class="category">비밀번호 변경</a>
+                          </li>
+                          <li>
+                            <a href="../mypage/blacklist.html" class="category">블랙리스트 관리</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">보안</span>
+                          </li>
+                          <li class="active">
+                            <a href="../mypage/login.html" class="category">로그인 기록</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="my-info__list">
+                        <ul>
+                          <li>
+                            <span class="info-list__title">리워드</span>
+                          </li>
+                          <li class="active">
+                            <a href="../mypage/reword.html" class="category">적립/사용내역</a>
+                          </li>
+                          <li>
+                            <a href="../mypage/reword.html" class="category">리워드 Mall</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">
+            <aside>
+              <ul>
+                <li>
+                  <a href="../mypage/myChannel.html"><span class="poppins">고객센터</span></a>
+                  <ul>
+                    <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                    <li><a href="">1:1 문의하기</a></li>
+                    <li><a href="">공지사항/이벤트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../mypage/myChannel.html"><span class="poppins">회원탈퇴</span></a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="layout-content">
+            <div class="community-content">
+              <p class="center-title">자주 묻는 질문</p>
+              <div class="sub-content-head">
+                <div class="search-area">
+                  <div class="input-group">
+                    <input type="text" class="form-control p-l-20" placeholder="키워드를 입력하세요" />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary btn-input-search" type="button">검색</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-0">
+                <ol class="step mt-n3">
+                  <li class="">
+                    <a href="../service/faq_individual.html"><span>개인회원</span></a>
+                  </li>
+                  <li class="active">
+                    <a href="../service/faq_headhunter.html"><span>헤드헌터회원</span></a>
+                  </li>
+                </ol>
+              </div>
+              <div class="faq-content">
+                <div class="accordion-agree">
+                  <div class="item active">
+                    <div class="agree-top">
+                      <p>Q. RESUME9에 회원가입은 어떻게 할 수 있나요?</p>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body">
+                      <p>
+                        헤드헌팅 전문 플랫폼 RESUME9에 개인회원 가입은 두 가지로 할 수 있습니다.<br />
+                        <br />
+                        <br />
+                        직접 가입하기
+                        <br />
+                        <br />
+                        <a href="../_login/signup.html" class="text-primary font-bold">개인회원 가입</a>에서 직접 가입할 수 있습니다.<br />
+                        개인회원 가입에서 인증과 이력서 간편등록을 완료하면 쉽게 가입할 수 있습니다.<br />
+                        헤드헌터를 통해 가입하기<br />
+                        <br />
+                        <br />
+                        RESUME9의 인증헤드헌터를 통해 포지션 제안을 받거나 인재등록 제안을 통해 가입할 수 있습니다.<br />
+                        인증 헤드헌터에게 이력서를 제출하여, 헤드헌터가 이를 제안한 포지션이나 담당인재로 등록하면, 회원님에게 RESUME9의 확인 메일이 발송되어 이를 통해 가입동의와 인증, 비밀번호를 설정하면 가입이 완료됩니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <p>Q. 개명 등으로 이름을 변경해야 하는데 어떻게 변경하나요?</p>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body">
+                      <p>
+                        이름을 변경하고 싶으신 경우, 1:1문의하기에 요청 내용과 함께 “주민등록등복 초본”를 첨부해서 제출해 주시면 절차에 따라 안내해 드리도록 하겠습니다.
+                        <br />
+                        <br />
+                        본인여부를 증빙할 수 없는 경우에는 이름변경을 지원해 드릴 수 없습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <p>Q. 휴대폰 인증 문자가 오지 않는데 어떻게 해야 하나요?</p>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body">
+                      <p>
+                        가입을 위한 휴대폰 인증 문자가 수신이 안될 경우에는 다음 두가지 사항을 확인해 주시기 바랍니다.
+                        <br />
+                        <br />
+                        <b>1. 휴대폰의 스팸차단 설정 확인</b>
+                        <br />
+                        <br />
+                        인증 문자가 발송되었다는 메세지가 표시되었으나 인증 문자가 계속 수신이 안된다면, 인증 문자 발송 번호(02-6956-2715)가 스팸번호로 등록되어 있는지 확인해 주시기 바랍니다.
+                        <br />
+                        <br />
+                        <b>2. 휴대폰 재부팅</b>
+                        <br />
+                        <br />
+                        간혹 통신사와 휴대폰 디바이스 간 연결에 문제가 있을 수 있습니다. 휴대폰 재부팅을 하면 문자 수신이 정상화 되는 경우도 있으니 스팸차단 설정이 되어있지 않다면 휴대폰 재부팅을 진행해 주시기 바랍니다.
+                        <br />
+                        <br />
+                        두 가지 사항을 확인했음에도 문제가 해결되지 않는다면 help@resume9.co.kr로 문의해 주시면 감사하겠습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <p>Q. 갑자기 제 이력서가 등록되었다는 메일(또는 SMS)를 받았습니다.</p>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body">
+                      <p>
+                        많이 놀라셨겠습니다.
+                        <br />
+                        <br />
+                        RESUME9은 합법적으로 등록된 국내 헤드헌터들과 구직자가 만나는 새로운 헤드헌팅 전문 플랫폼입니다.
+                        <br />
+                        <br />
+                        메일 또는 SMS를 통해 수신한 “이력서 등록 확인” 메일 또는 SMS는 고객님이 RESUME9의 인증헤드헌터에게 포지션 진행을 위한 이력서와 동의서를 제출해서 담당 헤드헌터가 포지션 진행을 위해 등록한 것입니다.
+                        <br />
+                        <br />
+                        RESUME9은 개인정보보호법 및 정보통신망법에 따라 정보주체에게 이 사실을 확인하기 위해 메일 또는 SMS를 발송했습니다.
+                        <br />
+                        <br />
+                        메일에 안내된 절차에 따라 동의와 비밀번호를 설정하면 이후 진행되는 채용절차의 상황을 계속 확인할 수 있습니다.
+                        <br />
+                        <br />
+                        만약, 해당 헤드헌터에게 동의서와 이력서를 제출한 적이 없음에도 이력서 등록메일을 받았다면 <a href="mailto:help@resume9.co.kr">help@resume9.co.kr</a> 로 메일을 보내주시면 확인 후 즉시 조치하도록 하겠습니다.
+                        <br />
+                        <br />
+                        RESUME9은 개인정보보호에 대해 법적 의무와 규정을 준수하기 위해 최선의 노력을 다하고 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <p>Q. 헤드헌터로부터 초대 메일이 왔는데 이게 무엇인가요?</p>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body">
+                      <p>
+                        RESUME9은 합법적으로 등록된 국내 헤드헌터들과 구직자가 만나는 새로운 헤드헌팅 플랫폼입니다.
+                        <br />
+                        <br />
+                        메일로 수신한 헤드헌터의 초대 메일은 이전에 고객님의 포지션 지원을 진행한 적이 있는 담당 헤드헌터가 RESUME9을 통해 우수인재로 등록하여 포지션을 추천하기 위해 고객님에게 가입초대의 메일을 발송한 것입니다.
+                        <br />
+                        <br />
+                        RESUME9은 이력서와 개인정보의 무단 등록 또는 열람을 방지하기 위해 포지션 추천 또는 인재등록을 위해 본인에게 자동으로 확인을 위한 메일을 발송하고 있습니다.
+                        <br />
+                        <br />
+                        초대 승인을 하시면, 담당 헤드헌터의 우수인재로 등록되어 다양한 포지션 제안을 받을 수 있으며, 이력서 로봇이나 채용절차 알림 등 편리한 기능과 함께 헤드헌팅 서비스를 이용하실 수 있습니다.
+                        <br />
+                        <br />
+                        만약, 헤드헌터가 발송하는 RESUME9의 초대 메일을 받지 않기를 원한다면 메일의 <span class="text-danger">[초대거부]</span>나 초대페이지의 <span class="text-danger">[초대거부]</span>를 클릭하면 이후에는 초대메일이 발송되지 않습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="agree-top">
+                      <p>Q. 갑자기 제 이력서 공개여부를 업데이트하라는 메일을 받았습니다.</p>
+                      <a href="javascript:;" class="toggler">
+                        <i class="icon-arrow"><span class="sr-only">자세히보기</span></i>
+                      </a>
+                    </div>
+                    <div class="agree-body">
+                      <p>
+                        RESUME9은 이력서 공개여부를 6개월에 한 번씩 확인하고 있는데요,<br />
+                        해당 메일을 받으셨다는 것은 6개월 전에 마지막으로 이력서를 공개하셨다는 뜻입니다.<br />
+                        <br /><br />
+                        직접 가입하신 이력이 없다면, 헤드헌터를 통해 이력서가 등록된 것입니다.<br />
+                        이전에 헤드헌터에게 이력서와 함께 동의서를 제출하시고,<br />
+                        헤드헌터가 RESUME9에 등록했을 경우 아래 제목으로 가입 안내 메일이 발송됩니다.<br />
+                        <br />
+                        - 메일제목 : 이력서를 RESUME9에 등록했습니다.<br />
+                        <br />
+                        <br />
+                        6개월 전 발송된 가입 안내 메일 확인하셔서,<br />
+                        해당 메일 내의 비밀번호 설정 버튼 통해 가입해 주시면 되겠습니다.<br />
+                        (해당 메일 내의 링크 통해서만 가능하며, 별도 문의는 help@resume9.co.kr 로 주시면 답변드리겠습니다.)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-5">
+                <div class="pagination">
+                  <a href=""><i class="icon-pager-prev"></i></a>
+                  <a href="" class="active">1</a>
+                  <a href="">2</a>
+                  <a href="">3</a>
+                  <a href="">4</a>
+                  <a href="">5</a>
+                  <a href="">6</a>
+                  <a href="">7</a>
+                  <a href="">8</a>
+                  <a href="">9</a>
+                  <a href="">10</a>
+                  <a href=""><i class="icon-pager-next"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-desc left">
+          <div class="footer-logo"></div>
+          <ul class="company-info">
+            <li>레쥬메나인(주)</li>
+            <li>사업자등록번호 : 543-81-01709</li>
+            <li class="hide-bar">직업정보제공사업 : J1200020200017</li>
+            <li>통신판매업 : 제 2021-서울강남-02745호</li>
+            <li class="hide-bar">서울시 강남구 테헤란로 16길 9, 1층</li>
+            <li>대표번호 : 02-6956-2715</li>
+            <li>대표이사 : 이덕진</li>
+            <li class="hide-bar">개인정보보호책임자 : 오길석</li>
+          </ul>
+          <p class="email">Email : resume9@resume9.co.kr (평일 10:00 ~ 17:30)</p>
+          <p class="copyright">CopyrightⓒResume9. All rights reserved.</p>
+        </div>
+        <div class="footer-desc right">
+          <ul class="wrap-info">
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보보호정책</a></li>
+            <li><a href="">이메일무단수집거부</a></li>
+            <li><a href="">제휴문의</a></li>
+            <li><a href="">고객센터</a></li>
+          </ul>
+          <div class="precautions">RESUME9(레쥬메나인)의 사전 서면동의 없이 일체의 정보, 콘텐츠, 로고 및 UI 등을 상업적 목적으로 무단전재, 전송 및 스크래핑 등을 할 수 없습니다.</div>
+          <div class="app-download">
+            <a href="">
+              <img src="../assets/images/icon-google-store.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="../assets/images/icon-app-store.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

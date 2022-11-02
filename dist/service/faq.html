@@ -39,24 +39,27 @@
         <div class="inner">
           <div class="col">
             <div class="row align-items-center justify-content-between gx-0">
-              <div class="col-6 d-flex align-items-center">
+              <div class="col-7 d-flex align-items-center">
                 <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
                 <ul class="gnb-list hidden-flex-mobile">
                   <li class="gnb-depth">
-                    <a href="">채용공고</a>
+                    <a href="../jop/posting.html">채용공고</a>
                   </li>
                   <li class="gnb-depth">
                     <a href="">헤드헌터검색</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="">내 이력서</a>
+                    <a href="../resume/resume_main.html">내 이력서</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="">커뮤니티</a>
+                    <a href="../application/application_status.html">지원현황</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="../_layout/community.html">커뮤니티</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-6 d-flex align-items-center justify-content-end">
+              <div class="col-5 d-flex align-items-center justify-content-end">
                 <div class="search-form hidden-mobile">
                   <input type="text" class="form-control form-lg" />
                   <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
@@ -75,7 +78,9 @@
                     <div class="my-info" style="display: none">
                       <div class="my-info__head">
                         <div class="info-head__my">
-                          <p class="info-head__name">홍길동</p>
+                          <a href="../mypage/profile_info.html">
+                            <p class="info-head__name">홍길동</p>
+                          </a>
                           <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
                         </div>
                         <div class="info-head__point">
@@ -87,16 +92,16 @@
                       <div class="my-info__list">
                         <ul>
                           <li>
-                            <span class="info-list__title">회원정보 수정</span>
+                            <a href=""><span class="info-list__title">회원정보 수정</span></a>
                           </li>
                           <li class="active">
-                            <a href="" class="category">회원정보 수정</a>
+                            <a href="../mypage/profile_info.html" class="category">회원정보 수정</a>
                           </li>
                           <li>
-                            <a href="" class="category">비밀번호 변경</a>
+                            <a href="../mypage/password.html" class="category">비밀번호 변경</a>
                           </li>
                           <li>
-                            <a href="" class="category">블랙리스트 관리</a>
+                            <a href="../mypage/blacklist.html" class="category">블랙리스트 관리</a>
                           </li>
                         </ul>
                       </div>
@@ -106,7 +111,7 @@
                             <span class="info-list__title">보안</span>
                           </li>
                           <li class="active">
-                            <a href="" class="category">로그인 기록</a>
+                            <a href="../mypage/login.html" class="category">로그인 기록</a>
                           </li>
                         </ul>
                       </div>
@@ -116,10 +121,10 @@
                             <span class="info-list__title">리워드</span>
                           </li>
                           <li class="active">
-                            <a href="" class="category">적립/사용내역</a>
+                            <a href="../mypage/reword.html" class="category">적립/사용내역</a>
                           </li>
                           <li>
-                            <a href="" class="category">리워드 Mall</a>
+                            <a href="../mypage/reword.html" class="category">리워드 Mall</a>
                           </li>
                         </ul>
                       </div>
@@ -138,100 +143,43 @@
         <div class="layout">
           <div class="layout-left">
             <aside>
-              <div class="resume-login">
-                <div class="resume-login-profile" style="background-image: url('../assets/images/icon-login.svg')"></div>
-                <p class="name"><b>박근수</b>님</p>
-                <a href="../_layout/community_worry.html" class="btn btn-outline-primary btn-md">이력서 등록하기</a>
-                <button type="button" class="btn btn-primary btn-md">이력서 공개중</button>
-              </div>
               <ul>
                 <li>
-                  <a href=""><span class="poppins">내 이력서 관리</span></a>
+                  <a href="../mypage/myChannel.html"><span class="poppins">고객센터</span></a>
                   <ul>
-                    <li class="active"><a href="../_layout/community_chat.html">이력서 등록</a></li>
-                    <li><a href="../_layout/community_worry.html">이력서 목록</a></li>
-                    <li><a href="../_layout/community_type.html">이력서 공개설정</a></li>
+                    <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                    <li><a href="">1:1 문의하기</a></li>
+                    <li><a href="">공지사항/이벤트</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="../mypage/myChannel.html"><span class="poppins">입사지원/제안관리</span></a>
-                  <ul>
-                    <li><a href="javascript:void(0)">입사지원 현황</a></li>
-                    <li>
-                      <a href="../_layout/company_curious.html">받은 포지션 제안</a>
-                      <ul>
-                        <li><a href="">포지션 제안내역</a></li>
-                        <li><a href="">내 이력서 열람내역</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="javascript:void(0)">과거 지원 결과</a></li>
-                    <li><a href="javascript:void(0)">취업활동증명서 발급</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href=""><span class="poppins">관심/맞춤제안</span></a>
-                  <ul>
-                    <li class=""><a href="../_layout/community_chat.html">관심 헤드헌터</a></li>
-                    <li><a href="../_layout/community_worry.html">스크랩/최근열람 공고</a></li>
-                  </ul>
+                  <a href="../mypage/myChannel.html"><span class="poppins">회원탈퇴</span></a>
                 </li>
               </ul>
             </aside>
           </div>
           <div class="layout-content">
             <div class="community-content">
+              <p class="center-title">자주 묻는 질문</p>
               <div class="sub-content-head">
-                <h3 class="subtitle">적립/사용 내역</h3>
-              </div>
-              <div class="reword-wrap">
-                <p class="reword-wrap-title">
-                  헤드헌터 내 이력서 상세정보를 열람할 때다<br />
-                  <b>100포인트</b>의 <b class="text-primary">리워드 적립</b>됩니다.
-                </p>
-                <p class="desc">RESUME에 이력서 등록하고 리워드 mall에서 쇼핑도 하세요!</p>
-
-                <div class="now-point">
-                  <i class="icon-point"></i>
-                  <span>내 리워드</span>
-                  <p class="my-point"><b class="text-primary">1,350</b>P</p>
-                </div>
-              </div>
-              <div class="reword-list">
-                <h4 class="table-subtitle mb-3">최신 글</h4>
-                <div class="reword-product-list">
-                  <div class="reword-product">
-                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
-                    <p class="company">스타벅스</p>
-                    <p class="product-name">아이스 카페 아메리카노</p>
-                    <p class="need-point"><span>4,100</span>P</p>
-                  </div>
-                  <div class="reword-product">
-                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
-                    <p class="company">스타벅스</p>
-                    <p class="product-name">아이스 카페 아메리카노</p>
-                    <p class="need-point"><span>4,100</span>P</p>
-                  </div>
-                  <div class="reword-product">
-                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
-                    <p class="company">스타벅스</p>
-                    <p class="product-name">아이스 카페 아메리카노</p>
-                    <p class="need-point"><span>4,100</span>P</p>
-                  </div>
-                  <div class="reword-product">
-                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
-                    <p class="company">스타벅스</p>
-                    <p class="product-name">아이스 카페 아메리카노</p>
-                    <p class="need-point"><span>4,100</span>P</p>
-                  </div>
-                  <div class="reword-product">
-                    <div class="img" style="background-image: url('../assets/images/about-01.png')"></div>
-                    <p class="company">스타벅스</p>
-                    <p class="product-name">아이스 카페 아메리카노</p>
-                    <p class="need-point"><span>4,100</span>P</p>
+                <div class="search-area">
+                  <div class="input-group">
+                    <input type="text" class="form-control p-l-20" placeholder="키워드를 입력하세요" />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary btn-input-search" type="button">검색</button>
+                    </div>
                   </div>
                 </div>
-
-                <button type="button" class="more-btn">VIEW MORE <span>(1/100)</span> <i class="icon-primary-plus"></i></button>
+              </div>
+              <div class="row row-0">
+                <ol class="step mt-n3">
+                  <li class="active">
+                    <a href="job_position.html"><span>개인회원</span></a>
+                  </li>
+                  <li class="">
+                    <a href="job_browse.html"><span>헤드헌터회원</span></a>
+                  </li>
+                </ol>
               </div>
             </div>
           </div>

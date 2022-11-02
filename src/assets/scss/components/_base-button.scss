@@ -137,5 +137,20 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .btn{ min-width: 90px; }
+  .btn{ 
+    min-width: 90px;
+    &.btn-sm{
+      padding: 1px 0.3rem; font-size: 11px; line-height: 22px; min-height: 22px;
+    }
+    &.btn-md{
+      padding: 3px 0.7rem; font-size: 12px; line-height: 24px; min-height: 24px;
+    }
+    &.btn-lg{
+      padding: 5px 0.7rem; font-size: 13px; line-height: 24px; min-height: 26px;
+    }
+    &.btn-xl{
+      padding: 7px 0.7rem; font-size: 14px; line-height: 24px; min-height: 30px;
+    }
+  
+  }
 }

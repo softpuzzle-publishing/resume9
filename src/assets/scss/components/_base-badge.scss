@@ -31,9 +31,9 @@
 }
 @media screen and (max-width: 992px) {
     .tag{
-        font-size: 12px; height: 24px;
+        font-size: 12px; height: 24px; 
         &.tag-sm{height: 20px; line-height: 20px;}
-        &.tag-lg{height: 26px; line-height: 26px; font-size: 12px; padding: 0 8px;}
+        &.tag-lg{height: 24px; line-height: 24px; font-size: 12px; padding: 0 8px;}
         &.tag-xl{
             height: 32px;padding: 0 16px;font-size: 18px;font-weight: 500;padding-bottom: 1px;
             > a{margin-left: 10px;}

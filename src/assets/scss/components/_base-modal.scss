@@ -84,6 +84,9 @@
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
+.btn-close{
+  width: 20px; height: 20px; background-image:url('../images/modal-btn-close.png'); background-size: cover;  background-position: center;
+}
 .modal-title{ 
   font-size: 18px; font-weight: 700; color: #000;
 }

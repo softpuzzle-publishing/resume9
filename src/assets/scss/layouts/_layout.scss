@@ -32,6 +32,7 @@
 @media screen and (max-width: 992px) {
     .row{ margin-left: 0; margin-right: 0;
         >*{padding-left: 0; padding-right: 0;}
+        .col{ padding: 0 5px !important;}
     }
     aside{ display: none;}
     .layout{
@@ -44,6 +45,9 @@
         width: 100%;
         padding-top: 0.5rem;
         margin-bottom: 50px;
+    }
+    .sub-content{
+        margin: 35px 0 70px 0; padding: 0 20px;
     }
 }
 

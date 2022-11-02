@@ -30,8 +30,8 @@
   }
 
   &:checked {
-    background-color: #202020;
-    border-color: #202020;
+    background-color: $PRIMARY_COLOR;
+    border-color: $PRIMARY_COLOR;
 
     &[type="checkbox"] {
       background-image: url('../images/checkbox-checked.svg');
@@ -101,4 +101,10 @@
   display: inline-block;
   margin-right: 1rem;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 992px) {
+  .form-check{
+    padding-left: 12px;
+  }
 }

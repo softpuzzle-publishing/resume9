@@ -74,8 +74,8 @@ legend{
         .tab-content{
             margin-top: 46px;
         }
+        .title{display: none;}
     }
-    .title{display: none;}
 
     .login-sns{
         margin-top: 56px;
@@ -766,9 +766,77 @@ legend{
 }
 .modal-cancel{
     max-width: 300px;
-    .modal-header{border:0;}
+    .modal-header{border:0;} 
     .modal-footer{border:0; justify-content: center;}
     .text-form{text-align: center; padding: 2rem 0;}
+}
+.modal-headhunter{
+    max-width: 600px;
+    .modal-header{border:0; justify-content: flex-end;}
+    .modal-footer{border:0; justify-content: center;}
+    .modal-body{ padding: 20px;}
+    .headhunter-profile-content{
+        border: 0; padding: 0; margin-top: 0;
+        .headhunter-profile{
+            align-items: inherit;
+            .name{
+                .rank{ font-size: 14px;  font-weight: 400; margin-left: 5px; color: #777;}
+                .txt{ font-size: 14px; font-weight: 400; margin-left: 20px;}
+            }
+            .phone{
+                display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 10px;
+            }
+            .headhunter-profile-img{ margin: 0 auto 20px;}
+            .headhunter-left{ width: 30%; text-align: center;}
+            .headhunter-profile-info{ width: 70%;}
+        }
+    }
+    .info-list{
+        border-top: 1px solid #ddd; margin-top: 20px; padding-top: 20px;
+        li{ display: flex; align-items: center; padding: 5px 0;
+            p:first-child{ width: 30%; font-weight: 500;}
+        }
+    }
+    .apply-wrap-body{
+        .content{ margin-top: 30px;}
+        .introduce-text{ padding:15px  10px; font-size: 14px;}
+    }
+    .history{
+        font-size: 14px; padding: 15px 10px;
+        li{ padding: 3px 0;}
+    }
+    .badge-box{
+        padding: 15px 10px; display:flex; flex-flow:wrap; gap:5px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .modal-headhunter{
+        .modal-body{ padding: 20px;}
+        .headhunter-profile-content{
+            .headhunter-profile{
+                .headhunter-profile-img{width:110px; height: 110px; margin: 0 auto 20px;}
+                .headhunter-left{ width: 100%;}
+                .headhunter-profile-info{ width: 100%; margin-top: 30px;}
+            }
+        }
+        .info-list{
+            border-top: 1px solid #ddd; margin-top: 10px; padding-top: 10px;
+            li{ display: flex; align-items: center; padding: 5px 0;
+                p:first-child{ width: 30%; font-weight: 500;}
+            }
+        }
+        .apply-wrap-body{
+            .content{ margin-top: 30px;}
+            .introduce-text{ padding:15px  10px; font-size: 14px;}
+        }
+        .history{
+            font-size: 14px; padding: 15px 10px;
+            li{ padding: 3px 0;}
+        }
+        .badge-box{
+            padding: 15px 10px; display:flex; flex-flow:wrap; gap:5px;
+        }
+    }
 }
 .preview-image-wrap{ 
     display: flex; align-items: center; gap: 10px; flex-flow: wrap; margin-top: 15px;
@@ -818,10 +886,12 @@ legend{
             &:focus{outline: 0;}
         }
     }
+    .search-side{
+        display: flex; align-items: center;
+        .form-check-input{ width: 20px; height: 20px;}
+    }
 }
-@media screen and (max-width: 992px) {
-    
-}
+
 // 채용공고
 .tbl-head{
     display: flex; align-items: end; justify-content: space-between; margin-top: 70px;
@@ -829,12 +899,37 @@ legend{
         span{ color:$PRIMARY_COLOR; font-weight: bold;}
     }
 }
+@media screen and (max-width: 992px) {
+    .search-area{
+       display: block;
+        .input-group{
+            width: 90%; margin: 0 auto;
+            input{ padding: 0 15px; font-size: 14px;}
+        }
+      
+        .search-side{
+            display: flex; align-items: center; justify-content: flex-end; padding-right: 15px; margin-top: 15px;
+            .form-check-input{ width: 20px; height: 20px;}
+        }
+    }
+    .tbl-head{
+        margin-top: 35px;
+    } 
+    .search-box{
+         min-width: auto; padding: 9px 30px 9px 12px; font-size: 13px; 
+        .search-btn{
+            right:12px;
+            .icon-search-dark{ width: 12px; height: 12px;}
+        }
+        &.search-lg{ height: 43px;}
+    }
+}
 .announcement-wrap{
     padding: 0 10px;
     .scale{line-height: 1; color: $PRIMARY_COLOR; font-size: 14px; display: flex; align-items: center;
         .company{ color: #777; margin-left: 10px;}
     }
-    .title{width: 500px; font-size: 20px; font-weight: 600; line-height: 1.5; margin:5px 0; display: block; text-decoration: underline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+    .title{width: 675px; font-size: 20px; font-weight: 600; line-height: 1.5; margin:5px 0; display: block; text-decoration: underline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
     .date{ color: #202020; font-size: 15px; 
         .tag{height: auto; padding: 3px 10px;}
         span{ margin-right:15px; display: inline-block;}
@@ -853,6 +948,18 @@ legend{
         .icon-favorites-off{background-image: url('../images/icon-favorites-on.svg');}
     }
 }
+@media screen and (max-width: 992px) {
+    .announcement-wrap{
+        width:100%; padding: 0;
+        .scale{ font-size: 12px;}
+        .title{ width: 100%; font-size: 16px; margin: 3px 0;}
+        .date{
+            font-size: 12px;
+            .tag{ padding: 0 10px;}
+        }
+    }
+    .headhunter-wrap{ display: flex; gap: 10px;}
+}
 // 채용공고 상세
 .poting-detail-wrap{
     .desc{
@@ -864,7 +971,7 @@ legend{
     margin-top: 15px; border: 1px solid #ddd;  padding: 20px 40px;
     .headhunter-profile{
         display: flex; align-items: center;
-        .headhunter-profile-img{ width: 90px; height: 90px; border-radius: 50%; background-image: url('../images/no-img.png'); background-size: cover; background-position: center;}
+        .headhunter-profile-img{ width: 90px; height: 90px; border-radius: 50%; background-image: url('../images/no-img.png'); background-size: cover; background-position: center; cursor: pointer;}
         .headhunter-profile-info{
             margin-left: 30px;
             .company{ color: #777; }
@@ -884,7 +991,7 @@ legend{
         .headhunter-profile{
             align-items: inherit; justify-content: space-between;
             .headhunter-profile-info{
-                margin-left: 0; display: flex ; align-items: center; 
+                margin-left: 0; display: flex ; align-items: center;
                 .name{ margin-top: 0; font-size: 20px;}
                 .company{margin-left: 10px;}
             }
@@ -904,7 +1011,30 @@ legend{
     margin-top: 50px; text-align: center;
     .btn{ width: 300px; margin: 0 auto;}
 }
-
+@media screen and (max-width: 992px) {
+    .poting-detail-wrap{
+        .desc{
+            padding: 25px 0 50px;
+        }
+    }
+    .headhunter-profile-content{
+        padding: 10px 15px; 
+        .headhunter-profile{
+            display: block;
+            .headhunter-profile-img{ 
+                width:70px; height:70px; margin-right: 20px;
+            }
+            .headhunter-profile-info{
+                margin-left: 0;  
+                &.detail{margin-top: 20px;}
+            }
+        }
+    }
+    .send-btn{
+        margin-top: 30px;
+        .btn{ width: 100%;}
+    }
+}
 // 이력서
 .apply-select{
     width: 50%; margin-top: 30px;
@@ -913,7 +1043,6 @@ legend{
     margin-top: 50px;   
 }
 .img-upload{
-    
    input{ display: none;} 
    .img-upload-label{
     width: 165px; height: 200px; border: 1px solid #000; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
@@ -982,6 +1111,9 @@ legend{
     }
     .content{
         margin-top: 50px;
+        &.exception{
+            &:first-child{margin-top: 50px;}
+        }
         &:first-child{margin-top: 0;}
     }
     .desc{
@@ -1013,6 +1145,7 @@ legend{
 .resume-form{
     &.position{ border-top: 1px solid #ddd;}
 }
+
 // 이력서 상세
 .detail-info{
     .title{
@@ -1022,7 +1155,7 @@ legend{
 }
 .detail-list{
     display: flex; align-items: center; margin-top: 15px;
-    .company{ font-size: 18px; font-weight: 700;}
+  
     li{
         color: #666; margin-right: 30px;
     }
@@ -1050,6 +1183,79 @@ legend{
     padding: 20px; border-bottom: 1px solid #ddd;
     &:last-child{border-bottom: 0;}
 }
+.career-statement{
+    display: flex; margin-bottom: 20px;
+    .company{ font-size: 18px; font-weight: 700;}
+}
+@media screen and (max-width:992px) {
+    .img-upload{
+        .img-upload-label{margin: 0 auto 20px;}
+    }
+    .apply-select{ width: 100%;}
+    .apply-wrap {
+        margin-top: 25px;
+    }
+    .apply-wrap-head{
+        display: block;
+        .resume-info{ 
+            margin-left: 0;
+            .name{ font-size: 18px;}
+            .resume-info-top {
+                display: block;
+                > div{
+                    display: block;
+                }
+                .list{
+                    &.m-block{display: flex; gap: 10px; margin-top: 10px; justify-content: center;}
+                    span{ 
+                        display: block; padding: 3px 0;
+                        &::after{content:none;}
+                    }
+                }
+            }
+        }
+        .rInfo_3 {
+            ul{
+                display: block; table-layout: inherit; width: 100%; padding: 20px 14px; 
+                li {
+                    width: 100%; display: flex; align-items: center; text-align: left; padding: 5px 0;
+                    &+ li:before {
+                        content: none;
+                    }
+                }
+                ._lab { font-size: 14px; width: 31%;}
+                ._cont {
+                    display: flex; align-items: center; margin-top: 0; gap: 10px;
+                    p:first-child { font-size: 13px; }
+                    p:last-child { margin-top: 0; font-size: 11px;}
+                    ._blk { font-size: 13px;}
+                }
+            }
+        }
+    }
+    .detail-info{
+        padding: 0 0 0 10px;
+        p{ line-height: 1.3;}
+        .title{ 
+            font-size: 14px;
+            span{font-size: 14px; color: #000; font-weight: 700; margin: 0 2px;}
+        }
+    }
+    .detail-list{
+        display: block; margin-right: 20px;
+        li{ margin-right: 1px; font-size: 13px; padding: 3px 0;}
+    }
+    .row-date{ font-size: 12px;}
+    .upload-img{ margin: 0 auto;}
+    .career-statement{
+        display: block; margin-bottom: 20px;
+        .company{ font-size: 16px;}
+    }
+    .apply-wrap-body{
+        .introduce-text{ padding: 14px;}
+    }
+}
+
 // 내 이력서 현황
 .add-info-box{
     width: 220px; border: 1px solid #ddd; padding: 20px; position: sticky; top: 0;
@@ -1098,6 +1304,23 @@ legend{
   .deadline{ color: #f95b55; }
 }
 
+@media screen and (max-width: 992px) {
+    .sub-content-sticky{
+        .apply-wrap-body{ width: 100%; padding-right: 0;}
+    } 
+    .add-info-box{
+        display: none;
+    }
+    .row-line{
+        padding: 14px;
+    }
+    .apply-dashbaord{
+        margin-bottom: 25px;
+        a{ height: 115px; }
+        strong{ font-size: 26px; margin: 24px 0 10px;}
+        span{ margin: 0 10px;}
+    }
+}
 // 입사지원
 .resume-application-head{
     width: 100%; display: flex; text-align: center; background-color: #f8f8f8; padding: 10px 0; border-bottom: 1px solid #ddd; border-top: 1px solid #000;
@@ -1125,6 +1348,9 @@ legend{
 // 이력서 목록
 .resume-list-wrap{
     display: flex; align-items: center; justify-content: space-between;
+    .resume-list-object{
+        display: flex; align-items: center; 
+    }
     .title {
         font-size: 20px; font-weight: 700; margin-bottom: 0; margin-left: 10px; margin-top: 0;
     }
@@ -1180,7 +1406,46 @@ legend{
 .notice-text{
      color: #888; margin-top: 50px; text-align: center;
 }
-// 관심 헤드헌터 
+@media screen and (max-width: 992px) {
+    .example-form{
+        padding: 10px 15px; margin-top: 0;
+    }
+    .resume-list-wrap{
+        align-items: flex-start;
+        .resume-list-object{
+            display: block;
+        }
+        .title {
+            font-size: 16px; margin-left: 0; margin-top: 10px;
+        }
+        .select-design{
+            width: 150px;
+        }
+    }
+    .total-career{font-size: 14px}
+    .fake-table{
+        &.posting{
+            .fake-table-cell:first-child{
+                width: 100%;
+                .announcement-wrap{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .toggle-btn {
+        .button {
+            width: 40px; height: 20px; 
+            p{font-size: 12px;}
+        }
+        .inside {
+            left: 5px; width: 13px; height: 13px; 
+        }
+        input:checked ~ label .button .inside {
+            left: 22px;
+        }
+    }
+}
 // 리워드 적립 사용내역
 .reword-wrap{
     margin-top: 40px; padding: 30px; background-color: #F8F8FA;
@@ -1227,4 +1492,8 @@ legend{
     .example-form{
         margin-top: 30px; background-color: transparent; padding: 0;
     }
+}
+
+.faq-content{
+    
 }
