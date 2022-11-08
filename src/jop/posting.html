@@ -48,24 +48,25 @@
                     <span class="company">삼성전자</span>
                     <button type="button" class="favorites active"><i class="icon-favorites-off"></i></button>
                   </p>
-                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
-                  <p class="date"><span>공고마감일</span><span>2022.10.21 (금)</span></p>
+                  <a href="@webRoot/jop/posting_detail.html" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <p class="date"><span>공고마감일</span><span>2022.10.21 (금)</span><span class="text-danger">(D-15)</span></p>
                 </div>
               </div>
               <div class="fake-table-cell text-start">
                 <div class="headhunter-wrap">
-                  <a href="@@webRoot/resume/headhunter.html" class="name">박준성</a>
+                  <a href="javascript:void(0)" class="name" data-bs-toggle="modal" data-bs-target="#modal-headhunter">박준성</a>
                   <p class="company">맨쉬컨설팅(주)</p>
                 </div>
               </div>
               <div class="fake-table-cell">
-                <button type="button" class="btn btn-outline-primary btn-md">즉시지원</button>
+                <a href="@@webRoot/jop/posting_apply.html" class="btn btn-outline-primary btn-md">즉시지원</a>
               </div>
             </div>
           </div>
           @@include('@@webRoot/_include/_pagination.html')
         </div>
       </div>
+      @@include('@@webRoot/_include/_modal.html')
     </div>
     @@include('@@webRoot/_include/_footer.html')
   </body>

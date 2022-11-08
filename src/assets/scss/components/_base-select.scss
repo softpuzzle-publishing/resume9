@@ -64,6 +64,7 @@
 .select2-container .select2-search--inline .select2-search__field{margin: 0;padding: 8px 0 0 1rem;font-family: 'Noto Sans KR';width: 100% !important;height: 100%;}
 .select2-container.select2-container--open{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);}
 .select2-container.select2-container--open .select2-selection--single{border: 1px solid #000;}
+.select2-dropdown{z-index: 10000;}
 .select2-container--open .select2-dropdown--below{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);}
 .select2-container--default .select2-selection--multiple::before{content: '항목을 선택하세요';color: #999;position: absolute;left: 1rem;top:8px;}
 .select2-container--default .select2-selection--multiple::after{content: '';display: block;background: url('../images/select.svg') 0 0 no-repeat;width: 14px;height: 10px;position: absolute;right: 19px;top: 16px;}

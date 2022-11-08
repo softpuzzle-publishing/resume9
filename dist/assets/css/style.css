@@ -642,6 +642,10 @@ progress {
   color: #f95b55;
 }
 
+.text-gray {
+  color: #777;
+}
+
 .min-width-auto {
   min-width: auto !important;
 }
@@ -1510,6 +1514,10 @@ progress {
   border: 1px solid #000;
 }
 
+.select2-dropdown {
+  z-index: 10000;
+}
+
 .select2-container--open .select2-dropdown--below {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
 }
@@ -2224,6 +2232,7 @@ progress {
   width: 1001px;
   padding-top: 1rem;
   margin-bottom: 100px;
+  min-height: 500px;
 }
 
 .sub-content {
@@ -3566,30 +3575,16 @@ legend {
   padding: 80px 0 140px;
   background-color: #fff;
 }
-.main-content__search .nav {
-  gap: 40px;
-  margin: 40px 0;
+.main-content__search .main-search-box {
+  position: relative;
 }
-.main-content__search .nav-tabs {
-  border-bottom: 0;
-}
-.main-content__search .nav-tabs .nav-link {
-  font-size: 16px;
+.main-content__search .main-search-box .title {
+  font-size: 18px;
   font-weight: 700;
-  color: #202020;
-  padding: 0;
+  margin-bottom: 30px;
 }
-.main-content__search .nav-tabs .nav-link.active {
-  border-bottom: 0;
-  color: #1686f2;
-}
-.main-content__search .nav-tabs .nav-link.active::after {
-  content: "";
-  border-bottom: 3px solid #1686f2;
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-top: 5px;
+.main-content__search .main-search-box:last-child {
+  margin-top: 100px;
 }
 .main-content__search .tab-content {
   position: relative;
@@ -3608,9 +3603,8 @@ legend {
   height: 24px;
   background: url("../images/icon-search-next.svg") 50% 50% no-repeat;
   right: 0;
-  bottom: -10px;
+  top: 22px;
   left: inherit;
-  top: inherit;
 }
 .main-content__search .swiper-button-next::after {
   content: none;
@@ -3620,9 +3614,8 @@ legend {
   height: 24px;
   background: url("../images/icon-search-prev.svg") 50% 50% no-repeat;
   right: 60px;
-  bottom: -10px;
+  top: 22px;
   left: inherit;
-  top: inherit;
 }
 .main-content__search .swiper-button-prev::after {
   content: none;
@@ -4668,6 +4661,7 @@ legend {
   background-size: cover;
   background-position: center;
   position: relative;
+  cursor: pointer;
 }
 .preview-image-wrap .preview-image:hover .hover-close {
   display: block;
@@ -5641,6 +5635,11 @@ legend {
   left: 0;
   top: 7px;
 }
+.example-form .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
 
 .resume-list-wrap {
   display: flex;
@@ -5909,5 +5908,25 @@ legend {
   margin-top: 30px;
   background-color: transparent;
   padding: 0;
+}
+
+.faq-btn-group {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.faq-btn-group .btn.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.my-inquiry-list {
+  margin-top: 150px;
+}
+
+.notice-view {
+  padding: 30px;
+  border-bottom: 1px solid #ddd;
 }
 /*# sourceMappingURL=maps/style.css.map */

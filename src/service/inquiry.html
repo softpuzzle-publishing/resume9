@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_service_center.html')</div>
+          <div class="layout-content">
+            <div class="community-content">
+              <p class="center-title">1:1 문의하기</p>
+              <div class="inquiry-content">
+                <div class="row m-b-10">
+                  <div class="col-md-3">
+                    <select class="select-design select-lg" style="width: 100%">
+                      <option value="1">선택</option>
+                      <option value="2">회원가입/회원정보</option>
+                      <option value="3">이력서 등록</option>
+                      <option value="4">제안요청/입사지원관리</option>
+                      <option value="5">헤드헌터/서치펌 검색</option>
+                      <option value="6">기타 이용</option>
+                    </select>
+                  </div>
+                  <div class="col-md-9">
+                    <input type="text" class="form-control form-lg inp-phone" value="제목을 입력하세요." />
+                  </div>
+                </div>
+                <div class="row m-b-10">
+                  <div class="col-md-12">
+                    <div class="form-textarea m-0">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요" class=""></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-upload">
+                      <input type="file" class="" id="form-file" />
+                      <label for="form-file"><i class="icon-input-add"></i></label>
+                    </div>
+                    <p class="m-t-5">10MB 이하 파일첨부 (.jpg, .gif, png, pdf)</p>
+                  </div>
+                </div>
+                <div class="send-btn">
+                  <a href="posting_apply.html" class="btn btn-primary btn-xl">문의하기</a>
+                </div>
+              </div>
+              <div class="my-inquiry-list">
+                <h4 class="table-subtitle mb-3">내 문의내역</h4>
+                <div class="fake-table">
+                  <div class="fake-table-column">
+                    <div class="fake-table-cell">
+                      <div class="announcement-wrap text-start">
+                        <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              @@include('@@webRoot/_include/_pagination.html')
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

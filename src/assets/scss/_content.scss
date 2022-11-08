@@ -285,14 +285,10 @@ legend{
 }
 .main-content__search{
     padding: 80px 0 140px; background-color: #fff;
-    .nav{ gap: 40px; margin: 40px 0;}
-    .nav-tabs{ border-bottom: 0;}
-    .nav-tabs .nav-link{
-        font-size: 16px; font-weight: 700; color: #202020; padding: 0;
-        &.active{ 
-            border-bottom: 0; color: #1686f2; 
-            &::after{ content:""; border-bottom: 3px solid #1686f2; width: 100%; height: 100%; display: block; padding-top: 5px;}
-        }
+    .main-search-box{
+        position: relative;
+        .title{ font-size: 18px; font-weight: 700; margin-bottom: 30px;}
+        &:last-child{margin-top: 100px;}
     }
    .tab-content{ position: relative;}
     .swiper-scrollbar{
@@ -300,11 +296,11 @@ legend{
         .swiper-scrollbar-drag{ background: #555;}
     }
     .swiper-button-next{
-        width:24px; height:24px; background: url('../images/icon-search-next.svg')50% 50% no-repeat; right: 0; bottom: -10px; left: inherit; top: inherit;
+        width:24px; height:24px; background: url('../images/icon-search-next.svg')50% 50% no-repeat; right: 0; top: 22px; left: inherit; 
         &::after{content:none;}
     }
     .swiper-button-prev{
-        width:24px; height:24px; background: url('../images/icon-search-prev.svg')50% 50% no-repeat; right: 60px; bottom: -10px; left: inherit; top: inherit;
+        width:24px; height:24px; background: url('../images/icon-search-prev.svg')50% 50% no-repeat; right: 60px; top: 22px; left: inherit;
         &::after{content:none;}
     }
 
@@ -841,7 +837,7 @@ legend{
 .preview-image-wrap{ 
     display: flex; align-items: center; gap: 10px; flex-flow: wrap; margin-top: 15px;
     .preview-image{
-        width: calc(20% - 8px); padding-bottom: 20%; background-size: cover; background-position: center; position: relative;
+        width: calc(20% - 8px); padding-bottom: 20%; background-size: cover; background-position: center; position: relative; cursor: pointer;
         &:hover{
             .hover-close{ display: block;}
          }
@@ -1343,6 +1339,7 @@ legend{
             content: ""; position: absolute; width: 3px; height: 3px; background-color: #202020; border-radius: 50%; left: 0; top: 7px;
         }
     }
+    .title{ font-size: 18px; font-weight: 700; margin-bottom: 30px;}
 }
 
 // 이력서 목록
@@ -1493,7 +1490,18 @@ legend{
         margin-top: 30px; background-color: transparent; padding: 0;
     }
 }
-
-.faq-content{
+.faq-btn-group{
+    display: flex; flex-flow: wrap; gap: 10px; margin-bottom: 20px;
+    .btn{
+        &.active{ background-color: #000; color: #fff;}
+    }
+}
+.inquiry-content{
     
+}
+.my-inquiry-list{
+    margin-top: 150px;
+}
+.notice-view{
+    padding: 30px; border-bottom: 1px solid #ddd;
 }

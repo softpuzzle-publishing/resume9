@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_service_center.html')</div>
+          <div class="layout-content">
+            <div class="community-content">
+              <p class="center-title">공지사항/이벤트</p>
+              <div class="fake-table">
+                <div class="fake-table-head">
+                  <div class="fake-table-cell">분류</div>
+                  <div class="fake-table-cell">제목</div>
+                  <div class="fake-table-cell">날짜</div>
+                </div>
+                <div class="fake-table-column">
+                  <div class="fake-table-cell text-gray">공지사항</div>
+                  <div class="fake-table-cell text-start"><a href="@@webRoot/service/notice_detail.html">채용공고를 가장한 보이스피싱 주의</a></div>
+                  <div class="fake-table-cell text-gray">2022.08.18</div>
+                </div>
+                <div class="fake-table-column">
+                  <div class="fake-table-cell text-gray">공지사항</div>
+                  <div class="fake-table-cell text-start"><a href="@@webRoot/service/notice_detail.html">[수정완료안내] 개인정보처리방침 개정 내용 사전안내</a></div>
+                  <div class="fake-table-cell text-gray">2022.08.18</div>
+                </div>
+                <div class="fake-table-column">
+                  <div class="fake-table-cell text-gray">공지사항</div>
+                  <div class="fake-table-cell text-start"><a href="@@webRoot/service/notice_detail.html">RESUME9 OPEN!</a></div>
+                  <div class="fake-table-cell text-gray">2022.08.18</div>
+                </div>
+                <div class="fake-table-column">
+                  <div class="fake-table-cell text-gray">공지사항</div>
+                  <div class="fake-table-cell text-start"><a href="@@webRoot/service/notice_detail.html">임금체불 사업주 명단공개</a></div>
+                  <div class="fake-table-cell text-gray">2022.08.18</div>
+                </div>
+              </div>
+              @@include('@@webRoot/_include/_pagination.html')
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>
