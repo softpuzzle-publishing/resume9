@@ -1274,9 +1274,34 @@ progress {
   background-image: url("../images/icon-primary-plus.svg");
 }
 
+.icon-hunter-search {
+  width: 23px;
+  height: 22px;
+  background-image: url("../images/icon-hunter-search.svg");
+}
+
+.icon-hunter-list {
+  width: 23px;
+  height: 22px;
+  background-image: url("../images/icon-hunter-list.svg");
+}
+
+.icon-like-off {
+  width: 22px;
+  height: 21px;
+  background-image: url("../images/icon-like-off.svg");
+}
+
+.icon-like-on {
+  width: 22px;
+  height: 21px;
+  background-image: url("../images/icon-like-on.svg");
+}
+
 /* checkbox/radio */
 .form-check {
-  display: block;
+  display: flex;
+  align-items: center;
   min-height: 16px;
   padding-left: 24px;
 }
@@ -2426,6 +2451,14 @@ progress {
   transform: translateY(-50%);
 }
 
+@media screen and (max-width: 992px) {
+  #header {
+    padding: 20px;
+  }
+  .header-logo {
+    width: 120px;
+  }
+}
 .footer {
   padding: 65px 0;
   background-color: #202020;
@@ -2965,6 +2998,16 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 0.416rem 1rem;
   }
 }
+.card-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.card-list .card {
+  padding: 32px;
+  border: 1px solid #ddd;
+}
+
 .main-content {
   background-color: #f2f3f5;
 }
@@ -3023,9 +3066,14 @@ input[type=number]::-webkit-inner-spin-button {
 .btn-form {
   display: flex;
   gap: 7.5px;
+  position: relative;
 }
 .btn-form .form-control {
   width: 80%;
+}
+.btn-form .counter {
+  position: absolute;
+  right: 0;
 }
 
 legend {
@@ -5928,5 +5976,195 @@ legend {
 .notice-view {
   padding: 30px;
   border-bottom: 1px solid #ddd;
+}
+
+.headhunter-search-wrap {
+  background-color: #F8F8FA;
+  padding: 32px;
+}
+.headhunter-search-wrap .content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.headhunter-search-wrap .content .select-design {
+  width: 240px;
+}
+.headhunter-search-wrap .content .form-control {
+  width: 770px;
+  background-color: #fff;
+}
+.headhunter-search-wrap .content .txt-box {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+.headhunter-search-wrap .content .tag {
+  border: 1px solid #aaa;
+  color: #aaa;
+  background-color: #fff;
+}
+.headhunter-search-wrap .content .tag.active {
+  border: 1px solid #000;
+  color: #000;
+}
+.headhunter-search-wrap .hunter-search-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 10px;
+}
+
+.card-list.hunter {
+  margin-top: 10px;
+  border-top: 1px solid #000;
+  padding-top: 45px;
+}
+.card-list.hunter .card {
+  width: 33.3%;
+  display: flex;
+}
+.card-list.hunter .card .headhunter-profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url(../images/no-img.png);
+  background-size: cover;
+  background-position: center;
+}
+.card-list.hunter .card .headhunter-info {
+  width: 80%;
+  margin-left: 16px;
+}
+.card-list.hunter .card .headhunter-info .name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-list.hunter .card .headhunter-info .company {
+  font-size: 14px;
+  color: #777;
+  margin-left: 11px;
+}
+.card-list.hunter .card .headhunter-info button.active .icon-like-off {
+  background-image: url("../images/icon-like-on.svg");
+}
+.card-list.hunter .card .headhunter-info .phone-num, .card-list.hunter .card .headhunter-info .email {
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.card-list.hunter .card .headhunter-info .desc {
+  display: flex;
+}
+.card-list.hunter .card .headhunter-info .desc .desc-title {
+  width: 70px;
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  line-height: 22px;
+}
+.card-list.hunter .card .headhunter-info .desc .desc-text {
+  width: 85%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 48px;
+  white-space: inherit;
+  overflow: hidden;
+}
+
+.find-txt-box {
+  width: 400px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.find-txt-box p {
+  margin-bottom: 50px;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.find-pw-box {
+  width: 400px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.find-btn-group {
+  width: 400px;
+  margin: 0 auto;
+}
+.find-btn-group .btn {
+  width: 100%;
+}
+
+.find-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.find-content a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .find-txt-box {
+    width: 100%;
+  }
+  .find-txt-box p {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  .find-pw-box {
+    width: 100%;
+  }
+  .find-btn-group {
+    width: 100%;
+  }
+  .find-btn-group .btn {
+    width: 100%;
+  }
+}
+.signup-success-wrap {
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 48px 0;
+  background-color: #F8F8FA;
+  border-top: 1px solid #000;
+}
+.signup-success-wrap .headhunter-profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url(../images/no-img.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+.signup-success-wrap .comment {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}
+.signup-success-wrap .success-msg {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.signup-success-wrap .system-comment {
+  margin: 40px 0 60px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 /*# sourceMappingURL=maps/style.css.map */

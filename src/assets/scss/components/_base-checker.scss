@@ -1,6 +1,7 @@
 /* checkbox/radio */
 .form-check {
-  display: block;
+  display: flex;
+  align-items: center;
   min-height: 16px;
   padding-left: 24px;
 }

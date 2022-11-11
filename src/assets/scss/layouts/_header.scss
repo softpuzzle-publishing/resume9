@@ -63,6 +63,10 @@
     min-width:50px; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
   }
 }
+@media screen and (max-width:992px) {
+  #header{ padding: 20px;}
+  .header-logo{ width: 120px;}
+}
 // @media screen and (max-width: 1400px) {
 //   .search-form{ width: 260px; margin-right: 20px;}
 //   .header-logo { margin-right: 4vw; }

@@ -33,4 +33,6 @@ $(document).ready(function () {
       .find("i")
       .addClass(getClass + "-active");
   });
+
+  $(".accordion-agree .item").click(function () {});
 });
