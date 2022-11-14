@@ -33,7 +33,11 @@
 .btn-form{
     display: flex; gap: 7.5px; position: relative;
     .form-control{ width: 80%; }
-    .counter{ position: absolute; right: 0;}
+    .certification-number{ 
+        width: 80%; position: relative;
+        .form-control{width: 100%;}
+    }
+    .counter{ position: absolute; right: 28px; top:50%; transform: translateY(-50%);}
 }
 legend{ 
     visibility: hidden; position: absolute;
@@ -50,13 +54,13 @@ legend{
 }
 
 
-@media screen and (max-width: $BREAKPOINT_LARGE) {
+@media screen and (max-width: 992px) {
     .content-bg {
         width: 100%; padding: 11px 16px 41px;
         .form-group {
             > label { 
                 font-size: 14px;  margin-bottom: 10px; 
-                &.essential{}
+                &.essential{ font-size: 14px;}
             }
         }
         .login-btn{ margin-top: 40px;}
@@ -104,6 +108,9 @@ legend{
     .item {
         border-bottom: 1px solid #d2d8dc;
         &.active{
+            .agree-top{
+                .icon-arrow{transform: rotate(180deg); transition: .4s;}
+            }
             .agree-body {
                 display: block;
             }
@@ -111,13 +118,52 @@ legend{
     }
     .agree-top {
         background: #f7f8f9; padding: 19px 23px; display: flex; justify-content:  space-between; align-items: center;
+        .icon-arrow{  transition: .4s;}
+        
     }
     .agree-body {
-        background: #fff; line-height: 1.6; font-size: 14px; padding: 27px 24px; display: none;
+        background: #fff; line-height: 1.6; font-size: 14px; padding: 27px 24px; display: none; height: 400px; overflow: auto;
+        .mo_terms{
+            article{
+                h3 { padding: 0 0 20px!important; }
+                dl{
+                    dt { font-weight: 500; }
+                    &+dl {margin-top: 20px; }
+                    dd {margin-top: 6px; line-height: 18px; }
+                }
+                span {
+                    font-size: 12px; line-height: 20px; letter-spacing: -.5px; display: inline-block; margin: 10px 0 5px; color: #000; font-weight: 700;
+                }
+            }
+        }
+        table{
+            &.tbl-terms{
+                width: 100%; border: 1px solid #ddd; margin-top: 10px;
+                th {
+                    padding: 7px 15px; background: #f1f3f5; font-weight: 400;
+                }
+                td {
+                    padding: 7px 15px; border: 1px solid #ddd;
+                }
+            }
+        }
+        
     }
 }
-@media screen and (max-width: $BREAKPOINT_LARGE) {
-
+@media screen and (max-width: 992px) {
+    .accordion-agree {
+        border-top: 2px solid #000;
+        .agree-top {
+            padding: 15px;
+            .form-check{padding-left: 0;}
+            .form-check-input{ width: 19px; height: 19px;}
+            .form-check-label{font-size: 12px;}
+            .icon-arrow{}
+        }
+        .agree-body {
+            font-size: 12px; padding: 18px; height: 250px;
+        }
+    }
 }
 
 // 메인
@@ -1594,7 +1640,16 @@ legend{
         margin-top: 32px; font-size: 24px; line-height: 29px; font-weight: 500;
     }
     .success-msg{ font-size: 14px; line-height: 17px; font-weight: 600; margin-top: 8px;}
+    
+} 
+.signup-success-content{
+    width:520px; margin: 0 auto;
     .system-comment{
         margin: 40px 0 60px; font-size: 18px; font-weight: 600; text-align: center;
     }
-} 
+    .success-btn-group{
+        display: flex; gap: 14px;
+        button.btn{ width: 30%; }
+        a.btn{ width: 70%; }
+    }
+}

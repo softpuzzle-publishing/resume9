@@ -140,76 +140,112 @@
 
     <div id="container-block">
       <div class="container">
-        <div class="sub-content">
-          <p class="center-title">채용공고 검색</p>
-          <div class="search-area">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="검색어를 입력하세요" />
-              <div class="input-group-append">
-                <button class="btn btn-primary btn-input-search" type="button">공고검색</button>
+        <div class="layout">
+          <div class="layout-left">
+            <aside>
+              <div class="resume-login">
+                <div class="resume-login-profile" style="background-image: url('../assets/images/icon-login.svg')"></div>
+                <p class="name"><b>박근수</b>님</p>
+                <a href="../_layout/community_worry.html" class="btn btn-outline-primary btn-md">이력서 등록하기</a>
+                <button type="button" class="btn btn-primary btn-md">이력서 공개중</button>
+              </div>
+              <ul>
+                <li>
+                  <a href=""><span class="poppins">내 이력서 관리</span></a>
+                  <ul>
+                    <li class="active"><a href="../_layout/community_chat.html">이력서 등록</a></li>
+                    <li><a href="../_layout/community_worry.html">이력서 목록</a></li>
+                    <li><a href="../_layout/community_type.html">이력서 공개설정</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../mypage/myChannel.html"><span class="poppins">입사지원/제안관리</span></a>
+                  <ul>
+                    <li><a href="javascript:void(0)">입사지원 현황</a></li>
+                    <li>
+                      <a href="../_layout/company_curious.html">받은 포지션 제안</a>
+                      <ul>
+                        <li><a href="">포지션 제안내역</a></li>
+                        <li><a href="">내 이력서 열람내역</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">과거 지원 결과</a></li>
+                    <li><a href="javascript:void(0)">취업활동증명서 발급</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href=""><span class="poppins">관심/맞춤제안</span></a>
+                  <ul>
+                    <li class=""><a href="../_layout/community_chat.html">관심 헤드헌터</a></li>
+                    <li><a href="../_layout/community_worry.html">스크랩/최근열람 공고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">관심 헤드헌터</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="headhunter-profile-content attention">
+              <div class="headhunter-profile">
+                <div class="d-flex">
+                  <div class="headhunter-profile-img"></div>
+                  <div class="content">
+                    <div class="headhunter-profile-info">
+                      <span class="name">홍길동</span>
+                      <span class="company">맨쉬컨설팅(주)</span>
+                    </div>
+                    <div class="d-flex align-items-center m-t-15">
+                      <p class="txt">전문분야</p>
+                      <p class="badge-box">
+                        <span class="tag tag-sm tag-outline-primary m-0 none-border">
+                          <em>의료/제약</em>
+                        </span>
+                        <span class="tag tag-sm tag-outline-primary m-0 none-border">
+                          <em>제조/생산/화학</em>
+                        </span>
+                        <span class="tag tag-sm tag-outline-primary m-0 none-border">
+                          <em>유통/판매</em>
+                        </span>
+                      </p>
+                    </div>
+                    <a href="javascript:void(0)" class="d-flex align-items-center m-t-15">
+                      <p class="txt">진행 중 공고</p>
+                      <p class="num">14건</p>
+                      <i class="icon-select-arrow m-l-5"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-dark">프로필 보기</button>
+                  <button type="button" class="btn btn-outline-primary m-t-10">관심해제</button>
+                </div>
               </div>
             </div>
-            <div class="search-side">
-              <div class="form-check m-l-25">
-                <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                <label class="form-check-label" for="multipleCheck"> 결과 내 검색 </label>
-              </div>
-              <div class="tooltip m-l-25"><i class="icon-exclamation"></i></div>
-            </div>
-          </div>
-
-          <div class="tbl-head">
-            <p class="tbl-head-cnt">총 <span>427</span>건의 채용공고가 있습니다.</p>
-            <div class="">
-              <select class="select-design" style="width: 100%">
-                <option value="1">등록일순</option>
-                <option value="3">마감임박순</option>
-              </select>
-            </div>
-          </div>
-          <div class="fake-table posting m-t-10">
-            <div class="fake-table-head">
-              <div class="fake-table-cell">공고내용</div>
-              <div class="fake-table-cell">헤드헌터</div>
-              <div class="fake-table-cell">지원</div>
-            </div>
-            <div class="fake-table-column">
-              <div class="fake-table-cell text-start">
+            <div class="resume-form">
+              <div class="resume-form-list headhunter-form w-100">
                 <div class="announcement-wrap">
-                  <p class="scale">
-                    중소기업
-                    <span class="company">삼성전자</span>
-                    <button type="button" class="favorites active"><i class="icon-favorites-off"></i></button>
-                  </p>
-                  <a href="@webRoot/jop/posting_detail.html" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
-                  <p class="date"><span>공고마감일</span><span>2022.10.21 (금)</span><span class="text-danger">(D-15)</span></p>
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
+                </div>
+                <div class="btn-group">
+                  <a href="" class="btn btn-outline-danger btn-md">즉시지원</a>
                 </div>
               </div>
-              <div class="fake-table-cell text-start">
-                <div class="headhunter-wrap">
-                  <a href="javascript:void(0)" class="name" data-bs-toggle="modal" data-bs-target="#modal-headhunter">박준성</a>
-                  <p class="company">맨쉬컨설팅(주)</p>
+              <div class="resume-form-list headhunter-form w-100">
+                <div class="announcement-wrap">
+                  <p class="scale">중소기업</p>
+                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
                 </div>
-              </div>
-              <div class="fake-table-cell">
-                <a href="../jop/posting_apply.html" class="btn btn-outline-primary btn-md">즉시지원</a>
+                <div class="btn-group">
+                  <a href="" class="btn btn-outline-primary btn-md">즉시지원</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="d-flex justify-content-center mt-5">
-            <div class="pagination">
-              <a href=""><i class="icon-pager-prev"></i></a>
-              <a href="" class="active">1</a>
-              <a href="">2</a>
-              <a href="">3</a>
-              <a href="">4</a>
-              <a href="">5</a>
-              <a href="">6</a>
-              <a href="">7</a>
-              <a href="">8</a>
-              <a href="">9</a>
-              <a href="">10</a>
-              <a href=""><i class="icon-pager-next"></i></a>
+            <div class="send-btn">
+              <a href="posting_apply.html" class="btn btn-primary btn-xl">지원하기</a>
             </div>
           </div>
         </div>

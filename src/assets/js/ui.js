@@ -34,5 +34,7 @@ $(document).ready(function () {
       .addClass(getClass + "-active");
   });
 
-  $(".accordion-agree .item").click(function () {});
+  $(".accordion-agree .item").click(function () {
+    $(this).toggleClass("active").siblings().removeClass("active");
+  });
 });

@@ -29,5 +29,7 @@ $(document).ready(function () {
     $(this).toggleClass("active");
     $(this).children().find("i").addClass(getClass + "-active");
   });
-  $(".accordion-agree .item").click(function () {});
+  $(".accordion-agree .item").click(function () {
+    $(this).toggleClass("active").siblings().removeClass("active");
+  });
 });
