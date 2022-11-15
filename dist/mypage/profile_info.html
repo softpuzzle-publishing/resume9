@@ -49,7 +49,7 @@
                     <a href="">헤드헌터검색</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../resume/resume_main.html">내 이력서</a>
+                    <a href="../resume/resume_list.html">내 이력서</a>
                   </li>
                   <li class="gnb-depth">
                     <a href="../application/application_status.html">지원현황</a>
@@ -145,24 +145,31 @@
             <aside>
               <ul>
                 <li>
-                  <a href="../mypage/myChannel.html"><span class="poppins">회원정보 관리</span></a>
+                  <a href="javascript:void(0)"><span class="poppins">회원정보 관리</span></a>
                   <ul>
-                    <li><a href="javascript:void(0)">회원정보 수정</a></li>
-                    <li><a href="">비밀번호 변경</a></li>
-                    <li><a href="">블랙리스트 관리</a></li>
+                    <li class="active"><a href="../mypage/profile_info.html">회원정보 수정</a></li>
+                    <li><a href="../mypage/password.html">비밀번호 변경</a></li>
+                    <li><a href="../mypage/blacklist.html">블랙리스트 관리</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="../mypage/myChannel.html"><span class="poppins">보안</span></a>
+                  <a href="javascript:void(0)"><span class="poppins">보안</span></a>
                   <ul>
-                    <li><a href="javascript:void(0)">로그인 기록</a></li>
+                    <li><a href="../mypage/login.html">로그인 기록</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="../mypage/myChannel.html"><span class="poppins">리워드</span></a>
+                  <a href="javascript:void(0)"><span class="poppins">리워드</span></a>
                   <ul>
-                    <li><a href="javascript:void(0)">적립/사용내역</a></li>
-                    <li><a href="">리워드Mall</a></li>
+                    <li><a href="../mypage/profile_info.html">적립/사용내역</a></li>
+                    <li><a href="../mypage/profile_info.html">리워드Mall</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><span class="poppins">관심/맞춤제안</span></a>
+                  <ul>
+                    <li class=""><a href="../mypage/attention_headhunter.html">관심 헤드헌터</a></li>
+                    <li><a href="../mypage/resume_scrap.html">스크랩/최근열람 공고</a></li>
                   </ul>
                 </li>
               </ul>
@@ -223,7 +230,14 @@
                   <div class="fake-table-column">
                     <div class="fake-table-cell">휴대폰번호</div>
                     <div class="fake-table-cell">
-                      <input type="text" class="form-control form-md" value="010-1234-5678" readonly />
+                      <div class="d-flex">
+                        <input type="text" class="form-control form-md" value="010-1234-5678" readonly />
+                        <button type="button" class="btn btn-primary" disabled>인증하기</button>
+                      </div>
+                      <div class="d-flex m-t-10">
+                        <input type="text" class="form-control form-md" value="" placeholder="인증번호를 입력하세요." />
+                        <button type="button" class="btn btn-primary">인증완료</button>
+                      </div>
                     </div>
                   </div>
                   <div class="fake-table-column">
@@ -390,6 +404,7 @@
           </div>
         </div>
       </div>
+
       <!-- 게시물 쓰기 + 비밀글 설정 (회사검색) -->
       <div class="modal fade" id="modal-write-secret-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-write modal-dialog-centered">
@@ -543,7 +558,7 @@
             <div class="modal-header">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pt-0">
               <div class="headhunter-profile-content">
                 <div class="headhunter-profile">
                   <div class="headhunter-left">
@@ -626,6 +641,66 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 지원하기 -->
+      <div class="modal fade" id="modal-apply" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-title">지원이 완료되었습니다.</div>
+              <div class="text-form">
+                채용기업의 규격에 맞게 이력서 변경이 필요한 경우<br />
+                본 채용공고 담당 헤드헌터가 지원이력서를 수정할 수 있는<br />
+                권한을 주시겠습니까?<br />
+                이력서 수정 권한을 주지 않는 경우 전형에 불이익이 있을 수 있습니다.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary m-r-10" data-bs-toggle="modal" data-bs-target="#modal-apply-success" data-bs-dismiss="modal">동의</button>
+                <button type="button" class="btn btn-outline-primary m-r-5" data-bs-toggle="modal" data-bs-target="#modal-apply-success" data-bs-dismiss="modal">미동의</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 지원 완료 -->
+      <div class="modal fade" id="modal-apply-success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-title">지원이 완료되었습니다.</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 경력인증 팝업 -->
+      <div class="modal fade" id="modal-career-certification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-form">
+                경력 인증을 받지 않으셨습니다.<br />
+                인증 받지 않은 경력 사항을 저장하시겠습니까?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary m-r-10">확인</button>
+                <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
               </div>
             </div>
           </div>

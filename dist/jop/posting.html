@@ -49,7 +49,7 @@
                     <a href="">헤드헌터검색</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../resume/resume_main.html">내 이력서</a>
+                    <a href="../resume/resume_list.html">내 이력서</a>
                   </li>
                   <li class="gnb-depth">
                     <a href="../application/application_status.html">지원현황</a>
@@ -149,13 +149,13 @@
                 <button class="btn btn-primary btn-input-search" type="button">공고검색</button>
               </div>
             </div>
-            <div class="search-side">
+            <!-- <div class="search-side">
               <div class="form-check m-l-25">
                 <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
                 <label class="form-check-label" for="multipleCheck"> 결과 내 검색 </label>
               </div>
               <div class="tooltip m-l-25"><i class="icon-exclamation"></i></div>
-            </div>
+            </div> -->
           </div>
 
           <div class="tbl-head">
@@ -177,11 +177,11 @@
               <div class="fake-table-cell text-start">
                 <div class="announcement-wrap">
                   <p class="scale">
-                    중소기업
+                    대기업
                     <span class="company">삼성전자</span>
                     <button type="button" class="favorites active"><i class="icon-favorites-off"></i></button>
                   </p>
-                  <a href="@webRoot/jop/posting_detail.html" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                  <a href="../jop/posting_detail.html" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
                   <p class="date"><span>공고마감일</span><span>2022.10.21 (금)</span><span class="text-danger">(D-15)</span></p>
                 </div>
               </div>
@@ -331,6 +331,7 @@
           </div>
         </div>
       </div>
+
       <!-- 게시물 쓰기 + 비밀글 설정 (회사검색) -->
       <div class="modal fade" id="modal-write-secret-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-write modal-dialog-centered">
@@ -484,7 +485,7 @@
             <div class="modal-header">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pt-0">
               <div class="headhunter-profile-content">
                 <div class="headhunter-profile">
                   <div class="headhunter-left">
@@ -567,6 +568,66 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 지원하기 -->
+      <div class="modal fade" id="modal-apply" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-title">지원이 완료되었습니다.</div>
+              <div class="text-form">
+                채용기업의 규격에 맞게 이력서 변경이 필요한 경우<br />
+                본 채용공고 담당 헤드헌터가 지원이력서를 수정할 수 있는<br />
+                권한을 주시겠습니까?<br />
+                이력서 수정 권한을 주지 않는 경우 전형에 불이익이 있을 수 있습니다.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary m-r-10" data-bs-toggle="modal" data-bs-target="#modal-apply-success" data-bs-dismiss="modal">동의</button>
+                <button type="button" class="btn btn-outline-primary m-r-5" data-bs-toggle="modal" data-bs-target="#modal-apply-success" data-bs-dismiss="modal">미동의</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 지원 완료 -->
+      <div class="modal fade" id="modal-apply-success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-title">지원이 완료되었습니다.</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 경력인증 팝업 -->
+      <div class="modal fade" id="modal-career-certification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-form">
+                경력 인증을 받지 않으셨습니다.<br />
+                인증 받지 않은 경력 사항을 저장하시겠습니까?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary m-r-10">확인</button>
+                <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
               </div>
             </div>
           </div>

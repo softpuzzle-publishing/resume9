@@ -1302,6 +1302,7 @@ progress {
 .form-check {
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 16px;
   padding-left: 24px;
 }
@@ -1351,6 +1352,23 @@ progress {
 }
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
   opacity: 0.5;
+}
+
+.check-badge {
+  display: none;
+}
+.check-badge + .check-badge-label {
+  border: 1px solid #aaa;
+  font-size: 14px;
+  color: #aaa;
+  padding: 6px 10px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+.check-badge:checked + .check-badge-label {
+  border: 1px solid #000;
+  color: #000;
 }
 
 .inline-form-radio .form-check {
@@ -1795,6 +1813,11 @@ progress {
   border-color: #eeeeee;
   background-color: #eeeeee;
 }
+.btn:disabled:hover {
+  color: #aaaaaa;
+  border-color: #eeeeee;
+  background-color: #eeeeee;
+}
 .btn.disabled {
   color: #aaaaaa;
   border-color: #eeeeee;
@@ -2227,8 +2250,8 @@ progress {
     margin: 1.75rem auto;
   }
 }
-#container {
-  flex-grow: 1;
+#container-block {
+  min-height: 600px;
 }
 
 .container {
@@ -2326,7 +2349,7 @@ progress {
 }
 
 .header-logo {
-  margin-right: 6vw;
+  margin-right: 3.5vw;
 }
 
 .gnb-list {
@@ -2617,6 +2640,10 @@ aside > ul > li > ul > li.active a {
 aside > ul > li > ul > li ul {
   padding-left: 20px;
   background-color: #f8f8f8;
+}
+aside .new-community li {
+  display: flex;
+  align-items: center;
 }
 
 .resume-login {
@@ -4641,6 +4668,27 @@ legend {
   padding: 2rem 0;
 }
 
+.modal-comment {
+  max-width: 500px;
+}
+.modal-comment .modal-header {
+  border: 0;
+}
+.modal-comment .modal-footer {
+  border: 0;
+  justify-content: center;
+}
+.modal-comment .text-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.modal-comment .text-form {
+  padding: 30px;
+  line-height: 1.4;
+}
+
 .modal-headhunter {
   max-width: 600px;
 }
@@ -5115,6 +5163,10 @@ legend {
   align-items: inherit;
   justify-content: space-between;
 }
+.headhunter-profile-content.attention .headhunter-profile .content {
+  margin-left: 30px;
+  width: 80%;
+}
 .headhunter-profile-content.attention .headhunter-profile .headhunter-profile-info {
   margin-left: 0;
   display: flex;
@@ -5127,6 +5179,18 @@ legend {
 .headhunter-profile-content.attention .headhunter-profile .headhunter-profile-info .company {
   margin-left: 10px;
 }
+.headhunter-profile-content.attention .headhunter-profile .phone-num {
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.headhunter-profile-content.attention .headhunter-profile .email {
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  margin-top: 8px;
+}
 .headhunter-profile-content.attention .headhunter-profile .txt {
   margin-right: 15px;
 }
@@ -5134,8 +5198,27 @@ legend {
   color: #1686f2;
   font-weight: bold;
 }
-.headhunter-profile-content.attention .headhunter-profile .content {
-  margin-left: 30px;
+.headhunter-profile-content.attention .headhunter-profile .desc {
+  display: flex;
+}
+.headhunter-profile-content.attention .headhunter-profile .desc .desc-title {
+  width: 70px;
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  line-height: 22px;
+}
+.headhunter-profile-content.attention .headhunter-profile .desc .desc-text {
+  width: 85%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 48px;
+  white-space: inherit;
+  overflow: hidden;
 }
 .headhunter-profile-content.attention .btn-group .btn {
   display: block;
@@ -5311,6 +5394,11 @@ legend {
 
 .apply-wrap-body.write .desc {
   padding: 20px 0;
+}
+.apply-wrap-body.write .desc.result {
+  border-top: 0;
+  border-bottom: 0;
+  background-color: #f8f8fa;
 }
 .apply-wrap-body .write-desk .form-group {
   display: flex;
@@ -5570,7 +5658,7 @@ legend {
   border: 1px solid #ddd;
   padding: 20px;
   position: sticky;
-  top: 0;
+  top: 20px;
 }
 .add-info-box .add-info-title {
   font-size: 17px;
@@ -6096,6 +6184,12 @@ legend {
   margin-left: 10px;
 }
 
+.check-badge-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .card-list.hunter {
   margin-top: 10px;
   border-top: 1px solid #000;
@@ -6262,5 +6356,30 @@ legend {
 }
 .signup-success-content .success-btn-group a.btn {
   width: 70%;
+}
+
+.headhunter-main-status {
+  width: 80%;
+  padding: 40px;
+}
+.headhunter-main-status .status-list {
+  display: flex;
+  text-align: center;
+  margin-top: 65px;
+}
+.headhunter-main-status .status-list > div {
+  width: 25%;
+}
+.headhunter-main-status .status-list .name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.headhunter-main-status .status-list .cnt {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #1686F2;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=maps/style.css.map */

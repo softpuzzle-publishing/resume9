@@ -2,6 +2,7 @@
 .form-check {
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 16px;
   padding-left: 24px;
 }
@@ -57,7 +58,17 @@
     }
   }
 }
-
+.check-badge{
+  display: none;
+  &+.check-badge-label{
+     border: 1px solid #aaa; font-size: 14px; color: #aaa; padding: 6px 10px; text-align: center; background-color: #fff; cursor: pointer;
+    }
+  &:checked{ 
+    &+.check-badge-label{
+      border: 1px solid #000; color: #000;
+    }
+  }
+}
 .inline-form-radio{
   .form-check{ margin-right: 40px;}
 }

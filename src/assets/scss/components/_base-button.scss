@@ -124,6 +124,11 @@
     color: #aaaaaa;
     border-color: #eeeeee;
     background-color: #eeeeee;
+    &:hover{
+      color: #aaaaaa;
+      border-color: #eeeeee;
+      background-color: #eeeeee;
+    }
   }
   &.disabled {
     color: #aaaaaa;

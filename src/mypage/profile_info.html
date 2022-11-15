@@ -64,7 +64,14 @@
                   <div class="fake-table-column">
                     <div class="fake-table-cell">휴대폰번호</div>
                     <div class="fake-table-cell">
-                      <input type="text" class="form-control form-md" value="010-1234-5678" readonly />
+                      <div class="d-flex">
+                        <input type="text" class="form-control form-md" value="010-1234-5678" readonly />
+                        <button type="button" class="btn btn-primary" disabled>인증하기</button>
+                      </div>
+                      <div class="d-flex m-t-10">
+                        <input type="text" class="form-control form-md" value="" placeholder="인증번호를 입력하세요." />
+                        <button type="button" class="btn btn-primary">인증완료</button>
+                      </div>
                     </div>
                   </div>
                   <div class="fake-table-column">

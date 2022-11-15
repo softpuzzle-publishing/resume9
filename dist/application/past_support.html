@@ -49,7 +49,7 @@
                     <a href="">헤드헌터검색</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../resume/resume_main.html">내 이력서</a>
+                    <a href="../resume/resume_list.html">내 이력서</a>
                   </li>
                   <li class="gnb-depth">
                     <a href="../application/application_status.html">지원현황</a>
@@ -143,109 +143,99 @@
         <div class="layout">
           <div class="layout-left">
             <aside>
-              <div class="resume-login">
-                <div class="resume-login-profile" style="background-image: url('../assets/images/icon-login.svg')"></div>
-                <p class="name"><b>박근수</b>님</p>
-                <a href="../_layout/community_worry.html" class="btn btn-outline-primary btn-md">이력서 등록하기</a>
-                <button type="button" class="btn btn-primary btn-md">이력서 공개중</button>
-              </div>
               <ul>
                 <li>
-                  <a href=""><span class="poppins">내 이력서 관리</span></a>
+                  <a href="../application/application_status.html"><span class="poppins">입사지원/제안관리</span></a>
                   <ul>
-                    <li class="active"><a href="../_layout/community_chat.html">이력서 등록</a></li>
-                    <li><a href="../_layout/community_worry.html">이력서 목록</a></li>
-                    <li><a href="../_layout/community_type.html">이력서 공개설정</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="../mypage/myChannel.html"><span class="poppins">입사지원/제안관리</span></a>
-                  <ul>
-                    <li><a href="javascript:void(0)">입사지원 현황</a></li>
+                    <li class="active"><a href="../application/application_status.html">입사지원 현황</a></li>
                     <li>
-                      <a href="../_layout/company_curious.html">받은 포지션 제안</a>
+                      <a href="../application/job_position.html">받은 포지션 제안</a>
                       <ul>
-                        <li><a href="">포지션 제안내역</a></li>
-                        <li><a href="">내 이력서 열람내역</a></li>
+                        <li><a href="../application/job_position.html">포지션 제안내역</a></li>
+                        <li><a href="../application/job_browse.html">내 이력서 열람내역</a></li>
                       </ul>
                     </li>
-                    <li><a href="javascript:void(0)">과거 지원 결과</a></li>
-                    <li><a href="javascript:void(0)">취업활동증명서 발급</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href=""><span class="poppins">관심/맞춤제안</span></a>
-                  <ul>
-                    <li class=""><a href="../_layout/community_chat.html">관심 헤드헌터</a></li>
-                    <li><a href="../_layout/community_worry.html">스크랩/최근열람 공고</a></li>
+                    <li><a href="../application/past_support.html">과거 지원 결과</a></li>
+                    <li><a href="../application/employment_certificate.html">취업활동증명서 발급</a></li>
                   </ul>
                 </li>
               </ul>
             </aside>
           </div>
           <div class="layout-content">
-            <h3 class="subtitle poppins">관심 헤드헌터</h3>
+            <h3 class="subtitle poppins">과거 지원 결과</h3>
             <div class="title-line mt-4 mb-5"></div>
-            <div class="headhunter-profile-content attention">
-              <div class="headhunter-profile">
-                <div class="d-flex">
-                  <div class="headhunter-profile-img"></div>
-                  <div class="content">
-                    <div class="headhunter-profile-info">
-                      <span class="name">홍길동</span>
-                      <span class="company">맨쉬컨설팅(주)</span>
-                    </div>
-                    <div class="d-flex align-items-center m-t-15">
-                      <p class="txt">전문분야</p>
-                      <p class="badge-box">
-                        <span class="tag tag-sm tag-outline-primary m-0 none-border">
-                          <em>의료/제약</em>
-                        </span>
-                        <span class="tag tag-sm tag-outline-primary m-0 none-border">
-                          <em>제조/생산/화학</em>
-                        </span>
-                        <span class="tag tag-sm tag-outline-primary m-0 none-border">
-                          <em>유통/판매</em>
-                        </span>
-                      </p>
-                    </div>
-                    <a href="javascript:void(0)" class="d-flex align-items-center m-t-15">
-                      <p class="txt">진행 중 공고</p>
-                      <p class="num">14건</p>
-                      <i class="icon-select-arrow m-l-5"></i>
-                    </a>
+            <div class="row row-0">
+              <ol class="step mt-n3">
+                <li class="active">
+                  <a href="past_support.html"><span>과거 지원 결과</span></a>
+                </li>
+                <li>
+                  <a href="employment_certificate.html"><span>취업활동증명서 발급</span></a>
+                </li>
+              </ol>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="btn-group date-list" hidden-flex-desktop role="group">
+                <p class="m-r-20 hidden-mobile">조회기간</p>
+                <button type="button" class="btn btn-outline-primary active">1개월</button>
+                <button type="button" class="btn btn-outline-primary">3개월</button>
+                <button type="button" class="btn btn-outline-primary">6개월</button>
+                <button type="button" class="btn btn-outline-primary">1년</button>
+              </div>
+              <div class="">
+                <select class="select-design" style="width: 100%">
+                  <option value="1">전체</option>
+                  <option value="3">마감임박순</option>
+                </select>
+              </div>
+            </div>
+            <div class="fake-table">
+              <div class="fake-table-column">
+                <div class="fake-table-cell text-start">
+                  <div class="announcement-wrap">
+                    <p class="scale">중소기업</p>
+                    <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                    <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
                   </div>
                 </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-outline-dark">프로필 보기</button>
-                  <button type="button" class="btn btn-outline-primary m-t-10">관심해제</button>
+                <div class="fake-table-cell">
+                  <div class="btn-group">
+                    <a href="" class="btn btn-outline-danger btn-md">불합격</a>
+                  </div>
+                </div>
+              </div>
+              <div class="fake-table-column">
+                <div class="fake-table-cell">
+                  <div class="announcement-wrap text-start">
+                    <p class="scale">중소기업</p>
+                    <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
+                    <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
+                  </div>
+                </div>
+                <div class="fake-table-cell">
+                  <div class="btn-group">
+                    <a href="" class="btn btn-outline-danger btn-md">불합격</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="resume-form">
-              <div class="resume-form-list headhunter-form w-100">
-                <div class="announcement-wrap">
-                  <p class="scale">중소기업</p>
-                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
-                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
-                </div>
-                <div class="btn-group">
-                  <a href="" class="btn btn-outline-danger btn-md">즉시지원</a>
-                </div>
+
+            <div class="d-flex justify-content-center mt-5">
+              <div class="pagination">
+                <a href=""><i class="icon-pager-prev"></i></a>
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href=""><i class="icon-pager-next"></i></a>
               </div>
-              <div class="resume-form-list headhunter-form w-100">
-                <div class="announcement-wrap">
-                  <p class="scale">중소기업</p>
-                  <a href="" class="title">MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리 MIS/인사시스템관리,IT운영-CC파트 콜센터운영/전사/기획 서버 및 DB관리</a>
-                  <p class="date"><span>지원일</span><span>2022.10.21 (금)</span></p>
-                </div>
-                <div class="btn-group">
-                  <a href="" class="btn btn-outline-primary btn-md">즉시지원</a>
-                </div>
-              </div>
-            </div>
-            <div class="send-btn">
-              <a href="posting_apply.html" class="btn btn-primary btn-xl">지원하기</a>
             </div>
           </div>
         </div>
@@ -367,6 +357,7 @@
           </div>
         </div>
       </div>
+
       <!-- 게시물 쓰기 + 비밀글 설정 (회사검색) -->
       <div class="modal fade" id="modal-write-secret-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-write modal-dialog-centered">
@@ -520,7 +511,7 @@
             <div class="modal-header">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pt-0">
               <div class="headhunter-profile-content">
                 <div class="headhunter-profile">
                   <div class="headhunter-left">
@@ -603,6 +594,66 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 지원하기 -->
+      <div class="modal fade" id="modal-apply" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-title">지원이 완료되었습니다.</div>
+              <div class="text-form">
+                채용기업의 규격에 맞게 이력서 변경이 필요한 경우<br />
+                본 채용공고 담당 헤드헌터가 지원이력서를 수정할 수 있는<br />
+                권한을 주시겠습니까?<br />
+                이력서 수정 권한을 주지 않는 경우 전형에 불이익이 있을 수 있습니다.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary m-r-10" data-bs-toggle="modal" data-bs-target="#modal-apply-success" data-bs-dismiss="modal">동의</button>
+                <button type="button" class="btn btn-outline-primary m-r-5" data-bs-toggle="modal" data-bs-target="#modal-apply-success" data-bs-dismiss="modal">미동의</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 지원 완료 -->
+      <div class="modal fade" id="modal-apply-success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-title">지원이 완료되었습니다.</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 경력인증 팝업 -->
+      <div class="modal fade" id="modal-career-certification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-end">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-form">
+                경력 인증을 받지 않으셨습니다.<br />
+                인증 받지 않은 경력 사항을 저장하시겠습니까?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary m-r-10">확인</button>
+                <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
               </div>
             </div>
           </div>
