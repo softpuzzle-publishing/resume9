@@ -6358,6 +6358,28 @@ legend {
   width: 70%;
 }
 
+.jop-result {
+  display: inline-flex;
+  margin-top: 100px;
+  background-color: #f8f8fa;
+  padding: 25px 50px 25px 25px;
+}
+.jop-result .title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.jop-result .jop-result-list {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.jop-result .jop-result-list:last-child {
+  margin-bottom: 0;
+}
+
 .headhunter-main-status {
   width: 80%;
   padding: 40px;
