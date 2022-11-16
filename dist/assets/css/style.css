@@ -840,6 +840,10 @@ progress {
   width: 50px;
 }
 
+.p-0 {
+  padding: 0 !important;
+}
+
 [class^=icon-] {
   display: inline-block;
   vertical-align: middle;
@@ -2163,6 +2167,10 @@ progress {
 }
 .modal-dialog .qna input {
   width: 100%;
+}
+.modal-dialog.modal-dialog-scrollable .modal-body .text-form {
+  height: 600px;
+  overflow: auto;
 }
 
 .modal-content {
@@ -5451,6 +5459,116 @@ legend {
 
 .resume-form.position {
   border-top: 1px solid #ddd;
+}
+
+.spell-check-wrap {
+  margin-top: 150px;
+}
+.spell-check-wrap .spell-check-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+.spell-check-wrap .spell-check-head p {
+  width: 50%;
+  text-align: center;
+}
+.spell-check-wrap .spell-document-content {
+  padding: 26px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  position: relative;
+}
+.spell-check-wrap .spell-document-content .spell-btn {
+  font-size: 16px;
+  vertical-align: baseline;
+  background-color: #fff07b;
+  white-space: nowrap;
+}
+.spell-check-wrap .popup {
+  width: 630px;
+  position: absolute;
+  border: 1px solid #000;
+  top: 65px;
+  right: 190px;
+  background-color: #fff;
+}
+.spell-check-wrap .popup::after {
+  content: "";
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  top: -9px;
+  right: 100px;
+  background-image: url("../images/icon-modal-toggle.svg");
+  background-size: cover;
+  background-position: center;
+}
+.spell-check-wrap .popup .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+}
+.spell-check-wrap .popup .recommendation {
+  padding: 25px 20px 0;
+  border-right: 1px solid #ddd;
+}
+.spell-check-wrap .popup .recommendation-head .recommendation-head-inp {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  border: 0;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.spell-check-wrap .popup .recommendation-content {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+  padding-left: 50px;
+  padding-top: 16px;
+}
+.spell-check-wrap .popup .recommendation-content .key {
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  color: #999;
+  font-size: 14px;
+}
+.spell-check-wrap .popup .recommendation-content .list {
+  font-size: 14px;
+  height: 100px;
+}
+.spell-check-wrap .popup .help {
+  padding: 25px 20px 0;
+}
+.spell-check-wrap .popup .help .title {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.spell-check-wrap .popup .help .description {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.5;
+  height: 120px;
+  overflow: auto;
+}
+.spell-check-wrap .popup .popup-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+}
+.spell-check-wrap .popup .popup-footer .btn {
+  min-width: 90px;
 }
 
 .detail-info .title {

@@ -689,15 +689,72 @@
               <!-- end -->
               <!-- 자기소개서 -->
               <div class="content">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center justify-content-between">
                   <h4 class="table-subtitle mb-3">자기소개서</h4>
-                  <p class=""><span>123</span>자</p>
+                  <div class="d-flex align-items-center m-b-15">
+                    <button type="button" class="btn btn-outline-dark btn-sm m-r-10">맞춤법 검사</button>
+                    <p class="">총 글자수 <span class="text-danger">123</span>자</p>
+                  </div>
                 </div>
                 <div class="desc">
                   <div class="row align-items-center">
                     <div class="col-12">
                       <div class="form-textarea m-0">
                         <textarea name="" id="" cols="30" rows="30" placeholder="내용을 입력하세요" class=""></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="spell-check-wrap">
+                  <div class="spell-check-head">
+                    <p>맞춤법에 어긋난 단어가 <span class="text-danger">16개</span> 있습니다.</p>
+                    <div>
+                      <button type="button" class="btn btn-outline-dark btn-sm m-r-10">맞춤법 재검사</button>
+                      <button type="button" class="btn btn-dark btn-sm">검사 종료</button>
+                    </div>
+                  </div>
+                  <div class="spell-document-content">
+                    기계 번역은 인간이 사용하는 자연 언어를 컴퓨터를 사용하여 다른 언어로 번역하는 일을 말한다. '자동 번역'이라고도 <button type="button" class="spell-btn">핸다.</button> 일관성과 통일성이 있게 번역되는 장점이 있으나 기계 번역은 현재로서는 자연스러운 번역을 보장할 수 없으며, 문장이
+                    부자연스러운 어투로 나오는 경우가 잦다. <br /><br />
+                    이것은 <button type="button" class="spell-btn">명백히 주작이다</button>
+
+                    <div class="popup">
+                      <button type="button" class="btn-close"></button>
+                      <div class="row m-0">
+                        <div class="col-md-6 col-12 recommendation">
+                          <div class="recommendation-head">
+                            <input type="text" class="recommendation-head-inp" value="핸다." />
+                          </div>
+                          <div class="recommendation-content">
+                            <div class="key">추천</div>
+                            <ul class="list">
+                              <li><button type="button">한다.</button></li>
+                              <li><button type="button">해야한다.</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-12 help">
+                          <p class="title">도움말</p>
+                          <div class="description">
+                            한국어 동사 어간 '하-'에 현재 시제를 나타내는<br />
+                            선어말 어미인 '-ㄴ-', 어말 어미 중 평서형 종결 어미 '-다'가 차례로 결합하여 만들어진 단어.
+                            <br />
+                            <br />
+                            한국어 동사 어간 '하-'에 현재 시제를 나타내는<br />
+                            선어말 어미인 '-ㄴ-', 어말 어미 중 평서형 종결 어미 '-다'가 차례로 결합하여 만들어진 단어.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup-footer">
+                        <div class="buttons">
+                          <button type="button" class="btn btn-sm btn-primary"><span>수정</span></button>
+                          <button type="button" class="btn btn-sm btn-outline-primary"><span>모두 수정</span></button>
+                        </div>
+                        <div class="page d-flex align-items-center">
+                          <div class="pager m-r-10"><strong class="text-danger">2</strong><i class="icon">/</i><span class="total">10</span></div>
+                          <button type="button" class="btn btn-sm btn-outline-gray m-r-5"><span>이전</span></button>
+                          <button type="button" class="btn btn-sm btn-outline-gray"><span>다음</span></button>
+                        </div>
                       </div>
                     </div>
                   </div>

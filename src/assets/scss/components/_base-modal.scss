@@ -44,6 +44,11 @@
     span{ width: 150px;}
     input{width: 100%;}
   }
+  &.modal-dialog-scrollable{
+    .modal-body{
+      .text-form{height: 600px; overflow: auto;}
+    }
+  }
 }
 
 .modal-content {

@@ -26,8 +26,14 @@ $(document).ready(function () {
   $(".add-info-box a").on("click", function () {
     var getThis = $(this).children().find("i");
     var getClass = getThis.attr("class");
-    $(this).toggleClass("active");
-    $(this).children().find("i").addClass(getClass + "-active");
+
+    if (!$(this).hasClass("active")) {
+      $(this).addClass("active");
+      $(this).children().find("i").addClass(getClass + "-active");
+    } else {
+      $(this).removeClass("active");
+      $(this).children().find("i").removeClass(getClass + "");
+    }
   });
   $(".accordion-agree .item").click(function () {
     $(this).toggleClass("active").siblings().removeClass("active");
