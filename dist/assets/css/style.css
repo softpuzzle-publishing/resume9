@@ -1464,6 +1464,9 @@ progress {
   .form-check {
     padding-left: 12px;
   }
+  .inline-form-radio .form-check {
+    margin-right: 0;
+  }
 }
 .form-select {
   display: block;
@@ -2292,6 +2295,11 @@ progress {
 @media screen and (max-width: 992px) {
   .modal-title {
     font-size: 16px;
+  }
+  .modal-dialog.modal-dialog-scrollable .modal-body .text-form {
+    height: 600px;
+    overflow: auto;
+    padding: 0;
   }
 }
 @media (min-width: 576px) {
@@ -3304,20 +3312,20 @@ legend {
   height: 400px;
   overflow: auto;
 }
-.accordion-agree .agree-body .mo_terms article h3 {
+.mo_terms article h3 {
   padding: 0 0 20px !important;
 }
-.accordion-agree .agree-body .mo_terms article dl dt {
+.mo_terms article dl dt {
   font-weight: 500;
 }
-.accordion-agree .agree-body .mo_terms article dl + dl {
+.mo_terms article dl + dl {
   margin-top: 20px;
 }
-.accordion-agree .agree-body .mo_terms article dl dd {
+.mo_terms article dl dd {
   margin-top: 6px;
   line-height: 18px;
 }
-.accordion-agree .agree-body .mo_terms article span {
+.mo_terms article span {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: -0.5px;
@@ -3326,17 +3334,18 @@ legend {
   color: #000;
   font-weight: 700;
 }
-.accordion-agree .agree-body table.tbl-terms {
+
+table.tbl-terms {
   width: 100%;
   border: 1px solid #ddd;
   margin-top: 10px;
 }
-.accordion-agree .agree-body table.tbl-terms th {
+table.tbl-terms th {
   padding: 7px 15px;
   background: #f1f3f5;
   font-weight: 400;
 }
-.accordion-agree .agree-body table.tbl-terms td {
+table.tbl-terms td {
   padding: 7px 15px;
   border: 1px solid #ddd;
 }

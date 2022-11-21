@@ -119,4 +119,7 @@
   .form-check{
     padding-left: 12px;
   }
+  .inline-form-radio{
+    .form-check{ margin-right: 0;}
+  }
 }
