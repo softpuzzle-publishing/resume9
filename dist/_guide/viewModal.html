@@ -1,6 +1,8 @@
+<!-- 게시물 쓰기 -->
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <title>(guide)Resume9</title>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-Compatible" content="IE=edge" />
     <title>Resume9</title>
@@ -32,539 +34,39 @@
     <!-- swiper -->
     <link rel="stylesheet" href="../assets/lib/swiper/css/swiper-bundle.min.css" />
     <script src="../assets/lib/swiper/js/swiper-bundle.min.js"></script>
+
+    <style>
+      body {
+        padding: 1rem 0 2rem;
+      }
+      section {
+        border-bottom: 1px solid #4d4444;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+        color: #ff6161;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      section > div {
+        margin: 3px 0;
+      }
+      .modal {
+        position: relative !important;
+        display: block !important;
+      }
+      .fade:not(.show) {
+        opacity: 1 !important;
+      }
+    </style>
   </head>
+
   <body>
-    <header id="header">
-      <div class="container">
-        <div class="inner">
-          <div class="col">
-            <div class="row align-items-center justify-content-between gx-0">
-              <div class="col-7 d-flex align-items-center">
-                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
-                <ul class="gnb-list hidden-flex-mobile">
-                  <li class="gnb-depth">
-                    <a href="../jop/posting.html">채용공고</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="">헤드헌터검색</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../resume/resume_list.html">내 이력서</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../application/application_status.html">지원현황</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../_layout/community.html">커뮤니티</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-5 d-flex align-items-center justify-content-end">
-                <div class="search-form hidden-mobile">
-                  <input type="text" class="form-control form-lg" />
-                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
-                </div>
-                <ul class="sign-list hidden-flex-mobile">
-                  <li class="sign-depth">
-                    <a href="">1:1 문의</a>
-                  </li>
-                  <li class="sign-depth">
-                    <a href="">고객센터</a>
-                  </li>
-                  <li class="sign-depth mypage">
-                    <!-- <a href="">로그인</a> -->
-                    <a href="javascript:void(0)" class="mypage-con">MY</a>
-                    <i class="icon-login m-l-10"></i>
-                    <div class="my-info" style="display: none">
-                      <div class="my-info__head">
-                        <div class="info-head__my">
-                          <a href="../mypage/profile_info.html">
-                            <p class="info-head__name">홍길동</p>
-                          </a>
-                          <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
-                        </div>
-                        <div class="info-head__point">
-                          <i class="icon-point"></i>
-                          <span class="my-reword">내 리워드</span>
-                          <span class="point">100P</span>
-                        </div>
-                      </div>
-                      <div class="my-info__list">
-                        <ul>
-                          <li>
-                            <a href=""><span class="info-list__title">회원정보 수정</span></a>
-                          </li>
-                          <li class="active">
-                            <a href="../mypage/profile_info.html" class="category">회원정보 수정</a>
-                          </li>
-                          <li>
-                            <a href="../mypage/password.html" class="category">비밀번호 변경</a>
-                          </li>
-                          <li>
-                            <a href="../mypage/blacklist.html" class="category">블랙리스트 관리</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="my-info__list">
-                        <ul>
-                          <li>
-                            <span class="info-list__title">보안</span>
-                          </li>
-                          <li class="active">
-                            <a href="../mypage/login.html" class="category">로그인 기록</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="my-info__list">
-                        <ul>
-                          <li>
-                            <span class="info-list__title">리워드</span>
-                          </li>
-                          <li class="active">
-                            <a href="../mypage/reword.html" class="category">적립/사용내역</a>
-                          </li>
-                          <li>
-                            <a href="../mypage/reword.html" class="category">리워드 Mall</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div id="container-block">
-      <div class="container">
-        <div class="sub-content">
-          <div class="row row-40 align-items-center">
-            <div class="d-flex align-items-center justify-content-between">
-              <h3 class="subtitle">이력서 상세</h3>
-              <!-- 열람 전 -->
-              <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark btn-md" data-bs-toggle="modal" data-bs-target="#modal-default-link">연락처보기</button>
-              </div>
-              <!-- // -->
-              <!-- 열람 후 -->
-              <!-- <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark btn-md" data-bs-toggle="modal" data-bs-target="#modal-select-position">포지션 추천</button>
-                <button type="button" class="btn btn-outline-dark btn-md" data-bs-toggle="modal" data-bs-target="#modal-default">내 인재 삭제</button>
-              </div> -->
-              <!-- // -->
-            </div>
-            <div class="title-line mt-4 mb-4"></div>
-
-            <div class="apply-wrap">
-              <div class="apply-wrap-head">
-                <div class="img-upload">
-                  <div class="upload-img">
-                    <img src="../assets/images/about-01.png" alt="" />
-                  </div>
-                </div>
-                <div class="resume-info">
-                  <div class="resume-info-top">
-                    <div class="list">
-                      <span class="name">홍길동</span>
-                      <span class="birth">941019(29세)</span>
-                      <span class="work">재직중</span>
-                    </div>
-                    <div class="list">
-                      <span class="address"><i class="icon-home"></i>서울특별시 서울특별시 서울특별시</span>
-                      <span class="phone"><i class="icon-phone"></i>010-1234-5678</span>
-                      <span class="email"><i class="icon-email"></i>abcd1234@naver.com</span>
-                      <span class="">상시</span>
-                    </div>
-                  </div>
-                  <div class="rInfo_3">
-                    <ul>
-                      <li>
-                        <div class="_lab">학력</div>
-                        <div class="_cont">
-                          <p>서울대학교</p>
-                          <p>경영학과(박사)</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="_lab">경력</div>
-                        <div class="_cont">
-                          <p>삼성전자</p>
-                          <p>16년8개월 , 재직중</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="_lab">희망연봉</div>
-                        <div class="_cont">
-                          <p>-</p>
-                          <p></p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="_lab">자격증/어학</div>
-                        <div class="_cont">
-                          <p>-</p>
-                          <!---->
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="apply-wrap-body">
-                <div class="content exception">
-                  <h4 class="table-subtitle mb-3">학력</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <div class="col-2">
-                        <div class="">
-                          <p>2010.03~ 2016.08</p>
-                          <p class="text-primary m-t-5">졸업</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="title">서울대학교<span>(서울특별시)</span><span>본교</span></p>
-                          <ul class="detail-list">
-                            <li>
-                              <span class="key">주전공</span>
-                              <span class="value">경영학과</span>
-                            </li>
-                            <li>
-                              <span class="key">학점</span>
-                              <span class="value">4.36</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-line">
-                      <div class="col-2">
-                        <div class="">
-                          <p>2007.03 ~ 2010.03</p>
-                          <p class="text-primary m-t-5">졸업</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="title">서울고등학교<span>(서울특별시)</span></p>
-                          <ul class="detail-list">
-                            <li>
-                              <span class="key">주전공</span>
-                              <span class="value">경영학과</span>
-                            </li>
-                            <li>
-                              <span class="key">학점</span>
-                              <span class="value">4.36</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">경력</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <div class="col-2">
-                        <div class="">
-                          <p>2016.08 ~ 재직중</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="title">삼성전자</p>
-                          <ul class="detail-list">
-                            <li>
-                              <span class="key">부서명</span>
-                              <span class="value">전략마케팅팀</span>
-                            </li>
-                            <li>
-                              <span class="key">직급</span>
-                              <span class="value">차장</span>
-                            </li>
-                            <li>
-                              <span class="key">직책</span>
-                              <span class="value">파트장</span>
-                            </li>
-                            <li>
-                              <span class="key">최종연봉</span>
-                              <span class="value">10,000만원</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">채용우대자격</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <div class="col-2">
-                        <div class="">
-                          <p>보훈대상</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-line">
-                      <div class="col-2">
-                        <div class="">
-                          <p>장애</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-line">
-                      <div class="col-2">
-                        <div class="">
-                          <p>병역여부</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="">면제</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">핵심역량</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <div class="col-1">
-                        <div class="">
-                          <p class="text-center">1</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="">직무능력 및 업무상 강점이 20자 내로 서술 됐다.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-line">
-                      <div class="col-1">
-                        <div class="">
-                          <p class="text-center">2</p>
-                        </div>
-                      </div>
-                      <div class="col-10">
-                        <div class="detail-info">
-                          <p class="">인성,자격증, 외국어 등 나는 3개국어를 할 줄 안다.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">경력기술서</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="detail-list mt-0">
-                        <li>
-                          <p class="company text-dark font-bold">삼성전자</p>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">부서명</span>
-                          <span class="value">전략마케팅팀</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">직급</span>
-                          <span class="value">차장</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">직책</span>
-                          <span class="value">파트장</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">최종연봉</span>
-                          <span class="value">10,000만원</span>
-                        </li>
-                      </ul>
-                      <div class="career-txt">
-                        [담당업무]<br />
-                        한국예탁결제원 펀드회계 및 더존 금융회계<br />
-                        고객 운용보고서 작성(분기,반기,연) 및 주문대리<br />
-                        공모주 펀드 IPO 관리 및 투자진행<br />
-                        Research Assistant(R.A) 업무로써 자료 분석 및 조사 <br />
-                        <상세업무/프로젝트> Daily position 파일 작성 및 보고<br />
-                        - 매 일 아침 전 영업일 기준 고객 및 고유 자산 포트폴리오 작성 및 보고<br />
-                        고유 회계
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">자기소개서</h4>
-                  <div class="desc">
-                    <p class="introduce-text">
-                      안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다.<br />
-                      안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다.<br />
-                      <br />
-                      안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다.<br />
-                      안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다.<br />
-                      안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다.
-                      안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다. 안녕하세요 자기소개입니다.
-                    </p>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">희망근무조건</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="detail-list mt-0">
-                        <li>
-                          <span class="key text-dark font-bold">고용형태</span>
-                          <span class="value">정규직</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">희망근무지</span>
-                          <span class="value">서울</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">희망산업</span>
-                          <span class="value">IT</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">희망직급</span>
-                          <span class="value">차장</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">희망연봉</span>
-                          <span class="value">12,000만원</span>
-                        </li>
-                        <li>
-                          <span class="key text-dark font-bold">입사가능시기</span>
-                          <span class="value">2주이내</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">어학(회화)</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <span class="txt">영어</span>
-                          <span class="txt">일상회화가능</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">어학(공인시험)</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <span class="txt">영어</span>
-                          <span class="txt">TOEIC</span>
-                          <span class="txt">900점</span>
-                          <span class="txt">2000.03</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">자격증</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <span class="txt">운전면허증</span>
-                          <span class="txt">교통부</span>
-                          <span class="txt">2000.03</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <span class="txt">대형운전면허증</span>
-                          <span class="txt">교통부</span>
-                          <span class="txt">2001.03</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">수상</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <span class="txt">베스트커플상</span>
-                          <span class="txt">MBCN</span>
-                          <span class="txt">2015.12</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">대외활동</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <span class="txt">엄청 활발히 대외활동 함</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">포트폴리오</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <a href="javascipt:void(0)" download="asd.pdf">작품활동내역.pdf</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="content">
-                  <h4 class="table-subtitle mb-3">영문이력서</h4>
-                  <div class="desc">
-                    <div class="row row-line">
-                      <ul class="default-list mt-0">
-                        <li>
-                          <a href="javascipt:void(0)" download="asd.pdf">영문이력서.pdf</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="send-btn">
-              <a href="posting_apply.html" class="btn btn-primary btn-xl">지원하기</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 게시물 쓰기 -->
+    <div class="continer-fluid">
       <div class="modal fade" id="modal-write" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-write modal-dialog-centered">
           <div class="modal-content">
@@ -1047,7 +549,8 @@
             <div class="modal-body">
               <div class="text-form text-center">
                 내 인재에서 삭제할 경우,<br />
-                인재검색 등에서 인재정보를 열람하기 위해서는 열람권을 다시 사용해야 합니다. 삭제 하시겠습니까?
+                인재검색 등에서 인재정보를 열람하기 위해서는 열람권을 다시 사용해야 합니다.<br />
+                삭제 하시겠습니까?
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
@@ -1057,7 +560,7 @@
           </div>
         </div>
       </div>
-      <!-- 포지션 선택-->
+      <!-- 게시물 쓰기 -->
       <div class="modal fade" id="modal-select-position" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-write modal-dialog-centered">
           <div class="modal-content">
@@ -1082,43 +585,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="footer-desc left">
-          <div class="footer-logo"></div>
-          <ul class="company-info">
-            <li>레쥬메나인(주)</li>
-            <li>사업자등록번호 : 543-81-01709</li>
-            <li class="hide-bar">직업정보제공사업 : J1200020200017</li>
-            <li>통신판매업 : 제 2021-서울강남-02745호</li>
-            <li class="hide-bar">서울시 강남구 테헤란로 16길 9, 1층</li>
-            <li>대표번호 : 02-6956-2715</li>
-            <li>대표이사 : 이덕진</li>
-            <li class="hide-bar">개인정보보호책임자 : 오길석</li>
-          </ul>
-          <p class="email">Email : resume9@resume9.co.kr (평일 10:00 ~ 17:30)</p>
-          <p class="copyright">CopyrightⓒResume9. All rights reserved.</p>
-        </div>
-        <div class="footer-desc right">
-          <ul class="wrap-info">
-            <li><a href="">이용약관</a></li>
-            <li><a href="">개인정보보호정책</a></li>
-            <li><a href="">이메일무단수집거부</a></li>
-            <li><a href="">제휴문의</a></li>
-            <li><a href="">고객센터</a></li>
-          </ul>
-          <div class="precautions">RESUME9(레쥬메나인)의 사전 서면동의 없이 일체의 정보, 콘텐츠, 로고 및 UI 등을 상업적 목적으로 무단전재, 전송 및 스크래핑 등을 할 수 없습니다.</div>
-          <div class="app-download">
-            <a href="">
-              <img src="../assets/images/icon-google-store.svg" alt="" />
-            </a>
-            <a href="">
-              <img src="../assets/images/icon-app-store.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
+
+      <script>
+        $(document).ready(function () {
+          $('.select-design').select2({
+            minimumResultsForSearch: -1,
+          });
+        });
+      </script>
     </div>
   </body>
 </html>

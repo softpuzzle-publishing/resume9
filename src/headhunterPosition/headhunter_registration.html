@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_headhunter_main_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="sub-content">
+          <div class="apply-wrap-body write">
+            <!-- 기업정보 -->
+            <div class="content">
+              <div class="d-flex align-items-center mb-3">
+                <h4 class="table-subtitle">공고제목</h4>
+                <span class="m-l-10">공고제목은 포지션명 위주로 작성해 주세요.</span>
+              </div>
+              <div class="desc">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <input type="text" class="form-control form-lg" value="" placeholder="예시) 계열사 제약회사 HR기획(평가보상) 대리급 채용" />
+                  </div>
+                </div>
+                <h4 class="table-subtitle mb-3 m-t-25">기업정보</h4>
+                <table class="table border-top-1">
+                  <caption>
+                    기업정보
+                  </caption>
+                  <colgroup>
+                    <col width="15%" />
+                    <col width="35%" />
+                    <col width="15%" />
+                    <col width="35%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="">기업검색</th>
+                      <td class="">
+                        <div class="search-box search-lg">
+                          <input type="text" class="" placeholder="회사 이름을 입력하세요" />
+                          <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+                        </div>
+                        <div class="search-result-list">
+                          <ul>
+                            <li class="active">
+                              <div class="result-company">
+                                <a href="">
+                                  <p class="company-name">(주)삼성전자</p>
+                                  <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="result-company">
+                                <a href="">
+                                  <p class="company-name">(주)삼성전자</p>
+                                  <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                      <th class="">사업자등록번호</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">대표자</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                      <th class="">설립일</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">전화번호</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                      <th class="">도로명주소</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">기업규모</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                      <th class="">업종명 10차</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">상장</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                      <th class="">기업상태</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">기업키워드</th>
+                      <td class="" colspan="3">
+                        <input type="text" class="form-control form-lg" value="" placeholder="기업의 인증, 수상, 특징(최대 3개) 벤쳐기업, 고용우수, 가족친화기업" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">사업자등록증 사본<span class="text-danger">(필수)</span></th>
+                      <td class="" colspan="3">
+                        <div class="form-upload">
+                          <input type="file" class="" id="form-file" />
+                          <label for="form-file"><i class="icon-input-add"></i></label>
+                        </div>
+                        <p class="text-danger mt-3">NICE평가정보에 등록되지 않은 회사는 사업자등록증을 첨부해야합니다.</p>
+                        <div class="m-t-20">
+                          <p>첨부가능 용량: 최대 10MB</p>
+                          <p>첨부가능 확장자명: jpg, gif, bmp, ppt, pptx, hwp, pdf, png</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">기업 정보 공개 범위 설정</th>
+                      <td class="" colspan="3">
+                        <div class="d-flex">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                            <label class="form-check-label" for="multipleCheck2">회사명 전체공개</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                            <label class="form-check-label" for="multipleCheck2">전체 비공개</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                            <label class="form-check-label" for="multipleCheck2">CO-WORKER까지만 공개</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- end -->
+
+            <!-- 공고내용 -->
+            <div class="content">
+              <div class="d-flex align-items-center mb-3">
+                <h4 class="table-subtitle">공고내용</h4>
+                <span class="m-l-10">공고내용은 사용자에게 전체공개 됩니다.</span>
+              </div>
+              <div class="desc">
+                <table class="table border-top-1">
+                  <caption>
+                    공고내용
+                  </caption>
+                  <colgroup>
+                    <col width="15%" />
+                    <col width="35%" />
+                    <col width="15%" />
+                    <col width="35%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="">직무<span class="text-danger">(필수)</span></th>
+                      <td class="" colspan="3"></td>
+                    </tr>
+                    <tr>
+                      <th class="">채용공고 JD<span class="text-danger">(필수)</span></th>
+                      <td class="" colspan="3"></td>
+                    </tr>
+                    <tr>
+                      <th class="">채용마감일<span class="text-danger">(필수)</span></th>
+                      <td class="" colspan="3"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

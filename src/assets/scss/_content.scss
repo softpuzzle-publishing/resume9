@@ -312,6 +312,11 @@ legend{
         &::after{content:none;}
     }
 }
+.humanResources{
+    .announcement-wrap__list{ 
+        li{width: calc(33.3% - 18px);}
+    }    
+}
 .announcement-wrap__list{ 
     display: flex; align-items: center; gap: 24px; margin-top: 24px; flex-flow: wrap;
     li{width: calc(25% - 18px); height: 160px; padding: 25px; border-radius: 16px; border: 1px solid #eee; background-color: #fff;
@@ -975,7 +980,6 @@ legend{
     }
 }
 .announcement-wrap{
-    padding: 0 10px;
     .scale{line-height: 1; color: $PRIMARY_COLOR; font-size: 14px; display: flex; align-items: center;
         .company{ color: #777; margin-left: 10px;}
     }
@@ -1749,9 +1753,28 @@ legend{
     .status-list{
         display: flex; text-align: center; margin-top: 65px;
         > div{
-            width: 25%;
+            width: 25%; border-right: 1px solid #ddd;
+            &:last-child{ border-right: 0;}
         }
         .name{font-weight: 500; font-size: 18px; line-height: 22px;}
         .cnt{ font-weight: 700; font-size: 64px; line-height: 77px; color: #1686F2; margin-top: 20px;}
+    }
+}
+.human-resources-filter{
+    background-color: #f8f8fa; display: flex; border: 1px solid #ddd;
+    .resources-search-content{
+        padding: 28px; border-right: 1px solid #ddd;
+        &:last-child{ border-right: 0;}
+        .title{ font-weight: 700; margin-bottom: 20px;}
+        .resources-input{
+            .form-control{width: 150px; background-color: #fff;}
+        }
+    }
+}
+.human-resources-search{
+    display: flex;  background-color: #f8f8fa; padding: 20px 30px;
+    .resources-search-wrap{
+       width: 100%; display: flex; background-color: #fff; border: 1px solid #ddd;
+        .form-control{ width: 85%; background-color: #fff;}
     }
 }

@@ -31,8 +31,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 // table
+.table{
+  width: 100%;
+}
 .table th, .table td {
-  padding: 1rem 0.75rem;border-bottom: 1px solid #e6ecf0; letter-spacing: -.7px; line-height: 1.36;
+  padding: 1rem;border-bottom: 1px solid #e6ecf0; letter-spacing: -.7px; line-height: 1.36; 
+}
+.table th{
+  background-color: #f8f8fa;
 }
 
 .in-table{
@@ -130,6 +136,12 @@ input[type="number"]::-webkit-inner-spin-button {
   .fake-table-cell{
     display: table-cell; padding: 20px; vertical-align: middle; text-align: center; border-top: 1px solid #ddd;
     .form-check-input{ margin-left: 0;}
+    .form-cell{
+      width: 100%; display: flex;
+      &.cell-2{
+        >div{ width: 50%; padding: 5px 0;}
+      }
+    }
   }
 }
 
