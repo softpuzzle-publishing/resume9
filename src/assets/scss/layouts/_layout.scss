@@ -6,6 +6,9 @@
     padding: 0;
 }
 @media screen and (max-width: $BREAKPOINT_LARGE) {
+    #container-block{
+        min-height: 100%;
+    }
     #container{ margin-top: 30px; }
 }
 

@@ -37,5 +37,7 @@ $(document).ready(function () {
   });
   $(".accordion-agree .item").click(function () {
     $(this).toggleClass("active").siblings().removeClass("active");
-  });
+  }); // datepicker
+
+  $("#datepicker").datepicker();
 });

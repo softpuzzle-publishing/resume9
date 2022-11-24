@@ -12,6 +12,10 @@
     <!-- jquery js -->
     <script src="../assets/lib/jquery/jquery.min.js"></script>
 
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="../assets/lib/jquery-ui/jquery-ui.min.css" />
+    <script src="../assets/lib/jquery-ui/jquery-ui.min.js"></script>
+
     <!-- select2 -->
     <link rel="stylesheet" href="../assets/lib/select2/select2.min.css" />
     <script src="../assets/lib/select2/select2.min.js"></script>
@@ -345,7 +349,7 @@
                 <option value="">직장인 고민</option>
               </select>
             </div>
-            <div class="form-check">
+            <div class="form-check justify-content-start">
               <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
               <label class="form-check-label" for="multipleCheck"> 비밀글 설정 (체크시 해당 기업 헤드헌터와 작성자만 볼 수 있습니다.) </label>
             </div>
@@ -727,6 +731,170 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
             <button type="button" class="btn btn-primary">추가</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 포지션 상세 - 컨택리스트 상태 적합/부적합 선택 -->
+    <div class="modal fade" id="modal-position-state" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-comment modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-form text-center">
+              직접지원한 인재의 경우 이력서를 확인 후<br />
+              적합, 부적합 여부를 선택해주세요.
+            </div>
+            <div class="d-flex justify-content-center m-b-25">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="multipleCheck1" />
+                <label class="form-check-label" for="multipleCheck1"> 적합 </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="multipleCheck1" />
+                <label class="form-check-label" for="multipleCheck1"> 부적합 </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn btn-primary">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 이메일 제안 -->
+    <div class="modal fade" id="modal-suggest-email" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-comment modal-dialog-centered" style="max-width: 900px">
+        <div class="modal-content">
+          <div class="modal-header justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">SMS/MMS</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">이메일</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row email-wrap m-0">
+                  <div class="col-12 m-t-20">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck5" />
+                          <label class="form-check-label" for="multipleCheck5">직접 작성</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="" id="multipleCheck5" />
+                          <label class="form-check-label" for="multipleCheck5">자주쓰는 메일</label>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-10">
+                        <select class="select-design select2-hidden-accessible" style="width: 200px" data-select2-id="select2-data-1-tov2" tabindex="-1" aria-hidden="true">
+                          <option value="1" data-select2-id="select2-data-3-q3v0">제안 메일 (기본 그룹)</option>
+                        </select>
+                        <select class="select-design select2-hidden-accessible" style="width: 250px" data-select2-id="select2-data-1-tov2" tabindex="-1" aria-hidden="true">
+                          <option value="1" data-select2-id="select2-data-3-q3v0">불러올 메일 선택</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table class="table border-top-1 m-t-30">
+                  <colgroup>
+                    <col width="15%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="">관련 포지션</th>
+                      <td class="">
+                        <select class="select-design select2-hidden-accessible" style="width: 100%" data-select2-id="select2-data-1-tov2" tabindex="-1" aria-hidden="true">
+                          <option value="1" data-select2-id="select2-data-3-q3v0">테스트 포지션등록 (지원하지 마세요)</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">받는 사람</th>
+                      <td class="">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="coworker-wrap m-r-15 bg-white">
+                            <div class="coworker-list">
+                              <div class="btn btn-sm btn-outline-gray round d-flex justify-content-around">
+                                <span class="name">김남극</span>
+                                <button type="button" class="close"><i class="icon-b-close"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-sm btn-primary round">+ 직접추가</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">제목</th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="제목을 입력해주세요." />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn btn-primary">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 목록추가(수동) -->
+    <div class="modal fade" id="modal-position-list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-write modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">목록추가(수동)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="m-b-25">기본정보를 알고있는 후보자의 경우 컨택리스트에 추가 후, 포지션 제안을 할 수 있습니다.</p>
+            <table class="table border-top-1 m-t-30">
+              <colgroup>
+                <col width="25%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th class="">이름</th>
+                  <td class="">
+                    <input type="text" class="form-control form-lg" value="" placeholder="이름" />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">휴대폰번호</th>
+                  <td class="">
+                    <input type="text" class="form-control form-lg" value="" placeholder="(-)를 제외하고 입력" />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">이메일주소</th>
+                  <td class="">
+                    <input type="text" class="form-control form-lg" value="" placeholder="email@example.com" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+            <button type="button" class="btn btn-primary">확인</button>
           </div>
         </div>
       </div>

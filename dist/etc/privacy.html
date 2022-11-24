@@ -12,6 +12,10 @@
     <!-- jquery js -->
     <script src="../assets/lib/jquery/jquery.min.js"></script>
 
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="../assets/lib/jquery-ui/jquery-ui.min.css" />
+    <script src="../assets/lib/jquery-ui/jquery-ui.min.js"></script>
+
     <!-- select2 -->
     <link rel="stylesheet" href="../assets/lib/select2/select2.min.css" />
     <script src="../assets/lib/select2/select2.min.js"></script>
@@ -34,109 +38,6 @@
     <script src="../assets/lib/swiper/js/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <header id="header">
-      <div class="container">
-        <div class="inner">
-          <div class="col">
-            <div class="row align-items-center justify-content-between gx-0">
-              <div class="col-8 d-flex align-items-center">
-                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
-                <ul class="gnb-list hidden-flex-mobile">
-                  <li class="gnb-depth">
-                    <a href="../jop/posting.html">포지션 관리</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="">인재검색 </a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../resume/resume_main.html">내 인재관리</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../application/application_status.html">내 주소록</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../_layout/community.html">고객사 관리</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../_layout/community.html">We펌</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-4 d-flex align-items-center justify-content-end">
-                <ul class="sign-list hidden-flex-mobile">
-                  <li class="sign-depth">
-                    <a href="">1:1 문의</a>
-                  </li>
-                  <li class="sign-depth">
-                    <a href="">고객센터</a>
-                  </li>
-                  <li class="sign-depth mypage">
-                    <!-- <a href="">로그인</a> -->
-                    <a href="javascript:void(0)" class="mypage-con">MY</a>
-                    <i class="icon-login m-l-10"></i>
-                    <div class="my-info" style="display: none">
-                      <div class="my-info__head">
-                        <div class="info-head__my">
-                          <a href="../mypage/profile_info.html">
-                            <p class="info-head__name">홍길동</p>
-                          </a>
-                          <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
-                        </div>
-                        <div class="info-head__point">
-                          <i class="icon-point"></i>
-                          <span class="my-reword">내 리워드</span>
-                          <span class="point">100P</span>
-                        </div>
-                      </div>
-                      <div class="my-info__list">
-                        <ul>
-                          <li>
-                            <a href=""><span class="info-list__title">회원정보 수정</span></a>
-                          </li>
-                          <li class="active">
-                            <a href="../mypage/profile_info.html" class="category">회원정보 수정</a>
-                          </li>
-                          <li>
-                            <a href="../mypage/password.html" class="category">비밀번호 변경</a>
-                          </li>
-                          <li>
-                            <a href="../mypage/blacklist.html" class="category">블랙리스트 관리</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="my-info__list">
-                        <ul>
-                          <li>
-                            <span class="info-list__title">보안</span>
-                          </li>
-                          <li class="active">
-                            <a href="../mypage/login.html" class="category">로그인 기록</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="my-info__list">
-                        <ul>
-                          <li>
-                            <span class="info-list__title">리워드</span>
-                          </li>
-                          <li class="active">
-                            <a href="../mypage/reword.html" class="category">적립/사용내역</a>
-                          </li>
-                          <li>
-                            <a href="../mypage/reword.html" class="category">리워드 Mall</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
     <div id="container-block">
       <div class="container">
         <div class="sub-content">
@@ -393,43 +294,6 @@
                 </dd>
               </dl>
             </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="footer-desc left">
-          <div class="footer-logo"></div>
-          <ul class="company-info">
-            <li>레쥬메나인(주)</li>
-            <li>사업자등록번호 : 543-81-01709</li>
-            <li class="hide-bar">직업정보제공사업 : J1200020200017</li>
-            <li>통신판매업 : 제 2021-서울강남-02745호</li>
-            <li class="hide-bar">서울시 강남구 테헤란로 16길 9, 1층</li>
-            <li>대표번호 : 02-6956-2715</li>
-            <li>대표이사 : 이덕진</li>
-            <li class="hide-bar">개인정보보호책임자 : 오길석</li>
-          </ul>
-          <p class="email">Email : resume9@resume9.co.kr (평일 10:00 ~ 17:30)</p>
-          <p class="copyright">CopyrightⓒResume9. All rights reserved.</p>
-        </div>
-        <div class="footer-desc right">
-          <ul class="wrap-info">
-            <li><a href="">이용약관</a></li>
-            <li><a href="">개인정보보호정책</a></li>
-            <li><a href="">이메일무단수집거부</a></li>
-            <li><a href="">제휴문의</a></li>
-            <li><a href="">고객센터</a></li>
-          </ul>
-          <div class="precautions">RESUME9(레쥬메나인)의 사전 서면동의 없이 일체의 정보, 콘텐츠, 로고 및 UI 등을 상업적 목적으로 무단전재, 전송 및 스크래핑 등을 할 수 없습니다.</div>
-          <div class="app-download">
-            <a href="">
-              <img src="../assets/images/icon-google-store.svg" alt="" />
-            </a>
-            <a href="">
-              <img src="../assets/images/icon-app-store.svg" alt="" />
-            </a>
           </div>
         </div>
       </div>

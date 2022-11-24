@@ -175,17 +175,289 @@
                     </tr>
                     <tr>
                       <th class="">채용공고 JD<span class="text-danger">(필수)</span></th>
-                      <td class="" colspan="3"></td>
+                      <td class="" colspan="3">
+                        <div id="editor"></div>
+                      </td>
                     </tr>
                     <tr>
                       <th class="">채용마감일<span class="text-danger">(필수)</span></th>
-                      <td class="" colspan="3"></td>
+                      <td class="" colspan="3">
+                        <input type="text" id="datepicker" />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
             <!-- end -->
+
+            <!-- 코웍정보 -->
+            <div class="content">
+              <div class="d-flex align-items-center mb-3">
+                <h4 class="table-subtitle">코웍정보</h4>
+              </div>
+              <div class="row align-items-center m-0">
+                <div class="col-12 list-info d-flex align-items-center">
+                  <p class="table-subtitle m-r-10">코웍으로 진행하시겠습니까?</p>
+                  <p>코웍정보는 코웍공고 및 코워커(CO)에게만 공개됩니다.</p>
+                  <div class="form-check m-l-15">
+                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                  </div>
+                </div>
+
+                <div class="col-12 list-info">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                        <label class="form-check-label" for="multipleCheck2"> 전체공개 </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                        <label class="form-check-label" for="multipleCheck2"> 선택공개 </label>
+                      </div>
+                    </div>
+                    <p>(선택공개 시 등록한 코워커 CO만 공고를 확인할 수 있습니다.)</p>
+                  </div>
+                  <div class="coworker-wrap">
+                    <div class="coworker-registration">
+                      <button type="button" class="btn btn-sm btn-primary round">+ 코워커 등록</button>
+                    </div>
+                    <div class="coworker-list">
+                      <div class="btn btn-sm btn-outline-gray round">
+                        <span class="name">김남극</span>
+                        <span class="email">spole7@menschconsulting.co.kr</span>
+                        <button type="button" class="close"><i class="icon-b-close"></i></button>
+                      </div>
+                      <div class="btn btn-sm btn-outline-gray round">
+                        <span class="name">김남극</span>
+                        <span class="email">spole7@menschconsulting.co.kr</span>
+                        <button type="button" class="close"><i class="icon-b-close"></i></button>
+                      </div>
+                      <div class="btn btn-sm btn-outline-gray round">
+                        <span class="name">김남극</span>
+                        <span class="email">spole7@menschconsulting.co.kr</span>
+                        <button type="button" class="close"><i class="icon-b-close"></i></button>
+                      </div>
+                      <div class="btn btn-sm btn-outline-gray round">
+                        <span class="name">김남극</span>
+                        <span class="email">spole7@menschconsulting.co.kr</span>
+                        <button type="button" class="close"><i class="icon-b-close"></i></button>
+                      </div>
+                    </div>
+                    <div class="coworker-search">
+                      <div class="d-flex align-items-center justify-content-end m-b-15">
+                        <button type="button" class="close"><i class="icon-b-close"></i></button>
+                      </div>
+                      <div class="search-box">
+                        <input type="text" class="" placeholder="" />
+                        <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
+                      </div>
+                      <div class="coworker-search-result">
+                        <ul>
+                          <li>
+                            <p class="name">김남극</p>
+                            <p class="email">spole7@menschconsulting.co.kr</p>
+                            <a href="javascript:void(0)" class="add-more">추가하기</a>
+                          </li>
+                          <li>
+                            <p class="name">김동진</p>
+                            <p class="email">djkim@menschconsulting.co.kr</p>
+                            <a href="javascript:void(0)" class="add-more">추가하기</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table class="table border-top-1 m-t-30">
+                  <colgroup>
+                    <col width="15%" />
+                    <col width="35%" />
+                    <col width="15%" />
+                    <col width="35%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="">채용사유<span class="text-danger font-size-14 d-inline-block m-l-5">필수</span></th>
+                      <td class="" colspan="3">
+                        <input type="text" class="form-control form-lg" value="" placeholder="채용사유 입력 (예: 충원, 증원, 사내이동 등)" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">팀 구성<span class="text-danger font-size-14 d-inline-block m-l-5">필수</span></th>
+                      <td class="" colspan="3">
+                        <input type="text" class="form-control form-lg" value="" placeholder="팀 구성 입력" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">
+                        연봉 수준 및 <br />
+                        연봉 조정 여부<span class="text-danger font-size-14 d-inline-block m-l-5">필수</span>
+                      </th>
+                      <td class="" colspan="3">
+                        <input type="text" class="form-control form-lg" value="" placeholder="연봉 수준 및 연봉 조정 여부 (예: 회사 내규 협의)" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">타깃 회사<span class="text-danger font-size-14 d-inline-block m-l-5">필수</span></th>
+                      <td class="" colspan="3">
+                        <input type="text" class="form-control form-lg" value="" placeholder="타깃 회사 입력 (원하는 출신기업 또는 계열의 기업)" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">직접채용 여부 <span class="text-danger font-size-14 d-inline-block m-l-5">필수</span></th>
+                      <td class="" colspan="3">
+                        <div class="d-flex">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="multipleCheck1" />
+                            <label class="form-check-label" for="multipleCheck1"> 헤드헌팅만 진행 </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="multipleCheck1" />
+                            <label class="form-check-label" for="multipleCheck1"> 직접채용 진행 </label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">기타 코멘트</th>
+                      <td class="" colspan="3">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="content">
+                <div class="desc border-0">
+                  <h4 class="table-subtitle m-b-5">코웍조건</h4>
+                  <table class="table border-top-1">
+                    <caption>
+                      코웍조건
+                    </caption>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="35%" />
+                      <col width="15%" />
+                      <col width="35%" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="">계약수수료율</th>
+                        <td class="" colspan="3"><input type="text" class="form-control form-lg" value="" placeholder="수수료율을 입력해 주세요." /></td>
+                      </tr>
+                      <tr>
+                        <th class="">보증기간</th>
+                        <td class="" colspan="3">
+                          <div class="d-flex align-items-center">
+                            <input type="number" class="form-control form-lg w-50px p-0 text-center" value="" placeholder="" />
+                            <span class="m-l-10">개월</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">기타사항</th>
+                        <td class="" colspan="3">
+                          <div class="form-textarea m-0">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="배분율 등 기타사항을 입력해 주세요." class=""></textarea>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+
+            <!-- 복리후생 및 기업소개 -->
+            <div class="content">
+              <div class="d-flex align-items-center mb-3">
+                <h4 class="table-subtitle">복리후생 및 기업소개(선택)</h4>
+                <span class="m-l-10">기업으로부터 수신한 IR자료, 직무기술서 등 기타 첨부파일을 등록할 수 있습니다. 첨부파일은 코워커(CO)에게만 공개됩니다.</span>
+              </div>
+              <div class="desc">
+                <div class="row align-items-center">
+                  <div class="col-md-2 col-6 col m-b-10">
+                    <select class="select-design select-lg select2-hidden-accessible" style="width: 100%" data-select2-id="select2-data-52-ksaj" tabindex="-1" aria-hidden="true">
+                      <option value="3" data-select2-id="select2-data-54-flob">파일첨부</option>
+                    </select>
+                  </div>
+                  <div class="col-md-10 col-12 col m-b-10">
+                    <div class="form-upload">
+                      <input type="file" class="" id="form-file" />
+                      <label for="form-file"><i class="icon-input-add"></i></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group d-flex justify-content-center m-t-20">
+                  <button type="button" class="btn btn-outline-dark btn-lg">추가하기 <i class="icon-row-add"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 고객사 인사담당자 연락처 -->
+            <div class="content">
+              <div class="d-flex align-items-center mb-3">
+                <h4 class="table-subtitle">고객사 인사담당자 연락처</h4>
+                <p class="m-l-10">인사담당자의 연락처는 <span class="text-danger">공개되지 않으며</span>, 후보자 추천 시 기업 인사담당자에게 메일을 발송하기 위한 정보입니다.</p>
+              </div>
+              <div class="desc">
+                <div class="row align-items-center">
+                  <div class="col-md-2 col-6 col m-b-10">
+                    <select class="select-design select-lg select2-hidden-accessible" style="width: 100%" data-select2-id="select2-data-52-ksaj" tabindex="-1" aria-hidden="true">
+                      <option value="3" data-select2-id="select2-data-54-flob">파일첨부</option>
+                    </select>
+                  </div>
+                  <div class="col-md-10 col-12 col m-b-10">
+                    <div class="form-upload">
+                      <input type="file" class="" id="form-file" />
+                      <label for="form-file"><i class="icon-input-add"></i></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group d-flex justify-content-center m-t-20">
+                  <button type="button" class="btn btn-outline-dark btn-lg">연락처 추가하기 <i class="icon-row-add"></i></button>
+                </div>
+              </div>
+            </div>
+            <!-- PM 코멘트 -->
+            <div class="content">
+              <div class="d-flex align-items-center mb-3">
+                <h4 class="table-subtitle">PM 코멘트</h4>
+                <span class="m-l-10">코웍 진행 시 코워커(CO)가 확인할 수 있는 내용입니다.</span>
+              </div>
+
+              <div class="desc">
+                <div class="edit-area"></div>
+              </div>
+            </div>
+            <!-- end -->
+            <div class="content">
+              <div class="example-form">
+                <ul>
+                  <li class="d-flex align-items-center justify-content-between">
+                    <p>이 채용정보에는 허위내용이 포함되지 않았음을 확인하빈다. 만약 허위사실로 인한 피해발생 시 모든 책임은 등록자에게 있음을 확인합니다.</p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck5" />
+                      <label class="form-check-label" for="multipleCheck5">동의합니다.</label>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center justify-content-between">
+                    <p>등록되는 채용정보는 채용 관련 법령 및 RESUME9의 채용정보 정책에 위반될 경우, 동의 없이 삭제 또는 게시중단 될 수 있습니다.</p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck6" />
+                      <label class="form-check-label" for="multipleCheck6">동의합니다.</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="btn-group d-flex justify-content-center m-t-10">
+              <button type="button" class="btn btn-outline-dark m-r-10">취소</button>
+              <button type="button" class="btn btn-outline-primary">등록</button>
+            </div>
           </div>
         </div>
       </div>
