@@ -144,171 +144,140 @@
     <div id="container-block">
       <div class="container">
         <div class="sub-content">
-          <div class="apply-wrap-body write">
-            <div class="content d-flex justify-content-between">
-              <div class="d-flex align-items-center mb-3">
-                <h4 class="table-subtitle">테스트 포지션등록 (지원하지마세요)</h4>
-                <span class="m-l-10">포지션 등록일:</span>
-                <span class="m-l-5 text-danger">2022.11.01</span>
+          <h3 class="subtitle">내 인재관리</h3>
+          <div class="management-filter">
+            <div class="management-filter-title">
+              <p>열람권을 사용하거나 인재등록을 통해 등록된 인재의 목록을 볼 수 있습니다.</p>
+              <button type="button" class="btn btn-primary">+ 인재등록</button>
+            </div>
+            <div class="management-filter-content">
+              <div class="resources-search-content">
+                <p class="title">경력</p>
+                <div class="d-flex align-items-center m-b-10">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">0년</option>
+                  </select>
+                  <p class="m-l-10 m-r-10">~</p>
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">30년</option>
+                  </select>
+                </div>
               </div>
-              <div>
-                <button type="button"><i class="icon-share"></i></button>
-                <button type="button" class="btn btn-primary btn-md m-l-10">참여중</button>
+              <div class="resources-search-content">
+                <p class="title">이름</p>
+                <input type="text" class="form-control form-md" />
+              </div>
+              <div class="resources-search-content">
+                <p class="title">최종회사</p>
+                <input type="text" class="form-control form-md" />
+              </div>
+              <div class="resources-search-content">
+                <p class="title">연령</p>
+                <div class="d-flex align-items-center m-b-10">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">선택</option>
+                  </select>
+                  <p class="m-l-10 m-r-10">~</p>
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">선택</option>
+                  </select>
+                </div>
+              </div>
+              <div class="resources-search-content">
+                <p class="title">키워드</p>
+                <input type="text" class="form-control form-md" />
               </div>
             </div>
-            <!-- 기업정보 -->
-            <div class="content">
-              <h4 class="table-subtitle mb-3 m-t-25">기업정보</h4>
-              <div class="desc">
-                <table class="table">
-                  <caption>
-                    기업정보
-                  </caption>
-                  <colgroup>
-                    <col width="15%" />
-                    <col width="35%" />
-                    <col width="15%" />
-                    <col width="35%" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th class="">기업명</th>
-                      <td class="">
-                        <p>(주)삼성전자</p>
-                      </td>
-                      <th class="">설립일</th>
-                      <td class="">
-                        <p>2017.04.10</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">대표자</th>
-                      <td class="">
-                        <p>이재용</p>
-                      </td>
-                      <th class="">도로명주소</th>
-                      <td class="">
-                        <p>서울 구로구 디지털로 272, 1007호</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">전화번호</th>
-                      <td class="">
-                        <p></p>
-                      </td>
-                      <th class="">업종명 10차</th>
-                      <td class="">
-                        <p>정상</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">기업규모</th>
-                      <td class="">
-                        <p>대기업</p>
-                      </td>
-                      <th class="">기업상태</th>
-                      <td class="">
-                        <p>정상</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">상장</th>
-                      <td class="" colspan="3">
-                        <p>대상</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 공고내용 -->
-            <div class="content">
-              <div class="d-flex align-items-center mb-3">
-                <h4 class="table-subtitle">공고내용</h4>
-                <span class="m-l-10">공고내용은 사용자에게 전체공개 됩니다.</span>
-              </div>
-              <div class="desc border-bottom-0">
-                <p>테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</p>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 코웍정보 -->
-            <div class="content">
-              <div class="d-flex align-items-center mb-3">
-                <h4 class="table-subtitle">코웍정보</h4>
-              </div>
-              <div class="desc border-bottom-0">
-                <table class="table">
-                  <caption>
-                    코웍정보
-                  </caption>
-                  <colgroup>
-                    <col width="15%" />
-                    <col width="35%" />
-                    <col width="15%" />
-                    <col width="35%" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th class="">코웍 참여자 수</th>
-                      <td class="">
-                        <p><span class="text-danger">1</span>명</p>
-                      </td>
-                      <th class="">이력서 제출 수</th>
-                      <td class="">
-                        <p><span class="font-bold">2</span>건</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- 코웍조건 -->
-            <div class="content">
-              <div class="d-flex align-items-center mb-3">
-                <h4 class="table-subtitle">코웍조건</h4>
-              </div>
-              <div class="desc">
-                <table class="table">
-                  <caption>
-                    코웍조건
-                  </caption>
-                  <colgroup>
-                    <col width="15%" />
-                    <col width="35%" />
-                    <col width="15%" />
-                    <col width="35%" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th class="">계약수수료율</th>
-                      <td class="" colspan="3">
-                        <p>10</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">보증기간</th>
-                      <td class="" colspan="3">
-                        <p>6개월</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">기타사항</th>
-                      <td class="" colspan="3">
-                        <p>테스트 포지션 등록</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- end -->
           </div>
+          <div class="btn-group d-flex align-items-center justify-content-center m-t-30">
+            <button type="button" class="btn btn-primary m-r-10">검색하기</button>
+            <button type="button" class="btn btn-outline-gray">초기화</button>
+          </div>
+
+          <div class="tbl-head">
+            <p class="tbl-head-cnt">총 <span>427</span>건의 채용공고가 있습니다.</p>
+            <div class="d-flex align-items-center gap-10">
+              <select class="select-design" style="width: 100%">
+                <option value="1">전체</option>
+              </select>
+              <select class="select-design" style="width: 100%">
+                <option value="1">그룹관리</option>
+              </select>
+              <select class="select-design" style="width: 100%">
+                <option value="1">열람권</option>
+              </select>
+              <select class="select-design" style="width: 100%">
+                <option value="1">10개씩 보기</option>
+                <option value="3">30개씩 보기</option>
+                <option value="3">50개씩 보기</option>
+              </select>
+            </div>
+          </div>
+          <table class="table m-t-15">
+            <thead>
+              <tr>
+                <th class="text-center">
+                  <div class="form-check p-0">
+                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                  </div>
+                </th>
+                <th class="text-center"></th>
+                <th class="text-center">이름</th>
+                <th class="text-center">경력</th>
+                <th class="text-center">최종회사<br />최장회사</th>
+                <th class="text-center">최종학교</th>
+                <th class="text-center">이직횟수</th>
+                <th class="text-center">등록방식</th>
+                <th class="text-center">업데이트일</th>
+                <th class="text-center">열람만료일</th>
+                <th class="text-center">그룹</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">
+                  <div class="form-check p-0">
+                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="img-box">
+                    <img src="../assets/images/about-01.png" alt="" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p>곽정석</p>
+                  <p>1975(48), 남</p>
+                  <button type="button" class="btn btn-outline-dark btn-sm">비공개하기</button>
+                </td>
+                <td class="text-center">
+                  <p>11년 11개월</p>
+                </td>
+                <td class="text-center">
+                  <p>락앤락</p>
+                  <p>락앤락</p>
+                </td>
+                <td class="text-center">
+                  <p>고려대학교</p>
+                </td>
+                <td class="text-center">
+                  <p>8회</p>
+                </td>
+                <td class="text-center">
+                  <p>열람권</p>
+                </td>
+                <td class="text-center">
+                  <p>2020-12-16</p>
+                </td>
+                <td class="text-center">
+                  <p>2022-12-20</p>
+                </td>
+                <td class="text-center">
+                  <p>기본</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <!-- 게시물 쓰기 -->

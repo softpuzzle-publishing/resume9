@@ -1371,8 +1371,8 @@ progress {
 }
 
 .icon-share {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   background-image: url("../images/icon-share.svg");
 }
 
@@ -6838,5 +6838,44 @@ table.tbl-terms td {
 }
 .position-title-wrap .position-title-state .select-design {
   width: 150px !important;
+}
+
+.management-filter {
+  margin-top: 30px;
+}
+.management-filter .management-filter-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.management-filter .management-filter-content {
+  background-color: #f8f8fa;
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+}
+.management-filter .management-filter-content .resources-search-content {
+  padding: 24px;
+}
+.management-filter .management-filter-content .resources-search-content .title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.management-filter .management-filter-content .resources-search-content .form-control {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+
+.img-box {
+  width: 120px;
+  height: 150px;
+  margin: 0 auto;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=maps/style.css.map */
