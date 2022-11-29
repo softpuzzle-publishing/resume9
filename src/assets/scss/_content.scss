@@ -1463,7 +1463,7 @@ legend{
     li{ 
         margin: 10px 0; position: relative; padding-left:10px;
         &::before{
-            content: ""; position: absolute; width: 3px; height: 3px; background-color: #202020; border-radius: 50%; left: 0; top: 9px;
+            content: ""; position: absolute; width: 3px; height: 3px; background-color: #202020; border-radius: 50%; left: 0; top: 8px;
         }
     }
     .title{ font-size: 18px; font-weight: 700; margin-bottom: 30px;}
@@ -1818,6 +1818,7 @@ legend{
 
 .coworker-wrap{
     background-color: #f8f8fa; padding: 24px 30px; margin-top: 20px; display: flex; position: relative;
+    &.resume{ border: 1px solid #ddd; justify-content: center;}
     .coworker-registration{
         margin-right: 30px;
     }
@@ -1968,4 +1969,28 @@ legend{
             p{max-width: 100%;}
         }
     }
+}
+
+// 인재등록
+.auto-project{
+    background-color: #f8f8fa; padding: 40px 10rem;
+    .title{ color: $PRIMARY_COLOR; line-height: 1.4; font-size: 18px; font-weight: 500;}
+    .notice{ color: #999; font-size: 14px; margin-top:20px; }
+    .form-upload{ background-color: #fff; border: 1px solid #ddd; margin-top: 20px; border-radius: 0;}
+}
+.agreement-content{
+    display: flex; align-items: center; justify-content: space-between; margin-top: 20px;
+    border: 1px solid #ddd; padding: 24px;
+    p{font-size: 18px; font-weight: 500;
+        span{ font-size: 14px; color: #777; font-weight: 400;}
+    }
+    .form-upload{ width: 50%;}
+}
+.memo-content{
+    padding: 40px 0;
+    p{ text-align: center; line-height: 1.4;}
+}
+.memo-form{
+    display: flex; margin-top: 30px;
+    .form-control{ border: 1px solid #ddd; background-color: #fff; border-radius: 0;}
 }

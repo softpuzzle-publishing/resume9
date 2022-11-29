@@ -1949,7 +1949,6 @@ progress {
   line-height: 1.5;
   color: #202020;
   background-color: #f8f8fa;
-  border-radius: 4px;
   border: 0;
 }
 .form-control::-moz-placeholder {
@@ -6105,7 +6104,7 @@ table.tbl-terms td {
   background-color: #202020;
   border-radius: 50%;
   left: 0;
-  top: 9px;
+  top: 8px;
 }
 .example-form .title {
   font-size: 18px;
@@ -6768,6 +6767,10 @@ table.tbl-terms td {
   display: flex;
   position: relative;
 }
+.coworker-wrap.resume {
+  border: 1px solid #ddd;
+  justify-content: center;
+}
 .coworker-wrap .coworker-registration {
   margin-right: 30px;
 }
@@ -7132,5 +7135,65 @@ table.tbl-terms td {
   .message-body .item p {
     max-width: 100%;
   }
+}
+.auto-project {
+  background-color: #f8f8fa;
+  padding: 40px 10rem;
+}
+.auto-project .title {
+  color: #1686f2;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 500;
+}
+.auto-project .notice {
+  color: #999;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.auto-project .form-upload {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 0;
+}
+
+.agreement-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 24px;
+}
+.agreement-content p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.agreement-content p span {
+  font-size: 14px;
+  color: #777;
+  font-weight: 400;
+}
+.agreement-content .form-upload {
+  width: 50%;
+}
+
+.memo-content {
+  padding: 40px 0;
+}
+.memo-content p {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.memo-form {
+  display: flex;
+  margin-top: 30px;
+}
+.memo-form .form-control {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 0;
 }
 /*# sourceMappingURL=maps/style.css.map */

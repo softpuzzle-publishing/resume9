@@ -138,10 +138,74 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <table class="table m-t-15 border-top-1">
+                  <colgroup>
+                    <col width="15%" />
+                    <col width="65%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="text-center">등록일</th>
+                      <th class="">포지션 명</th>
+                      <th class="text-center">마감/종료일</th>
+                      <th class="text-center">포지션 상태</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <p>2022-09-21</p>
+                      </td>
+                      <td class="">
+                        <a href="@@webRoot/headhunterPosition/headhunter_view.html" class="text-primary text-underline">테스트 포지션 등록</a>
+                      </td>
+                      <td class="text-center">
+                        <p>2022-09-30</p>
+                      </td>
+                      <td class="text-center">
+                        <p>진행중</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="memo-content">
+                  <p>
+                    고객사에 대한 메모를 작성해 보세요.<br />
+                    메모는 <strong>나만 볼 수 있으며</strong>, 고객사별 특징을 기록해 놓을 수 있습니다.
+                  </p>
+                  <div class="memo-form">
+                    <input type="text" class="form-control form-lg" placeholder="메모를 입력하세요." />
+                    <button type="button" class="btn btn-primary">메모입력</button>
+                  </div>
+                </div>
+                <table class="table m-t-15 border-top-1">
+                  <colgroup>
+                    <col width="20%" />
+                    <col width="80%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="text-center">등록일시</th>
+                      <th class="">내용</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center" colspan="2">
+                        <p class="m-t-20 m-b-20 text-centent">작성한 메모가 없습니다.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
+          @@include('@@webRoot/_include/_pagination.html')
         </div>
       </div>
       @@include('@@webRoot/_include/_modal.html')
