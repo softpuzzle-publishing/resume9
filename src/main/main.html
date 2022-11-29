@@ -244,7 +244,7 @@
         <!-- // main-content__announcement -->
         <div class="main-content__search">
           <div class="container">
-            <div class="main-search-box">
+            <div class="main-search-box swiper-search">
               <p class="title">참여 서치펌</p>
               <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -293,7 +293,7 @@
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
-            <div class="main-search-box">
+            <div class="main-search-box swiper-customer">
               <p class="title">고객사</p>
               <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -486,7 +486,7 @@
         },
       });
 
-      const searchSwiper = new Swiper(".main-content__search .swiper-container", {
+      const searchSwiper = new Swiper(".swiper-search .swiper-container", {
         // If we need pagination
         breakpoints: {
           996: {
@@ -498,12 +498,32 @@
         spaceBetween: 0,
         // Navigation arrows
         navigation: {
-          nextEl: ".main-content__search .swiper-button-next",
-          prevEl: ".main-content__search .swiper-button-prev",
+          nextEl: ".swiper-search .swiper-button-next",
+          prevEl: ".swiper-search .swiper-button-prev",
         },
 
         scrollbar: {
-          el: ".main-content__search .swiper-scrollbar",
+          el: ".swiper-search .swiper-scrollbar",
+        },
+      });
+      const customerSwiper = new Swiper(".swiper-customer .swiper-container", {
+        // If we need pagination
+        breakpoints: {
+          996: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-customer .swiper-button-next",
+          prevEl: ".swiper-customer .swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-customer .swiper-scrollbar",
         },
       });
       const platformSwiper = new Swiper(".main-content__platform .swiper-container", {
