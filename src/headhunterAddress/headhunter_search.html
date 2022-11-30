@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_headhunter_main_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="sub-content">
+          <p class="center-title">검색 가능한 인재수 : 총 <span class="text-primary">10,823</span>명</p>
+          <div class="">
+            <div class="human-resources-filter">
+              <div class="resources-search-content">
+                <p class="title">경력</p>
+                <div class="d-flex align-items-center m-b-10">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">0년</option>
+                  </select>
+                  <p class="m-l-10">~</p>
+                </div>
+                <div class="">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">30년</option>
+                  </select>
+                </div>
+              </div>
+              <div class="resources-search-content">
+                <p class="title">연령</p>
+                <div class="d-flex align-items-center m-b-10">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">20세 (2003)</option>
+                  </select>
+                  <p class="m-l-10">~</p>
+                </div>
+                <div class="">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">60세 (1963)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="resources-search-content">
+                <p class="title">희망연봉</p>
+                <div class="d-flex align-items-center m-b-10">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">1,000만원</option>
+                  </select>
+                  <p class="m-l-10">~</p>
+                </div>
+                <div class="">
+                  <select class="select-design" style="width: 100%">
+                    <option value="1">10,000만원</option>
+                  </select>
+                </div>
+              </div>
+              <div class="resources-search-content">
+                <p class="title">학력</p>
+                <div class="check-badge-wrap">
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check1" id="check1" />
+                    <label for="check1" class="check-badge-label">박사</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check2" id="check2" />
+                    <label for="check2" class="check-badge-label">석사</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check3" id="check3" />
+                    <label for="check3" class="check-badge-label">대학교 (4년)</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check4" id="check4" />
+                    <label for="check4" class="check-badge-label">대학(2-3년)</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check5" id="check5" />
+                    <label for="check5" class="check-badge-label">고졸</label>
+                  </div>
+                </div>
+              </div>
+              <div class="resources-search-content">
+                <p class="title">학력2</p>
+                <div class="check-badge-wrap">
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check1" id="check1" />
+                    <label for="check1" class="check-badge-label">해외</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check2" id="check2" />
+                    <label for="check2" class="check-badge-label">SKY</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check3" id="check3" />
+                    <label for="check3" class="check-badge-label">인서울</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check4" id="check4" />
+                    <label for="check4" class="check-badge-label">지방국공립</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check5" id="check5" />
+                    <label for="check5" class="check-badge-label">정규4년제</label>
+                  </div>
+                </div>
+              </div>
+              <div class="resources-search-content">
+                <p class="title">희망근무지</p>
+                <div class="check-badge-wrap">
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check1" id="check1" />
+                    <label for="check1" class="check-badge-label">전국</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check2" id="check2" />
+                    <label for="check2" class="check-badge-label">서울</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="check-badge" name="check3" id="check3" />
+                    <label for="check3" class="check-badge-label">수도권</label>
+                  </div>
+                </div>
+              </div>
+              <div class="resources-search-content">
+                <p class="title">외국어</p>
+                <div class="resources-input">
+                  <input type="text" class="form-control form-sm" />
+                </div>
+                <p class="title m-t-15">자격증</p>
+                <div class="resources-input">
+                  <input type="text" class="form-control form-sm" />
+                </div>
+              </div>
+            </div>
+            <div class="human-resources-search">
+              <div class="resources-search-wrap">
+                <input type="text" class="form-control form-md" />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="multipleCheck2" />
+                  <label class="form-check-label" for="multipleCheck2"> 결과 내 검색</label>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-md m-l-10">검색하기</button>
+            </div>
+          </div>
+          <div class="tbl-head">
+            <p class="tbl-head-cnt">총 <span>427</span>건의 채용공고가 있습니다.</p>
+            <div class="">
+              <select class="select-design" style="width: 100%">
+                <option value="1">10개씩 보기</option>
+                <option value="3">30개씩 보기</option>
+                <option value="3">50개씩 보기</option>
+              </select>
+            </div>
+          </div>
+          <div class="fake-table m-t-10">
+            <div class="fake-table-head">
+              <div class="fake-table-cell"></div>
+              <div class="fake-table-cell">이름</div>
+              <div class="fake-table-cell">총경력</div>
+              <div class="fake-table-cell">
+                최종회사<br />
+                최장회사
+              </div>
+              <div class="fake-table-cell">최종학교</div>
+              <div class="fake-table-cell">핵심역량</div>
+              <div class="fake-table-cell">이직횟수</div>
+              <div class="fake-table-cell">최근 로그인</div>
+            </div>
+            <div class="fake-table-column">
+              <div class="fake-table-cell">
+                <p class="text-primary">내 인재</p>
+              </div>
+              <div class="fake-table-cell">
+                <p><a href="">김희선</a></p>
+                <p>1980(43), 여</p>
+              </div>
+              <div class="fake-table-cell">
+                <p>13년 2개월</p>
+              </div>
+              <div class="fake-table-cell">
+                <p>삼성전자(주)</p>
+                <p>막스코(주)</p>
+              </div>
+              <div class="fake-table-cell">
+                <p>중앙대학교</p>
+                <p>(경기도)</p>
+              </div>
+              <div class="fake-table-cell">
+                <div class="form-cell cell-2">
+                  <div>
+                    <p>외국어</p>
+                  </div>
+                  <div class="">
+                    <p>ESP</p>
+                  </div>
+                </div>
+                <div class="form-cell cell-2">
+                  <div>
+                    <p>외국어</p>
+                  </div>
+                  <div class="">
+                    <p>ESP</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fake-table-cell">
+                <p>7회</p>
+              </div>
+              <div class="fake-table-cell">
+                <p>2022-09-09</p>
+              </div>
+            </div>
+          </div>
+          @@include('@@webRoot/_include/_pagination.html')
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

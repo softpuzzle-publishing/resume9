@@ -40,4 +40,12 @@ $(document).ready(function () {
   }); // datepicker
 
   $("#datepicker").datepicker();
+  $(".more-dot").click(function () {
+    $(this).addClass("active");
+  });
+  $("html").click(function (e) {
+    if ($(e.target).parents(".more-dot").length < 1) {
+      $(".more-dot").removeClass("active");
+    }
+  });
 });

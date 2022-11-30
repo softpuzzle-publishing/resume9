@@ -8,6 +8,7 @@ aside{
             > ul{
                 margin-top: -5px;
                 >li{
+                    position: relative;
                     .item-new{ margin-left: 10px;}
                     &.active{
                         a{
@@ -31,7 +32,19 @@ aside{
                         padding-left: 20px; background-color: #f8f8f8;
                     }
                 }
+
+                // 헤드헌터 사이드메뉴
+                .feed-list-detail{ 
+                    position: static;
+                    .more-dot{ 
+                        top:50%; right:10px; transform: translateY(-50%);
+                        .more-page{ left: 10px;}
+                    }
+                }
+                .icon-more-dot{height: 13px;}
+                // //
             }
+         .headhunter-side-title{ width: 100%; border: 1px dotted $PRIMARY_COLOR; color: $PRIMARY_COLOR; padding: 10px 20px; font-size: 16px;}
         }
     }
     .new-community{

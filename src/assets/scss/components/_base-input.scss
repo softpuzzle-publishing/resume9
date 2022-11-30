@@ -11,6 +11,7 @@
     background-color: #f8f8fa;
     border:0;
 
+    &.white{ background-color: #fff; border: 1px solid #ddd;}
     &::placeholder{ color: #999;}
 
     &:focus {
