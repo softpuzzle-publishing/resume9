@@ -41,48 +41,102 @@
     <div id="container-block">
       <div class="talk-inbox">
         <div class="message-wrap">
-          <div class="message-list">
-            <div class="list-top">
-              <h1>TALK 보관함</h1>
-              <div class="message-search">
-                <div class="input-group">
-                  <input type="text" class="form-control bg-light" placeholder="검색어를 입력하세요" />
-                  <div class="input-group-append">
-                    <button class="btn btn-light" type="submit">
-                      <i class="icon-input-search-dark"><span class="sr-only">검색</span></i>
-                    </button>
+          <div class="">
+            <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">알림</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">채팅</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="message-list">
+                  <div class="message-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control bg-light" placeholder="검색어를 입력하세요" />
+                      <div class="input-group-append">
+                        <button class="btn btn-light" type="submit">
+                          <i class="icon-input-search-dark"><span class="sr-only">검색</span></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <ul>
+                      <li class="active">
+                        <a href="javascript:;">
+                          <span class="profile"><img src="/../assets/images/about-01.png" alt="김신" /></span>
+                          <div class="cont">
+                            <span class="name">맞춤 인재 알림</span>
+                            <span class="desc">이*형1994(29), 이*형1994(29) 외 5명</span>
+                            <span class="msg">"경영전략"에 해당되는 인재를 발견했습니다</span>
+                            <span class="unread">5분전</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="profile"><img src="/../assets/images/about-01.png" alt="김신" /></span>
+                          <div class="cont">
+                            <span class="name">맞춤 인재 알림</span>
+                            <span class="desc">이*형1994(29), 이*형1994(29) 외 5명</span>
+                            <span class="msg">"경영전략"에 해당되는 인재를 발견했습니다</span>
+                            <span class="unread">5분전</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="list">
-              <ul>
-                <li class="active">
-                  <a href="javascript:;">
-                    <span class="profile"><img src="/../assets/images/about-01.png" alt="김신" /></span>
-                    <div class="cont">
-                      <span class="name">김신</span>
-                      <span class="msg">안녕하세요. 이번 지원 프로그램 관련하여 궁금한 사항이 있어서 메시지 보냅니다. 서류는 이렇게 준비해서 지원하면 되나요?</span>
-                      <span class="unread">99</span>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="message-list">
+                  <div class="message-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control bg-light" placeholder="검색어를 입력하세요" />
+                      <div class="input-group-append">
+                        <button class="btn btn-light" type="submit">
+                          <i class="icon-input-search-dark"><span class="sr-only">검색</span></i>
+                        </button>
+                      </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <span class="profile"><img src="/../assets/images/about-01.png" alt="김신" /></span>
-                    <div class="cont">
-                      <span class="name">김신</span>
-                      <span class="msg">안녕하세요. 이번 지원 프로그램 관련하여 궁금한 사항이 있어서 메시지 보냅니다. 서류는 이렇게 준비해서 지원하면 되나요?</span>
-                      <span class="unread">1</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+                  </div>
+                  <div class="list">
+                    <ul>
+                      <li class="active">
+                        <a href="javascript:;">
+                          <span class="profile"><img src="/../assets/images/about-01.png" alt="김신" /></span>
+                          <div class="cont">
+                            <span class="name">메세지 알림(헤드헌터)</span>
+                            <span class="desc">김이나님이 메시지를 보냄</span>
+                            <span class="msg">안녕하세요 김이나입니다.</span>
+                            <span class="unread">5분전</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="profile"><img src="/../assets/images/about-01.png" alt="김신" /></span>
+                          <div class="cont">
+                            <span class="name">메세지 알림(헤드헌터)</span>
+                            <span class="desc">김이나님이 메시지를 보냄</span>
+                            <span class="msg">안녕하세요 김이나입니다.</span>
+                            <span class="unread">5분전</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="message-content">
             <div class="message-header">
               <div class="opponent">
+                <a href="javascript:void(0)" class="back"><i class="icon-b-prev"></i></a>
                 <span class="profile"><img src="/../assets/images/about-01.png" alt="김신" /></span>
                 <span class="name">김신</span>
               </div>

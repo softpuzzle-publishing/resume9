@@ -13,8 +13,11 @@
     &.tag-outline-primary{
         background-color: #fff;border: 1px solid $PRIMARY_COLOR;color: $PRIMARY_COLOR;
     }
-    &.danger{
-        border: 1px solid #f95b55; color: #f95b55;
+    &.tag-danger{
+        border: 1px solid #FFE4E5; color: #E9090A; background-color: #FFE4E5;
+    }
+    &.tag-outline-danger{
+        border: 1px solid #E9090A; color: #E9090A; background-color: transparent;
     }
     &.tag-orange{
         color: #fff;

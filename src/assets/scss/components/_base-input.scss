@@ -45,7 +45,16 @@
       width: 100%; text-align: right; cursor: pointer;
     }
   }
-  
+  .date-range{
+    display: flex; align-items: center;
+    span{margin: 0 10px;}
+    .form-date-wrap{padding: 9px 33px 9px 10px;}
+  }
+  .form-date-wrap{
+    width: 140px; padding: 4px 33px 4px 5px;
+    border: 1px solid #ddd;
+    .form-date{ border:0; width: 100%;}
+  }
   @media screen and (max-width: 992px) {
     .form-control {
       &.form-sm{ min-height: 22px; font-size: 11px; padding: 4px 15px 4px 12px;}

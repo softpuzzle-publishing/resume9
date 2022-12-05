@@ -184,38 +184,90 @@
           <div class="layout-content">
             <div class="community-content">
               <div class="sub-content-head">
-                <h3 class="subtitle">리워드 mall</h3>
+                <h3 class="subtitle">적립/사용 내역</h3>
               </div>
-              <div class="reword-detail">
-                <div class="reword-product-img">
-                  <img src="../assets/images/about-01.png" alt="스타벅스 아이스아메리카노" />
-                </div>
-                <div class="reword-explanation">
-                  <div class="reword-product">
-                    <p class="company">스타벅스</p>
-                    <p class="product-name">아이스 카페 아메리카노</p>
-                    <p class="need-point"><span>4,100</span>P</p>
-                  </div>
-                  <ul class="product-content">
-                    <li>
-                      <span class="key">교환처</span>
-                      <span class="value">스타벅스</span>
-                    </li>
-                    <li>
-                      <span class="key">유효기간</span>
-                      <span class="value">전송 후 30일</span>
-                    </li>
-                  </ul>
-                  <div class="example-form">
-                    <ul>
-                      <li>이 상품은 RESUME9 회원의 리워드 포인트로만 교환할 수 있습니다.</li>
-                      <li>실물 상품이 아닌 스타벅스 매장에서 이용할 수 있는 모바일 교환권이며, 본인의 휴대폰번호로 전송됩니다.</li>
-                      <li>상품은 전송 후, 교환/취소/환불이 되지 않습니다.</li>
-                    </ul>
-                  </div>
-                  <button type="button" class="btn btn-lg btn-outline-dark">포인트로 구매하기</button>
+              <div class="reword-wrap">
+                <p class="reword-wrap-title">
+                  헤드헌터 내 이력서 상세정보를 열람할 때다<br />
+                  <b>100포인트</b>의 <b class="text-primary">리워드 적립</b>됩니다.
+                </p>
+                <p class="desc">RESUME에 이력서 등록하고 리워드 mall에서 쇼핑도 하세요!</p>
+
+                <div class="now-point">
+                  <i class="icon-point"></i>
+                  <span>내 리워드</span>
+                  <p class="my-point"><b class="text-primary">1,350</b>P</p>
                 </div>
               </div>
+              <div class="tbl-head">
+                <div class="btn-group date-list" role="group">
+                  <p class="m-r-20 hidden-mobile">조회기간</p>
+                  <button type="button" class="btn btn-outline-primary active">1개월</button>
+                  <button type="button" class="btn btn-outline-primary">3개월</button>
+                  <button type="button" class="btn btn-outline-primary">6개월</button>
+                  <button type="button" class="btn btn-outline-primary">1년</button>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <div class="date-range">
+                    <div class="form-date-wrap">
+                      <input type="text" id="datepicker" class="form-date" />
+                    </div>
+                    <span>~</span>
+                    <div class="form-date-wrap">
+                      <input type="text" id="datepicker" class="form-date" />
+                    </div>
+                  </div>
+                  <select class="select-design" style="width: 135px">
+                    <option value="1">전체</option>
+                    <option value="1">헤드헌터 열람</option>
+                    <option value="1">기프티콘 구매</option>
+                    <option value="1">관리자 입력</option>
+                    <option value="1">합격후기 등록</option>
+                  </select>
+                </div>
+              </div>
+              <table class="table m-t-15 border-top-1">
+                <colgroup>
+                  <col width="20%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="text-center">구분</th>
+                    <th class="text-center">일시</th>
+                    <th class="text-center">내역</th>
+                    <th class="text-center">포인트</th>
+                    <th class="text-center">상태</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center" colspan="5">
+                      <p class="m-t-30 m-b-30">리워드 적립/사용 내역이 없습니다.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      <p>적립</p>
+                    </td>
+                    <td class="text-center">
+                      <p>2022.11.01</p>
+                    </td>
+                    <td class="text-center">
+                      <p>헤드헌터 열람</p>
+                    </td>
+                    <td class="text-center">
+                      <p>+ 1,000P</p>
+                    </td>
+                    <td class="text-center">
+                      <p>발송대기 / 발송완료</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

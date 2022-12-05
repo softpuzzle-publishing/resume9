@@ -1894,7 +1894,12 @@ legend{
     }
 }
 
-.message-wrap{display: flex;}
+.message-wrap{
+    display: flex;
+    .nav-tabs{
+        padding: 20px 20px 0 20px;
+    }
+}
 .message-list{
     flex: 0 0 315px;max-width:315px;
     h1{font-size: 24px;font-weight: 700;}
@@ -1921,7 +1926,8 @@ legend{
         .cont{width: 223px;margin-left: 10px;}
         .name{display: block;font-weight: 700;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;margin-bottom: 5px;}
         .msg{display: block;font-size: 14px;color: #888;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
-        .unread{width: 20px;height: 20px;line-height: 21px;text-align: center;display: inline-block;background: #fa5050;border-radius: 50%;overflow: hidden;color: #fff;position: absolute;right: 1rem;top: 10px;font-size: 14px;font-weight: 700;font-size: 11px;}
+        .desc{display: block;font-size: 14px;color: #000;text-overflow: ellipsis;white-space: nowrap;overflow: hidden; margin-bottom: 5px;}
+        .unread{width: 20px;height: 20px;line-height: 21px;text-align: center;display: inline-block;border-radius: 50%;overflow: hidden;color: #ccc;position: absolute;right: 1rem;top: 10px;font-size: 14px;font-size: 11px;}
     }
 }
 .message-content{
@@ -1963,10 +1969,22 @@ legend{
     .body-talk .profile {
         width: 45px; height: 45px;
     }
-    .message-content{ position: fixed; z-index: 100;}
+    .message-wrap{
+        >div{width: 100%;}
+        .nav-tabs{ padding: 0 20px; }
+    }
+    .message-list{
+        flex: 0 0 100%; max-width: 100%;
+        .list{
+            .cont{width: 80%;}
+        }
+    }
+    .message-content{
+        position: fixed; z-index: 100; left: 100%; transition: left .5s;
+        &.active{ left:0; transition: left .5s;}
+    }
     .message-header{
-        padding: 1rem 30px 1rem 55px;
-        background-image: url('../images/icon-b-prev.svg'); background-repeat: no-repeat;    background-position: 4% 50%; background-size: 35px;
+        padding: 1rem 30px 1rem 20px;
         .name {
             margin-left: 10px; font-size: 18px;
         }
@@ -2010,4 +2028,24 @@ legend{
     .btn-primary{min-width: 120px}
     .btn-outline-gray{min-width: 90px}
     .select-design{ width: 100px !important;}
+}
+
+// 포지션 관리 리스트
+.position-wrap{
+    margin-top: 60px;
+}
+.position-list{display: flex; gap: 27px;}
+.position-card{
+  width:25%; height: 335px;  background-color: #F8F8FA; border:1px solid #ddd; padding: 30px; border-radius: 16px; display: block;
+  &.add{
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+  }
+  .position-card-head{
+    display: flex; align-items: center; justify-content: space-between;
+    .icon-r-time{ margin-right: 2px;}
+    .count{ 
+        font-size: 14px; font-weight: bold; color: #000;
+        &.extend{ color: #E9090A;}
+    }
+  }
 }

@@ -808,6 +808,10 @@ progress {
   margin-bottom: 25px !important;
 }
 
+.m-b-30 {
+  margin-bottom: 30px !important;
+}
+
 .m-l-5 {
   margin-left: 5px !important;
 }
@@ -828,6 +832,10 @@ progress {
   margin-left: 25px !important;
 }
 
+.m-l-30 {
+  margin-left: 30px !important;
+}
+
 .m-r-5 {
   margin-right: 5px !important;
 }
@@ -846,6 +854,10 @@ progress {
 
 .m-r-25 {
   margin-right: 25px !important;
+}
+
+.m-r-30 {
+  margin-right: 30px !important;
 }
 
 .p-l-10 {
@@ -1405,6 +1417,31 @@ progress {
   width: 14px;
   height: 20px;
   background-image: url("../images/icon-trash.svg");
+}
+
+.icon-date {
+  width: 20px;
+  height: 17px;
+  background-image: url("../images/icon-date.svg");
+}
+
+.icon-bg-plus {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icon-bg-plus.svg");
+}
+
+.icon-r-time {
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/icon-r-time.svg");
+}
+
+.icon-b-prev {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icon-b-prev.svg");
+  margin-right: 10px;
 }
 
 /* checkbox/radio */
@@ -2037,6 +2074,27 @@ progress {
   cursor: pointer;
 }
 
+.date-range {
+  display: flex;
+  align-items: center;
+}
+.date-range span {
+  margin: 0 10px;
+}
+.date-range .form-date-wrap {
+  padding: 9px 33px 9px 10px;
+}
+
+.form-date-wrap {
+  width: 140px;
+  padding: 4px 33px 4px 5px;
+  border: 1px solid #ddd;
+}
+.form-date-wrap .form-date {
+  border: 0;
+  width: 100%;
+}
+
 @media screen and (max-width: 992px) {
   .form-control.form-sm {
     min-height: 22px;
@@ -2172,9 +2230,15 @@ progress {
   border: 1px solid #1686f2;
   color: #1686f2;
 }
-.tag.danger {
-  border: 1px solid #f95b55;
-  color: #f95b55;
+.tag.tag-danger {
+  border: 1px solid #FFE4E5;
+  color: #E9090A;
+  background-color: #FFE4E5;
+}
+.tag.tag-outline-danger {
+  border: 1px solid #E9090A;
+  color: #E9090A;
+  background-color: transparent;
 }
 .tag.tag-orange {
   color: #fff;
@@ -3066,7 +3130,8 @@ input[type=number]::-webkit-inner-spin-button {
   margin-bottom: 20px;
 }
 .date-list .btn {
-  width: 100px;
+  width: 85px;
+  min-width: 85px;
   margin-right: -1px;
 }
 .date-list + div {
@@ -6972,6 +7037,9 @@ table.tbl-terms td {
 .message-wrap {
   display: flex;
 }
+.message-wrap .nav-tabs {
+  padding: 20px 20px 0 20px;
+}
 
 .message-list {
   flex: 0 0 315px;
@@ -7049,21 +7117,28 @@ table.tbl-terms td {
   white-space: nowrap;
   overflow: hidden;
 }
+.message-list .list .desc {
+  display: block;
+  font-size: 14px;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
 .message-list .list .unread {
   width: 20px;
   height: 20px;
   line-height: 21px;
   text-align: center;
   display: inline-block;
-  background: #fa5050;
   border-radius: 50%;
   overflow: hidden;
-  color: #fff;
+  color: #ccc;
   position: absolute;
   right: 1rem;
   top: 10px;
   font-size: 14px;
-  font-weight: 700;
   font-size: 11px;
 }
 
@@ -7176,16 +7251,31 @@ table.tbl-terms td {
     width: 45px;
     height: 45px;
   }
+  .message-wrap > div {
+    width: 100%;
+  }
+  .message-wrap .nav-tabs {
+    padding: 0 20px;
+  }
+  .message-list {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .message-list .list .cont {
+    width: 80%;
+  }
   .message-content {
     position: fixed;
     z-index: 100;
+    left: 100%;
+    transition: left 0.5s;
+  }
+  .message-content.active {
+    left: 0;
+    transition: left 0.5s;
   }
   .message-header {
-    padding: 1rem 30px 1rem 55px;
-    background-image: url("../images/icon-b-prev.svg");
-    background-repeat: no-repeat;
-    background-position: 4% 50%;
-    background-size: 35px;
+    padding: 1rem 30px 1rem 20px;
   }
   .message-header .name {
     margin-left: 10px;
@@ -7275,5 +7365,46 @@ table.tbl-terms td {
 }
 .address-tool .select-design {
   width: 100px !important;
+}
+
+.position-wrap {
+  margin-top: 60px;
+}
+
+.position-list {
+  display: flex;
+  gap: 27px;
+}
+
+.position-card {
+  width: 25%;
+  height: 335px;
+  background-color: #F8F8FA;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 16px;
+  display: block;
+}
+.position-card.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.position-card .position-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.position-card .position-card-head .icon-r-time {
+  margin-right: 2px;
+}
+.position-card .position-card-head .count {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+.position-card .position-card-head .count.extend {
+  color: #E9090A;
 }
 /*# sourceMappingURL=maps/style.css.map */
