@@ -28,7 +28,7 @@
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" value="" id="multipleCheck5" />
-                        <label class="form-check-label" for="multipleCheck5">자주쓰는 메일</label>
+                        <label class="form-check-label" for="multipleCheck5">자주쓰는 SMS</label>
                       </div>
                     </div>
                     <div class="d-flex gap-10">
@@ -59,7 +59,7 @@
                     <th class="">받는 사람</th>
                     <td class="">
                       <div class="d-flex align-items-center justify-content-between">
-                        <div class="coworker-wrap m-r-15 bg-white">
+                        <div class="coworker-wrap bg-white m-0">
                           <div class="coworker-list">
                             <div class="btn btn-sm btn-outline-gray round d-flex justify-content-around">
                               <span class="name">김남극</span>
@@ -67,18 +67,35 @@
                             </div>
                           </div>
                         </div>
-                        <button type="button" class="btn btn-sm btn-primary round">+ 직접추가</button>
+                        <button type="button" class="btn btn-sm btn-primary round" data-bs-toggle="modal" data-bs-target="#modal-email-add">+ 직접추가</button>
                       </div>
+                      <div class="d-flex align-items-center justify-content-between m-b-5">
+                        <div class="d-flex">
+                          <p class="text-danger font-size-14">문자메세지는 발송에 따라 건당 포인트가 차감됩니다.</p>
+                          <p class="m-l-10 font-size-14">SMS(20원/건) LMS(60원/건) MMS(100원/건)</p>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">지원태그 삽입</button>
+                      </div>
+                      <div class="form-textarea m-0">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요." class=""></textarea>
+                      </div>
+                      <p class="text-end font-size-14"><span id="cnt">0</span>/2000자</p>
                     </td>
                   </tr>
                   <tr>
-                    <th class="">제목</th>
+                    <th class="">제목(LMS/MMS)</th>
                     <td class="">
-                      <input type="text" class="form-control form-lg" value="" placeholder="제목을 입력해주세요." />
+                      <input type="text" class="form-control form-lg" value="" placeholder="제목을 입력시 MMS/LMS로 발송됩니다." />
                     </td>
                   </tr>
                 </tbody>
               </table>
+              <div class="d-flex align-items-center justify-content-end m-t-30">
+                <div class="d-flex gap-10">
+                  <button type="button" class="btn btn-gray">취소</button>
+                  <button type="button" class="btn btn-primary">문자발송</button>
+                </div>
+              </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div class="row email-wrap m-0">
@@ -122,7 +139,7 @@
                     <th class="">받는 사람</th>
                     <td class="">
                       <div class="d-flex align-items-center justify-content-between">
-                        <div class="coworker-wrap m-r-15 bg-white">
+                        <div class="coworker-wrap m-0 bg-white">
                           <div class="coworker-list">
                             <div class="btn btn-sm btn-outline-gray round d-flex justify-content-around">
                               <span class="name">김남극</span>
@@ -130,7 +147,7 @@
                             </div>
                           </div>
                         </div>
-                        <button type="button" class="btn btn-sm btn-primary round">+ 직접추가</button>
+                        <button type="button" class="btn btn-sm btn-primary round" data-bs-toggle="modal" data-bs-target="#modal-email-add">+ 직접추가</button>
                       </div>
                     </td>
                   </tr>
@@ -138,11 +155,7 @@
                     <th class="">제목</th>
                     <td class="">
                       <input type="text" class="form-control form-lg" value="" placeholder="제목을 입력해주세요." />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="" colspan="2">
-                      <div class="form">에디터 영역</div>
+                      <div class="form m-t-30">에디터 영역</div>
                     </td>
                   </tr>
                   <tr>

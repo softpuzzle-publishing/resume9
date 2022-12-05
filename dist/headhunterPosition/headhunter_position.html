@@ -145,34 +145,32 @@
       <div class="container">
         <div class="sub-content">
           <div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">진행중</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">종료</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">진행중</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">종료</button>
+                </li>
+              </ul>
+              <div class="d-flex gap-10">
+                <select class="select-design" style="width: 150px">
+                  <option value="1">코웍참가자</option>
+                </select>
+                <input type="text" class="form-control white form-md" style="width: 250px" />
+                <button type="button" class="btn btn-primary btn-md">검색</button>
+              </div>
             </div>
-          </div>
-
-          <div class="d-flex justify-content-center mt-5">
-            <div class="pagination">
-              <a href=""><i class="icon-pager-prev"></i></a>
-              <a href="" class="active">1</a>
-              <a href="">2</a>
-              <a href="">3</a>
-              <a href="">4</a>
-              <a href="">5</a>
-              <a href="">6</a>
-              <a href="">7</a>
-              <a href="">8</a>
-              <a href="">9</a>
-              <a href="">10</a>
-              <a href=""><i class="icon-pager-next"></i></a>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="position-wrap">
+                  <div class="position-list">
+                    <div class="position-card"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
             </div>
           </div>
         </div>
@@ -983,6 +981,53 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
               <button type="button" class="btn btn-primary">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 받는사람 직접추가 -->
+      <div class="modal fade" id="modal-email-add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-write modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">받는사람 직접추가</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table border-top-1 m-t-30">
+                <colgroup>
+                  <col width="25%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="">이름</th>
+                    <td class="">
+                      <input type="text" class="form-control form-lg" value="" placeholder="이름" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="">이메일주소</th>
+                    <td class="">
+                      <input type="text" class="form-control form-lg" value="" placeholder="email@example.com" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="">휴대폰번호</th>
+                    <td class="">
+                      <input type="text" class="form-control form-lg" value="" placeholder="(-)를 제외하고 입력" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="form-check m-t-20">
+                <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                <label class="form-check-label" for="multipleCheck"> 이 정보를 [내 주소록]에도 추가합니다. </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn btn-primary">추가</button>
             </div>
           </div>
         </div>

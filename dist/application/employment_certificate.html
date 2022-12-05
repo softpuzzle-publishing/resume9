@@ -1040,6 +1040,53 @@
           </div>
         </div>
       </div>
+
+      <!-- 받는사람 직접추가 -->
+      <div class="modal fade" id="modal-email-add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-write modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">받는사람 직접추가</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table border-top-1 m-t-30">
+                <colgroup>
+                  <col width="25%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="">이름</th>
+                    <td class="">
+                      <input type="text" class="form-control form-lg" value="" placeholder="이름" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="">이메일주소</th>
+                    <td class="">
+                      <input type="text" class="form-control form-lg" value="" placeholder="email@example.com" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="">휴대폰번호</th>
+                    <td class="">
+                      <input type="text" class="form-control form-lg" value="" placeholder="(-)를 제외하고 입력" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="form-check m-t-20">
+                <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                <label class="form-check-label" for="multipleCheck"> 이 정보를 [내 주소록]에도 추가합니다. </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn btn-primary">추가</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <div class="container">
