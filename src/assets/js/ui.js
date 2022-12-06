@@ -33,12 +33,6 @@ $(document).ready(function () {
         .children()
         .find("i")
         .addClass(getClass + "-active");
-    } else {
-      $(this).removeClass("active");
-      $(this)
-        .children()
-        .find("i")
-        .removeClass(getClass + "");
     }
   });
 

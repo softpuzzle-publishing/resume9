@@ -30,9 +30,6 @@ $(document).ready(function () {
     if (!$(this).hasClass("active")) {
       $(this).addClass("active");
       $(this).children().find("i").addClass(getClass + "-active");
-    } else {
-      $(this).removeClass("active");
-      $(this).children().find("i").removeClass(getClass + "");
     }
   });
   $(".accordion-agree .item").click(function () {

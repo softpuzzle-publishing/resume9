@@ -105,7 +105,9 @@
 
 .icon-resume-plus{ width: 24px; height: 24px; background-image: url('../images/icon-resume-plus.svg');}
 
-.icon-resume-minus{ width: 24px; height: 24px; background-image: url('../images/icon-resume-minus.svg');}
+.icon-resume-minus{ width: 24px; height: 24px; background-image: url('../images/icon-resume-minus.svg');
+  &.resume{width: 18px; height: 18px;}
+}
 
 .icon-like{ width: 20px; height: 21px; background-image: url('../images/icon-like.svg');}
 .icon-like-active{ width: 20px; height: 21px; background-image: url('../images/icon-like-active.svg');}
@@ -167,4 +169,7 @@
 }
 .icon-b-prev{
   width: 24px; height: 24px; background-image: url('../images/icon-b-prev.svg'); margin-right: 10px;
+}
+.icon-lock{
+  width: 14px; height: 18px; background-image: url('../images/icon-lock.svg');
 }

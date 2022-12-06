@@ -1310,6 +1310,10 @@ progress {
   height: 24px;
   background-image: url("../images/icon-resume-minus.svg");
 }
+.icon-resume-minus.resume {
+  width: 18px;
+  height: 18px;
+}
 
 .icon-like {
   width: 20px;
@@ -1442,6 +1446,12 @@ progress {
   height: 24px;
   background-image: url("../images/icon-b-prev.svg");
   margin-right: 10px;
+}
+
+.icon-lock {
+  width: 14px;
+  height: 18px;
+  background-image: url("../images/icon-lock.svg");
 }
 
 /* checkbox/radio */
@@ -5177,6 +5187,7 @@ table.tbl-terms td {
   display: none;
   position: absolute;
   width: 100%;
+  max-width: 600px;
   z-index: 10;
   background: #fff;
 }
@@ -5241,6 +5252,14 @@ table.tbl-terms td {
 }
 
 @media screen and (max-width: 992px) {
+  .search-result-list {
+    width: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .search-result-list li {
+    padding: 15px;
+  }
   .search-area {
     display: block;
   }
@@ -7373,23 +7392,34 @@ table.tbl-terms td {
 
 .position-list {
   display: flex;
-  gap: 27px;
+  flex-flow: wrap;
+  gap: 25px;
 }
 
 .position-card {
-  width: 25%;
+  width: calc(25% - 20px);
   height: 335px;
   background-color: #F8F8FA;
   border: 1px solid #ddd;
   padding: 30px;
   border-radius: 16px;
   display: block;
+  position: relative;
 }
 .position-card.add {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.position-card.deadline .position-card-content .title {
+  color: #aaa;
+}
+.position-card.deadline .position-card-content .desc {
+  color: #aaa;
+}
+.position-card.deadline .position-card-content .participation {
+  color: #aaa;
 }
 .position-card .position-card-head {
   display: flex;
@@ -7399,6 +7429,28 @@ table.tbl-terms td {
 .position-card .position-card-head .icon-r-time {
   margin-right: 2px;
 }
+@-webkit-keyframes endDate {
+  0% {
+    color: #E9090A;
+  }
+  50% {
+    color: #FFE4E5;
+  }
+  100% {
+    color: #E9090A;
+  }
+}
+@keyframes endDate {
+  0% {
+    color: #E9090A;
+  }
+  50% {
+    color: #FFE4E5;
+  }
+  100% {
+    color: #E9090A;
+  }
+}
 .position-card .position-card-head .count {
   font-size: 14px;
   font-weight: bold;
@@ -7406,5 +7458,68 @@ table.tbl-terms td {
 }
 .position-card .position-card-head .count.extend {
   color: #E9090A;
+  -webkit-animation-name: endDate;
+          animation-name: endDate;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.position-card .position-card-content {
+  margin-top: 30px;
+}
+.position-card .position-card-content .title {
+  font-weight: 700;
+  line-height: 22px;
+}
+.position-card .position-card-content .desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: #777777;
+}
+.position-card .position-card-content .desc.registration-date {
+  margin-top: 10px;
+}
+.position-card .position-card-content .desc .plus-date {
+  color: #FF902D;
+  display: inline-block;
+  margin-left: 6px;
+}
+.position-card .position-card-content .participation {
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.position-card .position-card-content .participation .icon-lock {
+  margin-right: 8px;
+}
+.position-card .position-card-footer {
+  display: flex;
+  justify-content: end;
+  gap: 17px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.position-card .position-cnt-list .number {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.position-card .position-cnt-list .name {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 7px;
 }
 /*# sourceMappingURL=maps/style.css.map */
