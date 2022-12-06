@@ -1964,9 +1964,11 @@ legend{
     padding: 19px;background-color: #fff;border-top: 1px solid #e6ecf0;height: 80px;
     .input-group{
         display: flex; align-items: center;
-        .form-control{border-color: #e6ecf0;border-right: 0;}
+        .form-control{border-color: #e6ecf0;border-right: 0; width: 87%;}
         .form-control:focus{box-shadow: none;}
     }
+    .clip-file{ display: none;}
+    .clip-file-label{ width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: #f8f8fa;}
 }
 
 @media screen and (max-width:992px) {
