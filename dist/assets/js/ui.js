@@ -49,13 +49,20 @@ $(document).ready(function () {
     monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"]
   });
   $("#datepicker .highlight a").tooltip("disable");
-  $(".more-dot").click(function () {
-    $(this).addClass("active");
+  $(".more-dot").hover(function () {
+    $(this).addClass("active").siblings().removeClass("active");
   });
   $("html").click(function (e) {
     if ($(e.target).parents(".more-dot").length < 1) {
       $(".more-dot").removeClass("active");
     }
+  }); // 치환태그
+
+  $("#replacement-btn").click(function () {
+    $(".replacement-tag-notice").addClass("active");
+  });
+  $(".replacement-tag-notice .close").click(function () {
+    $(".replacement-tag-notice").removeClass("active");
   });
 }); // 채팅창 모바일
 

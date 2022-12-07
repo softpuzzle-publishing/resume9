@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_headhunter_main_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_headhunter_mypage_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">자주쓰는 메일/SMS</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">SMS/MMS</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">이메일</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row m-t-30">
+                  <div class="col-3">
+                    <aside>
+                      <ul>
+                        <li>
+                          <a href="@@webRoot/application/application_status.html" class="headhunter-side-title"><i class="icon-file-active m-r-5"></i> 그룹 추가하기</a>
+                          <ul>
+                            <li class="">
+                              <a href="@@webRoot/application/application_status.html"><i class="icon-file-default m-r-5"></i> 제안 문자(기본 그룹)</a>
+                              <div class="feed-list-detail">
+                                <div class="more-dot">
+                                  <button type="button">
+                                    <i class="icon-more-dot"></i>
+                                  </button>
+                                  <div class="more-page">
+                                    <ul class="p-0">
+                                      <li><a href="javascript:void(0)">새 메시지 추가</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="@@webRoot/application/job_position.html"><i class="icon-file-default m-r-5"></i> 테스트0303</a>
+                              <div class="feed-list-detail">
+                                <div class="more-dot">
+                                  <button type="button">
+                                    <i class="icon-more-dot"></i>
+                                  </button>
+                                  <div class="more-page">
+                                    <ul class="p-0">
+                                      <li><a href="javascript:void(0)">새 메시지 추가</a></li>
+                                      <li><a href="javascript:void(0)">그룹명 수정</a></li>
+                                      <li><a href="javascript:void(0)">삭제</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </aside>
+                  </div>
+                  <div class="col-9">
+                    <table class="table border-top-1">
+                      <colgroup></colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="">
+                            <input type="text" class="form-control form-lg" value="" placeholder="MMS/LMS에 한하여 제목을 입력할 수 있습니다. 제목 입력시, MMS/LMS로 발송됩니다." />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="">
+                            <div class="d-flex align-items-center justify-content-end m-b-5 position-relative">
+                              <button type="button" class="btn btn-primary btn-sm" id="replacement-btn">치환태그 삽입</button>
+                              <div class="replacement-tag-notice">
+                                <div class="replacement-tag">
+                                  <p class="title">치환태그 방식</p>
+                                  <a href="javascript:void(0)" class="close"><i class="icon-g-close"></i></a>
+                                </div>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th class="text-center">필드명</th>
+                                      <th class="text-center">태그명</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="text-center">수신자이름</td>
+                                      <td class="text-center text-primary">{$수신자이름$}</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-center">포지션제목</td>
+                                      <td class="text-center text-primary">{$포지션제목$}</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-center">채용사이름</td>
+                                      <td class="text-center text-primary">{$채용사이름$}</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="form-textarea m-0">
+                              <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요." class=""></textarea>
+                            </div>
+                            <p class="text-end font-size-14"><span id="cnt">0</span>/2000자</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="d-flex align-items-center justify-content-end m-t-30">
+                      <div class="d-flex gap-10">
+                        <button type="button" class="btn btn-primary">저장</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row m-t-30">
+                  <div class="col-3">
+                    <aside>
+                      <ul>
+                        <li>
+                          <a href="@@webRoot/application/application_status.html" class="headhunter-side-title"><i class="icon-file-active m-r-5"></i> 그룹 추가하기</a>
+                          <ul>
+                            <li class="">
+                              <a href="@@webRoot/application/application_status.html"><i class="icon-file-default m-r-5"></i> 초대 메일 (기본 그룹)</a>
+                              <div class="feed-list-detail">
+                                <div class="more-dot">
+                                  <button type="button">
+                                    <i class="icon-more-dot"></i>
+                                  </button>
+                                  <div class="more-page">
+                                    <ul class="p-0">
+                                      <li><a href="javascript:void(0)">새 메시지 추가</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="@@webRoot/application/job_position.html"><i class="icon-file-default m-r-5"></i> 제안 메일 (기본 그룹)</a>
+                              <div class="feed-list-detail">
+                                <div class="more-dot">
+                                  <button type="button">
+                                    <i class="icon-more-dot"></i>
+                                  </button>
+                                  <div class="more-page">
+                                    <ul class="p-0">
+                                      <li><a href="javascript:void(0)">새 메시지 추가</a></li>
+                                      <li><a href="javascript:void(0)">그룹명 수정</a></li>
+                                      <li><a href="javascript:void(0)">삭제</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </aside>
+                  </div>
+                  <div class="col-9">
+                    <table class="table border-top-1">
+                      <colgroup></colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="">
+                            <input type="text" class="form-control form-lg" value="" placeholder="MMS/LMS에 한하여 제목을 입력할 수 있습니다. 제목 입력시, MMS/LMS로 발송됩니다." />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="">
+                            <div class="d-flex align-items-center justify-content-end m-b-5 position-relative">
+                              <button type="button" class="btn btn-primary btn-sm" id="replacement-btn">치환태그 삽입</button>
+                              <div class="replacement-tag-notice">
+                                <div class="replacement-tag">
+                                  <p class="title">치환태그 방식</p>
+                                  <a href="javascript:void(0)" class="close"><i class="icon-g-close"></i></a>
+                                </div>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th class="text-center">필드명</th>
+                                      <th class="text-center">태그명</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="text-center">수신자이름</td>
+                                      <td class="text-center text-primary">{$수신자이름$}</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-center">포지션제목</td>
+                                      <td class="text-center text-primary">{$포지션제목$}</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-center">채용사이름</td>
+                                      <td class="text-center text-primary">{$채용사이름$}</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                            <div id="editor">에디터 영역</div>
+                            <p class="text-end font-size-14"><span id="cnt">0</span>/2000자</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-upload">
+                              <input type="file" class="" id="form-file" />
+                              <!-- select 박스에 따라서 -->
+                              <label for="form-file"><i class="icon-input-add"></i></label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="d-flex align-items-center justify-content-end m-t-30">
+                      <div class="d-flex gap-10">
+                        <button type="button" class="btn btn-primary">저장</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

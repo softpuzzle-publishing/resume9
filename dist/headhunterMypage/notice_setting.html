@@ -43,30 +43,33 @@
         <div class="inner">
           <div class="col">
             <div class="row align-items-center justify-content-between gx-0">
-              <div class="col-8 d-flex align-items-center">
-                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
+              <div class="col-7 d-flex align-items-center">
+                <div class="header-logo">
+                  <a href="../main/main.html"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></a>
+                </div>
                 <ul class="gnb-list hidden-flex-mobile">
                   <li class="gnb-depth">
-                    <a href="../jop/posting.html">포지션 관리</a>
+                    <a href="../jop/posting.html">채용공고</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="">인재검색 </a>
+                    <a href="">헤드헌터검색</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../resume/resume_main.html">내 인재관리</a>
+                    <a href="../resume/resume_list.html">내 이력서</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../application/application_status.html">내 주소록</a>
+                    <a href="../application/application_status.html">지원현황</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../_layout/community.html">고객사 관리</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../_layout/community.html">We펌</a>
+                    <a href="../_layout/community.html">커뮤니티</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-4 d-flex align-items-center justify-content-end">
+              <div class="col-5 d-flex align-items-center justify-content-end">
+                <div class="search-form hidden-mobile">
+                  <input type="text" class="form-control form-lg" />
+                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
+                </div>
                 <ul class="sign-list hidden-flex-mobile">
                   <li class="sign-depth">
                     <a href="">1:1 문의</a>
@@ -145,271 +148,199 @@
       <div class="container">
         <div class="layout">
           <div class="layout-left">
-            <a href="../headhunterPosition/headhunter_detail.html" class="position-card aside">
-              <div class="position-card-head">
-                <div class="d-flex align-items-center0">
-                  <span class="tag tag-sm tag-outline-primary m-0">진행중</span>
-                </div>
-                <div class="d-flex align-items-center gap-10">
-                  <span class="count extend">D-1</span>
-                </div>
-              </div>
-              <div class="position-card-content">
-                <p class="title">대기업유통 텍스트 분석<span class="tag tag-sm tag-danger m-l-5 m-0">단독</span></p>
-                <p class="desc manager">이덕진</p>
-                <p class="desc expiration-date">공고 마감일: 2022.10.17(금)</p>
-              </div>
-              <div class="d-flex justify-content-end m-t-10">
-                <button type="button" class="btn btn-primary round btn-sm">컨택리스트 3명</button>
-              </div>
-            </a>
-            <a href="../headhunterPosition/headhunter_detail.html" class="position-card aside">
-              <div class="position-card-head">
-                <div class="d-flex align-items-center0">
-                  <span class="tag tag-sm tag-outline-primary m-0">진행중</span>
-                </div>
-                <div class="d-flex align-items-center gap-10">
-                  <span class="count extend">D-1</span>
-                </div>
-              </div>
-              <div class="position-card-content">
-                <p class="title">대기업유통 텍스트 분석<span class="tag tag-sm tag-danger m-l-5 m-0">단독</span></p>
-                <p class="desc manager">이덕진</p>
-                <p class="desc expiration-date">공고 마감일: 2022.10.17(금)</p>
-              </div>
-              <div class="d-flex justify-content-end m-t-10">
-                <button type="button" class="btn btn-primary round btn-sm">컨택리스트 3명</button>
-              </div>
-            </a>
+            <aside>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)"><span class="poppins">내 알림</span></a>
+                  <ul>
+                    <li class="active"><a href="../headhunterMypage/notice_setting.html">맞춤인재알림설정</a></li>
+                    <li><a href="../mypage/password.html">자주쓰는 메일/SMS</a></li>
+                    <li><a href="../mypage/blacklist.html">발송한 메일/SMS내역</a></li>
+                    <li><a href="../mypage/blacklist.html">나를 pick한 후보자</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><span class="poppins">내 정보 관리</span></a>
+                  <ul>
+                    <li><a href="../mypage/login.html">기본정보/이메일 서명</a></li>
+                    <li><a href="../mypage/login.html">프로필 설정</a></li>
+                    <li><a href="../mypage/login.html">이용 내역</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><span class="poppins">유료서비스</span></a>
+                  <ul>
+                    <li><a href="../mypage/profile_info.html">포인트 충전</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
           </div>
           <div class="layout-content">
-            <div class="position-title-wrap">
-              <div class="position-title-content">
-                <span class="tag tag-sm tag-orange">PM</span>
-                <a href="" class="object">테스트 포지션등록 (지원하지마세요)</a>
-                <span class="tag tag-sm none-border tag-gray">CO 현황</span>
-              </div>
-              <div class="position-title-state">
-                <div class="d-flex align-items-center">
-                  <p class="m-r-10">이 포지션</p>
-                  <select class="select-design select2-hidden-accessible" data-select2-id="select2-data-1-tov2" tabindex="-1" aria-hidden="true">
-                    <option value="1" data-select2-id="select2-data-3-q3v0">전체</option>
-                    <option value="3">마감임박순</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <ul class="nav nav-tabs m-t-30" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">컨택리스트</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">접수</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="btn-group m-t-30 d-flex align-items-center justify-content-between">
-                  <div>
-                    <a href="/../headhunterHuman/headhunter_search.html" class="btn btn-outline-dark btn-md">인재검색</a>
-                    <a href="javascript:void(0)" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#modal-position-list">목록추가(수동)</a>
-                    <button type="button" class="btn btn-outline-danger btn-md">삭제</button>
-                  </div>
-                  <div>
-                    <select class="select-design" style="width: 150px">
-                      <option value="1">상태</option>
-                      <option value="3">제안전</option>
-                      <option value="3">제안중</option>
-                      <option value="3">제안승인</option>
-                      <option value="3">제안거부</option>
-                      <option value="3">적합</option>
-                      <option value="3">부적합</option>
-                    </select>
-                    <button type="button" class="btn btn-outline-dark btn-md" data-bs-toggle="modal" data-bs-target="#modal-suggest-email">이메일 제안</button>
-                    <button type="button" class="btn btn-outline-primary btn-md">문자 안내</button>
-                  </div>
-                </div>
-                <table class="table m-t-30">
-                  <thead>
-                    <tr>
-                      <th class="text-center">
-                        <div class="form-check p-0">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </th>
-                      <th class="text-center">등록일<br />제안일</th>
-                      <th class="text-center">등록경로</th>
-                      <th class="text-center">이름<br />생년월일</th>
-                      <th class="text-center">연락처<br />이메일</th>
-                      <th class="text-center">이력서</th>
-                      <th class="text-center">상태</th>
-                    </tr>
-                  </thead>
+            <h3 class="subtitle">맞춤인재알림설정</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="row row-40 align-items-center">
+              <div class="apply-wrap">
+                <table class="table border-top-1">
+                  <colgroup>
+                    <col width="20%" />
+                    <col width="80%" />
+                  </colgroup>
                   <tbody>
                     <tr>
-                      <td class="text-center">
-                        <div class="form-check p-0">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                      <th class="text-center">알림 설정</th>
+                      <td>
+                        <div class="toggle-btn d-flex">
+                          <input type="checkbox" class="sr-only" id="check1" />
+                          <label for="check1">
+                            <div class="button">
+                              <div class="inside"></div>
+                            </div>
+                          </label>
                         </div>
-                      </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                        <p>2022-10-31</p>
-                      </td>
-                      <td class="text-center">
-                        <p>내인재</p>
-                      </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>1975(48)</p>
-                      </td>
-                      <td class="text-center">
-                        <p>010-1111-2222</p>
-                        <p>soft@gmail.com</p>
-                      </td>
-                      <td class="text-center">
-                        <a href="../resume/resume_detail.html">보기</a>
-                      </td>
-                      <td class="text-center">
-                        <p>제안중</p>
                       </td>
                     </tr>
                     <tr>
-                      <td class="text-center">
-                        <div class="form-check p-0">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                      <th class="text-center">경력</th>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <select class="select-design" style="width: 100px">
+                            <option value="1">0년</option>
+                          </select>
+                          <p class="m-l-10 m-r-10">~</p>
+                          <select class="select-design" style="width: 100px">
+                            <option value="1">30년</option>
+                          </select>
                         </div>
                       </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                        <p>-</p>
+                    </tr>
+                    <tr>
+                      <th class="text-center">연령</th>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <select class="select-design" style="width: 130px">
+                            <option value="1">20세(2003)</option>
+                          </select>
+                          <p class="m-l-10 m-r-10">~</p>
+                          <select class="select-design" style="width: 130px">
+                            <option value="1">60세(1963)</option>
+                          </select>
+                        </div>
                       </td>
-                      <td class="text-center">
-                        <p>수동입력</p>
+                    </tr>
+                    <tr>
+                      <th class="text-center">연봉</th>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <select class="select-design" style="width: 120px">
+                            <option value="1">1,000만원</option>
+                          </select>
+                          <p class="m-l-10 m-r-10">~</p>
+                          <select class="select-design" style="width: 120px">
+                            <option value="1">10,000만원</option>
+                          </select>
+                        </div>
                       </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>-</p>
+                    </tr>
+                    <tr>
+                      <th class="text-center">학력</th>
+                      <td>
+                        <div class="check-badge-wrap">
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check1" id="check1" />
+                            <label for="check1" class="check-badge-label">박사</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check2" id="check2" />
+                            <label for="check2" class="check-badge-label">석사</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check3" id="check3" />
+                            <label for="check3" class="check-badge-label">대졸(4)</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check4" id="check4" />
+                            <label for="check4" class="check-badge-label">전졸(2)</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check5" id="check5" />
+                            <label for="check5" class="check-badge-label">고졸</label>
+                          </div>
+                        </div>
                       </td>
-                      <td class="text-center">
-                        <p>010-1111-2222 <button type="button" class="tag tag-sm none-border">채팅하기</button></p>
-                        <p>soft@gmail.com</p>
+                    </tr>
+                    <tr>
+                      <th class="text-center">학력2</th>
+                      <td>
+                        <div class="check-badge-wrap">
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check6" id="check6" />
+                            <label for="check6" class="check-badge-label">해외</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check7" id="check7" />
+                            <label for="check7" class="check-badge-label">SKY</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check8" id="check8" />
+                            <label for="check8" class="check-badge-label">인서울</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check9" id="check9" />
+                            <label for="check9" class="check-badge-label">지방국공립</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check10" id="check10" />
+                            <label for="check10" class="check-badge-label">정규4년제</label>
+                          </div>
+                        </div>
                       </td>
-                      <td class="text-center">
-                        <p>보기</p>
+                    </tr>
+                    <tr>
+                      <th class="text-center">희망근무지</th>
+                      <td>
+                        <div class="check-badge-wrap">
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check17" id="check17" />
+                            <label for="check17" class="check-badge-label">전국</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check18" id="check18" />
+                            <label for="check18" class="check-badge-label">서울</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="check-badge" name="check19" id="check19" />
+                            <label for="check19" class="check-badge-label">수도권</label>
+                          </div>
+                        </div>
                       </td>
-                      <td class="text-center">
-                        <p>
-                          <a href="javascript:void(0)" class="text-underline" data-bs-toggle="modal" data-bs-target="#modal-position-state">적합/부적합</a>
-                        </p>
+                    </tr>
+                    <tr>
+                      <th class="text-center">출신회사</th>
+                      <td>
+                        <input type="text" class="form-control form-md" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">외국어</th>
+                      <td>
+                        <input type="text" class="form-control form-md" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">자격증</th>
+                      <td>
+                        <input type="text" class="form-control form-md" placeholder="" />
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="btn-group m-t-30 d-flex align-items-center justify-content-between">
-                  <div>
-                    <button type="button" class="btn btn-outline-danger btn-md">탈락</button>
-                    <select class="select-design" style="width: 150px">
-                      <option value="1">전형결과</option>
-                    </select>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <p class="m-r-15">채용사 추천을 위해 이력서 보기 화면에서 추천용 PDF 파일을 등록해주세요.</p>
-                    <button type="button" class="btn btn-primary btn-md">채용사에 추천</button>
-                  </div>
-                </div>
-                <table class="table m-t-30">
-                  <thead>
-                    <tr>
-                      <th class="text-center">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </th>
-                      <th class="text-center">접수일</th>
-                      <th class="text-center">접수경로</th>
-                      <th class="text-center">이름<br />생년월일</th>
-                      <th class="text-center">연락처<br />이메일</th>
-                      <th class="text-center">이력서</th>
-                      <th class="text-center">상태</th>
-                      <th class="text-center">전형결과</th>
-                      <th class="text-center"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                      </td>
-                      <td class="text-center">
-                        <p>수동입력</p>
-                      </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>1975(48)</p>
-                      </td>
-                      <td class="text-center">
-                        <p>010-1111-2222</p>
-                        <p>soft@gmail.com</p>
-                      </td>
-                      <td class="text-center">
-                        <p>보기</p>
-                      </td>
-                      <td class="text-center">
-                        <p>제안중</p>
-                      </td>
-                      <td class="text-center">
-                        <p>전형전</p>
-                      </td>
-                      <td class="text-center">
-                        <button type="button" class="btn btn-outline-danger btn-md">인재 등록</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                      </td>
-                      <td class="text-center">
-                        <p>수동입력</p>
-                      </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>1975(48)</p>
-                      </td>
-                      <td class="text-center">
-                        <p>010-1111-2222</p>
-                        <p>soft@gmail.com</p>
-                      </td>
-                      <td class="text-center">
-                        <p>보기</p>
-                      </td>
-                      <td class="text-center">
-                        <p>제안중</p>
-                      </td>
-                      <td class="text-center">
-                        <p>전형전</p>
-                      </td>
-                      <td class="text-center">
-                        <button type="button" class="btn btn-outline-danger btn-md">인재 등록</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="send-btn">
+                <button type="button" class="btn btn-outline-dark btn-xl">취소</button>
+                <button type="button" class="btn btn-dark btn-xl">저장</button>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between"></div>
           </div>
         </div>
       </div>
