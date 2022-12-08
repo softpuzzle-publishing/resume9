@@ -43,30 +43,33 @@
         <div class="inner">
           <div class="col">
             <div class="row align-items-center justify-content-between gx-0">
-              <div class="col-8 d-flex align-items-center">
-                <div class="header-logo"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></div>
+              <div class="col-7 d-flex align-items-center">
+                <div class="header-logo">
+                  <a href="../main/main.html"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></a>
+                </div>
                 <ul class="gnb-list hidden-flex-mobile">
                   <li class="gnb-depth">
-                    <a href="../jop/posting.html">포지션 관리</a>
+                    <a href="../jop/posting.html">채용공고</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="">인재검색 </a>
+                    <a href="">헤드헌터검색</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../resume/resume_main.html">내 인재관리</a>
+                    <a href="../resume/resume_list.html">내 이력서</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../application/application_status.html">내 주소록</a>
+                    <a href="../application/application_status.html">지원현황</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../_layout/community.html">고객사 관리</a>
-                  </li>
-                  <li class="gnb-depth">
-                    <a href="../_layout/community.html">We펌</a>
+                    <a href="../_layout/community.html">커뮤니티</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-4 d-flex align-items-center justify-content-end">
+              <div class="col-5 d-flex align-items-center justify-content-end">
+                <div class="search-form hidden-mobile">
+                  <input type="text" class="form-control form-lg" />
+                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
+                </div>
                 <ul class="sign-list hidden-flex-mobile">
                   <li class="sign-depth">
                     <a href="">1:1 문의</a>
@@ -143,175 +146,119 @@
 
     <div id="container-block">
       <div class="container">
-        <div class="sub-content">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">SMS/MMS</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">이메일</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <div class="row email-wrap m-0">
-                <div class="col-12 m-t-20">
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" value="" id="multipleCheck5" />
-                        <label class="form-check-label" for="multipleCheck5">직접 작성</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" value="" id="multipleCheck5" />
-                        <label class="form-check-label" for="multipleCheck5">자주쓰는 SMS</label>
-                      </div>
-                    </div>
-                    <div class="d-flex gap-10">
-                      <select class="select-design" style="width: 200px">
-                        <option value="1">제안 메일 (기본 그룹)</option>
-                      </select>
-                      <select class="select-design" style="width: 250px">
-                        <option value="1">불러올 메일 선택</option>
-                      </select>
-                    </div>
+        <div class="layout">
+          <div class="layout-left">
+            <aside>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)"><span class="poppins">내 알림</span></a>
+                  <ul>
+                    <li class="active"><a href="../headhunterMypage/notice_setting.html">맞춤인재알림설정</a></li>
+                    <li><a href="../mypage/password.html">자주쓰는 메일/SMS</a></li>
+                    <li><a href="../mypage/blacklist.html">발송한 메일/SMS내역</a></li>
+                    <li><a href="../mypage/blacklist.html">나를 pick한 후보자</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><span class="poppins">내 정보 관리</span></a>
+                  <ul>
+                    <li><a href="../mypage/login.html">기본정보/이메일 서명</a></li>
+                    <li><a href="../mypage/login.html">프로필 설정</a></li>
+                    <li><a href="../mypage/login.html">이용 내역</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><span class="poppins">유료서비스</span></a>
+                  <ul>
+                    <li><a href="../mypage/profile_info.html">포인트 충전</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="layout-content">
+            <div class="row row-40 align-items-center">
+              <h3 class="subtitle">이용내역</h3>
+              <div class="title-line mt-4 mb-5"></div>
+            </div>
+            <div class="tbl-head m-0">
+              <div class="btn-group date-list" role="group">
+                <p class="m-r-20 hidden-mobile">조회기간</p>
+                <button type="button" class="btn btn-outline-primary">오늘</button>
+                <button type="button" class="btn btn-outline-primary active">1개월</button>
+                <button type="button" class="btn btn-outline-primary">3개월</button>
+              </div>
+              <div class="d-flex align-items-center gap-10">
+                <div class="date-range">
+                  <div class="form-date-wrap">
+                    <input type="text" id="datepicker" class="form-date" />
+                  </div>
+                  <span>~</span>
+                  <div class="form-date-wrap">
+                    <input type="text" id="datepicker" class="form-date" />
                   </div>
                 </div>
-              </div>
-              <table class="table border-top-1 m-t-30">
-                <colgroup>
-                  <col width="15%" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th class="">관련 포지션</th>
-                    <td class="">
-                      <select class="select-design" style="width: 100%">
-                        <option value="1">테스트 포지션등록 (지원하지 마세요)</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="">받는 사람</th>
-                    <td class="">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <div class="coworker-wrap bg-white m-0">
-                          <div class="coworker-list">
-                            <div class="btn btn-sm btn-outline-gray round d-flex justify-content-around">
-                              <span class="name">김남극</span>
-                              <button type="button" class="close"><i class="icon-b-close"></i></button>
-                            </div>
-                          </div>
-                        </div>
-                        <button type="button" class="btn btn-sm btn-primary round" data-bs-toggle="modal" data-bs-target="#modal-email-add">+ 직접추가</button>
-                      </div>
-                      <div class="d-flex align-items-center justify-content-between m-b-5">
-                        <div class="d-flex">
-                          <p class="text-danger font-size-14">문자메세지는 발송에 따라 건당 포인트가 차감됩니다.</p>
-                          <p class="m-l-10 font-size-14">SMS(20원/건) LMS(60원/건) MMS(100원/건)</p>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-sm">지원태그 삽입</button>
-                      </div>
-                      <div class="form-textarea m-0">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력하세요." class=""></textarea>
-                      </div>
-                      <p class="text-end font-size-14"><span id="cnt">0</span>/2000자</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="">제목(LMS/MMS)</th>
-                    <td class="">
-                      <input type="text" class="form-control form-lg" value="" placeholder="제목을 입력시 MMS/LMS로 발송됩니다." />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="d-flex align-items-center justify-content-end m-t-30">
-                <div class="d-flex gap-10">
-                  <button type="button" class="btn btn-gray">취소</button>
-                  <button type="button" class="btn btn-primary">문자발송</button>
-                </div>
+                <select class="select-design" style="width: 135px">
+                  <option value="1">전체</option>
+                </select>
               </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <div class="row email-wrap m-0">
-                <div class="col-12 m-t-20">
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" value="" id="multipleCheck5" />
-                        <label class="form-check-label" for="multipleCheck5">직접 작성</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" value="" id="multipleCheck5" />
-                        <label class="form-check-label" for="multipleCheck5">자주쓰는 메일</label>
-                      </div>
-                    </div>
-                    <div class="d-flex gap-10">
-                      <select class="select-design" style="width: 200px">
-                        <option value="1">제안 메일 (기본 그룹)</option>
-                      </select>
-                      <select class="select-design" style="width: 250px">
-                        <option value="1">불러올 메일 선택</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <table class="table border-top-1 m-t-30">
-                <colgroup>
-                  <col width="15%" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th class="">관련 포지션</th>
-                    <td class="">
-                      <select class="select-design" style="width: 100%">
-                        <option value="1">테스트 포지션등록 (지원하지 마세요)</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="">받는 사람</th>
-                    <td class="">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <div class="coworker-wrap m-0 bg-white">
-                          <div class="coworker-list">
-                            <div class="btn btn-sm btn-outline-gray round d-flex justify-content-around">
-                              <span class="name">김남극</span>
-                              <button type="button" class="close"><i class="icon-b-close"></i></button>
-                            </div>
-                          </div>
-                        </div>
-                        <button type="button" class="btn btn-sm btn-primary round" data-bs-toggle="modal" data-bs-target="#modal-email-add">+ 직접추가</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="">제목</th>
-                    <td class="">
-                      <input type="text" class="form-control form-lg" value="" placeholder="제목을 입력해주세요." />
-                      <div class="form m-t-30">에디터 영역</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="">파일첨부</th>
-                    <td class="">
-                      <div class="form-upload">
-                        <input type="file" class="" id="form-file" />
-                        <!-- select 박스에 따라서 -->
-                        <label for="form-file"><i class="icon-input-add"></i></label>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="d-flex align-items-center justify-content-between m-t-30">
-                <button type="button" class="btn btn-outline-gray">미리보기</button>
-                <div class="d-flex gap-10">
-                  <button type="button" class="btn btn-gray">취소</button>
-                  <button type="button" class="btn btn-primary">메일발송</button>
-                </div>
+            <table class="table border-top-1">
+              <colgroup>
+                <col width="17%" />
+                <col width="17%" />
+                <col width="17%" />
+                <col width="17%" />
+                <col width="30%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="text-center">일시</th>
+                  <th class="text-center">IP</th>
+                  <th class="text-center">기기</th>
+                  <th class="text-center">내역</th>
+                  <th class="text-center">비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center" colspan="5">
+                    <p class="m-t-30 m-b-30">이용내역이 없습니다.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    <p>2022-10-04 17:40:57</p>
+                  </td>
+                  <td class="text-center">
+                    <p>61.73.75.162</p>
+                  </td>
+                  <td class="text-center">
+                    <p></p>
+                  </td>
+                  <td class="text-center">
+                    <p>로그인</p>
+                  </td>
+                  <td class="text-center">
+                    <p></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="d-flex justify-content-center mt-5">
+              <div class="pagination">
+                <a href=""><i class="icon-pager-prev"></i></a>
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href=""><i class="icon-pager-next"></i></a>
               </div>
             </div>
           </div>
@@ -1189,6 +1136,49 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary m-r-10" data-bs-dismiss="modal">저장</button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 변경 -->
+      <div class="modal fade" id="modal-pw-change" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-write modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">비밀번호 변경</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table border-top-1 m-t-30">
+                <colgroup>
+                  <col width="25%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="">현재 비밀번호</th>
+                    <td class="">
+                      <input type="password" class="form-control form-lg" value="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="">신규 비밀번호</th>
+                    <td class="">
+                      <input type="password" class="form-control form-lg" value="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="">비밀번호 확인</th>
+                    <td class="">
+                      <input type="password" class="form-control form-lg" value="" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-center m-t-30 m-b-20">비밀번호를 변경하시겠습니까?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn btn-primary">변경</button>
             </div>
           </div>
         </div>

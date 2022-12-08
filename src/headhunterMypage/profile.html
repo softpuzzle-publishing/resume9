@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_headhunter_mypage_aside.html')</div>
+          <div class="layout-content">
+            <div class="row row-40 align-items-center">
+              <h3 class="subtitle">프로필 설정 <span class="font-size-14 m-l-10">※ 표시된 부분은 후보자 화면에서 약식프로필로 노출됩니다.</span></h3>
+              <div class="title-line mt-4 mb-5"></div>
+              <table class="table m-t-15 border-top-1">
+                <colgroup>
+                  <col width="15%" />
+                  <col width="35%" />
+                  <col width="15%" />
+                  <col width="35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="text-center">
+                      <p>프로필 사진 ※</p>
+                    </th>
+                    <td colspan="3">
+                      <div class="file-flex">
+                        <div class="form-upload">
+                          <input type="file" class="" id="form-file" />
+                          <!-- select 박스에 따라서 -->
+                          <label for="form-file"><i class="icon-input-add"></i></label>
+                        </div>
+                        <p class="m-l-10">(파일형식: .jpg, .png, .gif)</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center">
+                      <p>직급</p>
+                    </th>
+                    <td>
+                      <input type="text" class="form-control form-lg" value="사장" placeholder="" />
+                    </td>
+                    <th class="text-center">
+                      <p>최종학교/전공</p>
+                    </th>
+                    <td>
+                      <div class="d-flex">
+                        <input type="text" class="form-control form-lg m-r-10" value="서강대학교" />
+                        <input type="text" class="form-control form-lg" value="물리학" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center">
+                      <p>인사말 ※</p>
+                    </th>
+                    <td colspan="3">
+                      <div class="form-textarea textarea-sm m-0">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="반도체 분야 전문 컨설턴트입니다." class=""></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center">
+                      <p>주요이력</p>
+                    </th>
+                    <td colspan="3">
+                      <div class="form-textarea textarea-sm m-0">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="삼성전자 및 동부하이텍에서 어쩌구 저쩌구" class=""></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center">
+                      <p>전문분야 선택 ※</p>
+                      <p>(최대 5개)</p>
+                    </th>
+                    <td colspan="3">
+                      <div class="check-badge-wrap">
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check1" id="check1" />
+                          <label for="check1" class="check-badge-label">서비스</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check2" id="check2" />
+                          <label for="check2" class="check-badge-label">교육</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check3" id="check3" />
+                          <label for="check3" class="check-badge-label">금융·은행</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check4" id="check4" />
+                          <label for="check4" class="check-badge-label">기관·협회</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check5" id="check5" />
+                          <label for="check5" class="check-badge-label">미디어·광고·출판</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check6" id="check6" />
+                          <label for="check6" class="check-badge-label">건설·건축</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check7" id="check7" />
+                          <label for="check7" class="check-badge-label">IT·인터넷</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check8" id="check8" />
+                          <label for="check8" class="check-badge-label">전자·통신·반도체</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check9" id="check9" />
+                          <label for="check9" class="check-badge-label">의료·제약</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check10" id="check10" />
+                          <label for="check10" class="check-badge-label">유통·판매</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check11" id="check11" />
+                          <label for="check11" class="check-badge-label">문화·예술·디자인</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" class="check-badge" name="check12" id="check12" />
+                          <label for="check12" class="check-badge-label">제조·생산·화학</label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center">
+                      <p>소속 서치펌명 ※</p>
+                    </th>
+                    <td>
+                      <p>맨쉬컨설팅(주)</p>
+                    </td>
+                    <th class="text-center">
+                      <p>
+                        소속 서치펌명<br />
+                        이메일
+                      </p>
+                    </th>
+                    <td>
+                      <p>rasdasd@naver.com</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" rowspan="5">
+                      <p>소속 서치펌명 ※</p>
+                    </th>
+                    <th class="text-center border-left-1">
+                      <p>인증여부</p>
+                    </th>
+                    <td colspan="3">
+                      <button type="button" class="btn btn-primary btn-sm" id="replacement-btn">R9 인증회원</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center border-left-1">
+                      <p>R9 활동기간</p>
+                    </th>
+                    <td colspan="3">
+                      <p><span class="text-danger">672</span>일 (2020.12.01 가입)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center border-left-1">
+                      <p>최근진행분야</p>
+                    </th>
+                    <td colspan="3">
+                      <p></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center border-left-1">
+                      <p>최종 로그인 일시</p>
+                    </th>
+                    <td colspan="3">
+                      <p>2020.12.01 17:40:57</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="send-btn">
+              <button type="button" class="btn btn-outline-dark btn-xl" data-bs-toggle="modal" data-bs-target="#modal-headhunter">미리보기</button>
+              <button type="button" class="btn btn-dark btn-xl">입력완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>
