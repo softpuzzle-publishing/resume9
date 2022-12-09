@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_we_firm_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle">We펌 관리</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">운영자 추가</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">We펌 정보관리</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">We펌 폐쇄</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <p class="text-center m-t-30 m-b-30">We펌에 가입한 회원 중 <span class="text-danger">1명</span>을 운영자로 지정할 수 있으며, We펌 대표자와 동일한 권한을 부여합니다.</p>
+                  <div class="sub-content-head p-0">
+                    <div class="search-area">
+                      <div class="input-group">
+                        <select class="select-design" style="width: 150px">
+                          <option value="1">이름</option>
+                          <option value="2">이메일</option>
+                        </select>
+                        <input type="text" class="form-control p-l-20" placeholder=" " />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary btn-input-search" type="button">검색</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="table border-top-1 m-t-15">
+                    <thead>
+                      <tr>
+                        <th class="text-center"></th>
+                        <th class="text-center">No.</th>
+                        <th class="text-center">사진</th>
+                        <th class="text-center">이름</th>
+                        <th class="text-center">연락처</th>
+                        <th class="text-center">이메일</th>
+                        <th class="text-center">가입일</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center"></td>
+                        <td class="text-center">
+                          <p>대표</p>
+                        </td>
+                        <td class="text-center">
+                          <div class="img-box">
+                            <img src="@@webRoot/assets/images/about-01.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>홍길동</p>
+                        </td>
+                        <td class="text-center">
+                          <p>010-1234-5678</p>
+                        </td>
+                        <td class="text-center">
+                          <p>asdb@naver.com</p>
+                        </td>
+                        <td class="text-center">
+                          <p>2020.12.01</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center"></td>
+                        <td class="text-center">
+                          <p>운영자</p>
+                        </td>
+                        <td class="text-center">
+                          <div class="img-box">
+                            <img src="@@webRoot/assets/images/about-01.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>홍길동</p>
+                        </td>
+                        <td class="text-center">
+                          <p>010-1234-5678</p>
+                        </td>
+                        <td class="text-center">
+                          <p>asdb@naver.com</p>
+                        </td>
+                        <td class="text-center">
+                          <p>2020.12.01</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <div class="form-check p-0">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>1</p>
+                        </td>
+                        <td class="text-center">
+                          <div class="img-box">
+                            <img src="@@webRoot/assets/images/about-01.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>홍길동</p>
+                        </td>
+                        <td class="text-center">
+                          <p>010-1234-5678</p>
+                        </td>
+                        <td class="text-center">
+                          <p>asdb@naver.com</p>
+                        </td>
+                        <td class="text-center">
+                          <p>2020.12.01</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="d-flex justify-content-end m-t-15">
+                    <button type="button" class="btn btn-outline-gray btn-md">운영자로 추가</button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <table class="table border-top-1 m-t-30">
+                    <caption>
+                      기업정보
+                    </caption>
+                    <tbody>
+                      <tr>
+                        <th class="">회사홈페이지<span class="text-danger">*</span></th>
+
+                        <td class="">
+                          <input type="text" class="form-control form-lg" value="asdasfrberha@.co.lr" placeholder="" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">회사 로고이미지<span class="text-danger">*</span></th>
+                        <td class="">
+                          <div class="form-upload">
+                            <input type="file" class="" id="form-file" />
+                            <label for="form-file"><i class="icon-input-add"></i></label>
+                          </div>
+                          <p class="text-end font-size-14 text-gray m-t-5">(20MB 이하의 .jpg, .gif, .png)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">We펌 상세설명<span class="text-danger">*</span></th>
+                        <td class="">
+                          <div class="form-textarea textarea-sm m-0">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="" class=""></textarea>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="m-t-10">사업자등록증상의 정보가 변경된 경우, 고객센터 1:1문의에 요청해 주시기 바랍니다.</p>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="mt-5">
+                    <h3 class="subtitle text-center">비밀번호 변경</h3>
+                    <div class="example-form mt-4">
+                      <ul>
+                        <li>We펌 폐쇄는 대표자만 가능하며, 대표자를 제외한 모든 회원을 탈퇴처리 한 후에 가능합니다.</li>
+                        <li>폐쇄 후에는 게시글 등을 복구할 수 없으니 필요하신 자료가 있으면 폐쇄 전 미리 저장해 주시기 바랍니다.</li>
+                      </ul>
+                    </div>
+                    <p class="notice-text"></p>
+
+                    <div class="apply-wrap">
+                      <div class="fake-table password">
+                        <div class="fake-table-column">
+                          <div class="fake-table-cell">
+                            <p class="table-cell-title">현재 비밀번호</p>
+                            <input type="password" class="form-control form-lg" value="" placeholder="현재 비밀번호" />
+                          </div>
+                        </div>
+                        <div class="fake-table-column">
+                          <div class="fake-table-cell">
+                            <p class="table-cell-title">비밀번호 확인</p>
+                            <input type="password" class="form-control form-lg" value="" placeholder="비밀번호 확인" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-10 m-t-30">
+                      <button type="button" class="btn btn-outline-dark btn-xl">취소</button>
+                      <button type="button" class="btn btn-dark btn-xl">확인</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

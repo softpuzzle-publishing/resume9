@@ -10,68 +10,66 @@
         <div class="layout">
           <div class="layout-left">@@include('@@webRoot/_include/_we_firm_aside.html')</div>
           <div class="layout-content">
-            <div class="row row-40 align-items-center">
-              <h3 class="subtitle">포지션 공고보기</h3>
-              <div class="title-line mt-4 mb-5"></div>
-              <div class="d-flex justify-content-end m-b-15">
-                <select class="select-design" style="width: 150px">
-                  <option value="1">최신순</option>
-                  <option value="2">참여자수순</option>
-                  <option value="2">마감임박순</option>
-                </select>
-              </div>
-              <div class="sub-content-head">
-                <div class="search-area">
-                  <div class="input-group">
-                    <select class="select-design" style="width: 150px">
-                      <option value="1">담당자</option>
-                      <option value="2">제목+본문</option>
-                    </select>
-                    <input type="text" class="form-control p-l-20" placeholder=" " />
-                    <div class="input-group-append">
-                      <button class="btn btn-primary btn-input-search" type="button">검색</button>
-                    </div>
+            <h3 class="subtitle">포지션 공고보기</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="d-flex justify-content-end m-b-15 p-0">
+              <select class="select-design" style="width: 150px">
+                <option value="1">최신순</option>
+                <option value="2">참여자수순</option>
+                <option value="2">마감임박순</option>
+              </select>
+            </div>
+            <div class="sub-content-head">
+              <div class="search-area">
+                <div class="input-group">
+                  <select class="select-design" style="width: 150px">
+                    <option value="1">담당자</option>
+                    <option value="2">제목+본문</option>
+                  </select>
+                  <input type="text" class="form-control p-l-20" placeholder=" " />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary btn-input-search" type="button">검색</button>
                   </div>
                 </div>
               </div>
-              <table class="table border-top-1">
-                <colgroup>
-                  <col width="20%" />
-                  <col width="50%" />
-                  <col width="15%" />
-                  <col width="15%" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th class="text-center">일정</th>
-                    <th class="">포지션 내용</th>
-                    <th class="text-center">담당자</th>
-                    <th class="text-center">참여자 수</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center">
-                      <a href="">
-                        <p>2022.12.08</p>
-                        <p>~ <span>2022.12.23</span></p>
-                      </a>
-                    </td>
-                    <td class="">
-                      <p class="text-gray">제이티비씨미디어텍(주)</p>
-                      <a href="" class="text-primary text-underline">[방송제작사] 재무회계 경력직 (3년~7년)</a>
-                    </td>
-                    <td class="text-center">
-                      <p>홍길동</p>
-                    </td>
-                    <td class="text-center">
-                      <p><span class="text-danger">0</span> 명</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              @@include('@@webRoot/_include/_pagination.html')
             </div>
+            <table class="table border-top-1">
+              <colgroup>
+                <col width="20%" />
+                <col width="50%" />
+                <col width="15%" />
+                <col width="15%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="text-center">일정</th>
+                  <th class="">포지션 내용</th>
+                  <th class="text-center">담당자</th>
+                  <th class="text-center">참여자 수</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <a href="">
+                      <p>2022.12.08</p>
+                      <p>~ <span>2022.12.23</span></p>
+                    </a>
+                  </td>
+                  <td class="">
+                    <p class="text-gray">제이티비씨미디어텍(주)</p>
+                    <a href="" class="text-primary text-underline">[방송제작사] 재무회계 경력직 (3년~7년)</a>
+                  </td>
+                  <td class="text-center">
+                    <p>홍길동</p>
+                  </td>
+                  <td class="text-center">
+                    <p><span class="text-danger">0</span> 명</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            @@include('@@webRoot/_include/_pagination.html')
           </div>
         </div>
       </div>

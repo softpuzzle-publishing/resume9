@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_we_firm_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle">고객사 관리</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="d-flex justify-content-end m-b-15 p-0">
+              <select class="select-design" style="width: 150px">
+                <option value="1">헤드헌터순</option>
+                <option value="2">기업순</option>
+                <option value="2">처리중</option>
+              </select>
+            </div>
+            <div class="sub-content-head p-0">
+              <div class="search-area">
+                <div class="input-group">
+                  <select class="select-design" style="width: 150px">
+                    <option value="1">고객사명</option>
+                    <option value="2">PM</option>
+                    <option value="2">사업자번호</option>
+                  </select>
+                  <input type="text" class="form-control p-l-20" placeholder=" " />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary btn-input-search" type="button">검색</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tbl-head mt-0 m-b-10">
+              <div class="d-flex align-items-center gap-10">
+                <button type="button" class="btn btn-outline-primary">수정</button>
+                <button type="button" class="btn btn-outline-gray">삭제</button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-customer-registration">+ 신규등록</button>
+              </div>
+            </div>
+            <table class="table border-top-1">
+              <thead>
+                <tr>
+                  <th class="text-center">인증</th>
+                  <th class="text-center">사업자 번호</th>
+                  <th class="text-center">고객사명</th>
+                  <th class="text-center">PM</th>
+                  <th class="text-center">등록일</th>
+                  <th class="text-center">만료일</th>
+                  <th class="text-center">관리</th>
+                  <th class="text-center">관리자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <p>●</p>
+                  </td>
+                  <td class="text-center">
+                    <p>1549876546</p>
+                  </td>
+                  <td class="text-center">
+                    <p>제이티비씨미디어텍(주)</p>
+                  </td>
+                  <td class="text-center">
+                    <p>홍길동</p>
+                  </td>
+                  <td class="text-center">
+                    <p>2022.09.30</p>
+                  </td>
+                  <td class="text-center">
+                    <p>2023.03.30 21:45</p>
+                  </td>
+                  <td class="text-center">
+                    <a href="javascript:void(0)" class="text-primary text-underline" data-bs-toggle="modal" data-bs-target="#modal-passer">합격자등록</a>
+                  </td>
+                  <td class="text-center">
+                    <a href="javascript:void(0)" class="text-primary text-underline">포지션 제안중</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            @@include('@@webRoot/_include/_pagination.html')
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>

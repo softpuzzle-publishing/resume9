@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_we_firm_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle">We펌 검색</h3>
+            <div class="title-line mt-4 mb-5"></div>
+
+            <div class="sub-content-head">
+              <div class="search-area">
+                <div class="input-group">
+                  <input type="text" class="form-control p-l-20" placeholder="서치펌명으로 검색하세요." />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary btn-input-search" type="button">검색</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end m-b-15 p-0">
+              <select class="select-design" style="width: 150px">
+                <option value="1">최신순</option>
+                <option value="2">참여자수순</option>
+                <option value="2">마감임박순</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center mt-5 mb-5">검색결과가 없습니다.</div>
+            <div class="business-card">
+              <div class="business-card-list">
+                <div class="company">
+                  <a href="" class="text-underline">(주)블록체인글로벌</a>
+
+                  <div class="company-logo">
+                    <img src="../assets/images/logo.svg" alt="RESUME9" />
+                  </div>
+                </div>
+                <div class="desc">
+                  <p>이건 상세 설명 칸</p>
+                </div>
+              </div>
+              <div class="business-card-list">
+                <div class="company">
+                  <a href="" class="text-underline">(주)블록체인글로벌</a>
+
+                  <div class="company-logo">
+                    <img src="../assets/images/logo.svg" alt="RESUME9" />
+                  </div>
+                </div>
+                <div class="desc">
+                  <p>이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸 이건 상세 설명 칸</p>
+                </div>
+              </div>
+            </div>
+            @@include('@@webRoot/_include/_pagination.html')
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>
