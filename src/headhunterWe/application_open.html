@@ -17,106 +17,76 @@
               <div class="content">
                 <h4 class="table-subtitle mb-3 m-t-25">정보입력</h4>
                 <table class="table border-top-1">
-                  <caption>
-                    기업정보
-                  </caption>
                   <colgroup>
-                    <col width="15%" />
-                    <col width="35%" />
-                    <col width="15%" />
-                    <col width="35%" />
+                    <col width="18%" />
+                    <col width="32%" />
+                    <col width="18%" />
+                    <col width="32%" />
                   </colgroup>
                   <tbody>
                     <tr>
-                      <th class="">기업검색</th>
+                      <th class="">사업자등록번호<span class="text-danger">*</span></th>
                       <td class="">
-                        <div class="search-box search-lg">
-                          <input type="text" class="" placeholder="회사 이름을 입력하세요" />
-                          <button type="button" class="search-btn"><i class="icon-search-dark"></i></button>
-                        </div>
-                        <div class="search-result-list">
-                          <ul>
-                            <li class="active">
-                              <div class="result-company">
-                                <a href="">
-                                  <p class="company-name">(주)삼성전자</p>
-                                  <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
-                                </a>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="result-company">
-                                <a href="">
-                                  <p class="company-name">(주)삼성전자</p>
-                                  <p class="company-obj">중소기업 | 시스템소프트웨어 | 중공업</p>
-                                </a>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                        <input type="text" class="form-control form-lg" value="2154654681" placeholder="" disabled />
                       </td>
-                      <th class="">사업자등록번호</th>
+                      <th class="">회사명<span class="text-danger">*</span></th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="컨설팅(주)" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">설립년월일<span class="text-danger">*</span></th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="" placeholder="" />
+                      </td>
+                      <th class="">사업장연락처<span class="text-danger">*</span></th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="02-6952-9944" placeholder="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">대표자명<span class="text-danger">*</span></th>
+                      <td class="">
+                        <input type="text" class="form-control form-lg" value="이덕진" placeholder="" />
+                      </td>
+                      <th class="">이메일<span class="text-danger">*</span></th>
                       <td class="">
                         <input type="text" class="form-control form-lg" value="" placeholder="" />
                       </td>
                     </tr>
                     <tr>
-                      <th class="">대표자</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                      <th class="">설립일</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">전화번호</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                      <th class="">도로명주소</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">기업규모</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                      <th class="">업종명 10차</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">상장</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                      <th class="">기업상태</th>
-                      <td class="">
-                        <input type="text" class="form-control form-lg" value="" placeholder="" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="">기업키워드</th>
+                      <th class="">회사 홈페이지<span class="text-danger">*</span></th>
                       <td class="" colspan="3">
-                        <input type="text" class="form-control form-lg" value="" placeholder="기업의 인증, 수상, 특징(최대 3개) 벤쳐기업, 고용우수, 가족친화기업" />
+                        <input type="text" class="form-control form-lg" value="http://menschonsulting.co.kr/" placeholder="" />
                       </td>
                     </tr>
                     <tr>
-                      <th class="">사업자등록증 사본<span class="text-danger">(필수)</span></th>
+                      <th class="">회사 로고이미지<span class="text-danger">*</span></th>
                       <td class="" colspan="3">
-                        <div class="form-upload">
-                          <input type="file" class="" id="form-file" />
-                          <label for="form-file"><i class="icon-input-add"></i></label>
+                        <div class="file-flex">
+                          <div class="form-upload">
+                            <input type="file" class="" id="form-file" />
+                            <!-- select 박스에 따라서 -->
+                            <label for="form-file"><i class="icon-input-add"></i></label>
+                          </div>
+                          <p class="m-l-10 text-gray">(파일형식: .jpg, .png, .gif)</p>
                         </div>
-                        <p class="text-danger mt-3">NICE평가정보에 등록되지 않은 회사는 사업자등록증을 첨부해야합니다.</p>
-                        <div class="m-t-20">
-                          <p>첨부가능 용량: 최대 10MB</p>
-                          <p>첨부가능 확장자명: jpg, gif, bmp, ppt, pptx, hwp, pdf, png</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">R9 We펌 주소<span class="text-danger">*</span></th>
+                      <td class="" colspan="3">
+                        <div class="d-flex align-items-center">
+                          <p class="m-r-10">http://menschonsulting.co.kr/</p>
+                          <input type="text" class="form-control form-lg" value="" placeholder="Resume9에서 사용하실 서치펌 주소를 설정하세요." />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="">We펌 상세설명<span class="text-danger">*</span></th>
+                      <td class="" colspan="3">
+                        <div class="form-textarea textarea-sm m-0">
+                          <textarea name="" id="" cols="30" rows="10" placeholder="" class=""></textarea>
                         </div>
                       </td>
                     </tr>
@@ -143,22 +113,42 @@
                 </table>
               </div>
               <!-- end -->
-
+              <!-- 인증제출 -->
+              <div class="content">
+                <h4 class="table-subtitle mb-3 m-t-25">인증제출</h4>
+                <table class="table border-top-1">
+                  <colgroup>
+                    <col width="15%" />
+                    <col width="35%" />
+                    <col width="15%" />
+                    <col width="35%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="">파일첨부<span class="text-danger">*</span></th>
+                      <td class="" colspan="3">
+                        <div class="file-flex">
+                          <div class="form-upload">
+                            <input type="file" class="" id="form-file" />
+                            <!-- select 박스에 따라서 -->
+                            <label for="form-file"><i class="icon-input-add"></i></label>
+                          </div>
+                          <button type="button" class="btn btn-outline-dark btn-md m-l-10">+ 추가</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end -->
               <div class="content">
                 <div class="example-form">
                   <ul>
                     <li class="d-flex align-items-center justify-content-between">
-                      <p>이 채용정보에는 허위내용이 포함되지 않았음을 확인하빈다. 만약 허위사실로 인한 피해발생 시 모든 책임은 등록자에게 있음을 확인합니다.</p>
+                      <p><span class="text-danger">[필수]</span> We펌 개설 및 이용약관 동의 <a href="" class="text-underline text-gray font-size-14">내용보기</a></p>
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="multipleCheck5" />
                         <label class="form-check-label" for="multipleCheck5">동의합니다.</label>
-                      </div>
-                    </li>
-                    <li class="d-flex align-items-center justify-content-between">
-                      <p>등록되는 채용정보는 채용 관련 법령 및 RESUME9의 채용정보 정책에 위반될 경우, 동의 없이 삭제 또는 게시중단 될 수 있습니다.</p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="multipleCheck6" />
-                        <label class="form-check-label" for="multipleCheck6">동의합니다.</label>
                       </div>
                     </li>
                   </ul>

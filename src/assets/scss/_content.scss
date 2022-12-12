@@ -1480,6 +1480,7 @@ legend{
         &::before{
             content: ""; position: absolute; width: 3px; height: 3px; background-color: #202020; border-radius: 50%; left: 0; top: 8px;
         }
+        p{width:80%; word-break: keep-all;}
     }
     .title{ font-size: 18px; font-weight: 700; margin-bottom: 30px;}
 }

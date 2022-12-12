@@ -6264,6 +6264,10 @@ table.tbl-terms td {
   left: 0;
   top: 8px;
 }
+.example-form li p {
+  width: 80%;
+  word-break: keep-all;
+}
 .example-form .title {
   font-size: 18px;
   font-weight: 700;
