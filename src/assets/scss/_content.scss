@@ -1706,8 +1706,8 @@ legend{
             }
             .headhunter-info{
                 width: 80%; margin-left: 16px;
-                .name{width:95px; font-size: 20px; font-weight: 700;}
-                .company{font-size: 14px; color: #777; margin-left: 11px;}
+                .name{width: 75px; font-size: 20px; font-weight: 700;}
+                .company{width:165px; font-size: 14px; color: #777; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
                 button{
                     &.active{
                         .icon-like-off{background-image: url('../images/icon-like-on.svg');}
