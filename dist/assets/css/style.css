@@ -1460,6 +1460,18 @@ progress {
   background-image: url("../images/icon-clip.svg");
 }
 
+.icon-b-next {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icon-b-next.svg");
+}
+
+.icon-no-img {
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/icon-no-img.svg");
+}
+
 /* checkbox/radio */
 .form-check {
   display: flex;
@@ -3588,6 +3600,7 @@ table.tbl-terms td {
   background-color: #fff;
   border-radius: 8px;
   padding: 8px;
+  height: 344px;
 }
 .main-content__join .swiper-container {
   width: 80%;
@@ -3904,9 +3917,24 @@ table.tbl-terms td {
   margin-top: 4px;
 }
 
+@media screen and (max-width: 996px) {
+  .sign-wrap__success {
+    width: 100%;
+  }
+}
 .main-content__announcement {
   padding: 80px 0 140px;
   background-color: #f2f3f5;
+}
+.main-content__announcement.headhunter > .container {
+  display: flex;
+  gap: 24px;
+}
+.main-content__announcement.headhunter > .container .content {
+  width: 50%;
+}
+.main-content__announcement.headhunter .announcement-wrap__list li {
+  width: calc(50% - 18px);
 }
 
 .announcement-head {
@@ -3971,6 +3999,24 @@ table.tbl-terms td {
   justify-content: space-between;
   flex-direction: column;
 }
+.announcement-wrap__list .resources-profile {
+  display: flex;
+  flex-direction: inherit;
+}
+.announcement-wrap__list .profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.announcement-wrap__list .profile-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.announcement-wrap__list .profile-list {
+  width: 65%;
+}
 .announcement-wrap__list .announcement-classification {
   font-size: 14px;
   font-weight: 700;
@@ -3980,6 +4026,17 @@ table.tbl-terms td {
   font-size: 18px;
   font-weight: 700;
   margin-top: 10px;
+}
+.announcement-wrap__list .announcement-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 6px;
+}
+.announcement-wrap__list .announcement-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .date-wrap {
@@ -4083,6 +4140,17 @@ table.tbl-terms td {
 @media screen and (max-width: 996px) {
   .main-content__announcement {
     padding: 45px 16px 40px;
+  }
+  .main-content__announcement.headhunter > .container {
+    display: block;
+    gap: 0;
+  }
+  .main-content__announcement.headhunter > .container .content {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .main-content__announcement.headhunter .announcement-wrap__list li {
+    width: 100%;
   }
   .main-content-title {
     font-size: 16px;
@@ -6629,6 +6697,7 @@ table.tbl-terms td {
   margin-left: 16px;
 }
 .card-list.hunter .card .headhunter-info .name {
+  width: 95px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -6877,6 +6946,32 @@ table.tbl-terms td {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 992px) {
+  .headhunter-main-status {
+    width: 100%;
+  }
+  .headhunter-main-status .status-list {
+    margin-top: 25px;
+    flex-flow: wrap;
+  }
+  .headhunter-main-status .status-list > div {
+    width: 50%;
+  }
+  .headhunter-main-status .status-list > div:last-child {
+    border-right: 0;
+  }
+  .headhunter-main-status .status-list .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .headhunter-main-status .status-list .cnt {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+}
 .human-resources-filter {
   background-color: #f8f8fa;
   display: flex;

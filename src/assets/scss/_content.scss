@@ -176,7 +176,7 @@ legend{
 }
 .main-content__join{
     display: flex; gap: 8px; margin-top: -250px; position: relative;
-    background-color: #fff; border-radius: 8px; padding: 8px;
+    background-color: #fff; border-radius: 8px; padding: 8px; height: 344px;
     .swiper-container{ width: 80%; }
     .swiper-pagination-bullet-active{ background: $PRIMARY_COLOR;}
     .swiper-button-next{
@@ -295,9 +295,22 @@ legend{
 }
 .content-txt{ font-size: 14px; margin-top: 8px;}
 .content-cnt{ font-size: 15px; font-weight: 700; color: #1686f2; margin-top: 4px;}
+@media screen and (max-width: $BREAKPOINT_LARGE) {
+    .sign-wrap__success{
+        width: 100%;
+    }
+}
 // 실시간 헤드헌팅 채용공고
 .main-content__announcement{
     padding: 80px 0 140px; background-color: #f2f3f5;  
+    &.headhunter{ 
+        >.container{display: flex; gap:24px;
+            .content{width: 50%;}
+        }
+        .announcement-wrap__list{
+            li{ width: calc(50% - 18px);}
+        }
+    }
 }
 .announcement-head{
     position: relative;
@@ -324,8 +337,16 @@ legend{
         &.active{ border: 2px solid #1686f2;}
         a{width: 100%; height: 100%; display: flex; justify-content: space-between; flex-direction: column;}
     }
+    .resources-profile{ display: flex; flex-direction: inherit;}
+    .profile-img{ 
+        width: 70px; height: 70px; border-radius: 50%; border: 1px solid #ddd;
+        img{ object-fit: cover; height: 100%;}
+    }
+    .profile-list{ width: 65%;}
     .announcement-classification{ font-size: 14px; font-weight: 700; color: #777;}
     .announcement-object{ font-size: 18px; font-weight: 700; margin-top: 10px;}
+    .announcement-name{ font-size: 18px; font-weight: 700; line-height: 22px; margin-bottom: 6px;}
+    .announcement-info{ font-weight: 400; font-size: 14px; line-height: 20px;}
 }
 .date-wrap{
     display: flex; align-items: center; justify-content: space-between;
@@ -373,6 +394,14 @@ legend{
 @media screen and (max-width: $BREAKPOINT_LARGE) {
     .main-content__announcement{
         padding: 45px 16px 40px;
+        &.headhunter{ 
+            >.container{display: block; gap: 0;
+                .content{width: 100%; margin-bottom: 25px;}
+            }
+            .announcement-wrap__list{
+                li{ width: calc(100%);}
+            }
+        }
     }
     .announcement-head{
         @at-root{
@@ -1677,7 +1706,7 @@ legend{
             }
             .headhunter-info{
                 width: 80%; margin-left: 16px;
-                .name{ font-size: 20px; font-weight: 700;}
+                .name{width:95px; font-size: 20px; font-weight: 700;}
                 .company{font-size: 14px; color: #777; margin-left: 11px;}
                 button{
                     &.active{
@@ -1808,6 +1837,20 @@ legend{
         .name{font-weight: 500; font-size: 18px; line-height: 22px;}
         .cnt{ font-weight: 700; font-size: 64px; line-height: 77px; color: #1686F2; margin-top: 20px;}
     }
+}
+@media screen and (max-width: 992px) {
+    .headhunter-main-status{
+        width:100%;
+        .status-list{
+            margin-top: 25px; flex-flow: wrap;
+            > div{
+                width: 50%;
+                &:last-child{ border-right: 0;}
+            }
+            .name{font-weight: 500; font-size: 16px; line-height: 22px;}
+            .cnt{ font-weight: 700; font-size: 40px; line-height: 40px;margin-top: 20px;}
+        }
+    } 
 }
 .human-resources-filter{
     background-color: #f8f8fa; display: flex; border: 1px solid #ddd;
