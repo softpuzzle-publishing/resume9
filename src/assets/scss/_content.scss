@@ -1849,11 +1849,11 @@ legend{
 }
 @media screen and (max-width: 992px) {
     .headhunter-main-status{
-        width:100%;
+        width:100%; padding: 0;
         .status-list{
-            margin-top: 25px; flex-flow: wrap;
+            margin-top: 50px; flex-flow: wrap; gap: 20px;
             > div{
-                width: 50%;
+                width: calc(50% - 10px); border-right: 0;
                 &:last-child{ border-right: 0;}
             }
             .name{font-weight: 500; font-size: 16px; line-height: 22px;}

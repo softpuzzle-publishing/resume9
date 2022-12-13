@@ -6969,13 +6969,16 @@ table.tbl-terms td {
 @media screen and (max-width: 992px) {
   .headhunter-main-status {
     width: 100%;
+    padding: 0;
   }
   .headhunter-main-status .status-list {
-    margin-top: 25px;
+    margin-top: 50px;
     flex-flow: wrap;
+    gap: 20px;
   }
   .headhunter-main-status .status-list > div {
-    width: 50%;
+    width: calc(50% - 10px);
+    border-right: 0;
   }
   .headhunter-main-status .status-list > div:last-child {
     border-right: 0;
