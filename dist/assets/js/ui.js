@@ -74,5 +74,5 @@ $(".opponent .back").click(function () {
 }); // 관심헤드헌터
 
 $(".open-btn").click(function () {
-  $(".headhunter-profile-list").toggleClass("active");
+  $(this).closest(".headhunter-profile-list").toggleClass("active");
 });
