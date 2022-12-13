@@ -3882,6 +3882,7 @@ table.tbl-terms td {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
+  border-radius: 50%;
 }
 .sign-success__con .name {
   font-size: 20px;
@@ -5074,6 +5075,9 @@ table.tbl-terms td {
 .modal-headhunter .headhunter-profile-content .headhunter-profile {
   align-items: inherit;
 }
+.modal-headhunter .headhunter-profile-content .headhunter-profile > .d-flex {
+  width: 100%;
+}
 .modal-headhunter .headhunter-profile-content .headhunter-profile .name .rank {
   font-size: 14px;
   font-weight: 400;
@@ -5476,6 +5480,19 @@ table.tbl-terms td {
 }
 .poting-detail-wrap .desc p {
   line-height: 1.5;
+}
+
+.headhunter-profile-list {
+  margin-bottom: 30px;
+}
+.headhunter-profile-list .resume-form {
+  display: none;
+}
+.headhunter-profile-list.active .resume-form {
+  display: block;
+}
+.headhunter-profile-list.active .icon-select-arrow {
+  transform: rotate(180deg);
 }
 
 .headhunter-profile-content {
