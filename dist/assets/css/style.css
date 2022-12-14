@@ -1489,6 +1489,24 @@ progress {
   background-image: url("../images/icon-no-img.svg");
 }
 
+.icon-chat-notice {
+  width: 56px;
+  height: 56px;
+  background-image: url("../images/icon-chat-notice.svg");
+}
+
+.icon-chat-notice-active {
+  width: 56px;
+  height: 56px;
+  background-image: url("../images/icon-chat-notice-active.svg");
+}
+
+.icon-top-btn {
+  width: 56px;
+  height: 56px;
+  background-image: url("../images/icon-top-btn.svg");
+}
+
 /* checkbox/radio */
 .form-check {
   display: flex;
@@ -3393,6 +3411,23 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 67px;
 }
 
+.chat-notice {
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+  z-index: 9999;
+}
+.chat-notice.active .icon-chat-notice {
+  background-image: url("../images/icon-chat-notice-active.svg");
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 12.5%;
+  right: 5%;
+  z-index: 9999;
+}
+
 .btn-form {
   display: flex;
   gap: 7.5px;
@@ -3920,6 +3955,7 @@ table.tbl-terms td {
 }
 .sign-success__con.headhunter {
   background-color: #fff;
+  padding: 15px 8px 10px;
 }
 .sign-success__con.headhunter .img-wrap {
   width: 250px;
@@ -3971,6 +4007,9 @@ table.tbl-terms td {
 
 @media screen and (max-width: 996px) {
   .sign-wrap__success {
+    width: 100%;
+  }
+  .sign-success__con.headhunter .img-wrap {
     width: 100%;
   }
 }

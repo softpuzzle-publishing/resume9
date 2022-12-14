@@ -84,3 +84,8 @@ $(".opponent .back").click(function () {
 $(".open-btn").click(function () {
   $(this).closest(".headhunter-profile-list").toggleClass("active");
 });
+
+$(".top-btn").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 400);
+  return false;
+});

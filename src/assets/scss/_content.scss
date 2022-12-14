@@ -30,6 +30,18 @@
         margin-top: 67px;
     }
 }
+
+.chat-notice{
+    position: fixed; bottom: 20%; right: 5%; z-index: 9999;
+    &.active{
+        .icon-chat-notice{
+            background-image: url('../images/icon-chat-notice-active.svg');
+        }
+    }
+}
+.top-btn{
+    position: fixed; bottom: 12.5%; right: 5%; z-index: 9999;
+}
 .btn-form{
     display: flex; gap: 7.5px; position: relative;
     .form-control{ width: 80%; }
@@ -290,7 +302,7 @@ legend{
   .email{font-size: 16px; color: #777; margin-top: 4px; margin-bottom: 24px;}
   .btn{width:100%; margin-top: 25px; background-color:transparent; border-radius:4px; }
   &.headhunter{
-    background-color: #fff;   
+    background-color: #fff;   padding: 15px 8px 10px; 
     .img-wrap{
         width: 250px; height: 120px; background-color: #f2f3f5;
         img{ width: 100%; height: 100%; object-fit: cover; }
@@ -310,6 +322,13 @@ legend{
 @media screen and (max-width: $BREAKPOINT_LARGE) {
     .sign-wrap__success{
         width: 100%;
+    }
+    .sign-success__con{
+        &.headhunter{
+            .img-wrap{
+                width: 100%;
+            }
+        }
     }
 }
 // 실시간 헤드헌팅 채용공고
