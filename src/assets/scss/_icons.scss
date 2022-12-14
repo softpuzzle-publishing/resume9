@@ -1,6 +1,7 @@
 [class^=icon-]{
   display: inline-block;vertical-align: middle;background-repeat: no-repeat;background-position: 50% 50%;background-size: contain;
 }
+.no-image{ width: 155px; height: 30px; background-image: url('../images/no-image.svg'); display: inline-block;vertical-align: middle;background-repeat: no-repeat;background-position: 50% 50%;background-size: contain;}
 .icon-naver{ width: 62px; height: 62px; background-image: url('../images/icon-naver.png');}
 .icon-kakao{ width: 62px; height: 62px; background-image: url('../images/icon-kakao.png');}
 .icon-facebook{ width: 62px; height: 62px; background-image: url('../images/icon-facebook.png');}
@@ -154,6 +155,9 @@
 }
 .icon-pen{
   width: 18px; height: 20px; background-image: url('../images/icon-pen.svg');
+}
+.icon-w-pen{
+  width: 21px; height: 24px; background-image: url('../images/icon-w-pen.svg');
 }
 .icon-trash{
   width: 14px; height: 20px; background-image: url('../images/icon-trash.svg');

@@ -53,91 +53,91 @@
     }
   }
   &.btn-gray{
-    color: #fff;
-    background-color: #777;
-    border-color: #777;
+    color: #fff !important;
+    background-color: #777 !important;
+    border-color: #777 !important;
     &:hover{
-      background-color: #777;
+      background-color: #777 !important;
     }
   }
   &.btn-outline-gray{
-    color: #777;
-    background-color: #fff;
-    border-color: #777;
+    color: #777 !important;
+    background-color: #fff !important;
+    border-color: #777 !important;
     &:hover{
-      color: #fff;
-      background-color: #777;
-      border-color: #777;;
+      color: #fff !important;
+      background-color: #777 !important;
+      border-color: #777 !important;
     }
   }
 
   &.btn-dark{
-    color: #fff;
-    background-color: #202020;
-    border-color: #202020;
+    color: #fff !important;
+    background-color: #202020 !important;
+    border-color: #202020 !important;
     &:hover{
-      background-color: #202020;
-      color: #fff;
-      border-color: #fff;
+      background-color: #202020 !important;
+      color: #fff !important;
+      border-color: #fff !important;
     }
     &.active{
-      color: #fff;
-      background-color: #202020;
-      border-color: #202020;
+      color: #fff !important;
+      background-color: #202020 !important;
+      border-color: #202020 !important;
     }
   }
   &.btn-outline-dark{
-    color: #202020;
-    background-color: #fff;
-    border-color: #202020;
+    color: #202020 !important;
+    background-color: #fff !important;
+    border-color: #202020 !important;
     &:hover{
-      color: #fff;
-      background-color: #202020;
-      border-color: #202020;
+      color: #fff !important;
+      background-color: #202020 !important;
+      border-color: #202020 !important;
     }
     &.active{
-      color: #fff;
-      background-color: #202020;
-      border-color: #202020;
+      color: #fff !important;
+      background-color: #202020 !important;
+      border-color: #202020 !important;
     }
   }
   &.btn-danger{
-    color: #fff;
-    background-color: #f95b55;
-    border-color: #f95b55;
+    color: #fff !important;
+    background-color: #f95b55 !important;
+    border-color: #f95b55 !important;
     &:hover{
-      background-color: #f95b55;
+      background-color: #f95b55 !important;
     }
   }
   &.btn-outline-danger{
-    color: #f95b55;
-    background-color: #fff;
-    border-color: #f95b55;
+    color: #f95b55 !important;
+    background-color: #fff !important;
+    border-color: #f95b55 !important;
     &:hover{
-      color: #fff;
-      background-color: #f95b55;
-      border-color: #f95b55;
+      color: #fff !important;
+      background-color: #f95b55 !important;
+      border-color: #f95b55 !important;
     }
   }
 
   &:disabled {
-    color: #aaaaaa;
-    border-color: #eeeeee;
-    background-color: #eeeeee;
+    color: #aaaaaa !important;
+    border-color: #eeeeee !important;
+    background-color: #eeeeee !important;
     &:hover{
-      color: #aaaaaa;
-      border-color: #eeeeee;
-      background-color: #eeeeee;
+      color: #aaaaaa !important;
+      border-color: #eeeeee !important;
+      background-color: #eeeeee !important;
     }
   }
   &.disabled {
-    color: #aaaaaa;
-    border-color: #eeeeee;
-    background-color: #eeeeee;
+    color: #aaaaaa !important;
+    border-color: #eeeeee !important;
+    background-color: #eeeeee !important;
     &:hover{
-      color: #aaaaaa;
-      border-color: #eeeeee;
-      background-color: #eeeeee;
+      color: #aaaaaa !important;
+      border-color: #eeeeee !important;
+      background-color: #eeeeee !important;
     }
   }
 }

@@ -289,6 +289,18 @@ legend{
   .name{ font-size: 20px; font-weight: 700; margin-top: 16px;}
   .email{font-size: 16px; color: #777; margin-top: 4px; margin-bottom: 24px;}
   .btn{width:100%; margin-top: 25px; background-color:transparent; border-radius:4px; }
+  &.headhunter{
+    background-color: #fff;   
+    .img-wrap{
+        width: 250px; height: 120px; background-color: #f2f3f5;
+        img{ width: 100%; height: 100%; object-fit: cover; }
+    }
+    .signup-success-firm{
+        width:50%; padding: 38px 16px; display: flex; align-items: center; justify-content: center; flex-direction: column;
+        .signup-success__title{font-size: 14px; color: #000; font-weight: 600;}
+        .signup-success__desc{font-size: 14px; color: #777; font-size: 13px; line-height: 15px; margin-top: 4px;}
+    }
+  }
 }
 .notice-con, .reward-con{
     width: 50%;
@@ -669,7 +681,7 @@ legend{
         .desc{ 
             font-size: 14px;   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 40px; white-space: inherit; line-height: 1.4;
         }
-        .name{ font-size: 16px; margin-top: 10px;}
+        .name{ font-size: 14px; margin-top: 10px; margin-bottom: 15px;}
         .feed-body{
             padding-bottom: 15px;
         }
