@@ -5473,6 +5473,35 @@ table.tbl-terms td {
     height: 43px;
   }
 }
+.page-over {
+  color: #1686f2;
+}
+.page-over a {
+  color: #1686f2;
+  text-decoration: underline;
+}
+
+.foot-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.announcement-wrap.mail-history {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 20px 0;
+}
+.announcement-wrap.mail-history .title {
+  margin: 0;
+  text-decoration: none;
+}
 .announcement-wrap .scale {
   line-height: 1;
   color: #1686f2;

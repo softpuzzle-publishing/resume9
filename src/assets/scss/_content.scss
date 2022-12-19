@@ -1059,7 +1059,18 @@ legend{
         &.search-lg{ height: 43px;}
     }
 }
+.page-over{ 
+    color: $PRIMARY_COLOR;
+    a{color: $PRIMARY_COLOR; text-decoration: underline;}
+}
+.foot-btn{ display: flex; align-items: center; justify-content: end; border-top: 1px solid #ddd; padding-top: 10px;}
 .announcement-wrap{
+    &.mail-history{
+        width: 100%; margin-top: 20px; border-top: 1px solid #ddd; display: flex;  align-items: center; justify-content: space-between; padding:24px 20px 0;  
+        .title{
+            margin:0; text-decoration: none;
+        }
+    }
     .scale{line-height: 1; color: $PRIMARY_COLOR; font-size: 14px; display: flex; align-items: center;
         .company{ color: #777; margin-left: 10px;}
     }
