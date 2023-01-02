@@ -5,6 +5,13 @@
   justify-content: center;
   min-height: 16px;
   padding-right: 24px;
+  &.block{
+    display: block; text-align: center; padding-right: 0;
+    .form-check-label{
+      display: block; margin-left: 0;
+      p{ font-size: 15px; margin: 5px 0;}
+    }
+  }
 }
 
 .form-check-input {

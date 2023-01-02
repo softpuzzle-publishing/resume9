@@ -646,6 +646,10 @@ progress {
   gap: 20px !important;
 }
 
+.gap-30 {
+  gap: 30px !important;
+}
+
 .text-primary {
   color: #1686f2 !important;
 }
@@ -1520,6 +1524,19 @@ progress {
   justify-content: center;
   min-height: 16px;
   padding-right: 24px;
+}
+.form-check.block {
+  display: block;
+  text-align: center;
+  padding-right: 0;
+}
+.form-check.block .form-check-label {
+  display: block;
+  margin-left: 0;
+}
+.form-check.block .form-check-label p {
+  font-size: 15px;
+  margin: 5px 0;
 }
 
 .form-check-input {
