@@ -134,6 +134,12 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .fake-table-column{
     display: table-row;
+    &.none-data{
+      position: relative; height: 80px;
+      .none-data__desc{
+        position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 20px 0;
+      }
+    }
   }
   .fake-table-cell{
     display: table-cell; padding: 20px; vertical-align: middle; text-align: center; border-top: 1px solid #ddd;

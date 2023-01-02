@@ -43,33 +43,32 @@
         <div class="inner">
           <div class="col">
             <div class="row align-items-center justify-content-between gx-0">
-              <div class="col-7 d-flex align-items-center">
+              <div class="col-8 d-flex align-items-center">
                 <div class="header-logo">
-                  <a href="../main/main.html"><img src="../assets/images/logo.svg" alt="RESUME9" /></a>
+                  <a href="../headhunter/headhunter_main.html"><img src="../assets/images/logo.svg" alt="SAMSUNG Dispatcher Logo" /></a>
                 </div>
                 <ul class="gnb-list hidden-flex-mobile">
                   <li class="gnb-depth">
-                    <a href="../jop/posting.html">채용공고</a>
+                    <a href="../jop/posting.html">포지션 관리</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="">헤드헌터검색</a>
+                    <a href="">인재검색 </a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../resume/resume_list.html">내 이력서</a>
+                    <a href="../resume/resume_main.html">내 인재관리</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../application/application_status.html">지원현황</a>
+                    <a href="../application/application_status.html">내 주소록</a>
                   </li>
                   <li class="gnb-depth">
-                    <a href="../_layout/community.html">커뮤니티</a>
+                    <a href="../_layout/community.html">고객사 관리</a>
+                  </li>
+                  <li class="gnb-depth">
+                    <a href="../_layout/community.html">We펌</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-5 d-flex align-items-center justify-content-end">
-                <div class="search-form hidden-mobile">
-                  <input type="text" class="form-control form-lg" />
-                  <button type="button" class="btn search-btn"><i class="icon-search"></i></button>
-                </div>
+              <div class="col-4 d-flex align-items-center justify-content-end">
                 <ul class="sign-list hidden-flex-mobile">
                   <li class="sign-depth">
                     <a href="">1:1 문의</a>
@@ -90,8 +89,13 @@
                           <a href="" class="info-head__logout"> 로그아웃 <i class="icon-logout"></i> </a>
                         </div>
                         <div class="info-head__point">
+                          <i class="icon-reading-ticket"></i>
+                          <span class="my-reword">무료열람권</span>
+                          <span class="point">100개</span>
+                        </div>
+                        <div class="info-head__point">
                           <i class="icon-point"></i>
-                          <span class="my-reword">내 리워드</span>
+                          <span class="my-reword">개인포인트</span>
                           <span class="point">100P</span>
                         </div>
                       </div>
@@ -146,121 +150,81 @@
 
     <div id="container-block">
       <div class="container">
-        <div class="layout">
-          <div class="layout-left">
-            <aside>
-              <ul>
-                <li>
-                  <a href="javascript:void(0)"><span class="poppins">내 알림</span></a>
-                  <ul>
-                    <li class="active"><a href="../headhunterMypage/notice_setting.html">맞춤인재알림설정</a></li>
-                    <li><a href="../mypage/password.html">자주쓰는 메일/SMS</a></li>
-                    <li><a href="../mypage/blacklist.html">발송한 메일/SMS내역</a></li>
-                    <li><a href="../mypage/blacklist.html">나를 pick한 후보자</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"><span class="poppins">내 정보 관리</span></a>
-                  <ul>
-                    <li><a href="../mypage/login.html">기본정보/이메일 서명</a></li>
-                    <li><a href="../mypage/login.html">프로필 설정</a></li>
-                    <li><a href="../mypage/login.html">이용 내역</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"><span class="poppins">유료서비스</span></a>
-                  <ul>
-                    <li><a href="../mypage/profile_info.html">포인트 충전</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </aside>
+        <div class="sub-content">
+          <div class="d-flex m-b-20">
+            <p class="company m-r-20">(주)소프트퍼즐</p>
+            <p class="name">정영은</p>
           </div>
-          <div class="layout-content">
-            <div class="row row-40 align-items-center">
-              <h3 class="subtitle">이용내역</h3>
-              <div class="title-line mt-4 mb-5"></div>
-            </div>
-            <div class="tbl-head m-0">
-              <div class="btn-group date-list" role="group">
-                <p class="m-r-20 hidden-mobile">조회기간</p>
-                <button type="button" class="btn btn-outline-primary">오늘</button>
-                <button type="button" class="btn btn-outline-primary active">1개월</button>
-                <button type="button" class="btn btn-outline-primary">3개월</button>
-              </div>
-              <div class="d-flex align-items-center gap-10">
-                <div class="date-range">
-                  <div class="form-date-wrap">
-                    <input type="text" id="datepicker" class="form-date" />
+          <h3 class="subtitle">테스트(지원불가!!!)</h3>
+          <div class="title-line mt-4 mb-5"></div>
+          <table class="table m-t-15 border-top-1">
+            <thead>
+              <tr>
+                <th class="text-center">추천일자</th>
+                <th class="text-center">후보자</th>
+                <th class="text-center">출생년(나이)</th>
+                <th class="text-center">최종졸업학교</th>
+                <th class="text-center">경력년수</th>
+                <th class="text-center">이력서</th>
+                <th class="text-center">전형상태</th>
+                <th class="text-center">서류전형 합격통보</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">
+                  <p>2022-11-02</p>
+                </td>
+                <td class="text-center">
+                  <p>홍길동</p>
+                </td>
+                <td class="text-center">
+                  <p><span>1975</span>(<span>49</span>)</p>
+                </td>
+                <td class="text-center">
+                  <p>제주대학교</p>
+                </td>
+                <td class="text-center">
+                  <p>22년8개월</p>
+                </td>
+                <td class="text-center">
+                  <a href="" class="text-primary text-underline" target="_blank">보기</a>
+                </td>
+                <td class="text-center">
+                  <p>최종합격</p>
+                </td>
+                <td class="text-center">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                      <label class="form-check-label" for="multipleCheck2">미정</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                      <label class="form-check-label" for="multipleCheck2">불합격</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" value="" id="multipleCheck2" />
+                      <label class="form-check-label" for="multipleCheck2">합격</label>
+                    </div>
                   </div>
-                  <span>~</span>
-                  <div class="form-date-wrap">
-                    <input type="text" id="datepicker" class="form-date" />
-                  </div>
-                </div>
-                <select class="select-design" style="width: 135px">
-                  <option value="1">전체</option>
-                </select>
-              </div>
-            </div>
-            <table class="table border-top-1">
-              <colgroup>
-                <col width="17%" />
-                <col width="17%" />
-                <col width="17%" />
-                <col width="17%" />
-                <col width="30%" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th class="text-center">일시</th>
-                  <th class="text-center">IP</th>
-                  <th class="text-center">기기</th>
-                  <th class="text-center">내역</th>
-                  <th class="text-center">비고</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="text-center" colspan="5">
-                    <p class="m-t-30 m-b-30">이용내역이 없습니다.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="text-center">
-                    <p>2022-10-04 17:40:57</p>
-                  </td>
-                  <td class="text-center">
-                    <p>61.73.75.162</p>
-                  </td>
-                  <td class="text-center">
-                    <p></p>
-                  </td>
-                  <td class="text-center">
-                    <p>로그인</p>
-                  </td>
-                  <td class="text-center">
-                    <p></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="d-flex justify-content-center mt-5">
-              <div class="pagination">
-                <a href=""><i class="icon-pager-prev"></i></a>
-                <a href="" class="active">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
-                <a href="">5</a>
-                <a href="">6</a>
-                <a href="">7</a>
-                <a href="">8</a>
-                <a href="">9</a>
-                <a href="">10</a>
-                <a href=""><i class="icon-pager-next"></i></a>
-              </div>
-            </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-flex align-items-center justify-content-center m-t-30">
+            <button type="button" class="btn btn-primary" disabled>전형결과 통보</button>
+          </div>
+          <div class="example-form suggestion">
+            <p>
+              빠른 인재추천과 추천인재의 정보관리를 위해 헤드헌팅 시스템으로 인재를 추천드립니다.<br />
+              <br />
+              <br />
+              [다음 사항에 주의하세요]<br />
+              “전형결과통보”를 클릭하면 <b class="text-underline">서류전형 결과가 담당헤드헌터에게 통보</b>됩니다.<br />
+              통보가 완료된 전형결과는 수정할 수 없으며, 전형결과 통보 전까지는 변경이 가능합니다.<br />
+              불합격을 통보한 지원자의 이력서는 열람을 할 수 없습니다.
+            </p>
           </div>
         </div>
       </div>

@@ -261,7 +261,102 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="position-wrap">
+                  <div class="position-list">
+                    <a href="../headhunterPosition/headhunter_registration.html" class="position-card add">
+                      <i class="icon-bg-plus"></i>
+                      <p class="m-t-20">버튼을 눌러 새 포지션을 등록하세요.</p>
+                    </a>
+                    <a href="javascript:void(0)" class="position-card">
+                      <div class="position-card-head">
+                        <div class="d-flex align-items-center gap-10">
+                          <span class="tag tag-sm tag-danger m-0">단독</span>
+                          <span class="tag tag-sm tag-outline-primary m-0">진행중</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-10">
+                          <span class="count extend">D-1</span>
+                          <button type="button" class="tag tag-sm tag-outline-danger m-0" data-bs-target="#modal-deadline" data-bs-toggle="modal"><i class="icon-r-time"></i> 연장</button>
+                        </div>
+                      </div>
+                      <div class="position-card-content">
+                        <p class="title">대기업유통 텍스트 분석</p>
+                        <p class="desc registration-date">등록일 2022.09.31 <span class="plus-date">+ 30 days</span></p>
+                        <p class="desc expiration-date">만료일 2022.10.31</p>
+                        <p class="desc manager">담당자 이덕진</p>
+                        <p class="participation"><i class="icon-lock"></i> 참여CO: 1명</p>
+                      </div>
+                      <div class="position-card-footer">
+                        <div class="position-cnt-list">
+                          <div class="number">3</div>
+                          <p class="name">포지션 제안</p>
+                        </div>
+                        <div class="position-cnt-list">
+                          <div class="number">0</div>
+                          <p class="name">이력서 접수</p>
+                        </div>
+                      </div>
+                      <div class="delete-box">
+                        <button type="button" class="btn-delete" data-bs-target="#modal-delete-position" data-bs-toggle="modal">
+                          <i class="icon-w-trash"></i>
+                        </button>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="position-card">
+                      <div class="position-card-head">
+                        <div class="d-flex align-items-center gap-10">
+                          <span class="tag tag-sm tag-primary m-0">PM</span>
+                          <span class="tag tag-sm tag-outline-primary m-0">진행중</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-10">
+                          <span class="count">D-10</span>
+                        </div>
+                      </div>
+                      <div class="position-card-content">
+                        <p class="title">대기업유통 텍스트 분석</p>
+                        <p class="desc registration-date">등록일 2022.09.31 <span class="plus-date">+ 30 days</span></p>
+                        <p class="desc expiration-date">만료일 2022.10.31</p>
+                        <p class="desc manager">담당자 이덕진</p>
+                      </div>
+                      <div class="position-card-footer">
+                        <div class="position-cnt-list">
+                          <div class="number">3</div>
+                          <p class="name">포지션 제안</p>
+                        </div>
+                        <div class="position-cnt-list">
+                          <div class="number">0</div>
+                          <p class="name">이력서 접수</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="position-card deadline">
+                      <div class="position-card-head">
+                        <div class="d-flex align-items-center gap-10">
+                          <span class="tag tag-sm tag-danger m-0">CO</span>
+                          <span class="tag tag-sm tag-outline-gray m-0">공고마감</span>
+                        </div>
+                      </div>
+                      <div class="position-card-content">
+                        <p class="title">대기업유통 텍스트 분석</p>
+                        <p class="desc registration-date">등록일 2022.09.31 <span class="plus-date">+ 30 days</span></p>
+                        <p class="desc expiration-date">만료일 2022.10.31</p>
+                        <p class="desc manager">담당자 이덕진</p>
+                        <p class="participation">참여CO: 1명</p>
+                      </div>
+                      <div class="position-card-footer">
+                        <div class="position-cnt-list">
+                          <div class="number">3</div>
+                          <p class="name">포지션 제안</p>
+                        </div>
+                        <div class="position-cnt-list">
+                          <div class="number">0</div>
+                          <p class="name">이력서 접수</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1230,6 +1325,28 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
               <button type="button" class="btn btn-primary">변경</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 포지션 삭제 -->
+      <div class="modal fade" id="modal-delete-position" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-comment modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">포지션 삭제</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="m-b-20 m-t-20 text-center">
+                공고를 삭제하시면 더이상 내용 확인이 불가능합니다.<br />
+                공고를 삭제하시겠습니까?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary m-r-5" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn btn-primary">확인</button>
             </div>
           </div>
         </div>

@@ -2,20 +2,21 @@
 
 $(document).ready(function () {
   // 헤더에 my눌렀을때
+
   $(".mypage-con").click(function () {
     $(".my-info").show();
-  }); // 메인 로그인 버튼 눌렀을 때
-
+  });
+  // 메인 로그인 버튼 눌렀을 때
   $(".login-group__con > button").click(function () {
     $(".sign-wrap__login").show();
   });
   $(".close").click(function () {
     $(".sign-wrap__login").hide();
-  }); //    //
+  });
+  //    //
 
   $(".search-box input").on("change keydown paste input", function () {
     $(this).closest(".search-box").next(".search-result-list").show();
-
     if ($(".search-box input").val() == "") {
       $(this).closest(".search-box").next(".search-result-list").hide();
     }
@@ -26,7 +27,6 @@ $(document).ready(function () {
   $(".add-info-box a").on("click", function () {
     var getThis = $(this).children().find("i");
     var getClass = getThis.attr("class");
-
     if (!$(this).hasClass("active")) {
       $(this).addClass("active");
       $(this).children().find("i").addClass(getClass + "-active");
@@ -34,8 +34,9 @@ $(document).ready(function () {
   });
   $(".accordion-agree .item").click(function () {
     $(this).toggleClass("active").siblings().removeClass("active");
-  }); // datepicker
+  });
 
+  // datepicker
   $("#datepicker").datepicker({
     changeMonth: true,
     changeYear: true,
@@ -56,23 +57,26 @@ $(document).ready(function () {
     if ($(e.target).parents(".more-dot").length < 1) {
       $(".more-dot").removeClass("active");
     }
-  }); // 치환태그
+  });
 
+  // 치환태그
   $("#replacement-btn").click(function () {
     $(".replacement-tag-notice").addClass("active");
   });
   $(".replacement-tag-notice .close").click(function () {
     $(".replacement-tag-notice").removeClass("active");
   });
-}); // 채팅창 모바일
+});
 
+// 채팅창 모바일
 $(".message-list .list li").click(function () {
   $(".message-content").addClass("active");
 });
 $(".opponent .back").click(function () {
   $(".message-content").removeClass("active");
-}); // 관심헤드헌터
+});
 
+// 관심헤드헌터
 $(".open-btn").click(function () {
   $(this).closest(".headhunter-profile-list").toggleClass("active");
 });
