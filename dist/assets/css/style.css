@@ -7482,10 +7482,15 @@ table.tbl-terms td {
   align-items: center;
   justify-content: end;
   margin-top: 10px;
+  position: relative;
+  z-index: 10;
 }
 .message-list .list .list-out a {
   color: #1686f2;
   font-size: 12px;
+}
+.message-list .list .list-out a:hover {
+  background: transparent;
 }
 .message-list .list .list-out span {
   font-size: 12px;
