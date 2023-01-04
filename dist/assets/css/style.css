@@ -7575,6 +7575,13 @@ table.tbl-terms td {
      object-fit: cover;
   border-radius: 50%;
 }
+.message-body .item .imgbox {
+  width: 120px;
+  height: 150px;
+}
+.message-body .item .imgbox img {
+  border-radius: 6px;
+}
 .message-body .item.my p {
   background: #1686f2;
   color: #fff;
@@ -7584,6 +7591,9 @@ table.tbl-terms td {
 .message-body .item.my .time {
   clear: both;
   text-align: right;
+}
+.message-body .item.my .imgbox {
+  margin-left: auto;
 }
 
 .message-footer {
