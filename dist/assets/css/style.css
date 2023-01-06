@@ -3003,6 +3003,64 @@ aside .new-community li {
     display: none;
   }
 }
+.pass-review {
+  position: relative;
+}
+.pass-review:hover .tooltip {
+  display: block;
+}
+.pass-review .tooltip {
+  display: none;
+  position: absolute;
+  top: 35px;
+  background-color: #444;
+  color: #fff;
+  z-index: 999;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  line-height: 1.3;
+}
+.pass-review .tooltip::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-bottom: 10px solid #444;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -5px;
+}
+
+.company-curious {
+  position: relative;
+}
+.company-curious:hover .tooltip {
+  display: block;
+}
+.company-curious .tooltip {
+  display: none;
+  position: absolute;
+  top: 35px;
+  background-color: #444;
+  color: #fff;
+  z-index: 999;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  line-height: 1.3;
+}
+.company-curious .tooltip::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-bottom: 10px solid #444;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -5px;
+}
+
 .fade {
   transition: opacity 0.15s linear;
 }
