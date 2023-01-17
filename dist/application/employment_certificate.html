@@ -1097,7 +1097,7 @@
             <div class="modal-body">
               <div class="text-title">마감일을 지정해주세요.</div>
               <div class="form-group m-b-30">
-                <input type="text" class="form-control form-md" placeholder="마감일" />
+                <input type="text" id="end-datepicker" class="form-control form-lg form-date" />
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary m-r-10" data-bs-dismiss="modal">저장</button>
@@ -1316,6 +1316,29 @@
           </div>
         </div>
       </div>
+
+      <script>
+        // datepicker
+        $('#end-datepicker').datepicker({
+          changeMonth: true,
+          changeYear: true,
+          nextText: '다음 달',
+          prevText: '이전 달',
+          currentText: '오늘 날짜',
+          closeText: '닫기',
+          dateFormat: 'yy-mm-dd',
+          showMonthAfterYear: true,
+          dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+          monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+          beforeShow: function (input) {
+            let i_offset = $(input).offset(); //클릭된 input의 위치값 체크
+            console.log(i_offset);
+            setTimeout(function () {
+              $('#ui-datepicker-div').css({ top: 53 + '%', bottom: '', left: i_offset.left }); //
+            });
+          },
+        });
+      </script>
     </div>
     <div class="footer">
       <div class="container">
