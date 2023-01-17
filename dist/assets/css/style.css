@@ -4246,7 +4246,7 @@ table.tbl-terms td {
 }
 
 .main-content__search {
-  padding: 80px 0 140px;
+  padding: 60px 0 60px;
   background-color: #fff;
 }
 .main-content__search .main-search-box {
@@ -4255,10 +4255,10 @@ table.tbl-terms td {
 .main-content__search .main-search-box .title {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .main-content__search .main-search-box:last-child {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .main-content__search .tab-content {
   position: relative;
@@ -4295,13 +4295,16 @@ table.tbl-terms td {
   content: none;
 }
 .main-content__search .search-card {
-  height: 175px;
+  height: 90px;
   border-radius: 16px;
   border: solid 1px #eee;
-  padding: 32px 25px;
 }
 .main-content__search .search-card a {
-  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-content__search .search-card.active {
   border: 2px solid #1686f2;
