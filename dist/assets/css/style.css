@@ -7759,6 +7759,7 @@ table.tbl-terms td {
 }
 .message-body .item p {
   max-width: 50%;
+  display: inline-block;
   background-color: #fff;
   border: 1px solid #e6ecf0;
   border-radius: 0 8px 8px 8px;
@@ -7883,7 +7884,7 @@ table.tbl-terms td {
     line-height: 28px;
   }
   .message-body .item p {
-    max-width: 100%;
+    max-width: 70%;
   }
 }
 .auto-project {
