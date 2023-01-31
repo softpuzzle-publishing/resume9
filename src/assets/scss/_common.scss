@@ -184,6 +184,12 @@ input[type="number"]::-webkit-inner-spin-button {
       display: block; padding: 5px 10px; vertical-align: middle; text-align: left; border-top: 0; 
       .form-check-input{ margin-left: 0;}
     }
+    &.search{
+      display: table;
+      .fake-table-head{ display: table-row;}
+      .fake-table-column{ display: table-row;}
+      .fake-table-cell{ display: table-cell; text-align: center;}
+    }
   }
   .step{
     margin-bottom: 25px;

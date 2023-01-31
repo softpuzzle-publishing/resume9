@@ -2549,6 +2549,12 @@ progress {
 #container-block {
   min-height: 600px;
 }
+#container-block.desktop-wrap {
+  min-width: 1320px;
+}
+#container-block.desktop-wrap .container {
+  max-width: 1320px;
+}
 
 .container {
   padding: 0;
@@ -3422,6 +3428,19 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .fake-table .fake-table-cell .form-check-input {
     margin-left: 0;
+  }
+  .fake-table.search {
+    display: table;
+  }
+  .fake-table.search .fake-table-head {
+    display: table-row;
+  }
+  .fake-table.search .fake-table-column {
+    display: table-row;
+  }
+  .fake-table.search .fake-table-cell {
+    display: table-cell;
+    text-align: center;
   }
   .step {
     margin-bottom: 25px;

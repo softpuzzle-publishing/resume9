@@ -1,6 +1,10 @@
 
 #container-block{
     min-height: 600px;
+    &.desktop-wrap{
+        min-width: 1320px;
+        .container{max-width: 1320px;}
+    }
 }
 .container{
     padding: 0;
