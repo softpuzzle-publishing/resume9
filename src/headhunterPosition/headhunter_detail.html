@@ -36,11 +36,11 @@
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="btn-group m-t-30 d-flex align-items-center justify-content-between">
+                <div class="position-btn-group m-t-30">
                   <div>
-                    <a href="/@@webRoot/headhunterHuman/headhunter_search.html" class="btn btn-outline-dark btn-md">인재검색</a>
-                    <a href="javascript:void(0)" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#modal-position-list">목록추가(수동)</a>
-                    <button type="button" class="btn btn-outline-danger btn-md">삭제</button>
+                    <a href="/@@webRoot/headhunterHuman/headhunter_search.html" class="btn btn-outline-gray btn-md">인재검색</a>
+                    <a href="javascript:void(0)" class="btn btn-outline-gray btn-md" data-bs-toggle="modal" data-bs-target="#modal-position-list">목록추가(수동)</a>
+                    <button type="button" class="btn btn-outline-gray btn-md">삭제</button>
                   </div>
                   <div>
                     <select class="select-design" style="width: 150px">
@@ -56,86 +56,88 @@
                     <button type="button" class="btn btn-outline-primary btn-md">문자 안내</button>
                   </div>
                 </div>
-                <table class="table m-t-30">
-                  <thead>
-                    <tr>
-                      <th class="text-center">
-                        <div class="form-check p-0">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </th>
-                      <th class="text-center">등록일<br />제안일</th>
-                      <th class="text-center">등록경로</th>
-                      <th class="text-center">이름<br />생년월일</th>
-                      <th class="text-center">연락처<br />이메일</th>
-                      <th class="text-center">이력서</th>
-                      <th class="text-center">상태</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center">
-                        <div class="form-check p-0">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                        <p>2022-10-31</p>
-                      </td>
-                      <td class="text-center">
-                        <p>내인재</p>
-                      </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>1975(48)</p>
-                      </td>
-                      <td class="text-center">
-                        <p>010-1111-2222</p>
-                        <p>soft@gmail.com</p>
-                      </td>
-                      <td class="text-center">
-                        <a href="@@webRoot/resume/resume_detail.html">보기</a>
-                      </td>
-                      <td class="text-center">
-                        <p>제안중</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">
-                        <div class="form-check p-0">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                        <p>-</p>
-                      </td>
-                      <td class="text-center">
-                        <p>수동입력</p>
-                      </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>-</p>
-                      </td>
-                      <td class="text-center">
-                        <p>010-1111-2222 <button type="button" class="tag tag-sm none-border">채팅하기</button></p>
-                        <p>soft@gmail.com</p>
-                      </td>
-                      <td class="text-center">
-                        <p>보기</p>
-                      </td>
-                      <td class="text-center">
-                        <p>
-                          <a href="javascript:void(0)" class="text-underline" data-bs-toggle="modal" data-bs-target="#modal-position-state">적합/부적합</a>
-                        </p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="auto">
+                  <table class="table m-t-30">
+                    <thead>
+                      <tr>
+                        <th class="text-center">
+                          <div class="form-check p-0">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          </div>
+                        </th>
+                        <th class="text-center">등록일<br />제안일</th>
+                        <th class="text-center">등록경로</th>
+                        <th class="text-center">이름<br />생년월일</th>
+                        <th class="text-center">연락처<br />이메일</th>
+                        <th class="text-center">이력서</th>
+                        <th class="text-center">상태</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">
+                          <div class="form-check p-0">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>2022-10-30</p>
+                          <p>2022-10-31</p>
+                        </td>
+                        <td class="text-center">
+                          <p>내인재</p>
+                        </td>
+                        <td class="text-center">
+                          <p>곽정석</p>
+                          <p>1975(48)</p>
+                        </td>
+                        <td class="text-center">
+                          <p>010-1111-2222</p>
+                          <p>soft@gmail.com</p>
+                        </td>
+                        <td class="text-center">
+                          <a href="@@webRoot/resume/resume_detail.html">보기</a>
+                        </td>
+                        <td class="text-center">
+                          <p>제안중</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <div class="form-check p-0">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>2022-10-30</p>
+                          <p>-</p>
+                        </td>
+                        <td class="text-center">
+                          <p>수동입력</p>
+                        </td>
+                        <td class="text-center">
+                          <p>곽정석</p>
+                          <p>-</p>
+                        </td>
+                        <td class="text-center">
+                          <p>010-1111-2222 <button type="button" class="tag tag-sm none-border">채팅하기</button></p>
+                          <p>soft@gmail.com</p>
+                        </td>
+                        <td class="text-center">
+                          <p>보기</p>
+                        </td>
+                        <td class="text-center">
+                          <p>
+                            <a href="javascript:void(0)" class="text-underline" data-bs-toggle="modal" data-bs-target="#modal-position-state">적합/부적합</a>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="btn-group m-t-30 d-flex align-items-center justify-content-between">
+                <div class="position-btn-group m-t-30">
                   <div>
                     <button type="button" class="btn btn-outline-danger btn-md">탈락</button>
                     <select class="select-design" style="width: 150px">
@@ -147,93 +149,95 @@
                     <button type="button" class="btn btn-primary btn-md">채용사에 추천</button>
                   </div>
                 </div>
-                <table class="table m-t-30">
-                  <thead>
-                    <tr>
-                      <th class="text-center">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </th>
-                      <th class="text-center">접수일</th>
-                      <th class="text-center">접수경로</th>
-                      <th class="text-center">이름<br />생년월일</th>
-                      <th class="text-center">연락처<br />이메일</th>
-                      <th class="text-center">이력서</th>
-                      <th class="text-center">상태</th>
-                      <th class="text-center">전형결과</th>
-                      <th class="text-center"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                      </td>
-                      <td class="text-center">
-                        <p>수동입력</p>
-                      </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>1975(48)</p>
-                      </td>
-                      <td class="text-center">
-                        <p>010-1111-2222</p>
-                        <p>soft@gmail.com</p>
-                      </td>
-                      <td class="text-center">
-                        <p>보기</p>
-                      </td>
-                      <td class="text-center">
-                        <p>제안중</p>
-                      </td>
-                      <td class="text-center">
-                        <p>전형전</p>
-                      </td>
-                      <td class="text-center">
-                        <button type="button" class="btn btn-outline-danger btn-md">인재 등록</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <p>2022-10-30</p>
-                      </td>
-                      <td class="text-center">
-                        <p>수동입력</p>
-                      </td>
-                      <td class="text-center">
-                        <p>곽정석</p>
-                        <p>1975(48)</p>
-                      </td>
-                      <td class="text-center">
-                        <p>010-1111-2222</p>
-                        <p>soft@gmail.com</p>
-                      </td>
-                      <td class="text-center">
-                        <p>보기</p>
-                      </td>
-                      <td class="text-center">
-                        <p>제안중</p>
-                      </td>
-                      <td class="text-center">
-                        <p>전형전</p>
-                      </td>
-                      <td class="text-center">
-                        <button type="button" class="btn btn-outline-danger btn-md">인재 등록</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="auto">
+                  <table class="table m-t-30">
+                    <thead>
+                      <tr>
+                        <th class="text-center">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          </div>
+                        </th>
+                        <th class="text-center">접수일</th>
+                        <th class="text-center">접수경로</th>
+                        <th class="text-center">이름<br />생년월일</th>
+                        <th class="text-center">연락처<br />이메일</th>
+                        <th class="text-center">이력서</th>
+                        <th class="text-center">상태</th>
+                        <th class="text-center">전형결과</th>
+                        <th class="text-center"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>2022-10-30</p>
+                        </td>
+                        <td class="text-center">
+                          <p>수동입력</p>
+                        </td>
+                        <td class="text-center">
+                          <p>곽정석</p>
+                          <p>1975(48)</p>
+                        </td>
+                        <td class="text-center">
+                          <p>010-1111-2222</p>
+                          <p>soft@gmail.com</p>
+                        </td>
+                        <td class="text-center">
+                          <p>보기</p>
+                        </td>
+                        <td class="text-center">
+                          <p>제안중</p>
+                        </td>
+                        <td class="text-center">
+                          <p>전형전</p>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-danger btn-md">인재 등록</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <p>2022-10-30</p>
+                        </td>
+                        <td class="text-center">
+                          <p>수동입력</p>
+                        </td>
+                        <td class="text-center">
+                          <p>곽정석</p>
+                          <p>1975(48)</p>
+                        </td>
+                        <td class="text-center">
+                          <p>010-1111-2222</p>
+                          <p>soft@gmail.com</p>
+                        </td>
+                        <td class="text-center">
+                          <p>보기</p>
+                        </td>
+                        <td class="text-center">
+                          <p>제안중</p>
+                        </td>
+                        <td class="text-center">
+                          <p>전형전</p>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-danger btn-md">인재 등록</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-between"></div>

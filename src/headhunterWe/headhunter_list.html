@@ -10,9 +10,9 @@
         <div class="layout">
           <div class="layout-left">@@include('@@webRoot/_include/_we_firm_aside.html')</div>
           <div class="layout-content">
-            <div class="d-flex">
+            <div class="layout-head">
               <h3 class="subtitle">헤드헌터 리스트</h3>
-              <span class="font-size-14 m-l-20 text-gray"
+              <span class="font-size-14 text-gray"
                 >※ 퇴사 후 즉시 WE펌에서 탈퇴 처리 해주셔야 합니다. 미 처리 시 WE펌 사용에 제한을 받을 수 있습니다.<br />
                 (직업안정법 상 서치펌 변경 후 30일 이내 신고하지 않으면 법률위반 입니다)
               </span>
@@ -24,56 +24,58 @@
                 <button type="button" class="btn btn-outline-gray btn-md">검색</button>
               </div>
             </div>
-            <table class="table border-top-1 m-t-15">
-              <thead>
-                <tr>
-                  <th class="text-center">
-                    <div class="form-check p-0">
-                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                    </div>
-                  </th>
-                  <th class="text-center">No.</th>
-                  <th class="text-center">사진</th>
-                  <th class="text-center">이름</th>
-                  <th class="text-center">연락처</th>
-                  <th class="text-center">이메일</th>
-                  <th class="text-center">가입일</th>
-                  <th class="text-center">진행중공고</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="text-center">
-                    <div class="form-check p-0">
-                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                    </div>
-                  </td>
-                  <td class="text-center">
-                    <p>1</p>
-                  </td>
-                  <td class="text-center">
-                    <div class="img-box">
-                      <img src="@@webRoot/assets/images/about-01.png" alt="" />
-                    </div>
-                  </td>
-                  <td class="text-center">
-                    <p>홍길동</p>
-                  </td>
-                  <td class="text-center">
-                    <p>010-1234-5678</p>
-                  </td>
-                  <td class="text-center">
-                    <p>asdb@naver.com</p>
-                  </td>
-                  <td class="text-center">
-                    <p>2020.12.01</p>
-                  </td>
-                  <td class="text-center">
-                    <p><a href="javascript:void(0)" class="text-danger">1</a>건</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="auto">
+              <table class="table management-list__table border-top-1 m-t-15">
+                <thead>
+                  <tr>
+                    <th class="text-center">
+                      <div class="form-check p-0">
+                        <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                      </div>
+                    </th>
+                    <th class="text-center">No.</th>
+                    <th class="text-center">사진</th>
+                    <th class="text-center">이름</th>
+                    <th class="text-center">연락처</th>
+                    <th class="text-center">이메일</th>
+                    <th class="text-center">가입일</th>
+                    <th class="text-center">진행중공고</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">
+                      <div class="form-check p-0">
+                        <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <p>1</p>
+                    </td>
+                    <td class="text-center">
+                      <div class="img-box">
+                        <img src="@@webRoot/assets/images/about-01.png" alt="" />
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <p>홍길동</p>
+                    </td>
+                    <td class="text-center">
+                      <p>010-1234-5678</p>
+                    </td>
+                    <td class="text-center">
+                      <p>asdb@naver.com</p>
+                    </td>
+                    <td class="text-center">
+                      <p>2020.12.01</p>
+                    </td>
+                    <td class="text-center">
+                      <p><a href="javascript:void(0)" class="text-danger">1</a>건</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="d-flex justify-content-end m-t-15">
               <button type="button" class="btn btn-outline-danger btn-md">강제탈퇴</button>
             </div>

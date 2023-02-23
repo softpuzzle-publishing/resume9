@@ -11,7 +11,10 @@
 }
 @media screen and (max-width: $BREAKPOINT_LARGE) {
     #container-block{
-        min-height: 100%;
+        min-width: 100%; min-height: 100%; 
+        &.desktop-wrap{
+            min-width: 100%;
+        }
     }
     #container{ margin-top: 30px; }
 }
@@ -32,30 +35,89 @@
     width: 1001px;
     padding-top: 1rem;
     margin-bottom: 100px;
-    min-height: 500px;
+    min-height: 800px;
 }
 .sub-content{
-    margin: 70px 0;
+    margin: 70px 0; min-height: 800px;
 }
 @media screen and (max-width: 992px) {
     .row{ margin-left: 0; margin-right: 0;
         >*{padding-left: 0; padding-right: 0;}
         .col{ padding: 0 5px !important;}
     }
-    aside{ display: none;}
+    
     .layout{
-        margin-top: 35px; padding: 0 20px;
+        margin-top: 35px; padding: 0 20px; display: block;
     }
     .layout-left {
-        display: none;
+        width: calc( 100% + 40px); display: block; margin-left: -20px; margin-right: -20px;
+        aside{ 
+            width:100%; display: flex; flex-direction: column; overflow-x: scroll; overflow-y: hidden; padding-bottom: 35px;
+            >ul{ 
+                display: flex; white-space: nowrap; overflow-x: auto; gap: 8px;  padding-bottom: 65px; padding-left: 15px; position: relative;
+                >li{
+                    margin-bottom: 0;  background-color: #fff; border: 1px solid $PRIMARY_COLOR; border-radius: 24px;
+                    >a{
+                        font-size: 14px; line-height: 22px; padding: 5px 15px; margin-bottom: 0; color: $PRIMARY_COLOR;
+                    }
+                    &.active{
+                        background-color: $PRIMARY_COLOR;
+                        >a{
+                            color: #fff;
+                        }
+                        ul{
+                            width:100%; display: flex; background-color: #f7f7f7; position: absolute; left: 0; bottom: 0; gap: 20px; padding: 9px 30px;  white-space: nowrap; overflow-x: auto;
+                        }
+                    }
+                    ul{
+                        display: none;
+                    }
+                }
+            }
+            &.address{
+                overflow-x: inherit; overflow-y: inherit;
+                >ul{ 
+                    display: block; white-space: inherit; overflow-x: inherit; gap: 8px;  padding: 0 20px 65px; position: relative;
+                    >li{
+                        margin-bottom: 0;  background-color: #fff; border: 0;
+                        >a{
+                            font-size: 14px; line-height: 22px; padding: 5px 15px; margin-bottom: 0; color: $PRIMARY_COLOR; border-radius: 24px; display: inline;
+                        }
+                        &.active{
+                            ul{
+                                width:100%; display: block; position: static; left: 0; bottom: 0; gap: 20px; padding: 9px 30px;  white-space: inherit; overflow-x: inherit;
+                            }
+                        }
+                        ul{
+                            display: block; margin-top: 20px;
+                            li{
+                                a{ padding-right: 40px;}
+
+                            }
+                            .feed-list-detail{
+                                .more-dot{
+                                    .more-page{
+                                        right: 10px; left: inherit; width: 150px; z-index: 99;
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+    
     .layout-content {
         width: 100%;
         padding-top: 0.5rem;
         margin-bottom: 50px;
+        min-height: auto;
     }
     .sub-content{
-        margin: 35px 0 70px 0; padding: 0 20px;
+        margin: 35px 0 70px 0; 
+        padding: 0 20px;
+        min-height: auto;
     }
 }
 

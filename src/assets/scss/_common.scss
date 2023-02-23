@@ -32,6 +32,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 // table
+.auto{
+  overflow: auto;
+}
 .table{
   width: 100%;
 }
@@ -49,6 +52,11 @@ input[type="number"]::-webkit-inner-spin-button {
   tbody th{background: #f8f8fa;vertical-align: middle;}
 }
 
+@media screen and (max-width: 992px) {
+  .table{
+    min-width: 700px;
+  }
+}
 .table-title{font-size: 18px;font-weight: 700;letter-spacing: -1.2px;line-height: 1.2;margin-bottom: 1rem;}
 .table-title-desc{line-height: 1.1;color: #888;letter-spacing: -0.8px;}
 
@@ -185,7 +193,7 @@ input[type="number"]::-webkit-inner-spin-button {
       .form-check-input{ margin-left: 0;}
     }
     &.search{
-      display: table;
+      display: table; width: 800px;
       .fake-table-head{ display: table-row;}
       .fake-table-column{ display: table-row;}
       .fake-table-cell{ display: table-cell; text-align: center;}

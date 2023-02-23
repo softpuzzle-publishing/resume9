@@ -137,6 +137,63 @@
                     </div>
                   </li>
                 </ul>
+                <a href="javascript:void(0)" class="mobile-menu d-block d-lg-none">
+                  <i class="icon-menu"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mobile-menu__wrap">
+              <div class="menu-wrap__content">
+                <div class="close-wrap">
+                  <button type="button" class="close-btn">
+                    <i class="icon-b-close"></i>
+                  </button>
+                </div>
+                <ul class="menu-list">
+                  <li>
+                    <a href="">
+                      <i class="icon-mo-home"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <i class="icon-mo-mypage"></i>
+                      마이페이지
+                    </a>
+                    <ul class="depth">
+                      <li>회원정보 수정</li>
+                      <li>비밀번호 변경</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-mo-search"></i>
+                      최근 열람 공고
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-mo-star"></i>
+                      내가 스크랩한 공고
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-mo-setting"></i>
+                      설정
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-mo-about"></i>
+                      About
+                    </a>
+                  </li>
+                </ul>
+                <div class="logout-btn">
+                  <button type="button">로그아웃</button>
+                </div>
               </div>
             </div>
           </div>
@@ -150,7 +207,7 @@
           <div class="layout-left">
             <aside>
               <ul>
-                <li>
+                <li class="active">
                   <a href="javascript:void(0)"><span class="poppins">회원정보 관리</span></a>
                   <ul>
                     <li class="active"><a href="../mypage/profile_info.html">회원정보 수정</a></li>
@@ -227,48 +284,50 @@
                   </select>
                 </div>
               </div>
-              <table class="table m-t-15 border-top-1">
-                <colgroup>
-                  <col width="20%" />
-                  <col width="20%" />
-                  <col width="20%" />
-                  <col width="20%" />
-                  <col width="20%" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th class="text-center">구분</th>
-                    <th class="text-center">일시</th>
-                    <th class="text-center">내역</th>
-                    <th class="text-center">포인트</th>
-                    <th class="text-center">상태</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center" colspan="5">
-                      <p class="m-t-30 m-b-30">리워드 적립/사용 내역이 없습니다.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">
-                      <p>적립</p>
-                    </td>
-                    <td class="text-center">
-                      <p>2022.11.01</p>
-                    </td>
-                    <td class="text-center">
-                      <p>헤드헌터 열람</p>
-                    </td>
-                    <td class="text-center">
-                      <p>+ 1,000P</p>
-                    </td>
-                    <td class="text-center">
-                      <p>발송대기 / 발송완료</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="auto">
+                <table class="table m-t-15 border-top-1">
+                  <colgroup>
+                    <col width="20%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="text-center">구분</th>
+                      <th class="text-center">일시</th>
+                      <th class="text-center">내역</th>
+                      <th class="text-center">포인트</th>
+                      <th class="text-center">상태</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center" colspan="5">
+                        <p class="m-t-30 m-b-30">리워드 적립/사용 내역이 없습니다.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                        <p>적립</p>
+                      </td>
+                      <td class="text-center">
+                        <p>2022.11.01</p>
+                      </td>
+                      <td class="text-center">
+                        <p>헤드헌터 열람</p>
+                      </td>
+                      <td class="text-center">
+                        <p>+ 1,000P</p>
+                      </td>
+                      <td class="text-center">
+                        <p>발송대기 / 발송완료</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <div class="d-flex justify-content-center mt-5">
                 <div class="pagination">
                   <a href=""><i class="icon-pager-prev"></i></a>

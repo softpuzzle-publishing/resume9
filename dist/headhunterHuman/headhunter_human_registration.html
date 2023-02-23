@@ -141,6 +141,63 @@
                     </div>
                   </li>
                 </ul>
+                <a href="javascript:void(0)" class="mobile-menu d-block d-lg-none">
+                  <i class="icon-menu"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu__wrap">
+            <div class="menu-wrap__content">
+              <div class="close-wrap">
+                <button type="button" class="close-btn">
+                  <i class="icon-b-close"></i>
+                </button>
+              </div>
+              <ul class="menu-list">
+                <li>
+                  <a href="">
+                    <i class="icon-mo-home"></i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="icon-mo-mypage"></i>
+                    마이페이지
+                  </a>
+                  <ul class="depth">
+                    <li>회원정보 수정</li>
+                    <li>비밀번호 변경</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon-mo-search"></i>
+                    내 인재 목록
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon-mo-position"></i>
+                    내 포지션 목록
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon-mo-setting"></i>
+                    설정
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon-mo-about"></i>
+                    About
+                  </a>
+                </li>
+              </ul>
+              <div class="logout-btn">
+                <button type="button">로그아웃</button>
               </div>
             </div>
           </div>
@@ -182,14 +239,14 @@
                     <button type="button" class="btn btn-outline-dark btn-sm">이력서 로봇FAQ</button>
                   </div>
                 </div>
-                <div class="agreement-content d-flex align-items-center justify-content-between m-t-20">
+                <div class="agreement-content">
                   <p>동의서를 추가해 주세요. <span>(이력서 파일을 먼저 첨부 후 동의서 추가가 가능합니다.)</span></p>
                   <div class="form-upload">
                     <input type="file" class="" id="form-file" />
                     <label for="form-file"><i class="icon-input-add"></i></label>
                   </div>
                 </div>
-                <div class="coworker-wrap resume m-r-15">
+                <div class="coworker-wrap resume">
                   <div class="coworker-list">
                     <div class="btn btn-sm btn-outline-gray round d-flex justify-content-around">
                       <span class="name">김남극</span>
@@ -889,14 +946,14 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="agreement-content d-flex align-items-center justify-content-between m-t-20">
+                <div class="agreement-content">
                   <p>동의서를 추가해 주세요. <span>(이력서 파일을 먼저 첨부 후 동의서 추가가 가능합니다.)</span></p>
                   <div class="form-upload">
                     <input type="file" class="" id="form-file" />
                     <label for="form-file"><i class="icon-input-add"></i></label>
                   </div>
                 </div>
-                <div class="coworker-wrap resume m-r-15">
+                <div class="coworker-wrap resume">
                   <div class="coworker-list">
                     <div class="btn btn-sm btn-outline-gray round d-flex justify-content-around">
                       <span class="name">김남극</span>
@@ -1619,7 +1676,7 @@
                   </div>
                 </div>
                 <div class="tbl-head">
-                  <p class="tbl-head-cnt font-size-18 font-bold">이력서 등록신청 내역</p>
+                  <p class="tbl-head-cnt font-size-18 font-bold mb-3 m-lg-0">이력서 등록신청 내역</p>
                   <div class="d-flex">
                     <select class="select-design" style="width: 100%">
                       <option value="1">파일명</option>
@@ -1628,38 +1685,40 @@
                     <button type="button" class="btn btn-outline-gray btn-md">검색</button>
                   </div>
                 </div>
-                <table class="table m-t-15 border-top-1">
-                  <colgroup>
-                    <col width="25%" />
-                    <col width="25%" />
-                    <col width="25%" />
-                    <col width="25%" />
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th class="text-center">신청일시</th>
-                      <th class="text-center">신청파일명</th>
-                      <th class="text-center">진행 상태</th>
-                      <th class="text-center">비고</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center">
-                        <a href="" class="text-primary text-underline">2022-09-23 09:13</a>
-                      </td>
-                      <td class="text-center">
-                        <p>이주혜 최종.docx</p>
-                      </td>
-                      <td class="text-center">
-                        <p>등록 불가</p>
-                      </td>
-                      <td class="text-center">
-                        <p>테스트 신청</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="auto">
+                  <table class="table m-t-15 border-top-1">
+                    <colgroup>
+                      <col width="25%" />
+                      <col width="25%" />
+                      <col width="25%" />
+                      <col width="25%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="text-center">신청일시</th>
+                        <th class="text-center">신청파일명</th>
+                        <th class="text-center">진행 상태</th>
+                        <th class="text-center">비고</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">
+                          <a href="" class="text-primary text-underline">2022-09-23 09:13</a>
+                        </td>
+                        <td class="text-center">
+                          <p>이주혜 최종.docx</p>
+                        </td>
+                        <td class="text-center">
+                          <p>등록 불가</p>
+                        </td>
+                        <td class="text-center">
+                          <p>테스트 신청</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

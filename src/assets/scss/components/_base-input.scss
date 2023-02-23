@@ -62,4 +62,8 @@
       &.form-lg{min-height: 26px; font-size: 13px;  padding: 12px 15px 12px 12px;}
       &.form-xl{min-height: 30px;  font-size: 14px; padding: 16px 30px 16px 18px;}
     }
+    .date-range{
+      span{margin: 0 5px;}
+      .form-date-wrap{width:100px; padding: 11px 10px; font-size: 12px;}
+    }
   }

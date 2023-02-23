@@ -12,89 +12,91 @@
           <div class="title-line mt-4 mb-5"></div>
           <div class="tbl-head">
             <p class="tbl-head-cnt text-danger">※ 내 고객사 리스트는 외부에 공개 되지 않으며 등록한 당사자만 조회할 수 있습니다.</p>
-            <div class="d-flex align-items-center gap-10">
+            <div class="d-flex align-items-center justify-content-end gap-10">
               <button type="button" class="btn btn-outline-primary">삭제</button>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-customer-registration">+ 신규등록</button>
             </div>
           </div>
-          <table class="table m-t-15 border-top-1">
-            <colgroup>
-              <col width="10%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="10%" />
-              <col width="40%" />
-              <col width="10%" />
-              <col width="10%" />
-            </colgroup>
-            <thead>
-              <tr>
-                <th class="text-center">
-                  <div class="form-check p-0">
-                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                  </div>
-                </th>
-                <th class="text-center">고객사</th>
-                <th class="text-center">등록일</th>
-                <th class="text-center">인사담당자</th>
-                <th class="">최종포지션</th>
-                <th class="text-center">마감/종료일</th>
-                <th class="text-center">포지션 결과</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-center">
-                  <div class="form-check p-0">
-                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                  </div>
-                </td>
-                <td class="text-center">
-                  <a href="" class="text-primary text-underline">(주)소프트퍼즐</a>
-                </td>
-                <td class="text-center">
-                  <p>2022-09-21</p>
-                </td>
-                <td class="text-center">
-                  <p>-</p>
-                </td>
-                <td class="">
-                  <a href="" class="text-primary text-underline">테스트 포지션 등록</a>
-                </td>
-                <td class="text-center">
-                  <p>2022-10-30</p>
-                </td>
-                <td class="text-center">
-                  <p>진행중</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">
-                  <div class="form-check p-0">
-                    <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
-                  </div>
-                </td>
-                <td class="text-center">
-                  <a href="" class="text-primary text-underline">(주)모션</a>
-                </td>
-                <td class="text-center">
-                  <p>2022-09-21</p>
-                </td>
-                <td class="text-center">
-                  <p>-</p>
-                </td>
-                <td class="">
-                  <a href="" class="text-primary text-underline">대기업 계열사, 임배디드 리눅스 개발자, 과장급</a>
-                </td>
-                <td class="text-center">
-                  <p></p>
-                </td>
-                <td class="text-center">
-                  <p>마감</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="auto">
+            <table class="table management-list__table m-t-15 border-top-1">
+              <colgroup>
+                <col width="7%" />
+                <col width="13%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="40%" />
+                <col width="10%" />
+                <col width="10%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="text-center">
+                    <div class="form-check p-0">
+                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                    </div>
+                  </th>
+                  <th class="text-center">고객사</th>
+                  <th class="text-center">등록일</th>
+                  <th class="text-center">인사담당자</th>
+                  <th class="">최종포지션</th>
+                  <th class="text-center">마감/종료일</th>
+                  <th class="text-center">포지션 결과</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <div class="form-check p-0">
+                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <a href="" class="text-primary text-underline">(주)소프트퍼즐</a>
+                  </td>
+                  <td class="text-center">
+                    <p>2022-09-21</p>
+                  </td>
+                  <td class="text-center">
+                    <p>-</p>
+                  </td>
+                  <td class="">
+                    <a href="" class="text-primary text-underline">테스트 포지션 등록</a>
+                  </td>
+                  <td class="text-center">
+                    <p>2022-10-30</p>
+                  </td>
+                  <td class="text-center">
+                    <p>진행중</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    <div class="form-check p-0">
+                      <input class="form-check-input" type="checkbox" value="" id="multipleCheck" />
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <a href="" class="text-primary text-underline">(주)모션</a>
+                  </td>
+                  <td class="text-center">
+                    <p>2022-09-21</p>
+                  </td>
+                  <td class="text-center">
+                    <p>-</p>
+                  </td>
+                  <td class="">
+                    <a href="" class="text-primary text-underline">대기업 계열사, 임배디드 리눅스 개발자, 과장급</a>
+                  </td>
+                  <td class="text-center">
+                    <p></p>
+                  </td>
+                  <td class="text-center">
+                    <p>마감</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       @@include('@@webRoot/_include/_modal.html')

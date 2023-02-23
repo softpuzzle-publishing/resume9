@@ -54,20 +54,20 @@
   }
   &.btn-gray{
     color: #fff !important;
-    background-color: #777 !important;
-    border-color: #777 !important;
+    background-color: #ddd !important;
+    border-color: #ddd !important;
     &:hover{
-      background-color: #777 !important;
+      background-color: #ddd !important;
     }
   }
   &.btn-outline-gray{
-    color: #777 !important;
+    color: #202020 !important;
     background-color: #fff !important;
-    border-color: #777 !important;
+    border-color: #ddd !important;
     &:hover{
-      color: #fff !important;
-      background-color: #777 !important;
-      border-color: #777 !important;
+      color: #777 !important;
+      background-color: #ddd !important;
+      border-color: #ddd !important;
     }
   }
 
@@ -148,7 +148,7 @@
       padding: 1px 0.3rem; font-size: 11px; line-height: 22px; min-height: 22px;
     }
     &.btn-md{
-      padding: 3px 0.7rem; font-size: 12px; line-height: 24px; min-height: 24px;
+      padding: 7px 0.7rem; font-size: 12px; line-height: 24px; min-height: 24px;
     }
     &.btn-lg{
       padding: 5px 0.7rem; font-size: 13px; line-height: 24px; min-height: 26px;

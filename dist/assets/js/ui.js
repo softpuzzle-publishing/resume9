@@ -86,3 +86,13 @@ $(".top-btn").click(function () {
   }, 400);
   return false;
 });
+
+// 모바일 메뉴버튼
+
+$(".mobile-menu").click(function () {
+  // $(".mobile-menu__wrap").show();
+  $(".mobile-menu__wrap").addClass("active");
+});
+$(".close-btn").click(function () {
+  $(".mobile-menu__wrap").removeClass("active");
+});
