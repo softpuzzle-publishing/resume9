@@ -32,11 +32,20 @@
 }
 
 .chat-notice{
-    position: fixed; bottom: 20%; right: 5%; z-index: 9999;
+    position: fixed; bottom: 20%; right: 5%; z-index: 9999; 
     &.active{
         .icon-chat-notice{
-            background-image: url('../images/icon-chat-notice-active.svg');
+             background-image: url('../images/icon-chat-notice-active.svg');
         }
+    }
+}
+.chat-notice-msg{
+    position: fixed; bottom: 28%; right: 5%; z-index: 9999; width: 56px; height: 56px; background-color: #777777; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    .icon-notice-msg{
+        width: 30px; height: 30px; background-image: url('../images/icon-notices.svg');
+    }
+    &.active{
+        background-color: $PRIMARY_COLOR;
     }
 }
 .top-btn{
@@ -242,7 +251,8 @@ legend{
 @media screen and (max-width: $BREAKPOINT_LARGE) {
     .main-visual{ width: 100%; height: 140px;  }
     .main-content__join{
-        width: calc(100% - 32px); gap:0; margin-top: -100px; padding: 25px;
+        width: calc(100% - 32px); margin-top: -100px; padding: 25px; display: block;
+        height: auto;
         .swiper-container{ width: 100%; }
         .swiper-button-next{
            right: 0; bottom: 0;
@@ -322,7 +332,7 @@ legend{
 .content-cnt{ font-size: 15px; font-weight: 700; color: #1686f2; margin-top: 4px;}
 @media screen and (max-width: $BREAKPOINT_LARGE) {
     .sign-wrap__success{
-        width: 100%;
+        width: 100%; position: static; padding: 0; margin-top: 20px;
     }
     .sign-success__con{
         &.headhunter{

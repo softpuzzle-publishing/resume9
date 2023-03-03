@@ -2960,6 +2960,10 @@ progress {
   top: 50%;
   transform: translateY(-50%);
 }
+.search-form.mobile-search {
+  width: 100%;
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 992px) {
   #header {
@@ -2996,6 +3000,7 @@ progress {
   right: 0;
   transform: translateX(100%);
   transition: 0.5s;
+  overflow-y: scroll;
 }
 .mobile-menu__wrap .close-wrap {
   text-align: right;
@@ -3027,7 +3032,7 @@ progress {
   font-size: 12px;
   line-height: 16px;
   color: #202020;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   position: relative;
   padding-left: 15px;
 }
@@ -3039,10 +3044,19 @@ progress {
   border-radius: 50%;
   background-color: #202020;
   left: 5px;
-  top: 7px;
+  top: 10px;
 }
 .mobile-menu__wrap .menu-list li .depth li:last-child {
   padding-bottom: 0;
+}
+.mobile-menu__wrap .menu-list li .depth .depth2 {
+  margin-top: 10px;
+}
+.mobile-menu__wrap .menu-list li .depth .depth2 li {
+  padding-bottom: 10px;
+}
+.mobile-menu__wrap .menu-list li .depth .depth2 li a {
+  font-size: 11px;
 }
 .mobile-menu__wrap::before {
   content: "";
@@ -3056,10 +3070,7 @@ progress {
 }
 .mobile-menu__wrap .logout-btn {
   width: calc(100% - 2rem);
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto 50px;
 }
 .mobile-menu__wrap .logout-btn button {
   width: 100%;
@@ -3831,6 +3842,28 @@ input[type=number]::-webkit-inner-spin-button {
   background-image: url("../images/icon-chat-notice-active.svg");
 }
 
+.chat-notice-msg {
+  position: fixed;
+  bottom: 28%;
+  right: 5%;
+  z-index: 9999;
+  width: 56px;
+  height: 56px;
+  background-color: #777777;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat-notice-msg .icon-notice-msg {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icon-notices.svg");
+}
+.chat-notice-msg.active {
+  background-color: #1686f2;
+}
+
 .top-btn {
   position: fixed;
   bottom: 12.5%;
@@ -4185,9 +4218,10 @@ table.tbl-terms td {
   }
   .main-content__join {
     width: calc(100% - 32px);
-    gap: 0;
     margin-top: -100px;
     padding: 25px;
+    display: block;
+    height: auto;
   }
   .main-content__join .swiper-container {
     width: 100%;
@@ -4421,6 +4455,9 @@ table.tbl-terms td {
 @media screen and (max-width: 996px) {
   .sign-wrap__success {
     width: 100%;
+    position: static;
+    padding: 0;
+    margin-top: 20px;
   }
   .sign-success__con.headhunter .img-wrap {
     width: 100%;
