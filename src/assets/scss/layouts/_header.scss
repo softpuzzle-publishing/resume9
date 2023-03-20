@@ -141,3 +141,11 @@
     button{ width: 100%; height: 40px; background-color: #eee; color: #aaa; font-size: 12px; font-weight: 700; border-radius: 16px;}
   }
 }
+.history-back{
+  display: none;
+}
+@media screen and (max-width:992px) {
+  .history-back{
+    margin-right: 15px; display: block;
+  }
+}

@@ -1556,7 +1556,8 @@
                 </div>
                 <div class="form-check block">
                   <input class="form-check-input" type="radio" value="" id="multipleCheck3" name="multipleCheck1" />
-                  <label class="form-check-label" for="multipleCheck3">
+                  r
+                  <label clarss="form-check-label" for="multipleCheck3">
                     <p>표 형식 이력서</p>
                     <img src="../assets/images/resume-case-3.png" alt="" />
                   </label>
@@ -1586,7 +1587,6 @@
           monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
           beforeShow: function (input) {
             let i_offset = $(input).offset(); //클릭된 input의 위치값 체크
-            console.log(i_offset);
             setTimeout(function () {
               $('#ui-datepicker-div').css({ top: 53 + '%', bottom: '', left: i_offset.left }); //
             });

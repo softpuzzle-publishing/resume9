@@ -76,6 +76,8 @@ legend{
 
 
 @media screen and (max-width: 992px) {
+    .chat-notice-msg{ display: none;}
+    .chat-notice{ display: none;}
     .content-bg {
         width: 100%; padding: 11px 16px 41px;
         .form-group {
@@ -118,6 +120,9 @@ legend{
     .btn-form{
         display: flex; gap: 7.5px;
         .form-control{ width: 80%; }
+    }
+    .top-btn{
+        display: none;
     }
 }
 
@@ -2752,5 +2757,85 @@ legend{
     // 소속헤드헌터
     .affiliated-card{
         width: 100%; margin-bottom: 20px;
+    }
+}
+
+.notice-content{
+    border:0; margin-bottom: 50px;
+    .resume-list-wrap{ align-items: center;}
+    .notice-content__title{
+        font-weight: 600; font-size: 18px; line-height: 22px; color: #777777; 
+    }
+    .notice-content__desc{
+        font-size: 16px; line-height: 22px; color: #aaaaaa; padding: 5px 10px 0;
+    }
+    
+}
+.notice-footer {
+    padding: 16px 0;
+    p {
+        font-size: 16px;
+        line-height: 16px;
+        color: #777777;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .notice-content{
+        margin-bottom: 40px;
+        .notice-content__title{
+            font-size: 16px; 
+        }
+        .notice-content__desc{
+            font-size: 12px;padding: 0;
+        }
+    }
+}
+
+
+.popup-banner {
+    width: auto;
+    max-width: 450px;
+    height: auto;
+    padding: 0 0 0 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 98;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    img {
+        display: flex;
+        margin: 0 auto;
+    }
+    .cookie {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .table{
+        word-break: keep-all;
+        .font-size-14{ font-size: 10px !important;}
+        td, th{ font-size: 12px;}
+        &.min-100{min-width: 100% !important; width: 100% !important;}
+        &.min-400{min-width: 400px !important; width: 100% !important;}
+        &.min-450{min-width: 450px !important; width: 100% !important;}
+        &.min-500{min-width: 500px !important; width: 100% !important;}
+        &.min-550{min-width: 550px !important; width: 100% !important;}
+        &.min-600{min-width: 600px !important; width: 100% !important;}
+        &.min-650{min-width: 650px !important; width: 100% !important;}
+        &.min-750{min-width: 750px !important; width: 100% !important;}
+        &.min-800{min-width: 800px !important; width: 100% !important;}
+        &.min-850{min-width: 850px !important; width: 100% !important;}
+        &.min-900{min-width: 900px !important; width: 100% !important;}
+        &.min-950{min-width: 950px !important; width: 100% !important;}
+        &.min-1000{min-width: 1000px !important; width: 100% !important;}
+
+
     }
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+  <body>
+    @@include('@@webRoot/_include/_header.html')
+    <div id="container-block">
+      <div class="container">
+        <div class="layout">
+          <div class="layout-left">@@include('@@webRoot/_include/_resume_aside.html')</div>
+          <div class="layout-content">
+            <h3 class="subtitle poppins">알림 설정</h3>
+            <div class="title-line mt-4 mb-5"></div>
+            <div class="feed-list notice-content">
+              <p class="notice-content__title">채용공고 알림</p>
+              <ul>
+                <li>
+                  <a href="" class="w-100">
+                    <div class="row row-40 align-items-center">
+                      <div class="resume-list-wrap">
+                        <div class="resume-list-object">
+                          <div class="title m-r-20 mt-0">맞춤 채용공고 알림</div>
+                        </div>
+                        <i class="icon-right-arrow"></i>
+                      </div>
+                    </div>
+                    <p class="notice-content__desc">관심있는 기업의 채용공고가 등록될 경우 알림을 받거나 알림을 끌 수 있습니다.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="feed-list notice-content">
+              <p class="notice-content__title">메세지 알림</p>
+              <ul>
+                <li>
+                  <div class="row row-40 align-items-center">
+                    <div class="resume-list-wrap">
+                      <div class="resume-list-object">
+                        <div class="title m-r-20 mt-0">헤드헌터 메세지 알림</div>
+                      </div>
+                      <div class="toggle-btn">
+                        <input type="checkbox" class="sr-only" id="check1" />
+                        <label for="check1">
+                          <div class="button">
+                            <div class="inside"></div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row row-40 align-items-center">
+                    <div class="resume-list-wrap">
+                      <div class="resume-list-object">
+                        <div class="title m-r-20 mt-0">커뮤니티 알림</div>
+                      </div>
+                      <div class="toggle-btn">
+                        <input type="checkbox" class="sr-only" id="check2" />
+                        <label for="check2">
+                          <div class="button">
+                            <div class="inside"></div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="feed-list notice-content">
+              <p class="notice-content__title">서비스 알림</p>
+              <ul>
+                <li>
+                  <div class="row row-40 align-items-center">
+                    <div class="resume-list-wrap">
+                      <div class="resume-list-object">
+                        <div class="title m-r-20 mt-0">마케팅 알림</div>
+                      </div>
+                      <div class="toggle-btn">
+                        <input type="checkbox" class="sr-only" id="check3" />
+                        <label for="check3">
+                          <div class="button">
+                            <div class="inside"></div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="notice-content__desc">마케팅 정보 수신 메세지 해제 2022.08.08</p>
+                </li>
+              </ul>
+            </div>
+            <div class="notice-footer">
+              <p>프로젝트를 등록하지 않았거나 등록 기간이 종료된 경우 알림을 받을 수 있습니다</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('@@webRoot/_include/_modal.html')
+    </div>
+    @@include('@@webRoot/_include/_footer.html')
+  </body>
+</html>
